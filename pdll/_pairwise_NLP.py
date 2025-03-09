@@ -1,6 +1,7 @@
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 import pandas as pd
+import openai
 
 SEED = 17
 
@@ -47,7 +48,47 @@ X_train, X_test, Y_train, Y_test = train_test_split(
     data_stripped, lablesTrue, test_size=0.25, random_state=SEED, shuffle=True
 )
 
-print(X_train.head(9))
+
+# difference paired essays
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = api_key
+
+
+def get_pair_diff(text1: str, text2: str) -> str:
+
+    prompt = f"""
+    Compare the following two texts and return their differences:
+    
+    Text 1:
+    {text1}
+    
+    Text 2:
+    {text2}
+    
+    Provide a concise and structured response highlighting the key differences.
+    """
+
+    response = openai.chat.completions.create(
+        model="gpt-4o-2024-11-20",
+        messages=[
+            {
+                "role": "developer",
+                "content": "You are an expert text comparison assistant.",
+            },
+            {"role": "user", "content": prompt},
+        ],
+    )
+
+    return response.choices[0].message.content
+
+
+# Example usage (replace 'your_api_key' with your OpenAI API key):
+diff = get_pair_diff("Hello world!", "Hello, ChatGPT!")
+print(diff)
 
 
 # d2 = data.head(9)[data.columns[:3]]
