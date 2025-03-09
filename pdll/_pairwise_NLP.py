@@ -8,44 +8,44 @@ SEED = 17
 
 # Input data file from directory and preprocessing
 
-inputdir = Path(
+input_dir = Path(
     "C:/Users/betti/Documents/Daten-lokal/Studium/Bachelorarbeit/asap-aes/data"
 )
 
-inputfile = inputdir / "training_set_rel3.CSV"
+input_file = input_dir / "training_set_rel3.CSV"
 
-data = pd.read_csv(inputfile, header=0, sep=";", encoding="latin-1")
+data = pd.read_csv(input_file, header=0, sep=";", encoding="latin-1")
 
 data["essay"] = data["essay"].astype(pd.StringDtype())
 data["essay"] = data["essay"].str.strip()
 
 
 # slice data into the different essay prompt sets and store in dictionary
-essayPromptSetID = data.essay_set.unique()
+essay_prompt_set_ID = data.essay_set.unique()
 
-dictOfEssaySets = {elem: pd.DataFrame() for elem in essayPromptSetID}
+dict_of_essay_sets = {elem: pd.DataFrame() for elem in essay_prompt_set_ID}
 
-for key in dictOfEssaySets.keys():
-    dictOfEssaySets[key] = data[:][data.essay_set == key]
+for key in dict_of_essay_sets.keys():
+    dict_of_essay_sets[key] = data[:][data.essay_set == key]
 
 
 # establish a simple reduced dataset of only the first essay set for development
-prelimReducedData = dictOfEssaySets[essayPromptSetID[0]]
+prelim_reduced_data = dict_of_essay_sets[essay_prompt_set_ID[0]]
 
-prelimReducedData = prelimReducedData.dropna(axis=1, how="all")
+prelim_reduced_data = prelim_reduced_data.dropna(axis=1, how="all")
 
-# print(prelimReducedData.essay_id.unique().nonzero())
+# print(prelim_reduced_data.essay_id.unique().nonzero())
 
 
 # train test split
 
-prelimReducedData = prelimReducedData.sample(frac=1, random_state=SEED)
+prelim_reduced_data = prelim_reduced_data.sample(frac=1, random_state=SEED)
 
-lablesTrue = prelimReducedData.iloc[:, 3:]
-data_stripped = prelimReducedData.iloc[:, :3]
+lables_true = prelim_reduced_data.iloc[:, 3:]
+data_stripped = prelim_reduced_data.iloc[:, :3]
 
 X_train, X_test, Y_train, Y_test = train_test_split(
-    data_stripped, lablesTrue, test_size=0.25, random_state=SEED, shuffle=True
+    data_stripped, lables_true, test_size=0.25, random_state=SEED, shuffle=True
 )
 
 
