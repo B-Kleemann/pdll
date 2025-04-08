@@ -1,9 +1,38 @@
-from pathlib import Path
-from sklearn.model_selection import train_test_split
+from typing import Any
 import pandas as pd
 import openai
+import os
+
+from pathlib import Path
+from sklearn.model_selection import train_test_split
+from dotenv import load_dotenv
+from pdfquery import PDFQuery
+
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = api_key
 
 SEED = 17
+
+
+# read rubric files
+
+rubric_dir = Path(
+    "C:/Users/betti/Documents/Daten-lokal/Studium/Bachelorarbeit/asap-aes/scoring_rubrics"
+)
+
+filename_rubric_set_1 = rubric_dir / "rubric_set_1.pdf"
+
+rubric_set_1 = PDFQuery(filename_rubric_set_1)
+rubric_set_1.load()
+
+# Use CSS-like selectors to locate the elements
+rubric_set_1_text = rubric_set_1.pq("LTTextLineHorizontal")
+
+# # Extract the text from the elements
+# text = [t.text for t in text_elements]
+
+# print(text)
 
 
 # Input data file from directory and preprocessing
@@ -50,47 +79,110 @@ X_train, X_test, Y_train, Y_test = train_test_split(
 
 
 # difference paired essays
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = api_key
 
 
-def get_pair_diff(text1: str, text2: str) -> str:
+def pair_input_averaging():
+    avg = ""
+    # predict difference in score
+    return avg
 
+
+def pair_input_predict_diff(x1, x2):
+    diff = ""
+    # predict difference in score
+    return diff
+
+
+def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
     prompt = f"""
-    Compare the following two texts and return their differences:
-    
-    Text 1:
-    {text1}
-    
-    Text 2:
-    {text2}
-    
-    Provide a concise and structured response highlighting the key differences.
-    """
+        Compare the following two texts and return the difference in their score according to the provided rubric.
 
-    response = openai.chat.completions.create(
-        model="gpt-4o-2024-11-20",
-        messages=[
-            {
-                "role": "developer",
-                "content": "You are an expert text comparison assistant.",
-            },
-            {"role": "user", "content": prompt},
-        ],
-    )
+        Rubric:
+        {rubric}
 
-    return response.choices[0].message.content
+        Text 1:
+        {text1}
+
+        Text 2:
+        {text2}
+
+        Only return a single integer. No explanation, no additional text.
+        """
+
+    try:
+        response = openai.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are an expert text comparison assistant.",
+                },
+                {"role": "user", "content": prompt},
+            ],
+        )
+
+        result = response.choices[0].message.content.strip()
+        return int(result)
+
+    except (ValueError, IndexError, AttributeError) as parse_err:
+        raise RuntimeError(f"Failed to parse score difference: {parse_err}")
+
+    except Exception as api_err:
+        raise RuntimeError(f"OpenAI API call failed: {api_err}")
 
 
 # Example usage (replace 'your_api_key' with your OpenAI API key):
-diff = get_pair_diff("Hello world!", "Hello, ChatGPT!")
-print(diff)
+# = get_pair_diff_as_score("Hello world!", "Hello, ChatGPT!")
+
+# diff = get_pair_diff_as_int(
+#     X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
+# )
 
 
-# d2 = data.head(9)[data.columns[:3]]
-# print(d2)
-# print(data.info())
+# print(Y_train.iloc[0])  # essay)
+# print(Y_train.iloc[1])  # essay)
+# print(diff)
+
+
+# input (x1, x2), output (diff)
+# save all differences, then average over all the differences to obtain final precicion score
+
+# first, a fuction that takes the train, test, and dev set
+# use the train set
+# have a nested for loop
+# loop over all instances
+# inside first loop, have storage for differences
+# in inner loop, get the difference between the pairs via get_pair_diff_as_int function
+# save the difference in the storage
+# after inner loop is done, calculate the average of the differences in storage
+# how to scale the differences to the range of the scores in the dataset
+# predict final score for each instance
+
+
+def predict_score_diff(data: pd.DataFrame, rubric: str):
+
+    predictions = []
+
+    for i, row_i in data.iterrows():
+        diffs = []
+        for j, row_j in data.iterrows():
+            if i == j:
+                continue
+            try:
+                diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
+                diffs.append(diff)
+            except RuntimeError:
+                continue
+
+        avg_score = sum(diffs) / len(diffs)
+
+        predictions.append(avg_score)
+
+    data["predicted_score"] = predictions
+    return data
+
+
+score_diff = predict_score_diff(X_train.head(3), rubric_set_1_text)
+print(score_diff)
+
+print(Y_train.head(3))
