@@ -165,8 +165,11 @@ def predict_score_diff(data: pd.DataFrame, rubric: str):
 
     for i, row_i in data.iterrows():
         diffs = []
+
         for j, row_j in data.iterrows():
-            if i == j:
+            if (
+                i == j
+            ):  # try <= and >= both, this halfs the squared data, do that as double checking, does full set work better or is half-set sufficient already in obtaining ggood results, for debugging: isolated predictions, give same pair twice, then see if difference is 0
                 continue
             try:
                 diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
@@ -178,11 +181,23 @@ def predict_score_diff(data: pd.DataFrame, rubric: str):
 
         predictions.append(avg_score)
 
-    data["predicted_score"] = predictions
+    data["y_pred"] = predictions
     return data
 
 
-score_diff = predict_score_diff(X_train.head(3), rubric_set_1_text)
+limit = 4  # Limit the number of rows for testing
+
+assert limit > 0, "Limit must be greater than 0."
+assert limit < len(X_train), "Limit exceeds number of rows in X_train."
+assert limit <= 6, "Limit exceeds number of reasonable rows."
+
+score_diff = predict_score_diff(X_train.head(limit), rubric_set_1_text)
 print(score_diff)
 
-print(Y_train.head(3))
+print(Y_train.head(limit))  # y_truth
+
+# cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int difff for qzuerying, pringting to see which is a fresh API call and which come form the cash
+
+# now include the original target variable from y_train in the prediction
+
+# later the test data will be paired with the training data, no data leakage
