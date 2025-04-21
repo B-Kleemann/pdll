@@ -95,19 +95,19 @@ def pair_input_predict_diff(x1, x2):
 
 def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
     prompt = f"""
-        Compare the following two texts and return the difference in their score according to the provided rubric.
+                    Evaluate the two texts below strictly according to the provided rubric.
 
-        Rubric:
-        {rubric}
+                    Rubric:
+                    {rubric}
 
-        Text 1:
-        {text1}
+                    Text 1:
+                    {text1}
 
-        Text 2:
-        {text2}
+                    Text 2:
+                    {text2}
 
-        Only return a single integer. No explanation, no additional text.
-        """
+                    Return one and only one signed integer: the score difference (Text 1 - Text 2). Do not include any explanation, labels, formatting, or extra characters. Any output other than a single signed integer will be considered invalid.
+                """
 
     try:
         response = openai.chat.completions.create(
@@ -173,7 +173,7 @@ def predict_scores(data: pd.DataFrame, baseline: pd.DataFrame, rubric: str):
             #     continue
             try:
                 diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
-                score_pred = 6 + diff
+                score_pred = row_j["domain1_score"] + diff  # row_j["domain1_score"]
                 store_pred_scores.append(score_pred)
             except RuntimeError:
                 continue
