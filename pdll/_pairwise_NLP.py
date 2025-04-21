@@ -1,12 +1,12 @@
-from typing import Any
-import pandas as pd
-import openai
 import os
-
 from pathlib import Path
-from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
+
+import openai
+import pandas as pd
 from dotenv import load_dotenv
 from pdfquery import PDFQuery
+from sklearn.model_selection import train_test_split
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
@@ -159,25 +159,29 @@ def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
 # predict final score for each instance
 
 
-def predict_score_diff(data: pd.DataFrame, rubric: str):
+def predict_scores(data: pd.DataFrame, baseline: pd.DataFrame, rubric: str):
 
     predictions = []
 
     for i, row_i in data.iterrows():
-        diffs = []
+        store_pred_scores = []
 
-        for j, row_j in data.iterrows():
-            if (
-                i == j
-            ):  # try <= and >= both, this halfs the squared data, do that as double checking, does full set work better or is half-set sufficient already in obtaining ggood results, for debugging: isolated predictions, give same pair twice, then see if difference is 0
-                continue
+        for j, row_j in baseline.iterrows():
+            # if i <= j:
+            #     # try <= and >= both, this halfs the squared data, do that as double checking, does full set work better or is half-set sufficient already in obtaining good results,
+            #     # for debugging: isolated predictions, give same pair twice, then see if difference is 0
+            #     continue
             try:
                 diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
-                diffs.append(diff)
+                score_pred = 6 + diff
+                store_pred_scores.append(score_pred)
             except RuntimeError:
                 continue
 
-        avg_score = sum(diffs) / len(diffs)
+        avg_score = 0
+        # if the list is empty, it means no valid differences were found
+        if len(store_pred_scores) != 0:
+            avg_score = sum(store_pred_scores) / len(store_pred_scores)
 
         predictions.append(avg_score)
 
@@ -185,18 +189,32 @@ def predict_score_diff(data: pd.DataFrame, rubric: str):
     return data
 
 
-limit = 4  # Limit the number of rows for testing
+limit = 3  # Limit the number of rows for testing
+limit_data = limit  # Limit the number of rows for testing
+limit_baseline = 2 * limit  # Limit the number of rows for testing
 
 assert limit > 0, "Limit must be greater than 0."
 assert limit < len(X_train), "Limit exceeds number of rows in X_train."
 assert limit <= 6, "Limit exceeds number of reasonable rows."
 
-score_diff = predict_score_diff(X_train.head(limit), rubric_set_1_text)
-print(score_diff)
+# now include the original target variable from y_train in the prediction of the difference
+data_baseline = prelim_reduced_data.tail(limit_baseline)
+data_for_pred = prelim_reduced_data.head(limit_data)
+rubric = rubric_set_1_text
 
-print(Y_train.head(limit))  # y_truth
 
-# cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int difff for qzuerying, pringting to see which is a fresh API call and which come form the cash
+score_prediction = predict_scores(data_for_pred, data_baseline, rubric)
+print(score_prediction)
+
+y_true = data_for_pred["domain1_score"]
+y_pred = score_prediction["y_pred"]
+
+mse = mean_squared_error(y_true, y_pred)
+print(f"Mean Squared Error: {mse:.2f}")  # f'{a:.2f}'
+
+# print(Y_train.head(limit))  # y_truth
+
+# cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int diff for querying, printing to see which is a fresh API call and which come form the cash
 
 # now include the original target variable from y_train in the prediction
 
