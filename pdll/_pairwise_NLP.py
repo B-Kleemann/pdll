@@ -167,10 +167,10 @@ def predict_scores(data: pd.DataFrame, baseline: pd.DataFrame, rubric: str):
         store_pred_scores = []
 
         for j, row_j in baseline.iterrows():
-            # if i <= j:
-            #     # try <= and >= both, this halfs the squared data, do that as double checking, does full set work better or is half-set sufficient already in obtaining good results,
-            #     # for debugging: isolated predictions, give same pair twice, then see if difference is 0
-            #     continue
+            if i <= j:  # type: ignore
+                # try <= and >= both, this halfs the squared data, do that as double checking, does full set work better or is half-set sufficient already in obtaining good results,
+                # Todo for debugging: isolated predictions, give same pair twice, then see if difference is 0
+                continue
             try:
                 diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
                 score_pred = row_j["domain1_score"] + diff  # row_j["domain1_score"]
@@ -189,7 +189,7 @@ def predict_scores(data: pd.DataFrame, baseline: pd.DataFrame, rubric: str):
     return data
 
 
-limit = 3  # Limit the number of rows for testing
+limit = 4  # Limit the number of rows for testing
 limit_data = limit  # Limit the number of rows for testing
 limit_baseline = 2 * limit  # Limit the number of rows for testing
 
@@ -210,7 +210,7 @@ y_true = data_for_pred["domain1_score"]
 y_pred = score_prediction["y_pred"]
 
 mse = mean_squared_error(y_true, y_pred)
-print(f"Mean Squared Error: {mse:.2f}")  # f'{a:.2f}'
+print(f"Mean Squared Error: {mse:.2f}")
 
 # print(Y_train.head(limit))  # y_truth
 
