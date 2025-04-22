@@ -93,6 +93,7 @@ def pair_input_predict_diff(x1, x2):
     return diff
 
 
+# make sure the model doesn't have access to the internet so it doesn't just look-up
 def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
     prompt = f"""
                     Evaluate the two texts below strictly according to the provided rubric.
@@ -159,9 +160,16 @@ def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
 # predict final score for each instance
 
 
+# todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
+
+# ! thesis will get registered now, this means an official DEADLINE, I will get an e-mail about that
+# new title: Pairwise Difference Learning for LLMs
+
+
 def predict_scores(data: pd.DataFrame, baseline: pd.DataFrame, rubric: str):
 
     predictions = []
+    # renaming for clarity: data = test_data, baseline = training_data
 
     for i, row_i in data.iterrows():
         store_pred_scores = []
