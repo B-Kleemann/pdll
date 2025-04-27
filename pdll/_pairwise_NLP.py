@@ -132,26 +132,20 @@ def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
         raise RuntimeError(f"OpenAI API call failed: {api_err}")
 
 
-diff_1 = get_pair_diff_as_int(
-    X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
-)
-diff_2 = get_pair_diff_as_int(
-    X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
-)
+# diff_1 = get_pair_diff_as_int(
+#     X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
+# )
+# diff_2 = get_pair_diff_as_int(
+#     X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
+# )
 
-if diff_1 != diff_2:
-    print(f"Different results! {diff_1} != {diff_2}")
-else:
-    print(f"Same results! Both say {diff_1}")
+# if diff_1 != diff_2:
+#     print(f"Different results! {diff_1} != {diff_2}")
+# else:
+#     print(f"Same results! Both say {diff_1}")
 
 # ? variation of the differences is high, so the model is not consistent in its predictions
 # ? range tested with this essay pair is -1 to 3, -1 x 1, 0 x 3, 1 x 2, 2 x 3, 3 x 1
-
-
-# todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
-
-# ! thesis will get registered now, this means an official DEADLINE, I will get an e-mail about that
-# new title: Pairwise Difference Learning for LLMs
 
 
 def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric: str):
@@ -185,33 +179,37 @@ def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric:
     return test_data
 
 
-# limit = 4  # Limit the number of rows for testing
-# limit_data = limit  # Limit the number of rows for testing
-# limit_baseline = 2 * limit  # Limit the number of rows for testing
+limit = 4  # Limit the number of rows for testing
+limit_data = limit  # Limit the number of rows for testing
+limit_baseline = 2 * limit  # Limit the number of rows for testing
 
-# assert limit > 0, "Limit must be greater than 0."
-# assert limit < len(X_train), "Limit exceeds number of rows in X_train."
-# assert limit <= 6, "Limit exceeds number of reasonable rows."
+assert limit > 0, "Limit must be greater than 0."
+assert limit < len(X_train), "Limit exceeds number of rows in X_train."
+assert limit <= 6, "Limit exceeds number of reasonable rows."
 
-# # now include the original target variable from y_train in the prediction of the difference
-# data_baseline = prelim_reduced_data.tail(limit_baseline)
-# data_for_pred = prelim_reduced_data.head(limit_data)
-# rubric = rubric_set_1_text
+# now include the original target variable from y_train in the prediction of the difference
+data_baseline = prelim_reduced_data.tail(limit_baseline)
+data_for_pred = prelim_reduced_data.head(limit_data)
+rubric = rubric_set_1_text
 
 
-# score_prediction = predict_scores(data_for_pred, data_baseline, rubric)
-# print(score_prediction)
+score_prediction = predict_scores(data_for_pred, data_baseline, rubric)
+print(score_prediction)
 
-# y_true = data_for_pred["domain1_score"]
-# y_pred = score_prediction["y_pred"]
+y_true = data_for_pred["domain1_score"]
+y_pred = score_prediction["y_pred"]
 
-# mse = mean_squared_error(y_true, y_pred)
-# print(f"Mean Squared Error: {mse:.2f}")
+mse = mean_squared_error(y_true, y_pred)
+print(f"Mean Squared Error: {mse:.2f}")
 
-# print(Y_train.head(limit))  # y_truth
 
-# cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int diff for querying, printing to see which is a fresh API call and which come form the cash
+# todo: cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int diff for querying, printing to see which is a fresh API call and which come form the cash
 
-# now include the original target variable from y_train in the prediction
+# todo: include support for the other essay sets (other rubrics, different column names, etc.)
 
-# later the test data will be paired with the training data, no data leakage
+# todo: connect my work to the pre-folded / split data instead of the test-version
+
+# todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
+
+# ! thesis will get registered now, this means an official DEADLINE, I will get an e-mail about that
+# new title: Pairwise Difference Learning for LLMs
