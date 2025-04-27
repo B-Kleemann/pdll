@@ -1,3 +1,4 @@
+import codecs
 import os
 from pathlib import Path
 from sklearn.metrics import mean_squared_error
@@ -35,65 +36,70 @@ rubric_set_1_text = rubric_set_1.pq("LTTextLineHorizontal")
 # print(text)
 
 
-# Input data file from directory and preprocessing
-
-input_dir = Path(
-    "C:/Users/betti/Documents/Daten-lokal/Studium/Bachelorarbeit/asap-aes/data"
-)
-
-input_file = input_dir / "training_set_rel3.CSV"
-
-data = pd.read_csv(input_file, header=0, sep=";", encoding="latin-1")
-
-data["essay"] = data["essay"].astype(pd.StringDtype())
-data["essay"] = data["essay"].str.strip()
-
-
-# slice data into the different essay prompt sets and store in dictionary
-essay_prompt_set_ID = data.essay_set.unique()
-
-dict_of_essay_sets = {elem: pd.DataFrame() for elem in essay_prompt_set_ID}
-
-for key in dict_of_essay_sets.keys():
-    dict_of_essay_sets[key] = data[:][data.essay_set == key]
+# Input data file from corresponding fold
+FOLD_ID = 0
+dir = Path(f"data-set\\asap\\fold_{FOLD_ID}")
+paths = [f"{dir}\\train.tsv", f"{dir}\\dev.tsv", f"{dir}\\test.tsv"]
+prompt_id_to_score_index_mapping = {
+    1: 6,
+    2: 3,  #! todo: complete this mapping for all prompt ids
+    3: 3,
+    4: 3,
+    5: 3,
+    6: 3,
+    7: 3,
+}
 
 
-# establish a simple reduced dataset of only the first essay set for development
-prelim_reduced_data = dict_of_essay_sets[essay_prompt_set_ID[0]]
+def read_dataset(file_path, prompt_id, score_index):
+    data_x, data_y, prompt_ids = [], [], []
 
-prelim_reduced_data = prelim_reduced_data.dropna(axis=1, how="all")
+    with codecs.open(file_path, mode="r", encoding="UTF8") as input_file:
+        next(input_file)
+        for line in input_file:
+            tokens = line.strip().split("\t")
 
-# print(prelim_reduced_data.essay_id.unique().nonzero())
+            essay_id = int(tokens[0])
+            essay_set = int(tokens[1])
+            content = str(tokens[2].strip())
+            score = int(tokens[score_index])
 
+            if essay_set == prompt_id or prompt_id <= 0:
+                data_x.append(content)
+                data_y.append(score)
+                prompt_ids.append(essay_set)
 
-# train test split
-
-prelim_reduced_data = prelim_reduced_data.sample(frac=1, random_state=SEED)
-
-lables_true = prelim_reduced_data.iloc[:, 3:]
-data_stripped = prelim_reduced_data.iloc[:, :3]
-
-X_train, X_test, Y_train, Y_test = train_test_split(
-    data_stripped, lables_true, test_size=0.25, random_state=SEED, shuffle=True
-)
-
-
-# difference paired essays
+    return data_x, data_y, prompt_ids
 
 
-def pair_input_averaging():
-    avg = ""
-    # predict difference in score
-    return avg
+def get_data(paths, prompt_id, as_list_of_tuples):
+    train_path, dev_path, test_path = paths[0], paths[1], paths[2]
+
+    train_x, train_y, train_prompts = read_dataset(
+        train_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
+    )
+
+    dev_x, dev_y, dev_prompts = read_dataset(
+        dev_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
+    )
+
+    test_x, test_y, test_prompts = read_dataset(
+        test_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
+    )
+
+    if as_list_of_tuples:
+        train = list(zip(train_x, train_y))
+        dev = list(zip(dev_x, dev_y))
+        test = list(zip(test_x, test_y))
+    else:
+        # as tuple of lists
+        train = (train_x, train_y)
+        dev = (dev_x, dev_y)
+        test = (test_x, test_y)
+
+    return train, dev, test
 
 
-def pair_input_predict_diff(x1, x2):
-    diff = ""
-    # predict difference in score
-    return diff
-
-
-# make sure the model doesn't have access to the internet so it doesn't just look-up
 def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
     prompt = f"""
             Evaluate the two texts below strictly according to the provided rubric.
@@ -163,7 +169,8 @@ def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric:
                 continue
             try:
                 diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
-                score_pred = row_j["domain1_score"] + diff
+                score_of_baseline_essay = row_j.iloc[1]
+                score_pred = score_of_baseline_essay + diff
                 store_pred_scores.append(score_pred)
             except RuntimeError:
                 continue
@@ -179,24 +186,38 @@ def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric:
     return test_data
 
 
+prompt_id = 1  # Set the prompt ID you want to use
+as_list_of_tuples = True
+data_train, data_dev, data_test = get_data(paths, prompt_id, as_list_of_tuples)
+
 limit = 4  # Limit the number of rows for testing
 limit_data = limit  # Limit the number of rows for testing
 limit_baseline = 2 * limit  # Limit the number of rows for testing
 
 assert limit > 0, "Limit must be greater than 0."
-assert limit < len(X_train), "Limit exceeds number of rows in X_train."
+assert limit < len(data_train), "Limit exceeds number of rows in dataset."
 assert limit <= 6, "Limit exceeds number of reasonable rows."
 
-# now include the original target variable from y_train in the prediction of the difference
-data_baseline = prelim_reduced_data.tail(limit_baseline)
-data_for_pred = prelim_reduced_data.head(limit_data)
-rubric = rubric_set_1_text
+# conversion to DataFrame
+data_train, data_dev, data_test = (
+    pd.DataFrame(data_train, columns=["essay", "score"]),
+    pd.DataFrame(data_dev, columns=["essay", "score"]),
+    pd.DataFrame(data_test, columns=["essay", "score"]),
+)
 
+#! limits data for development and testing
+data_train, data_dev, data_test = (
+    data_train.head(limit_baseline),
+    data_dev.head(limit_data),
+    data_test.head(limit),
+)
 
-score_prediction = predict_scores(data_for_pred, data_baseline, rubric)
+score_prediction = predict_scores(
+    pd.DataFrame(data_dev), pd.DataFrame(data_train), rubric_set_1_text
+)
 print(score_prediction)
 
-y_true = data_for_pred["domain1_score"]
+y_true = data_dev["score"]
 y_pred = score_prediction["y_pred"]
 
 mse = mean_squared_error(y_true, y_pred)
@@ -210,6 +231,8 @@ print(f"Mean Squared Error: {mse:.2f}")
 # todo: connect my work to the pre-folded / split data instead of the test-version
 
 # todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
+
+# todo: make sure the model doesn't have access to the internet so it doesn't just look-up
 
 # ! thesis will get registered now, this means an official DEADLINE, I will get an e-mail about that
 # new title: Pairwise Difference Learning for LLMs
