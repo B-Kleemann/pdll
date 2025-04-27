@@ -62,7 +62,7 @@ def read_dataset(file_path, prompt_id, score_index):
             essay_id = int(tokens[0])
             essay_set = int(tokens[1])
             content = str(tokens[2].strip())
-            score = float(tokens[score_index])
+            score = int(tokens[score_index])
 
             if essay_set == prompt_id or prompt_id <= 0:
                 data_x.append(content)
@@ -72,7 +72,7 @@ def read_dataset(file_path, prompt_id, score_index):
     return data_x, data_y, prompt_ids
 
 
-def get_data(paths, prompt_id):
+def get_data(paths, prompt_id, as_list_of_tuples):
     train_path, dev_path, test_path = paths[0], paths[1], paths[2]
 
     train_x, train_y, train_prompts = read_dataset(
@@ -87,9 +87,15 @@ def get_data(paths, prompt_id):
         test_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
     )
 
-    train = (train_x, train_y)
-    dev = (dev_x, dev_y)
-    test = (test_x, test_y)
+    if as_list_of_tuples:
+        train = list(zip(train_x, train_y))
+        dev = list(zip(dev_x, dev_y))
+        test = list(zip(test_x, test_y))
+    else:
+        # as tuple of lists
+        train = (train_x, train_y)
+        dev = (dev_x, dev_y)
+        test = (test_x, test_y)
 
     return train, dev, test
 
@@ -163,7 +169,8 @@ def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric:
                 continue
             try:
                 diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
-                score_pred = row_j["domain1_score"] + diff
+                score_of_baseline_essay = row_j.iloc[1]
+                score_pred = score_of_baseline_essay + diff
                 store_pred_scores.append(score_pred)
             except RuntimeError:
                 continue
@@ -180,7 +187,8 @@ def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric:
 
 
 prompt_id = 1  # Set the prompt ID you want to use
-data_train, data_dev, data_test = get_data(paths, prompt_id)
+as_list_of_tuples = True
+data_train, data_dev, data_test = get_data(paths, prompt_id, as_list_of_tuples)
 
 limit = 4  # Limit the number of rows for testing
 limit_data = limit  # Limit the number of rows for testing
@@ -190,12 +198,26 @@ assert limit > 0, "Limit must be greater than 0."
 assert limit < len(data_train), "Limit exceeds number of rows in dataset."
 assert limit <= 6, "Limit exceeds number of reasonable rows."
 
+# conversion to DataFrame
+data_train, data_dev, data_test = (
+    pd.DataFrame(data_train, columns=["essay", "score"]),
+    pd.DataFrame(data_dev, columns=["essay", "score"]),
+    pd.DataFrame(data_test, columns=["essay", "score"]),
+)
+
+#! limits data for development and testing
+data_train, data_dev, data_test = (
+    data_train.head(limit_baseline),
+    data_dev.head(limit_data),
+    data_test.head(limit),
+)
+
 score_prediction = predict_scores(
     pd.DataFrame(data_dev), pd.DataFrame(data_train), rubric_set_1_text
 )
 print(score_prediction)
 
-y_true = data_dev[1]
+y_true = data_dev["score"]
 y_pred = score_prediction["y_pred"]
 
 mse = mean_squared_error(y_true, y_pred)
