@@ -96,19 +96,19 @@ def pair_input_predict_diff(x1, x2):
 # make sure the model doesn't have access to the internet so it doesn't just look-up
 def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
     prompt = f"""
-                    Evaluate the two texts below strictly according to the provided rubric.
+            Evaluate the two texts below strictly according to the provided rubric.
 
-                    Rubric:
-                    {rubric}
+            Rubric:
+            {rubric}
 
-                    Text 1:
-                    {text1}
+            Text 1:
+            {text1}
 
-                    Text 2:
-                    {text2}
+            Text 2:
+            {text2}
 
-                    Return one and only one signed integer: the score difference (Text 1 - Text 2). Do not include any explanation, labels, formatting, or extra characters. Any output other than a single signed integer will be considered invalid.
-                """
+            Return one and only one signed integer: the score difference (Text 1 - Text 2). Do not include any explanation, or extra characters. Any output other than a single signed integer is invalid.
+            """
 
     try:
         response = openai.chat.completions.create(
@@ -132,32 +132,20 @@ def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
         raise RuntimeError(f"OpenAI API call failed: {api_err}")
 
 
-# Example usage (replace 'your_api_key' with your OpenAI API key):
-# = get_pair_diff_as_score("Hello world!", "Hello, ChatGPT!")
+diff_1 = get_pair_diff_as_int(
+    X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
+)
+diff_2 = get_pair_diff_as_int(
+    X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
+)
 
-# diff = get_pair_diff_as_int(
-#     X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
-# )
+if diff_1 != diff_2:
+    print(f"Different results! {diff_1} != {diff_2}")
+else:
+    print(f"Same results! Both say {diff_1}")
 
-
-# print(Y_train.iloc[0])  # essay)
-# print(Y_train.iloc[1])  # essay)
-# print(diff)
-
-
-# input (x1, x2), output (diff)
-# save all differences, then average over all the differences to obtain final precicion score
-
-# first, a fuction that takes the train, test, and dev set
-# use the train set
-# have a nested for loop
-# loop over all instances
-# inside first loop, have storage for differences
-# in inner loop, get the difference between the pairs via get_pair_diff_as_int function
-# save the difference in the storage
-# after inner loop is done, calculate the average of the differences in storage
-# how to scale the differences to the range of the scores in the dataset
-# predict final score for each instance
+# ? variation of the differences is high, so the model is not consistent in its predictions
+# ? range tested with this essay pair is -1 to 3, -1 x 1, 0 x 3, 1 x 2, 2 x 3, 3 x 1
 
 
 # todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
@@ -166,22 +154,22 @@ def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
 # new title: Pairwise Difference Learning for LLMs
 
 
-def predict_scores(data: pd.DataFrame, baseline: pd.DataFrame, rubric: str):
+def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric: str):
 
     predictions = []
     # renaming for clarity: data = test_data, baseline = training_data
 
-    for i, row_i in data.iterrows():
+    for i, row_i in test_data.iterrows():
         store_pred_scores = []
 
-        for j, row_j in baseline.iterrows():
+        for j, row_j in training_data.iterrows():
             if i <= j:  # type: ignore
                 # try <= and >= both, this halfs the squared data, do that as double checking, does full set work better or is half-set sufficient already in obtaining good results,
                 # Todo for debugging: isolated predictions, give same pair twice, then see if difference is 0
                 continue
             try:
                 diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
-                score_pred = row_j["domain1_score"] + diff  # row_j["domain1_score"]
+                score_pred = row_j["domain1_score"] + diff
                 store_pred_scores.append(score_pred)
             except RuntimeError:
                 continue
@@ -193,32 +181,32 @@ def predict_scores(data: pd.DataFrame, baseline: pd.DataFrame, rubric: str):
 
         predictions.append(avg_score)
 
-    data["y_pred"] = predictions
-    return data
+    test_data["y_pred"] = predictions
+    return test_data
 
 
-limit = 4  # Limit the number of rows for testing
-limit_data = limit  # Limit the number of rows for testing
-limit_baseline = 2 * limit  # Limit the number of rows for testing
+# limit = 4  # Limit the number of rows for testing
+# limit_data = limit  # Limit the number of rows for testing
+# limit_baseline = 2 * limit  # Limit the number of rows for testing
 
-assert limit > 0, "Limit must be greater than 0."
-assert limit < len(X_train), "Limit exceeds number of rows in X_train."
-assert limit <= 6, "Limit exceeds number of reasonable rows."
+# assert limit > 0, "Limit must be greater than 0."
+# assert limit < len(X_train), "Limit exceeds number of rows in X_train."
+# assert limit <= 6, "Limit exceeds number of reasonable rows."
 
-# now include the original target variable from y_train in the prediction of the difference
-data_baseline = prelim_reduced_data.tail(limit_baseline)
-data_for_pred = prelim_reduced_data.head(limit_data)
-rubric = rubric_set_1_text
+# # now include the original target variable from y_train in the prediction of the difference
+# data_baseline = prelim_reduced_data.tail(limit_baseline)
+# data_for_pred = prelim_reduced_data.head(limit_data)
+# rubric = rubric_set_1_text
 
 
-score_prediction = predict_scores(data_for_pred, data_baseline, rubric)
-print(score_prediction)
+# score_prediction = predict_scores(data_for_pred, data_baseline, rubric)
+# print(score_prediction)
 
-y_true = data_for_pred["domain1_score"]
-y_pred = score_prediction["y_pred"]
+# y_true = data_for_pred["domain1_score"]
+# y_pred = score_prediction["y_pred"]
 
-mse = mean_squared_error(y_true, y_pred)
-print(f"Mean Squared Error: {mse:.2f}")
+# mse = mean_squared_error(y_true, y_pred)
+# print(f"Mean Squared Error: {mse:.2f}")
 
 # print(Y_train.head(limit))  # y_truth
 
