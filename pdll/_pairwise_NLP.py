@@ -179,24 +179,23 @@ def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric:
     return test_data
 
 
+prompt_id = 1  # Set the prompt ID you want to use
+data_train, data_dev, data_test = get_data(paths, prompt_id)
+
 limit = 4  # Limit the number of rows for testing
 limit_data = limit  # Limit the number of rows for testing
 limit_baseline = 2 * limit  # Limit the number of rows for testing
 
 assert limit > 0, "Limit must be greater than 0."
-assert limit < len(X_train), "Limit exceeds number of rows in X_train."
+assert limit < len(data_train), "Limit exceeds number of rows in dataset."
 assert limit <= 6, "Limit exceeds number of reasonable rows."
 
-# now include the original target variable from y_train in the prediction of the difference
-data_baseline = prelim_reduced_data.tail(limit_baseline)
-data_for_pred = prelim_reduced_data.head(limit_data)
-rubric = rubric_set_1_text
-
-
-score_prediction = predict_scores(data_for_pred, data_baseline, rubric)
+score_prediction = predict_scores(
+    pd.DataFrame(data_dev), pd.DataFrame(data_train), rubric_set_1_text
+)
 print(score_prediction)
 
-y_true = data_for_pred["domain1_score"]
+y_true = data_dev[1]
 y_pred = score_prediction["y_pred"]
 
 mse = mean_squared_error(y_true, y_pred)
