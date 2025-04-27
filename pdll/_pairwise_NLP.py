@@ -1,3 +1,4 @@
+import codecs
 import os
 from pathlib import Path
 from sklearn.metrics import mean_squared_error
@@ -35,65 +36,64 @@ rubric_set_1_text = rubric_set_1.pq("LTTextLineHorizontal")
 # print(text)
 
 
-# Input data file from directory and preprocessing
-
-input_dir = Path(
-    "C:/Users/betti/Documents/Daten-lokal/Studium/Bachelorarbeit/asap-aes/data"
-)
-
-input_file = input_dir / "training_set_rel3.CSV"
-
-data = pd.read_csv(input_file, header=0, sep=";", encoding="latin-1")
-
-data["essay"] = data["essay"].astype(pd.StringDtype())
-data["essay"] = data["essay"].str.strip()
-
-
-# slice data into the different essay prompt sets and store in dictionary
-essay_prompt_set_ID = data.essay_set.unique()
-
-dict_of_essay_sets = {elem: pd.DataFrame() for elem in essay_prompt_set_ID}
-
-for key in dict_of_essay_sets.keys():
-    dict_of_essay_sets[key] = data[:][data.essay_set == key]
+# Input data file from corresponding fold
+FOLD_ID = 0
+dir = Path(f"data-set\\asap\\fold_{FOLD_ID}")
+paths = [f"{dir}\\train.tsv", f"{dir}\\dev.tsv", f"{dir}\\test.tsv"]
+prompt_id_to_score_index_mapping = {
+    1: 6,
+    2: 3,  #! todo: complete this mapping for all prompt ids
+    3: 3,
+    4: 3,
+    5: 3,
+    6: 3,
+    7: 3,
+}
 
 
-# establish a simple reduced dataset of only the first essay set for development
-prelim_reduced_data = dict_of_essay_sets[essay_prompt_set_ID[0]]
+def read_dataset(file_path, prompt_id, score_index):
+    data_x, data_y, prompt_ids = [], [], []
 
-prelim_reduced_data = prelim_reduced_data.dropna(axis=1, how="all")
+    with codecs.open(file_path, mode="r", encoding="UTF8") as input_file:
+        next(input_file)
+        for line in input_file:
+            tokens = line.strip().split("\t")
 
-# print(prelim_reduced_data.essay_id.unique().nonzero())
+            essay_id = int(tokens[0])
+            essay_set = int(tokens[1])
+            content = str(tokens[2].strip())
+            score = float(tokens[score_index])
 
+            if essay_set == prompt_id or prompt_id <= 0:
+                data_x.append(content)
+                data_y.append(score)
+                prompt_ids.append(essay_set)
 
-# train test split
-
-prelim_reduced_data = prelim_reduced_data.sample(frac=1, random_state=SEED)
-
-lables_true = prelim_reduced_data.iloc[:, 3:]
-data_stripped = prelim_reduced_data.iloc[:, :3]
-
-X_train, X_test, Y_train, Y_test = train_test_split(
-    data_stripped, lables_true, test_size=0.25, random_state=SEED, shuffle=True
-)
-
-
-# difference paired essays
+    return data_x, data_y, prompt_ids
 
 
-def pair_input_averaging():
-    avg = ""
-    # predict difference in score
-    return avg
+def get_data(paths, prompt_id):
+    train_path, dev_path, test_path = paths[0], paths[1], paths[2]
+
+    train_x, train_y, train_prompts = read_dataset(
+        train_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
+    )
+
+    dev_x, dev_y, dev_prompts = read_dataset(
+        dev_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
+    )
+
+    test_x, test_y, test_prompts = read_dataset(
+        test_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
+    )
+
+    train = (train_x, train_y)
+    dev = (dev_x, dev_y)
+    test = (test_x, test_y)
+
+    return train, dev, test
 
 
-def pair_input_predict_diff(x1, x2):
-    diff = ""
-    # predict difference in score
-    return diff
-
-
-# make sure the model doesn't have access to the internet so it doesn't just look-up
 def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
     prompt = f"""
             Evaluate the two texts below strictly according to the provided rubric.
@@ -210,6 +210,8 @@ print(f"Mean Squared Error: {mse:.2f}")
 # todo: connect my work to the pre-folded / split data instead of the test-version
 
 # todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
+
+# todo: make sure the model doesn't have access to the internet so it doesn't just look-up
 
 # ! thesis will get registered now, this means an official DEADLINE, I will get an e-mail about that
 # new title: Pairwise Difference Learning for LLMs
