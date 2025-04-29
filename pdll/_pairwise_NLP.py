@@ -16,27 +16,6 @@ openai.api_key = api_key
 SEED = 17
 
 
-# read rubric files
-rubric_dir = Path("data-set\\scoring_rubrics")
-essay_set_ID_to_scoring_rubrics = {}
-
-formatting_keywords = [
-    "Prompt",
-    "Rubric Guidelines",
-    "Score",
-    "Adjudication Rules",
-    "Source Essay",
-    "Conventions",
-    "Sentence Fluency",
-    "Word Choice",
-    "Voice",
-    "Organization",
-    "Ideas",
-    "Style",
-    "Total Composite Score",
-]
-
-
 def get_rubric_texts_from_files(target_dir: Path) -> dict[int, str]:
     file_dict = {}
     for file in target_dir.iterdir():
@@ -65,8 +44,25 @@ def format_rubric_text_file(file: Path, keyword_list: list[str], filter: str):
         writer.truncate()
 
 
-if essay_set_ID_to_scoring_rubrics == {}:
-    get_rubric_texts_from_files(rubric_dir)
+# read rubric files
+rubric_dir = Path("data-set\\scoring_rubrics")
+formatting_keywords = [
+    "Prompt",
+    "Rubric Guidelines",
+    "Score",
+    "Adjudication Rules",
+    "Source Essay",
+    "Conventions",
+    "Sentence Fluency",
+    "Word Choice",
+    "Voice",
+    "Organization",
+    "Ideas",
+    "Style",
+    "Total Composite Score",
+]
+essay_set_ID_to_scoring_rubrics = {}
+essay_set_ID_to_scoring_rubrics = get_rubric_texts_from_files(rubric_dir)
 
 
 # Input data file from corresponding fold
@@ -196,10 +192,10 @@ def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric:
         store_pred_scores = []
 
         for j, row_j in training_data.iterrows():
-            if i <= j:  # type: ignore
-                # try <= and >= both, this halfs the squared data, do that as double checking, does full set work better or is half-set sufficient already in obtaining good results,
-                # Todo for debugging: isolated predictions, give same pair twice, then see if difference is 0
-                continue
+            # if i <= j:  # type: ignore
+            # try <= and >= both, this halfs the squared data, do that as double checking, does full set work better or is half-set sufficient already in obtaining good results,
+            # Todo for debugging: isolated predictions, give same pair twice, then see if difference is 0
+            # continue
             try:
                 diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
                 score_of_baseline_essay = row_j.iloc[1]
@@ -213,17 +209,17 @@ def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric:
         if len(store_pred_scores) != 0:
             avg_score = sum(store_pred_scores) / len(store_pred_scores)
 
-        predictions.append(avg_score)
+        predictions.append(round(avg_score, 2))
 
     test_data["y_pred"] = predictions
     return test_data
 
 
-prompt_id = 1  # Set the prompt ID you want to use
+essay_set_ID = 1  # Set the prompt ID you want to use
 as_list_of_tuples = True
-data_train, data_dev, data_test = get_data(paths, prompt_id, as_list_of_tuples)
+data_train, data_dev, data_test = get_data(paths, essay_set_ID, as_list_of_tuples)
 
-limit = 4  # Limit the number of rows for testing
+limit = 3  # Limit the number of rows for testing
 limit_data = limit  # Limit the number of rows for testing
 limit_baseline = 2 * limit  # Limit the number of rows for testing
 
@@ -240,19 +236,23 @@ data_train, data_dev, data_test = (
 
 #! limits data for development and testing
 data_train, data_dev, data_test = (
-    data_train.head(limit_baseline),
-    data_dev.head(limit_data),
-    data_test.head(limit),
+    data_train.tail(limit_baseline),
+    data_dev.tail(limit_data),
+    data_test.tail(limit),
+    # data_train.head(limit_baseline),
+    # data_dev.head(limit_data),
+    # data_test.head(limit),
 )
 
 score_prediction = predict_scores(
-    pd.DataFrame(data_dev), pd.DataFrame(data_train), rubric_set_1_text
+    pd.DataFrame(data_dev),
+    pd.DataFrame(data_train),
+    essay_set_ID_to_scoring_rubrics[essay_set_ID],
 )
 print(score_prediction)
 
-y_true = data_dev["score"]
+y_true = score_prediction["score"]
 y_pred = score_prediction["y_pred"]
-
 mse = mean_squared_error(y_true, y_pred)
 print(f"Mean Squared Error: {mse:.2f}")
 
