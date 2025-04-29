@@ -269,3 +269,7 @@ print(f"Mean Squared Error: {mse:.2f}")
 
 # ! thesis will get registered now, this means an official DEADLINE, I will get an e-mail about that
 # new title: Pairwise Difference Learning for LLMs
+
+#! baseline first!
+# with increasing complexity, bug detection might be more difficult
+# include separation between modifications that should and shouldn't affect the score (for example cashing = no impact on score, prompt change = impact on score)
