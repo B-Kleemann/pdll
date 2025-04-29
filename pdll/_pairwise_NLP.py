@@ -130,20 +130,20 @@ def get_data(paths, prompt_id, as_list_of_tuples):
 
 
 def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
-    prompt = f"""
-            Evaluate the two texts below strictly according to the provided rubric.
+    prompt = f"""Task:
+Strictly evaluate two texts according to the rubric below.
+Rules:
+Return only one signed integer: the score difference (Text 1 score minus Text 2 score).
+Do NOT include any explanations, comments, extra characters, whitespace, or anything besides a single signed integer.
+Any output other than a single signed integer will be considered invalid.
 
-            Rubric:
-            {rubric}
+Rubric:
+{rubric}
 
-            Text 1:
-            {text1}
-
-            Text 2:
-            {text2}
-
-            Return one and only one signed integer: the score difference (Text 1 - Text 2). Do not include any explanation, or extra characters. Any output other than a single signed integer is invalid.
-            """
+Text 1:
+{text1}
+Text 2:
+{text2}"""
 
     try:
         response = openai.chat.completions.create(
@@ -219,9 +219,9 @@ essay_set_ID = 1  # Set the prompt ID you want to use
 as_list_of_tuples = True
 data_train, data_dev, data_test = get_data(paths, essay_set_ID, as_list_of_tuples)
 
-limit = 3  # Limit the number of rows for testing
+limit = 6  # Limit the number of rows for testing
 limit_data = limit  # Limit the number of rows for testing
-limit_baseline = 2 * limit  # Limit the number of rows for testing
+limit_baseline = limit  # Limit the number of rows for testing
 
 assert limit > 0, "Limit must be greater than 0."
 assert limit < len(data_train), "Limit exceeds number of rows in dataset."
@@ -236,12 +236,12 @@ data_train, data_dev, data_test = (
 
 #! limits data for development and testing
 data_train, data_dev, data_test = (
-    data_train.tail(limit_baseline),
-    data_dev.tail(limit_data),
-    data_test.tail(limit),
-    # data_train.head(limit_baseline),
-    # data_dev.head(limit_data),
-    # data_test.head(limit),
+    # data_train.tail(limit_baseline),
+    # data_dev.tail(limit_data),
+    # data_test.tail(limit),
+    data_train.head(limit_baseline),
+    data_dev.head(limit_data),
+    data_test.head(limit),
 )
 
 score_prediction = predict_scores(
@@ -259,9 +259,9 @@ print(f"Mean Squared Error: {mse:.2f}")
 
 # todo: cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int diff for querying, printing to see which is a fresh API call and which come form the cash
 
-# todo: include support for the other essay sets (other rubrics, different column names, etc.)
+# include support for the other essay sets (other rubrics)
 
-# todo: connect my work to the pre-folded / split data instead of the test-version
+# connect my work to the pre-folded / split data instead of the test-version
 
 # todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
 
