@@ -17,23 +17,56 @@ SEED = 17
 
 
 # read rubric files
+rubric_dir = Path("data-set\\scoring_rubrics")
+essay_set_ID_to_scoring_rubrics = {}
 
-rubric_dir = Path(
-    "C:/Users/betti/Documents/Daten-lokal/Studium/Bachelorarbeit/asap-aes/scoring_rubrics"
-)
+formatting_keywords = [
+    "Prompt",
+    "Rubric Guidelines",
+    "Score",
+    "Adjudication Rules",
+    "Source Essay",
+    "Conventions",
+    "Sentence Fluency",
+    "Word Choice",
+    "Voice",
+    "Organization",
+    "Ideas",
+    "Style",
+    "Total Composite Score",
+]
 
-filename_rubric_set_1 = rubric_dir / "rubric_set_1.pdf"
 
-rubric_set_1 = PDFQuery(filename_rubric_set_1)
-rubric_set_1.load()
+def get_rubric_texts_from_files(target_dir: Path) -> dict[int, str]:
+    file_dict = {}
+    for file in target_dir.iterdir():
+        if file.is_file() and file.suffix == ".txt":
+            essay_set_ID = int(file.stem.split("_")[2])
 
-# Use CSS-like selectors to locate the elements
-rubric_set_1_text = rubric_set_1.pq("LTTextLineHorizontal")
+            format_rubric_text_file(file, formatting_keywords, "Essay Set")
 
-# # Extract the text from the elements
-# text = [t.text for t in text_elements]
+            with open(file, "r", encoding="utf-8") as rf:
+                rubric_text = rf.read()
 
-# print(text)
+            file_dict[essay_set_ID] = rubric_text
+    return file_dict
+
+
+def format_rubric_text_file(file: Path, keyword_list: list[str], filter: str):
+    with open(file, "r", encoding="utf-8") as reader, open(
+        file, "r+", encoding="utf-8"
+    ) as writer:
+        for line in reader:
+            if line.rstrip() and not line.startswith(filter):
+                for keyword in keyword_list:
+                    if line.startswith(keyword):
+                        writer.write("\n")
+                writer.write(line)
+        writer.truncate()
+
+
+if essay_set_ID_to_scoring_rubrics == {}:
+    get_rubric_texts_from_files(rubric_dir)
 
 
 # Input data file from corresponding fold
