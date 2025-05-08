@@ -6,8 +6,6 @@ from sklearn.metrics import mean_squared_error
 import openai
 import pandas as pd
 from dotenv import load_dotenv
-from pdfquery import PDFQuery
-from sklearn.model_selection import train_test_split
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
@@ -61,7 +59,6 @@ formatting_keywords = [
     "Style",
     "Total Composite Score",
 ]
-essay_set_ID_to_scoring_rubrics = {}
 essay_set_ID_to_scoring_rubrics = get_rubric_texts_from_files(rubric_dir)
 
 
@@ -130,20 +127,21 @@ def get_data(paths, prompt_id, as_list_of_tuples):
 
 
 def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
-    prompt = f"""Task:
-Strictly evaluate two texts according to the rubric below.
-Rules:
-Return only one signed integer: the score difference (Text 1 score minus Text 2 score).
-Do NOT include any explanations, comments, extra characters, whitespace, or anything besides a single signed integer.
-Any output other than a single signed integer will be considered invalid.
+    prompt = f"""
+    Task:
+    Strictly evaluate two texts according to the rubric below.
+    Rules:
+    Return only one signed integer: the score difference (Text 1 score minus Text 2 score).
+    Do NOT include any explanations, comments, extra characters, whitespace, or anything besides a single signed integer.
+    Any output other than a single signed integer will be considered invalid.
 
-Rubric:
-{rubric}
+    Rubric:
+    {rubric}
 
-Text 1:
-{text1}
-Text 2:
-{text2}"""
+    Text 1:
+    {text1}
+    Text 2:
+    {text2}"""
 
     try:
         response = openai.chat.completions.create(
@@ -256,20 +254,21 @@ y_pred = score_prediction["y_pred"]
 mse = mean_squared_error(y_true, y_pred)
 print(f"Mean Squared Error: {mse:.2f}")
 
+# * DONE
+# include support for the other essay sets (other rubrics)
+# connect my work to the pre-folded / split data instead of the test-version
+
+# * TODO
+#! baseline first!
+# todo: with increasing complexity, bug detection might be more difficult
+# todo: include separation between modifications that should and shouldn't affect the score (for example cashing = no impact on score, prompt change = impact on score)
+# todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
+
+# make sure the model doesn't have access to the internet so it doesn't just look-up;
+# api calls do not have native access to the internet
 
 # todo: cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int diff for querying, printing to see which is a fresh API call and which come form the cash
 
-# include support for the other essay sets (other rubrics)
-
-# connect my work to the pre-folded / split data instead of the test-version
-
-# todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
-
-# todo: make sure the model doesn't have access to the internet so it doesn't just look-up
 
 # ! thesis will get registered now, this means an official DEADLINE, I will get an e-mail about that
 # new title: Pairwise Difference Learning for LLMs
-
-#! baseline first!
-# with increasing complexity, bug detection might be more difficult
-# include separation between modifications that should and shouldn't affect the score (for example cashing = no impact on score, prompt change = impact on score)
