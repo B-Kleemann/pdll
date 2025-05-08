@@ -16,13 +16,14 @@ SEED = 17
 FOLD_ID = 0
 
 # read rubric files
-essay_set_ID_to_scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
+scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
 
 def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
     prompt = f"""
     Task:
-    Strictly evaluate two texts according to the rubric below.
+    Strictly evaluate the two essays according to the rubric below.
+    
     Rules:
     Return only one signed integer: the score difference (Text 1 score minus Text 2 score).
     Do NOT include any explanations, comments, extra characters, whitespace, or anything besides a single signed integer.
@@ -33,8 +34,10 @@ def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
 
     Text 1:
     {text1}
+    
     Text 2:
-    {text2}"""
+    {text2}
+    """
 
     try:
         response = openai.chat.completions.create(
@@ -48,7 +51,7 @@ def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
             ],
         )
 
-        result = response.choices[0].message.content.strip()
+        result = response.choices[0].message.content.strip()  # type: ignore
         return int(result)
 
     except (ValueError, IndexError, AttributeError) as parse_err:
@@ -74,7 +77,9 @@ def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
 }  # type: ignore
 
 
-def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric: str):
+def predict_scores_pairwise(
+    test_data: pd.DataFrame, training_data: pd.DataFrame, rubric: str
+) -> pd.DataFrame:
 
     predictions = []
     # renaming for clarity: data = test_data, baseline = training_data
@@ -103,6 +108,62 @@ def predict_scores(test_data: pd.DataFrame, training_data: pd.DataFrame, rubric:
         predictions.append(round(avg_score, 2))
 
     test_data["y_pred"] = predictions
+    return test_data
+
+
+def get_essay_score_as_int(essay: str, rubric: str) -> int:
+    prompt = f"""
+    Task:
+    Strictly evaluate the essay according to the rubric below.
+    
+    Rules:
+    Return only one integer: the score for the essay.
+    Do NOT include any explanations, comments, extra characters, whitespace, or anything besides a single integer.
+    Any output other than a single integer will be considered invalid.
+
+    Rubric:
+    {rubric}
+
+    Essay:
+    {essay}
+    """
+
+    try:
+        response = openai.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are an expert text comparison assistant.",
+                },
+                {"role": "user", "content": prompt},
+            ],
+        )
+
+        result = response.choices[0].message.content.strip()  # type: ignore
+        return int(result)
+
+    except (ValueError, IndexError, AttributeError) as parse_err:
+        raise RuntimeError(f"Failed to parse score difference: {parse_err}")
+
+    except Exception as api_err:
+        raise RuntimeError(f"OpenAI API call failed: {api_err}")
+
+
+def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
+
+    predictions = []
+    for i, row_i in test_data.iterrows():
+        try:
+            # the score here is doubled, because the original score is the sum of two single scores by two different experts
+            score_pred = 2 * get_essay_score_as_int(row_i["essay"], rubric)
+            predictions.append(score_pred)
+
+        except RuntimeError:
+            continue
+
+    test_data["y_pred"] = predictions
+
     return test_data
 
 
@@ -137,17 +198,29 @@ data_train, data_dev, data_test = (
     data_test.head(limit),
 )
 
-score_prediction = predict_scores(
-    pd.DataFrame(data_dev),
-    pd.DataFrame(data_train),
-    essay_set_ID_to_scoring_rubrics[essay_set_ID],
-)
-print(score_prediction)
+# pairwise_score_prediction = predict_scores_pairwise(
+#     pd.DataFrame(data_dev),
+#     pd.DataFrame(data_train),
+#     scoring_rubrics[essay_set_ID],
+# )
+# print(pairwise_score_prediction)
 
-y_true = score_prediction["score"]
-y_pred = score_prediction["y_pred"]
+solo_score_prediction = predict_scores_solo(
+    pd.DataFrame(data_dev),
+    scoring_rubrics[essay_set_ID],
+)
+print(solo_score_prediction)
+
+
+# y_true = pairwise_score_prediction["score"]
+# y_pred = pairwise_score_prediction["y_pred"]
+
+y_true = solo_score_prediction["score"]
+y_pred = solo_score_prediction["y_pred"]
+
 mse = mean_squared_error(y_true, y_pred)
 print(f"Mean Squared Error: {mse:.2f}")
+
 
 # * DONE
 # include support for the other essay sets (other rubrics)
