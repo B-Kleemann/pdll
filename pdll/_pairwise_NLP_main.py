@@ -1,0 +1,97 @@
+import pandas as pd
+from sklearn.metrics import mean_squared_error
+
+import pdll._pairwise_NLP as pairwise
+import pdll._pairwise_NLP_baseline as baseline
+import pdll._pairwise_NLP_dataprocessing as data_processing
+import pdll._pairwise_NLP_rubricextraction as rubric_extraction
+
+SEED = 17
+FOLD_ID = 0
+
+
+# Set variables for data
+essay_set_ID = 1
+as_list_of_tuples = True
+
+data_train, data_dev, data_test = data_processing.get_data(
+    FOLD_ID, essay_set_ID, as_list_of_tuples
+)
+
+
+# Set limit of rows for testing
+limit = 4
+limit_data = limit
+limit_baseline = limit
+
+assert limit > 0, "Limit must be greater than 0."
+assert limit < len(data_train), "Limit exceeds number of rows in dataset."
+assert limit <= 6, "Limit exceeds number of reasonable rows."
+
+
+# conversion to DataFrame
+data_train, data_dev, data_test = (
+    pd.DataFrame(data_train, columns=["essay", "score"]),
+    pd.DataFrame(data_dev, columns=["essay", "score"]),
+    pd.DataFrame(data_test, columns=["essay", "score"]),
+)
+
+
+#! limits data for development and testing
+data_train, data_dev, data_test = (
+    data_train.tail(limit_baseline),
+    data_dev.tail(limit_data),
+    data_test.tail(limit),
+    # data_train.head(limit_baseline),
+    # data_dev.head(limit_data),
+    # data_test.head(limit),
+)
+
+
+# Load scoring rubrics
+scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
+
+
+pairwise_score_prediction = pairwise.predict_scores_pairwise(
+    pd.DataFrame(data_dev),
+    pd.DataFrame(data_train),
+    scoring_rubrics[essay_set_ID],
+)
+print(pairwise_score_prediction)
+
+
+solo_score_prediction = baseline.predict_scores_solo(
+    pd.DataFrame(data_dev),
+    scoring_rubrics[essay_set_ID],
+)
+print(solo_score_prediction)
+
+
+# y_true = pairwise_score_prediction["score"]
+# y_pred = pairwise_score_prediction["y_pred"]
+
+y_true = solo_score_prediction["score"]
+y_pred = solo_score_prediction["y_pred"]
+
+mse = mean_squared_error(y_true, y_pred)
+print(f"Mean Squared Error: {mse:.2f}")
+
+
+# * DONE
+# include support for the other essay sets (other rubrics)
+# connect my work to the pre-folded / split data instead of the test-version
+
+# make sure the model doesn't have access to the internet so it doesn't just look-up;
+# api calls do not have native access to the internet
+
+# * TODO
+#! baseline first!
+# todo: with increasing complexity, bug detection might be more difficult
+# todo: include separation between modifications that should and shouldn't affect the score (for example cashing = no impact on score, prompt change = impact on score)
+# todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
+
+# todo: cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int diff for querying, printing to see which is a fresh API call and which come form the cash
+
+
+# ! thesis will get registered now, this means an official DEADLINE, I will get an e-mail about that
+# new title: Pairwise Difference Learning for LLMs
