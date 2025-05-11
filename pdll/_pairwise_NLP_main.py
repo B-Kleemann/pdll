@@ -6,7 +6,6 @@ import pdll._pairwise_NLP_baseline as baseline
 import pdll._pairwise_NLP_dataprocessing as data_processing
 import pdll._pairwise_NLP_rubricextraction as rubric_extraction
 
-SEED = 17
 FOLD_ID = 0
 
 
@@ -19,62 +18,75 @@ data_train, data_dev, data_test = data_processing.get_data(
 )
 
 
-# Set limit of rows for testing
-limit = 4
-limit_data = limit
-limit_baseline = limit
-
-assert limit > 0, "Limit must be greater than 0."
-assert limit < len(data_train), "Limit exceeds number of rows in dataset."
-assert limit <= 6, "Limit exceeds number of reasonable rows."
+# Set control variables
+TESTING = True
+PAIRWISE = False
 
 
-# conversion to DataFrame
-data_train, data_dev, data_test = (
-    pd.DataFrame(data_train, columns=["essay", "score"]),
-    pd.DataFrame(data_dev, columns=["essay", "score"]),
-    pd.DataFrame(data_test, columns=["essay", "score"]),
-)
+if TESTING:
+    # Set limit of rows for testing
+    limit = 5
+    limit_data = limit
+    limit_baseline = limit
 
+    assert limit > 0, "Limit must be greater than 0."
+    assert limit < len(data_train), "Limit exceeds number of rows in dataset."
+    assert limit <= 6, "Limit exceeds number of reasonable rows."
 
-#! limits data for development and testing
-data_train, data_dev, data_test = (
-    data_train.tail(limit_baseline),
-    data_dev.tail(limit_data),
-    data_test.tail(limit),
-    # data_train.head(limit_baseline),
-    # data_dev.head(limit_data),
-    # data_test.head(limit),
-)
+    # conversion to DataFrame
+    data_train, data_dev, data_test = (
+        pd.DataFrame(data_train, columns=["essay", "score"]),
+        pd.DataFrame(data_dev, columns=["essay", "score"]),
+        pd.DataFrame(data_test, columns=["essay", "score"]),
+    )
+
+    #! limits data for development and testing
+    data_train, data_dev, data_test = (
+        data_train.tail(limit_baseline),
+        data_dev.tail(limit_data),
+        data_test.tail(limit),
+        # data_train.head(limit_baseline),
+        # data_dev.head(limit_data),
+        # data_test.head(limit),
+    )
+else:
+    # conversion to DataFrame
+    data_train, data_dev, data_test = (
+        pd.DataFrame(data_train, columns=["essay", "score"]),
+        pd.DataFrame(data_dev, columns=["essay", "score"]),
+        pd.DataFrame(data_test, columns=["essay", "score"]),
+    )
 
 
 # Load scoring rubrics
 scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
-
-pairwise_score_prediction = pairwise.predict_scores_pairwise(
-    pd.DataFrame(data_dev),
-    pd.DataFrame(data_train),
-    scoring_rubrics[essay_set_ID],
-)
-print(pairwise_score_prediction)
-
-
-solo_score_prediction = baseline.predict_scores_solo(
-    pd.DataFrame(data_dev),
-    scoring_rubrics[essay_set_ID],
-)
-print(solo_score_prediction)
+score_prediction = None
+if PAIRWISE:
+    score_prediction = pairwise.predict_scores_pairwise(
+        pd.DataFrame(data_dev),
+        pd.DataFrame(data_train),
+        scoring_rubrics[essay_set_ID],
+    )
+else:
+    score_prediction = baseline.predict_scores_solo(
+        pd.DataFrame(data_dev),
+        scoring_rubrics[essay_set_ID],
+    )
 
 
-# y_true = pairwise_score_prediction["score"]
-# y_pred = pairwise_score_prediction["y_pred"]
+# Print results
+print(score_prediction)
 
-y_true = solo_score_prediction["score"]
-y_pred = solo_score_prediction["y_pred"]
+if score_prediction is not None:
+    # Compute and print error metrics
+    y_true = score_prediction["score"]
+    y_pred = score_prediction["y_pred"]
 
-mse = mean_squared_error(y_true, y_pred)
-print(f"Mean Squared Error: {mse:.2f}")
+    mse = mean_squared_error(y_true, y_pred)
+    print(f"Mean Squared Error: {mse:.2f}")
+else:
+    print("No score prediction available.")
 
 
 # * DONE
