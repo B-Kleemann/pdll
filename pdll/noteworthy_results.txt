@@ -124,3 +124,18 @@ Avg score: 8
 Mean Squared Error: 0.80
 
 12.05.2025, 00:55
+
+
+
+
+
+& C:/ProgramData/anaconda3/envs/PDL/python.exe c:/Users/betti/Documents/Daten-lokal/Studium/Bachelorarbeit/pdll/pdll/_pairwise_NLP_main.py
+dll/_pairwise_NLP_main.py                                                                                                                                                                                                                    essay  score  y_pred
+86   "Computers are used everywhere, for thousands ...      8       7
+343  "Dear @CAPS1 @CAPS2 I believe that there is mo...      9       8
+35   "Dear Readers of @LOCATION1 @CAPS1 has been bo...      8       6
+64   "I think that computers are a good thing to ha...      7       4
+255  "Dear @CAPS1, I am writing to you to let you k...      9       8
+Mean Squared Error: 3.20
+
+12.05.2025, 01:17
