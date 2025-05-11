@@ -78,24 +78,34 @@ def predict_scores_pairwise(
         store_pred_scores = []
 
         for j, row_j in training_data.iterrows():
+            print(f"Datapoint {i} & Datapoint {j}")
+
             # if i <= j:  # type: ignore
             # try <= and >= both, this halfs the squared data, do that as double checking, does full set work better or is half-set sufficient already in obtaining good results,
             # Todo for debugging: isolated predictions, give same pair twice, then see if difference is 0
             # continue
             try:
                 diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
-                score_of_baseline_essay = row_j.iloc[1]
+                print(f"Diff: {diff}")
+
+                score_of_baseline_essay = int(row_j.iloc[1])
+                print(f"Score of baseline essay: {score_of_baseline_essay}")
+
                 score_pred = score_of_baseline_essay + diff
+                print(f"Score prediction: {score_pred}")
+
                 store_pred_scores.append(score_pred)
+
             except RuntimeError:
                 continue
 
         avg_score = 0
         # if the list is empty, it means no valid differences were found
-        if len(store_pred_scores) != 0:
-            avg_score = sum(store_pred_scores) / len(store_pred_scores)
+        if store_pred_scores != []:
+            avg_score = int(round(sum(store_pred_scores) / len(store_pred_scores), 0))
+        print(f"Avg score: {avg_score}\n\n")
 
-        predictions.append(round(avg_score, 2))
+        predictions.append(int(avg_score))
 
     test_data["y_pred"] = predictions
     return test_data
