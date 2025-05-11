@@ -21,6 +21,7 @@ data_train, data_dev, data_test = data_processing.get_data(
 # Set control variables
 TESTING = True
 PAIRWISE = False
+HEAD = False
 
 
 if TESTING:
@@ -31,7 +32,7 @@ if TESTING:
 
     assert limit > 0, "Limit must be greater than 0."
     assert limit < len(data_train), "Limit exceeds number of rows in dataset."
-    assert limit <= 6, "Limit exceeds number of reasonable rows."
+    assert limit <= 8, "Limit exceeds number of reasonable rows."
 
     # conversion to DataFrame
     data_train, data_dev, data_test = data_processing.convert_to_dataframe(
@@ -39,14 +40,20 @@ if TESTING:
     )
 
     #! limits data for development and testing
-    data_train, data_dev, data_test = (
-        data_train.tail(limit_baseline),
-        data_dev.tail(limit_data),
-        data_test.tail(limit),
-        # data_train.head(limit_baseline),
-        # data_dev.head(limit_data),
-        # data_test.head(limit),
-    )
+    if HEAD:
+        # use head for testing
+        data_train, data_dev, data_test = (
+            data_train.head(limit_baseline),
+            data_dev.head(limit_data),
+            data_test.head(limit),
+        )
+    else:
+        # use tail for testing
+        data_train, data_dev, data_test = (
+            data_train.tail(limit_baseline),
+            data_dev.tail(limit_data),
+            data_test.tail(limit),
+        )
 else:
     # conversion to DataFrame
     data_train, data_dev, data_test = data_processing.convert_to_dataframe(
