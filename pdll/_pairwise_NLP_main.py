@@ -6,23 +6,20 @@ import pdll._pairwise_NLP_baseline as baseline
 import pdll._pairwise_NLP_dataprocessing as data_processing
 import pdll._pairwise_NLP_rubricextraction as rubric_extraction
 
-FOLD_ID = 0
-
 
 # Set variables for data
 essay_set_ID = 1
 as_list_of_tuples = True
 
+# Set control variables
+TESTING = True
+PAIRWISE = True
+SEED = 17
+FOLD_ID = 0
+
 data_train, data_dev, data_test = data_processing.get_data(
     FOLD_ID, essay_set_ID, as_list_of_tuples
 )
-
-
-# Set control variables
-TESTING = True
-PAIRWISE = False
-HEAD = False
-
 
 if TESTING:
     # Set limit of rows for testing
@@ -40,20 +37,12 @@ if TESTING:
     )
 
     #! limits data for development and testing
-    if HEAD:
-        # use head for testing
-        data_train, data_dev, data_test = (
-            data_train.head(limit_baseline),
-            data_dev.head(limit_data),
-            data_test.head(limit),
-        )
-    else:
-        # use tail for testing
-        data_train, data_dev, data_test = (
-            data_train.tail(limit_baseline),
-            data_dev.tail(limit_data),
-            data_test.tail(limit),
-        )
+    # use random sample for testing
+    data_train, data_dev, data_test = (
+        data_train.sample(limit_baseline, random_state=SEED),
+        data_dev.sample(limit_data, random_state=SEED),
+        data_test.sample(limit, random_state=SEED),
+    )
 else:
     # conversion to DataFrame
     data_train, data_dev, data_test = data_processing.convert_to_dataframe(
