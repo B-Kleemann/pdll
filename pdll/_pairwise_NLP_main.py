@@ -34,10 +34,8 @@ if TESTING:
     assert limit <= 6, "Limit exceeds number of reasonable rows."
 
     # conversion to DataFrame
-    data_train, data_dev, data_test = (
-        pd.DataFrame(data_train, columns=["essay", "score"]),
-        pd.DataFrame(data_dev, columns=["essay", "score"]),
-        pd.DataFrame(data_test, columns=["essay", "score"]),
+    data_train, data_dev, data_test = data_processing.convert_to_dataframe(
+        [data_train, data_dev, data_test]
     )
 
     #! limits data for development and testing
@@ -51,10 +49,8 @@ if TESTING:
     )
 else:
     # conversion to DataFrame
-    data_train, data_dev, data_test = (
-        pd.DataFrame(data_train, columns=["essay", "score"]),
-        pd.DataFrame(data_dev, columns=["essay", "score"]),
-        pd.DataFrame(data_test, columns=["essay", "score"]),
+    data_train, data_dev, data_test = data_processing.convert_to_dataframe(
+        [data_train, data_dev, data_test]
     )
 
 
@@ -77,6 +73,7 @@ else:
 
 # Print results
 print(score_prediction)
+
 
 if score_prediction is not None:
     # Compute and print error metrics
