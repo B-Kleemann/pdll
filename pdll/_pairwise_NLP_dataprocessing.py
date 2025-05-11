@@ -67,22 +67,22 @@ def get_data(fold_id, prompt_id, as_list_of_tuples):
     return train, dev, test
 
 
-def convert_to_dataframe(data) -> list[pd.DataFrame]:
+def convert_to_dataframe(list_data) -> list[pd.DataFrame]:
 
-    df = [pd.DataFrame()]
+    ldf = []
 
-    for d in data:
+    for data in list_data:
         if isinstance(data, list) and all(isinstance(i, tuple) for i in data):
             # Convert list of tuples to DataFrame
-            lot = pd.DataFrame(d, columns=["essay", "score"])
-            df.append(lot)
+            lot = pd.DataFrame(data, columns=["essay", "score"])
+            ldf.append(lot)
         elif isinstance(data, tuple) and len(data) == 2:
             # Convert tuple of lists to DataFrame
             tol = pd.DataFrame(list(zip(*data)), columns=["essay", "score"])
-            df.append(tol)
+            ldf.append(tol)
         else:
             raise ValueError(
                 "Invalid data format. Expected list of tuples or tuple of lists."
             )
 
-    return df
+    return ldf
