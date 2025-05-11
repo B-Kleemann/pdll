@@ -9,24 +9,24 @@ api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
 
 
-def get_pair_diff_as_int(text1: str, text2: str, rubric: str) -> int:
+def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
     prompt = f"""
     Task:
     Strictly evaluate the two essays according to the rubric below.
     
     Rules:
-    Return only one signed integer: the score difference (Text 1 score minus Text 2 score).
+    Return only one signed integer: the score difference (Essay 1 score minus Essay 2 score).
     Do NOT include any explanations, comments, extra characters, whitespace, or anything besides a single signed integer.
     Any output other than a single signed integer will be considered invalid.
 
     Rubric:
     {rubric}
 
-    Text 1:
-    {text1}
+    Essay 1:
+    {essay1}
     
-    Text 2:
-    {text2}
+    Essay 2:
+    {essay2}
     """
 
     try:

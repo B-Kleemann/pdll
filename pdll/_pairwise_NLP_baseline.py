@@ -12,7 +12,7 @@ openai.api_key = api_key
 def get_essay_score_as_int(essay: str, rubric: str) -> int:
     prompt = f"""
     Task:
-    Strictly evaluate the essay according to the rubric.
+    Strictly evaluate the essay according to the rubric below.
     
     Rules:
     Return only one integer: the score for the essay.
