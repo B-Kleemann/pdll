@@ -27,6 +27,9 @@ def get_essay_score_as_int(essay: str, rubric: str) -> int:
     """
 
     try:
+        # implement cashing here!
+        # parqet file for dataframe for cashing
+        # ask chat gpt, whole message as needed
         response = openai.chat.completions.create(
             model="gpt-4o",
             messages=[
@@ -66,3 +69,6 @@ def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
     test_data["y_pred"] = predictions
 
     return test_data
+
+
+# test output with float to avoid multi-queriying of the same

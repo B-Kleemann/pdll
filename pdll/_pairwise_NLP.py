@@ -29,13 +29,17 @@ def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
     {essay2}
     """
 
+    # temperature can be manually adjusted, look for value
+    # use different seeds instead, to assure multiple different querys
+    # include that in cashig, "separate runs can be in"
+    # dont implement that, runs cost too much!!!
     try:
         response = openai.chat.completions.create(
             model="gpt-4o",
             messages=[
                 {
                     "role": "system",
-                    "content": "You are an expert text comparison assistant.",
+                    "content": "You are an expert essay grading assistant.",
                 },
                 {"role": "user", "content": prompt},
             ],
@@ -109,3 +113,10 @@ def predict_scores_pairwise(
 
     test_data["y_pred"] = predictions
     return test_data
+
+
+# run large scale tests with 300 essays
+# for both pairwise and solo
+# test = 300, train = 10 for pairwise reference, record EVERYTHING
+# then later on you can simulate for smaller train essay numbers from the recorded data for more
+#

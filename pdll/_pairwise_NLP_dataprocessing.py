@@ -86,3 +86,19 @@ def convert_to_dataframe(list_data) -> list[pd.DataFrame]:
             )
 
     return ldf
+
+
+# for large scale testing log EVERYTHING
+# so later you can make detailed analysis
+# etc bigger vs smaller text size
+
+# to do
+# make it work with all essay sets
+#
+# see which essay sets to use?
+
+# analysis of completed run:
+# When does PDL work better than the baseline?
+# impact of number of reference esssays?
+
+# write part of chapter 1 of the thesis, the introduction
