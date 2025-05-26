@@ -1,6 +1,6 @@
 from pathlib import Path
 
-files_need_formatting = True
+files_need_formatting = False
 
 formatting_keywords = [
     "Prompt",

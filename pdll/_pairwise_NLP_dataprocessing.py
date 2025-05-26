@@ -3,19 +3,12 @@ from pathlib import Path
 
 import pandas as pd
 
-prompt_id_to_score_index_mapping = {
-    1: 6,
-    2: 3,  #! todo: complete this mapping for all prompt ids
-    3: 3,
-    4: 3,
-    5: 3,
-    6: 3,
-    7: 3,
-}
 
-
-def read_dataset(file_path, prompt_id, score_index):
+def read_dataset(file_path, prompt_id):
     data_x, data_y, prompt_ids = [], [], []
+
+    score_index = 6
+    special_index = 9
 
     with codecs.open(file_path, mode="r", encoding="UTF8") as input_file:
         next(input_file)
@@ -26,6 +19,8 @@ def read_dataset(file_path, prompt_id, score_index):
             essay_set = int(tokens[1])
             content = str(tokens[2].strip())
             score = int(tokens[score_index])
+            if essay_set == 2:
+                score = score + int(tokens[special_index])
 
             if essay_set == prompt_id or prompt_id <= 0:
                 data_x.append(content)
@@ -42,17 +37,11 @@ def get_data(fold_id, prompt_id, as_list_of_tuples):
 
     train_path, dev_path, test_path = paths[0], paths[1], paths[2]
 
-    train_x, train_y, train_prompts = read_dataset(
-        train_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
-    )
+    train_x, train_y, train_prompts = read_dataset(train_path, prompt_id)
 
-    dev_x, dev_y, dev_prompts = read_dataset(
-        dev_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
-    )
+    dev_x, dev_y, dev_prompts = read_dataset(dev_path, prompt_id)
 
-    test_x, test_y, test_prompts = read_dataset(
-        test_path, prompt_id, prompt_id_to_score_index_mapping[prompt_id]
-    )
+    test_x, test_y, test_prompts = read_dataset(test_path, prompt_id)
 
     if as_list_of_tuples:
         train = list(zip(train_x, train_y))
