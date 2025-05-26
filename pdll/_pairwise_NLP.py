@@ -36,6 +36,7 @@ def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
     try:
         response = openai.chat.completions.create(
             model="gpt-4o",
+            temperature=0,
             messages=[
                 {
                     "role": "system",
