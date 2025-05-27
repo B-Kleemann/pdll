@@ -38,6 +38,7 @@ def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
             response = openai.chat.completions.create(
                 model="gpt-4o",
                 temperature=0,
+                # try put sentence actually in the prompt, not system, no separation
                 messages=[
                     {
                         "role": "system",

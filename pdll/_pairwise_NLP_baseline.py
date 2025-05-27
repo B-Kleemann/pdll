@@ -10,6 +10,9 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
 
+# at the end ony one plot, showing the clear difference between baseline and pairwise
+# do anaysis and draw up convincing stats that go with it
+
 
 def get_essay_score_as_float(essay: str, rubric: str) -> float:
     prompt = f"""
@@ -37,6 +40,7 @@ def get_essay_score_as_float(essay: str, rubric: str) -> float:
             response = openai.chat.completions.create(
                 model="gpt-4o",
                 temperature=0,
+                #! remove the role split and keep the assignement in the prompt directly!
                 messages=[
                     {
                         "role": "system",
