@@ -4,6 +4,8 @@ import openai
 import pandas as pd
 from dotenv import load_dotenv
 
+import pdll._pairwise_NLP_caching as caching
+
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
@@ -29,55 +31,44 @@ def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
     {essay2}
     """
 
-    # temperature can be manually adjusted, look for value
-    # use different seeds instead, to assure multiple different querys
-    # include that in cashig, "separate runs can be in"
-    # dont implement that, runs cost too much!!!
-    try:
-        response = openai.chat.completions.create(
-            model="gpt-4o",
-            temperature=0,
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You are an expert essay grading assistant.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-        )
+    from_cache = caching.lookup_in_cache(prompt, True)
 
-        result = response.choices[0].message.content.strip()  # type: ignore
-        return int(result)
+    if from_cache is None:
+        try:
+            response = openai.chat.completions.create(
+                model="gpt-4o",
+                temperature=0,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You are an expert essay grading assistant.",
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+            )
 
-    except (ValueError, IndexError, AttributeError) as parse_err:
-        raise RuntimeError(f"Failed to parse score difference: {parse_err}")
+            pred_score = int(response.choices[0].message.content.strip())  # type: ignore
 
-    except Exception as api_err:
-        raise RuntimeError(f"OpenAI API call failed: {api_err}")
+            caching.new_cache_entry(prompt, pred_score, True)
 
+            return pred_score
 
-# {
-#     # diff_1 = get_pair_diff_as_int(
-#     #     X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
-#     # )
-#     # diff_2 = get_pair_diff_as_int(
-#     #     X_train.iloc[0].essay, X_train.iloc[1].essay, rubric_set_1_text
-#     # )
-#     # if diff_1 != diff_2:
-#     #     print(f"Different results! {diff_1} != {diff_2}")
-#     # else:
-#     #     print(f"Same results! Both say {diff_1}")
-#     # ? variation of the differences is high, so the model is not consistent in its predictions
-#     # ? range tested with this essay pair is -1 to 3, -1 x 1, 0 x 3, 1 x 2, 2 x 3, 3 x 1
-# }  # type: ignore
+        except (ValueError, IndexError, AttributeError) as parse_err:
+            raise RuntimeError(f"Failed to parse score difference: {parse_err}")
+
+        except Exception as api_err:
+            raise RuntimeError(f"OpenAI API call failed: {api_err}")
+
+    else:
+        return int(from_cache)
 
 
 def predict_scores_pairwise(
     test_data: pd.DataFrame, training_data: pd.DataFrame, rubric: str
 ) -> pd.DataFrame:
+    caching.load_cache(True)
 
     predictions = []
-    # renaming for clarity: data = test_data, baseline = training_data
 
     for i, row_i in test_data.iterrows():
         store_pred_scores = []

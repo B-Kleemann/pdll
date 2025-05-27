@@ -4,6 +4,8 @@ import openai
 import pandas as pd
 from dotenv import load_dotenv
 
+import pdll._pairwise_NLP_caching as caching
+
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
@@ -28,35 +30,43 @@ def get_essay_score_as_float(essay: str, rubric: str) -> float:
     {essay}
     """
 
-    try:
-        # implement cashing here!
-        # parqet file for dataframe for cashing
-        # ask chat gpt, whole message as needed
-        response = openai.chat.completions.create(
-            model="gpt-4o",
-            temperature=0,
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You are an expert text comparison assistant.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-        )
+    from_cache = caching.lookup_in_cache(prompt, False)
 
-        result = response.choices[0].message.content.strip()  # type: ignore
-        return float(result)
+    if from_cache is None:
+        try:
+            response = openai.chat.completions.create(
+                model="gpt-4o",
+                temperature=0,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You are an expert text comparison assistant.",
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+            )
 
-    except (ValueError, IndexError, AttributeError) as parse_err:
-        raise RuntimeError(f"Failed to parse score difference: {parse_err}")
+            pred_score = float(response.choices[0].message.content.strip())  # type: ignore
 
-    except Exception as api_err:
-        raise RuntimeError(f"OpenAI API call failed: {api_err}")
+            caching.new_cache_entry(prompt, pred_score, False)
+
+            return pred_score
+
+        except (ValueError, IndexError, AttributeError) as parse_err:
+            raise RuntimeError(f"Failed to parse score difference: {parse_err}")
+
+        except Exception as api_err:
+            raise RuntimeError(f"OpenAI API call failed: {api_err}")
+
+    else:
+        return float(from_cache)
 
 
 def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
+    caching.load_cache(False)
 
     predictions = []
+
     for i, row_i in test_data.iterrows():
         try:
             # the score here is predicted and then doubled to mimic the composition of the original score (the sum of two single scores by two different experts)
@@ -73,7 +83,7 @@ def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
     return test_data
 
 
-# test output with float to avoid multi-queriying of the same
+# done: test output with float to avoid multi-queriying of the same
 
 
 def get_essay_score_as_int(essay: str, rubric: str) -> int:

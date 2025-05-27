@@ -3,47 +3,56 @@ from sklearn.metrics import mean_squared_error
 
 import pdll._pairwise_NLP as pairwise
 import pdll._pairwise_NLP_baseline as baseline
+import pdll._pairwise_NLP_caching as caching
 import pdll._pairwise_NLP_dataprocessing as data_processing
 import pdll._pairwise_NLP_rubricextraction as rubric_extraction
 
+# Set control variables
+TESTING = True
+PAIRWISE = True
+SEED = 81
+FOLD_ID = 1
 
 # Set variables for data
 as_list_of_tuples = True
 
-# Set control variables
-TESTING = True
-PAIRWISE = False
-SEED = 81
-FOLD_ID = 1
+# Load scoring rubrics
+scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
+
+# Set limit of rows for testing
+if PAIRWISE:
+    limit = 3
+    limit_data = limit
+    limit_baseline = limit
+    reasonable = 8
+else:
+    limit = 3
+    limit_data = limit
+    limit_baseline = limit
+    reasonable = 30
+
+assert limit > 0, "Limit must be greater than 0."
+# assert limit < len(data_train), "Limit exceeds number of rows in dataset."
+assert limit <= reasonable, "Limit exceeds number of reasonable rows."
+
+# set up variable for collecting results
+list_mse = []
+gathered_mse = 0
 
 
 def main(essay_set_ID):
     data_train, data_dev, data_test = data_processing.get_data(
-        FOLD_ID, essay_set_ID, as_list_of_tuples
+        FOLD_ID,
+        essay_set_ID,
+        as_list_of_tuples,
+    )
+
+    # conversion to DataFrame
+    data_train, data_dev, data_test = data_processing.convert_to_dataframe(
+        [data_train, data_dev, data_test]
     )
 
     if TESTING:
-        # Set limit of rows for testing
-        if PAIRWISE:
-            limit = 3
-            limit_data = limit
-            limit_baseline = limit
-            reasonable = 8
-        else:
-            limit = 9
-            limit_data = limit
-            limit_baseline = limit
-            reasonable = 30
-
-        assert limit > 0, "Limit must be greater than 0."
-        assert limit < len(data_train), "Limit exceeds number of rows in dataset."
-        assert limit <= reasonable, "Limit exceeds number of reasonable rows."
-
-        # conversion to DataFrame
-        data_train, data_dev, data_test = data_processing.convert_to_dataframe(
-            [data_train, data_dev, data_test]
-        )
-
         #! limits data for development and testing
         # use random sample for testing
         data_train, data_dev, data_test = (
@@ -51,14 +60,6 @@ def main(essay_set_ID):
             data_dev.sample(limit_data, random_state=SEED),
             data_test.sample(limit, random_state=SEED),
         )
-    else:
-        # conversion to DataFrame
-        data_train, data_dev, data_test = data_processing.convert_to_dataframe(
-            [data_train, data_dev, data_test]
-        )
-
-    # Load scoring rubrics
-    scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
     score_prediction = None
     if PAIRWISE:
@@ -82,14 +83,30 @@ def main(essay_set_ID):
         y_pred = score_prediction["y_pred"]
 
         mse = mean_squared_error(y_true, y_pred)
-        print(f"Mean Squared Error: {mse:.2f}")
+        list_mse.append(mse)
+        print(f"MSE of Set: {mse:.2f}")
     else:
         print("No score prediction available.")
 
 
-for i in range(1, 8):
+stop = 4
+
+# run through all essay sets
+for i in range(1, stop):
     main(i)
 
+print("\n\nCache-Stats:\n")
+caching.print_cache_stats(True)
+caching.print_cache_stats(False)
+
+# evaluation
+print("\n\nEvaluation:\n")
+for j in range(len(list_mse)):
+    print(f"MSE of Set {j+1}: {round(list_mse[j], 2)}")
+    gathered_mse = gathered_mse + list_mse[j]
+
+avg_mse = round(gathered_mse / len(list_mse), 2)
+print(f"\nAverage MSE: {avg_mse}\n\n")
 
 # * DONE
 # include support for the other essay sets (other rubrics)
