@@ -75,7 +75,7 @@ def main(essay_set_ID):
         )
 
     # Print results
-    print(score_prediction)
+    # print(score_prediction)
 
     if score_prediction is not None:
         # Compute and print error metrics
