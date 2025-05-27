@@ -90,14 +90,12 @@ def main(essay_set_ID):
 
 
 stop = 4
-
 # run through all essay sets
 for i in range(1, stop):
     main(i)
 
 print("\n\nCache-Stats:\n")
-caching.print_cache_stats(True)
-caching.print_cache_stats(False)
+caching.print_cache_stats(PAIRWISE)
 
 # evaluation
 print("\n\nEvaluation:\n")
@@ -115,14 +113,13 @@ print(f"\nAverage MSE: {avg_mse}\n\n")
 # make sure the model doesn't have access to the internet so it doesn't just look-up;
 # api calls do not have native access to the internet
 
+# with increasing complexity, bug detection might be more difficult
+# include separation between modifications that should and shouldn't affect the score (for example cashing = no impact on score, prompt change = impact on score)
+# implement a baseline predictor that only predicts the score directly from the model, for comparison
+
+# cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int diff for querying, printing to see which is a fresh API call and which come form the cash
+
 # * TODO
-#! baseline first!
-# todo: with increasing complexity, bug detection might be more difficult
-# todo: include separation between modifications that should and shouldn't affect the score (for example cashing = no impact on score, prompt change = impact on score)
-# todo: implement a baseline predictor that only predicts the score directly from the model, for comparison
-
-# todo: cash get_pair_diff_as_int , reduces the API calls, use the FULL string, not only the inputs, because for example the prompt could be modified from one call to the other, cashing as dataframe, string and int diff for querying, printing to see which is a fresh API call and which come form the cash
-
 
 # ! thesis will get registered now, this means an official DEADLINE, I will get an e-mail about that
 # new title: Pairwise Difference Learning for LLMs
