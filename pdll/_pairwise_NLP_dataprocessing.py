@@ -37,11 +37,20 @@ def get_data(fold_id, prompt_id, as_list_of_tuples):
 
     train_path, dev_path, test_path = paths[0], paths[1], paths[2]
 
-    train_x, train_y, train_prompts = read_dataset(train_path, prompt_id)
+    train_x, train_y, train_prompts = read_dataset(
+        train_path,
+        prompt_id,
+    )
 
-    dev_x, dev_y, dev_prompts = read_dataset(dev_path, prompt_id)
+    dev_x, dev_y, dev_prompts = read_dataset(
+        dev_path,
+        prompt_id,
+    )
 
-    test_x, test_y, test_prompts = read_dataset(test_path, prompt_id)
+    test_x, test_y, test_prompts = read_dataset(
+        test_path,
+        prompt_id,
+    )
 
     if as_list_of_tuples:
         train = list(zip(train_x, train_y))
