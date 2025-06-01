@@ -109,6 +109,25 @@ def query_the_api(model: str, prompt: str):
     return answer
 
 
+MAX_SCORE_PER_SET = {
+    1: 12,
+    2: 10,
+    3: 3,
+    4: 3,
+    5: 4,
+    6: 4,
+    7: 30,
+    8: 60,
+}
+
+
+def normalize_score(df: pd.DataFrame, essay_set: int):
+    normalizer = MAX_SCORE_PER_SET[essay_set]
+    df["score"] = df["score"] / normalizer
+    df["y_pred"] = df["y_pred"] / normalizer
+    return df
+
+
 # for large scale testing log EVERYTHING
 # so later you can make detailed analysis
 # etc bigger vs smaller text size

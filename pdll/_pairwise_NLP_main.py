@@ -21,12 +21,12 @@ scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
 # Set limit of rows for testing
 if PAIRWISE:
-    limit = 3
+    limit = 4
     limit_data = limit
     limit_baseline = limit
     reasonable = 8
 else:
-    limit = 3
+    limit = 4
     limit_data = limit
     limit_baseline = limit
     reasonable = 30
@@ -41,6 +41,7 @@ gathered_mse = 0
 
 
 def main(essay_set_ID):
+    print(f"ESSAY SET {essay_set_ID}:\n")
     data_train, data_dev, data_test = data_processing.get_data(
         FOLD_ID,
         essay_set_ID,
@@ -79,32 +80,39 @@ def main(essay_set_ID):
 
     if score_prediction is not None:
         # Compute and print error metrics
+        data_processing.normalize_score(score_prediction, essay_set_ID)
+
         y_true = score_prediction["score"]
         y_pred = score_prediction["y_pred"]
 
+        score_prediction["diff"] = y_true - y_pred
+
         mse = mean_squared_error(y_true, y_pred)
         list_mse.append(mse)
-        print(f"MSE of Set: {mse:.2f}")
+        print(f"MSE of Set: {mse:.5f}\n")
+        print(score_prediction)
+        print("\n\n")
     else:
         print("No score prediction available.")
 
 
-stop = 4
+stop = 9
 # run through all essay sets
 for i in range(1, stop):
     main(i)
 
-print("\n\nCache-Stats:\n")
+print("\nCache-Stats:\n")
 caching.print_cache_stats(PAIRWISE)
 
 # evaluation
 print("\n\nEvaluation:\n")
 for j in range(len(list_mse)):
-    print(f"MSE of Set {j+1}: {round(list_mse[j], 2)}")
+    print(f"MSE of Set: {list_mse[j]:.5f}")
     gathered_mse = gathered_mse + list_mse[j]
 
-avg_mse = round(gathered_mse / len(list_mse), 2)
-print(f"\nAverage MSE: {avg_mse}\n\n")
+avg_mse = gathered_mse / len(list_mse)
+print(f"\nAverage MSE: {avg_mse:.5f}\n\n")
+
 
 # * DONE
 # include support for the other essay sets (other rubrics)
