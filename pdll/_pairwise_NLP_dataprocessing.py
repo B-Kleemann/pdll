@@ -1,7 +1,14 @@
 import codecs
+import os
 from pathlib import Path
 
+import openai
 import pandas as pd
+from dotenv import load_dotenv
+
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = api_key
 
 
 def read_dataset(file_path, prompt_id):
@@ -84,6 +91,22 @@ def convert_to_dataframe(list_data) -> list[pd.DataFrame]:
             )
 
     return ldf
+
+
+def query_the_api(model: str, prompt: str):
+    response = openai.chat.completions.create(
+        model=model,
+        temperature=0,
+        # try put sentence actually in the prompt, not system, no separation
+        messages=[
+            {
+                "role": "user",
+                "content": prompt,
+            },
+        ],
+    )
+    answer = response.choices[0].message.content.strip()  # type: ignore
+    return answer
 
 
 # for large scale testing log EVERYTHING

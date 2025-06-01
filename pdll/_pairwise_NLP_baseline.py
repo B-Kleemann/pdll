@@ -5,6 +5,7 @@ import pandas as pd
 from dotenv import load_dotenv
 
 import pdll._pairwise_NLP_caching as caching
+from pdll._pairwise_NLP_dataprocessing import query_the_api
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
@@ -16,6 +17,8 @@ openai.api_key = api_key
 
 def get_essay_score_as_float(essay: str, rubric: str) -> float:
     prompt = f"""
+    You are an expert text comparison assistant.
+    
     Task:
     Strictly evaluate the essay according to the rubric below.
     
@@ -37,23 +40,8 @@ def get_essay_score_as_float(essay: str, rubric: str) -> float:
 
     if from_cache is None:
         try:
-            response = openai.chat.completions.create(
-                model="gpt-4o",
-                temperature=0,
-                #! remove the role split and keep the assignement in the prompt directly!
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You are an expert text comparison assistant.",
-                    },
-                    {"role": "user", "content": prompt},
-                ],
-            )
-
-            pred_score = float(response.choices[0].message.content.strip())  # type: ignore
-
+            pred_score = float(query_the_api("gpt-4o", prompt))
             caching.new_cache_entry(prompt, pred_score, False)
-
             return pred_score
 
         except (ValueError, IndexError, AttributeError) as parse_err:

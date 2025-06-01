@@ -1,18 +1,13 @@
-import os
-
-import openai
 import pandas as pd
-from dotenv import load_dotenv
 
 import pdll._pairwise_NLP_caching as caching
-
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = api_key
+from pdll._pairwise_NLP_dataprocessing import query_the_api
 
 
 def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
     prompt = f"""
+    You are an expert text comparison assistant.
+    
     Task:
     Strictly evaluate the two essays according to the rubric below.
     
@@ -35,23 +30,8 @@ def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
 
     if from_cache is None:
         try:
-            response = openai.chat.completions.create(
-                model="gpt-4o",
-                temperature=0,
-                # try put sentence actually in the prompt, not system, no separation
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You are an expert essay grading assistant.",
-                    },
-                    {"role": "user", "content": prompt},
-                ],
-            )
-
-            pred_score = int(response.choices[0].message.content.strip())  # type: ignore
-
+            pred_score = int(query_the_api("gpt-4o", prompt))
             caching.new_cache_entry(prompt, pred_score, True)
-
             return pred_score
 
         except (ValueError, IndexError, AttributeError) as parse_err:
