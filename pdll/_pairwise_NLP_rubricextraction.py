@@ -1,4 +1,9 @@
+import logging
+import logging.config
 from pathlib import Path
+
+logging.config.fileConfig("pdll\\logging.conf")
+logger = logging.getLogger("result")
 
 files_need_formatting = False
 
@@ -37,6 +42,7 @@ def get_rubric_texts_from_files() -> dict[int, str]:
                 rubric_text = rf.read()
 
             file_dict[essay_set_ID] = rubric_text
+    logger.debug("extracted rubric texts from corresponding files")
     return file_dict
 
 
@@ -51,3 +57,4 @@ def format_rubric_text_file(file: Path, keyword_list: list[str], filter: str):
                         writer.write("\n")
                 writer.write(line)
         writer.truncate()
+    logger.debug("formatted rubric text file")

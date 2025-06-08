@@ -1,8 +1,13 @@
+import logging
+import logging.config
 import os
 from datetime import datetime
 
-from anyio import Path
 import pandas as pd
+from anyio import Path
+
+logging.config.fileConfig("pdll\\logging.conf")
+logger = logging.getLogger("result")
 
 CACHE_PATH_BASELINE = "pdll\\baseline_cache.parquet"
 CACHE_PATH_PAIRWISE = "pdll\\pairwise_cache.parquet"
@@ -24,6 +29,7 @@ def load_cache(is_pairwise: bool):
         read_cache_file(cache_path, is_pairwise)
     else:
         initialize_new_cache(is_pairwise)
+    logger.debug("loaded cache")
 
 
 def read_cache_file(cache_path, is_pairwise: bool):
@@ -33,6 +39,7 @@ def read_cache_file(cache_path, is_pairwise: bool):
         cache_pairwise = cache_df
     else:
         cache_baseline = cache_df
+    logger.debug("read cache file")
 
 
 def initialize_new_cache(is_pairwise: bool):
@@ -42,6 +49,7 @@ def initialize_new_cache(is_pairwise: bool):
         cache_pairwise = cache_df
     else:
         cache_baseline = cache_df
+    logger.debug("initialized new cache")
 
 
 def save_cache(cache: pd.DataFrame, is_pairwise: bool):
@@ -50,6 +58,7 @@ def save_cache(cache: pd.DataFrame, is_pairwise: bool):
     else:
         cache_path = CACHE_PATH_BASELINE
     cache.to_parquet(cache_path, index=False)
+    logger.debug("saved cache file")
 
 
 def lookup_in_cache(prompt: str, is_pairwise: bool):
@@ -68,6 +77,7 @@ def lookup_in_cache(prompt: str, is_pairwise: bool):
             cache_stats_baseline["hits"] += 1
             return cached_row.iloc[0]["score"]
         cache_stats_baseline["misses"] += 1
+    logger.debug("looked-up prompt in cache")
 
 
 def new_cache_entry(prompt: str, score, is_pairwise: bool):
@@ -86,15 +96,16 @@ def new_cache_entry(prompt: str, score, is_pairwise: bool):
         )
         cache_baseline = pd.concat([cache_baseline, new_entry], ignore_index=True)
         save_cache(cache_baseline, is_pairwise)
+    logger.debug("created new cache entry")
 
 
 def print_cache_stats(is_pairwise: bool):
     if is_pairwise:
         cache_stats = cache_stats_pairwise
-        print("Pairwise:")
+        logger.info("Pairwise Cache-Stats:")
     else:
         cache_stats = cache_stats_baseline
-        print("Baseline:")
-
-    print(f"Cache hits: {cache_stats['hits']}")
-    print(f"Cache misses: {cache_stats['misses']}")
+        logger.info("Baseline Cache-Stats:")
+    logger.info(f"Cache hits: {cache_stats['hits']}")
+    logger.info(f"Cache misses: {cache_stats['misses']}")
+    logger.debug("printed cache stats\n")

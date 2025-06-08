@@ -1,3 +1,5 @@
+import logging
+import logging.config
 import os
 
 import openai
@@ -13,6 +15,9 @@ openai.api_key = api_key
 
 # at the end ony one plot, showing the clear difference between baseline and pairwise
 # do anaysis and draw up convincing stats that go with it
+
+logging.config.fileConfig("pdll\\logging.conf")
+logger = logging.getLogger("result")
 
 
 def get_essay_score_as_float(essay: str, rubric: str) -> float:
@@ -42,24 +47,30 @@ def get_essay_score_as_float(essay: str, rubric: str) -> float:
         try:
             pred_score = float(query_the_api("gpt-4o", prompt))
             caching.new_cache_entry(prompt, pred_score, False)
+            logger.debug("got score from new prediction")
             return pred_score
 
         except (ValueError, IndexError, AttributeError) as parse_err:
-            raise RuntimeError(f"Failed to parse score difference: {parse_err}")
+            raise RuntimeError(
+                logger.exception(f"Failed to parse score difference: {parse_err}")
+            )
 
         except Exception as api_err:
-            raise RuntimeError(f"OpenAI API call failed: {api_err}")
+            raise RuntimeError(logger.exception(f"OpenAI API call failed: {api_err}"))
 
     else:
+        logger.debug("got score from cache")
         return float(from_cache)
 
 
 def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
     caching.load_cache(False)
+    logger.info("score prediction started")
 
     predictions = []
 
     for i, row_i in test_data.iterrows():
+        logger.info(f"Datapoint {i}")
         try:
             # the score here is predicted and then doubled to mimic the composition of the original score (the sum of two single scores by two different experts)
             score_pred_1 = get_essay_score_as_float(row_i["essay"], rubric)
@@ -68,10 +79,10 @@ def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
             predictions.append(score_pred)
 
         except RuntimeError:
-            continue
+            raise RuntimeError(logger.exception(f"prediction failed"))
 
     test_data["y_pred"] = predictions
-
+    logger.info("predicted scores solo")
     return test_data
 
 

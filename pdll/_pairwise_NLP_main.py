@@ -1,3 +1,6 @@
+import logging
+import logging.config
+
 import pandas as pd
 from sklearn.metrics import mean_squared_error
 
@@ -7,11 +10,19 @@ import pdll._pairwise_NLP_caching as caching
 import pdll._pairwise_NLP_dataprocessing as data_processing
 import pdll._pairwise_NLP_rubricextraction as rubric_extraction
 
+logging.config.fileConfig("pdll\\logging.conf")
+logger = logging.getLogger("result")
+
 # Set control variables
 TESTING = True
-PAIRWISE = True
+PAIRWISE = False
+START_AT_ESSAY_SET = 1
+STOP_AT_ESSAY_SET = 8
 SEED = 81
 FOLD_ID = 1
+logger.debug(
+    f"pairwise: {PAIRWISE}; testing: {TESTING}; random seed: {SEED}; fold ID: {FOLD_ID}"
+)
 
 # Set variables for data
 as_list_of_tuples = True
@@ -19,21 +30,21 @@ as_list_of_tuples = True
 # Load scoring rubrics
 scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
+logger.info(f"Run through essay sets {START_AT_ESSAY_SET} to {STOP_AT_ESSAY_SET}")
+
 # Set limit of rows for testing
 if PAIRWISE:
-    limit = 4
+    limit = 2
     limit_data = limit
     limit_baseline = limit
     reasonable = 8
+    logger.info("Mode: Pairwise\n")
 else:
     limit = 4
     limit_data = limit
     limit_baseline = limit
     reasonable = 30
-
-assert limit > 0, "Limit must be greater than 0."
-# assert limit < len(data_train), "Limit exceeds number of rows in dataset."
-assert limit <= reasonable, "Limit exceeds number of reasonable rows."
+    logger.info("Mode: Solo\n")
 
 # set up variable for collecting results
 list_mse = []
@@ -41,7 +52,7 @@ gathered_mse = 0
 
 
 def main(essay_set_ID):
-    print(f"ESSAY SET {essay_set_ID}:\n")
+    logger.info(f"ESSAY SET {essay_set_ID}:\n")
     data_train, data_dev, data_test = data_processing.get_data(
         FOLD_ID,
         essay_set_ID,
@@ -55,12 +66,19 @@ def main(essay_set_ID):
 
     if TESTING:
         #! limits data for development and testing
+        assert limit > 0, logger.warning(
+            "Limit for data reduction must be greater than 0."
+        )
+        assert limit <= reasonable, logger.warning(
+            "Limit for data reduction exceeds number of reasonable rows."
+        )
         # use random sample for testing
         data_train, data_dev, data_test = (
             data_train.sample(limit_baseline, random_state=SEED),
             data_dev.sample(limit_data, random_state=SEED),
             data_test.sample(limit, random_state=SEED),
         )
+        logger.info("amount of datapoints was limited due to active testing")
 
     score_prediction = None
     if PAIRWISE:
@@ -89,29 +107,28 @@ def main(essay_set_ID):
 
         mse = mean_squared_error(y_true, y_pred)
         list_mse.append(mse)
-        print(f"MSE of Set: {mse:.5f}\n")
-        print(score_prediction)
-        print("\n\n")
+        logger.info(f"MSE of Set: {mse:.5f}\n")
+        logger.debug(f"\n{score_prediction}\n\n\n")
     else:
-        print("No score prediction available.")
+        logger.info("No score prediction available.")
 
 
-stop = 9
-# run through all essay sets
-for i in range(1, stop):
+for i in range(START_AT_ESSAY_SET, STOP_AT_ESSAY_SET + 1):
     main(i)
 
-print("\nCache-Stats:\n")
 caching.print_cache_stats(PAIRWISE)
 
 # evaluation
-print("\n\nEvaluation:\n")
-for j in range(len(list_mse)):
-    print(f"MSE of Set: {list_mse[j]:.5f}")
-    gathered_mse = gathered_mse + list_mse[j]
+logger.info("Evaluation:")
+for j in range(START_AT_ESSAY_SET, STOP_AT_ESSAY_SET + 1):
+    logger.info(f"MSE of Set {j}: {list_mse[j - 1]:.5f}")
+    gathered_mse += list_mse[j - 1]
 
 avg_mse = gathered_mse / len(list_mse)
-print(f"\nAverage MSE: {avg_mse:.5f}\n\n")
+logger.info(f"Average MSE: {avg_mse:.5f}\n")
+logger.info(
+    "-----------------------------------------------------------------\n\n\n\n\n"
+)
 
 
 # * DONE

@@ -1,4 +1,6 @@
 import codecs
+import logging
+import logging.config
 import os
 from pathlib import Path
 
@@ -9,6 +11,9 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
+
+logging.config.fileConfig("pdll\\logging.conf")
+logger = logging.getLogger("result")
 
 
 def read_dataset(file_path, prompt_id):
@@ -33,7 +38,7 @@ def read_dataset(file_path, prompt_id):
                 data_x.append(content)
                 data_y.append(score)
                 prompt_ids.append(essay_set)
-
+    logger.debug("read dataset and split off target variable")
     return data_x, data_y, prompt_ids
 
 
@@ -69,11 +74,11 @@ def get_data(fold_id, prompt_id, as_list_of_tuples):
         dev = (dev_x, dev_y)
         test = (test_x, test_y)
 
+    logger.debug("split data in train, dev, test set")
     return train, dev, test
 
 
 def convert_to_dataframe(list_data) -> list[pd.DataFrame]:
-
     ldf = []
 
     for data in list_data:
@@ -89,7 +94,7 @@ def convert_to_dataframe(list_data) -> list[pd.DataFrame]:
             raise ValueError(
                 "Invalid data format. Expected list of tuples or tuple of lists."
             )
-
+    logger.debug("converted list of datasets to list of dataframes")
     return ldf
 
 
@@ -106,6 +111,7 @@ def query_the_api(model: str, prompt: str):
         ],
     )
     answer = response.choices[0].message.content.strip()  # type: ignore
+    logger.debug("queried the API")
     return answer
 
 
@@ -125,6 +131,7 @@ def normalize_score(df: pd.DataFrame, essay_set: int):
     normalizer = MAX_SCORE_PER_SET[essay_set]
     df["score"] = df["score"] / normalizer
     df["y_pred"] = df["y_pred"] / normalizer
+    logger.debug("normalized score with the corresponding max value")
     return df
 
 
