@@ -1,0 +1,2170 @@
+2025-06-08 01:22:32,856 - result - DEBUG - random seed: 81; fold ID: 1
+2025-06-08 01:22:32,856 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 01:22:32,856 - result - INFO - Mode: Pairwise
+
+2025-06-08 01:22:32,856 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-08 01:22:32,856 - result - INFO - ESSAY SET 1:
+
+2025-06-08 01:22:33,036 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:22:33,084 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:22:33,150 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:22:33,151 - result - DEBUG - split data in train, dev, test set
+2025-06-08 01:22:33,151 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 01:22:33,151 - result - INFO - data limited due to active testing
+2025-06-08 01:22:33,219 - result - DEBUG - read cache file
+2025-06-08 01:22:33,219 - result - DEBUG - loaded cache
+2025-06-08 01:22:33,219 - result - INFO - score prediction started
+2025-06-08 01:22:33,219 - result - INFO - Datapoint 251 & Datapoint 309
+2025-06-08 01:22:33,219 - result - DEBUG - got score from cache
+2025-06-08 01:22:33,219 - result - INFO - Diff: 0
+2025-06-08 01:22:33,219 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:22:33,219 - result - INFO - Score prediction: 8
+2025-06-08 01:22:33,219 - result - INFO - Datapoint 251 & Datapoint 104
+2025-06-08 01:22:33,219 - result - DEBUG - got score from cache
+2025-06-08 01:22:33,219 - result - INFO - Diff: 1
+2025-06-08 01:22:33,219 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:22:33,219 - result - INFO - Score prediction: 11
+2025-06-08 01:22:33,219 - result - INFO - Avg score for essay 251: 10
+2025-06-08 01:22:33,219 - result - INFO - Datapoint 273 & Datapoint 309
+2025-06-08 01:22:33,219 - result - DEBUG - got score from cache
+2025-06-08 01:22:33,219 - result - INFO - Diff: 0
+2025-06-08 01:22:33,219 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:22:33,219 - result - INFO - Score prediction: 8
+2025-06-08 01:22:33,219 - result - INFO - Datapoint 273 & Datapoint 104
+2025-06-08 01:22:33,219 - result - DEBUG - got score from cache
+2025-06-08 01:22:33,219 - result - INFO - Diff: 0
+2025-06-08 01:22:33,219 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:22:33,219 - result - INFO - Score prediction: 10
+2025-06-08 01:22:33,219 - result - INFO - Avg score for essay 273: 9
+2025-06-08 01:22:33,219 - result - DEBUG - predicted scores pairwise
+2025-06-08 01:22:33,219 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 01:22:33,219 - result - INFO - MSE of Set: 0.04514
+
+2025-06-08 01:22:33,235 - result - DEBUG -                                                  essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.833333 -0.166667
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.750000  0.250000
+
+2025-06-08 01:22:33,235 - result - INFO - Pairwise Cache-Stats:
+2025-06-08 01:22:33,235 - result - INFO - Cache hits: 4
+2025-06-08 01:22:33,235 - result - INFO - Cache misses: 0
+2025-06-08 01:22:33,235 - result - DEBUG - printed cache stats
+
+2025-06-08 01:22:33,235 - result - INFO - Evaluation:
+2025-06-08 01:22:33,235 - result - INFO - MSE of Set: 0.04514
+2025-06-08 01:22:33,235 - result - INFO - Average MSE: 0.04514
+2025-06-08 01:22:33,235 - result - INFO - 
+-------------------------------------------------------------------------------
+
+
+2025-06-08 01:51:13,826 - result - DEBUG - pairwise: True; testing: True; random seed: 81; fold ID: 1
+2025-06-08 01:51:13,826 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 01:51:13,826 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-08 01:51:13,826 - result - INFO - Mode: Pairwise
+
+2025-06-08 01:51:13,826 - result - INFO - ESSAY SET 1:
+
+2025-06-08 01:51:14,057 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:51:14,129 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:51:14,166 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:51:14,166 - result - DEBUG - split data in train, dev, test set
+2025-06-08 01:51:14,166 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 01:51:14,166 - result - INFO - data limited due to active testing
+2025-06-08 01:51:14,243 - result - DEBUG - read cache file
+2025-06-08 01:51:14,243 - result - DEBUG - loaded cache
+2025-06-08 01:51:14,243 - result - INFO - score prediction started
+2025-06-08 01:51:14,243 - result - INFO - Datapoint 251 & Datapoint 309
+2025-06-08 01:51:14,243 - result - DEBUG - got score from cache
+2025-06-08 01:51:14,243 - result - INFO - Diff: 0
+2025-06-08 01:51:14,243 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:51:14,243 - result - INFO - Score prediction: 8
+2025-06-08 01:51:14,243 - result - INFO - Datapoint 251 & Datapoint 104
+2025-06-08 01:51:14,243 - result - DEBUG - got score from cache
+2025-06-08 01:51:14,243 - result - INFO - Diff: 1
+2025-06-08 01:51:14,243 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:51:14,243 - result - INFO - Score prediction: 11
+2025-06-08 01:51:14,243 - result - INFO - Avg score for essay 251: 10
+
+2025-06-08 01:51:14,243 - result - INFO - Datapoint 273 & Datapoint 309
+2025-06-08 01:51:14,243 - result - DEBUG - got score from cache
+2025-06-08 01:51:14,243 - result - INFO - Diff: 0
+2025-06-08 01:51:14,243 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:51:14,243 - result - INFO - Score prediction: 8
+2025-06-08 01:51:14,243 - result - INFO - Datapoint 273 & Datapoint 104
+2025-06-08 01:51:14,243 - result - DEBUG - got score from cache
+2025-06-08 01:51:14,243 - result - INFO - Diff: 0
+2025-06-08 01:51:14,243 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:51:14,243 - result - INFO - Score prediction: 10
+2025-06-08 01:51:14,243 - result - INFO - Avg score for essay 273: 9
+
+2025-06-08 01:51:14,243 - result - DEBUG - predicted scores pairwise
+2025-06-08 01:51:14,243 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 01:51:14,243 - result - INFO - MSE of Set: 0.04514
+
+2025-06-08 01:51:14,243 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.833333 -0.166667
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.750000  0.250000
+
+2025-06-08 01:51:14,243 - result - INFO - Pairwise Cache-Stats:
+2025-06-08 01:51:14,243 - result - INFO - Cache hits: 4
+2025-06-08 01:51:14,243 - result - INFO - Cache misses: 0
+2025-06-08 01:51:14,243 - result - DEBUG - printed cache stats
+
+2025-06-08 01:51:14,243 - result - INFO - Evaluation:
+2025-06-08 01:52:00,434 - result - DEBUG - pairwise: True; testing: True; random seed: 81; fold ID: 1
+2025-06-08 01:52:00,446 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 01:52:00,446 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-08 01:52:00,446 - result - INFO - Mode: Pairwise
+
+2025-06-08 01:52:00,446 - result - INFO - ESSAY SET 1:
+
+2025-06-08 01:52:00,569 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:52:00,612 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:52:00,674 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:52:00,676 - result - DEBUG - split data in train, dev, test set
+2025-06-08 01:52:00,677 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 01:52:00,680 - result - INFO - data limited due to active testing
+2025-06-08 01:52:00,781 - result - DEBUG - read cache file
+2025-06-08 01:52:00,781 - result - DEBUG - loaded cache
+2025-06-08 01:52:00,782 - result - INFO - score prediction started
+2025-06-08 01:52:00,783 - result - INFO - Datapoint 251 & Datapoint 309
+2025-06-08 01:52:00,786 - result - DEBUG - got score from cache
+2025-06-08 01:52:00,787 - result - INFO - Diff: 0
+2025-06-08 01:52:00,787 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:52:00,787 - result - INFO - Score prediction: 8
+2025-06-08 01:52:00,788 - result - INFO - Datapoint 251 & Datapoint 104
+2025-06-08 01:52:00,789 - result - DEBUG - got score from cache
+2025-06-08 01:52:00,789 - result - INFO - Diff: 1
+2025-06-08 01:52:00,789 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:52:00,789 - result - INFO - Score prediction: 11
+2025-06-08 01:52:00,789 - result - INFO - Avg score for essay 251: 10
+
+2025-06-08 01:52:00,790 - result - INFO - Datapoint 273 & Datapoint 309
+2025-06-08 01:52:00,790 - result - DEBUG - got score from cache
+2025-06-08 01:52:00,791 - result - INFO - Diff: 0
+2025-06-08 01:52:00,791 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:52:00,791 - result - INFO - Score prediction: 8
+2025-06-08 01:52:00,791 - result - INFO - Datapoint 273 & Datapoint 104
+2025-06-08 01:52:00,792 - result - DEBUG - got score from cache
+2025-06-08 01:52:00,792 - result - INFO - Diff: 0
+2025-06-08 01:52:00,792 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:52:00,792 - result - INFO - Score prediction: 10
+2025-06-08 01:52:00,792 - result - INFO - Avg score for essay 273: 9
+
+2025-06-08 01:52:00,793 - result - DEBUG - predicted scores pairwise
+2025-06-08 01:52:00,794 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 01:52:00,796 - result - INFO - MSE of Set: 0.04514
+
+2025-06-08 01:52:00,813 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.833333 -0.166667
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.750000  0.250000
+
+2025-06-08 01:52:00,814 - result - INFO - Pairwise Cache-Stats:
+2025-06-08 01:52:00,814 - result - INFO - Cache hits: 4
+2025-06-08 01:52:00,814 - result - INFO - Cache misses: 0
+2025-06-08 01:52:00,814 - result - DEBUG - printed cache stats
+
+2025-06-08 01:52:00,814 - result - INFO - Evaluation:
+2025-06-08 01:52:00,814 - result - INFO - MSE of Set 1: 0.04514
+2025-06-08 01:52:22,946 - result - DEBUG - pairwise: True; testing: True; random seed: 81; fold ID: 1
+2025-06-08 01:52:22,962 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 01:52:22,962 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-08 01:52:22,962 - result - INFO - Mode: Pairwise
+
+2025-06-08 01:52:22,962 - result - INFO - ESSAY SET 1:
+
+2025-06-08 01:52:23,069 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:52:23,096 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:52:23,128 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:52:23,128 - result - DEBUG - split data in train, dev, test set
+2025-06-08 01:52:23,128 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 01:52:23,143 - result - INFO - data limited due to active testing
+2025-06-08 01:52:23,206 - result - DEBUG - read cache file
+2025-06-08 01:52:23,206 - result - DEBUG - loaded cache
+2025-06-08 01:52:23,206 - result - INFO - score prediction started
+2025-06-08 01:52:23,206 - result - INFO - Datapoint 251 & Datapoint 309
+2025-06-08 01:52:23,206 - result - DEBUG - got score from cache
+2025-06-08 01:52:23,206 - result - INFO - Diff: 0
+2025-06-08 01:52:23,206 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:52:23,206 - result - INFO - Score prediction: 8
+2025-06-08 01:52:23,206 - result - INFO - Datapoint 251 & Datapoint 104
+2025-06-08 01:52:23,206 - result - DEBUG - got score from cache
+2025-06-08 01:52:23,206 - result - INFO - Diff: 1
+2025-06-08 01:52:23,206 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:52:23,206 - result - INFO - Score prediction: 11
+2025-06-08 01:52:23,206 - result - INFO - Avg score for essay 251: 10
+
+2025-06-08 01:52:23,206 - result - INFO - Datapoint 273 & Datapoint 309
+2025-06-08 01:52:23,206 - result - DEBUG - got score from cache
+2025-06-08 01:52:23,206 - result - INFO - Diff: 0
+2025-06-08 01:52:23,206 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:52:23,206 - result - INFO - Score prediction: 8
+2025-06-08 01:52:23,206 - result - INFO - Datapoint 273 & Datapoint 104
+2025-06-08 01:52:23,206 - result - DEBUG - got score from cache
+2025-06-08 01:52:23,206 - result - INFO - Diff: 0
+2025-06-08 01:52:23,206 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:52:23,206 - result - INFO - Score prediction: 10
+2025-06-08 01:52:23,206 - result - INFO - Avg score for essay 273: 9
+
+2025-06-08 01:52:23,206 - result - DEBUG - predicted scores pairwise
+2025-06-08 01:52:23,206 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 01:52:23,222 - result - INFO - MSE of Set: 0.04514
+
+2025-06-08 01:52:23,233 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.833333 -0.166667
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.750000  0.250000
+
+2025-06-08 01:52:23,233 - result - INFO - Pairwise Cache-Stats:
+2025-06-08 01:52:23,233 - result - INFO - Cache hits: 4
+2025-06-08 01:52:23,234 - result - INFO - Cache misses: 0
+2025-06-08 01:52:23,234 - result - DEBUG - printed cache stats
+
+2025-06-08 01:52:23,234 - result - INFO - Evaluation:
+2025-06-08 01:52:23,234 - result - INFO - MSE of Set 1: 0.04514
+2025-06-08 01:52:57,746 - result - DEBUG - pairwise: True; testing: True; random seed: 81; fold ID: 1
+2025-06-08 01:52:57,746 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 01:52:57,746 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-08 01:52:57,746 - result - INFO - Mode: Pairwise
+
+2025-06-08 01:52:57,746 - result - INFO - ESSAY SET 1:
+
+2025-06-08 01:52:57,864 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:52:57,895 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:52:57,926 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:52:57,926 - result - DEBUG - split data in train, dev, test set
+2025-06-08 01:52:57,926 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 01:52:57,943 - result - INFO - data limited due to active testing
+2025-06-08 01:52:57,996 - result - DEBUG - read cache file
+2025-06-08 01:52:57,996 - result - DEBUG - loaded cache
+2025-06-08 01:52:57,996 - result - INFO - score prediction started
+2025-06-08 01:52:57,996 - result - INFO - Datapoint 251 & Datapoint 309
+2025-06-08 01:52:57,996 - result - DEBUG - got score from cache
+2025-06-08 01:52:57,996 - result - INFO - Diff: 0
+2025-06-08 01:52:57,996 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:52:57,996 - result - INFO - Score prediction: 8
+2025-06-08 01:52:57,996 - result - INFO - Datapoint 251 & Datapoint 104
+2025-06-08 01:52:57,996 - result - DEBUG - got score from cache
+2025-06-08 01:52:57,996 - result - INFO - Diff: 1
+2025-06-08 01:52:57,996 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:52:57,996 - result - INFO - Score prediction: 11
+2025-06-08 01:52:57,996 - result - INFO - Avg score for essay 251: 10
+
+2025-06-08 01:52:57,996 - result - INFO - Datapoint 273 & Datapoint 309
+2025-06-08 01:52:57,996 - result - DEBUG - got score from cache
+2025-06-08 01:52:57,996 - result - INFO - Diff: 0
+2025-06-08 01:52:57,996 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:52:57,996 - result - INFO - Score prediction: 8
+2025-06-08 01:52:57,996 - result - INFO - Datapoint 273 & Datapoint 104
+2025-06-08 01:52:57,996 - result - DEBUG - got score from cache
+2025-06-08 01:52:57,996 - result - INFO - Diff: 0
+2025-06-08 01:52:57,996 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:52:57,996 - result - INFO - Score prediction: 10
+2025-06-08 01:52:57,996 - result - INFO - Avg score for essay 273: 9
+
+2025-06-08 01:52:58,012 - result - DEBUG - predicted scores pairwise
+2025-06-08 01:52:58,012 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 01:52:58,012 - result - INFO - MSE of Set: 0.04514
+
+2025-06-08 01:52:58,012 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.833333 -0.166667
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.750000  0.250000
+
+2025-06-08 01:52:58,012 - result - INFO - Pairwise Cache-Stats:
+2025-06-08 01:52:58,012 - result - INFO - Cache hits: 4
+2025-06-08 01:52:58,012 - result - INFO - Cache misses: 0
+2025-06-08 01:52:58,012 - result - DEBUG - printed cache stats
+
+2025-06-08 01:52:58,012 - result - INFO - Evaluation:
+2025-06-08 01:52:58,012 - result - INFO - MSE of Set 1: 0.04514
+2025-06-08 01:52:58,012 - result - INFO - Average MSE: 0.04514
+2025-06-08 01:52:58,012 - result - INFO - -------------------------------------------------------------------------------
+
+
+2025-06-08 01:59:51,077 - result - DEBUG - pairwise: True; testing: True; random seed: 81; fold ID: 1
+2025-06-08 01:59:51,081 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 01:59:51,081 - result - INFO - Run through essay sets 1 to 1
+2025-06-08 01:59:51,081 - result - INFO - Mode: Pairwise
+
+2025-06-08 01:59:51,081 - result - INFO - ESSAY SET 1:
+
+2025-06-08 01:59:51,182 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:59:51,229 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:59:51,267 - result - DEBUG - read dataset and split off target variable
+2025-06-08 01:59:51,268 - result - DEBUG - split data in train, dev, test set
+2025-06-08 01:59:51,269 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 01:59:51,271 - result - INFO - data limited due to active testing
+2025-06-08 01:59:51,318 - result - DEBUG - read cache file
+2025-06-08 01:59:51,318 - result - DEBUG - loaded cache
+2025-06-08 01:59:51,318 - result - INFO - score prediction started
+
+2025-06-08 01:59:51,318 - result - INFO - Datapoint 251 & Datapoint 309
+2025-06-08 01:59:51,318 - result - DEBUG - got score from cache
+2025-06-08 01:59:51,318 - result - INFO - Diff: 0
+2025-06-08 01:59:51,318 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:59:51,318 - result - INFO - Score prediction: 8
+2025-06-08 01:59:51,318 - result - INFO - Datapoint 251 & Datapoint 104
+2025-06-08 01:59:51,318 - result - DEBUG - got score from cache
+2025-06-08 01:59:51,318 - result - INFO - Diff: 1
+2025-06-08 01:59:51,318 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:59:51,318 - result - INFO - Score prediction: 11
+2025-06-08 01:59:51,318 - result - INFO - Avg score for essay 251: 10
+
+2025-06-08 01:59:51,318 - result - INFO - Datapoint 273 & Datapoint 309
+2025-06-08 01:59:51,318 - result - DEBUG - got score from cache
+2025-06-08 01:59:51,318 - result - INFO - Diff: 0
+2025-06-08 01:59:51,318 - result - INFO - Score of baseline essay: 8
+2025-06-08 01:59:51,318 - result - INFO - Score prediction: 8
+2025-06-08 01:59:51,318 - result - INFO - Datapoint 273 & Datapoint 104
+2025-06-08 01:59:51,318 - result - DEBUG - got score from cache
+2025-06-08 01:59:51,318 - result - INFO - Diff: 0
+2025-06-08 01:59:51,318 - result - INFO - Score of baseline essay: 10
+2025-06-08 01:59:51,318 - result - INFO - Score prediction: 10
+2025-06-08 01:59:51,318 - result - INFO - Avg score for essay 273: 9
+
+2025-06-08 01:59:51,318 - result - DEBUG - predicted scores pairwise
+2025-06-08 01:59:51,318 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 01:59:51,318 - result - INFO - MSE of Set: 0.04514
+
+2025-06-08 01:59:51,334 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.833333 -0.166667
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.750000  0.250000
+
+2025-06-08 01:59:51,334 - result - INFO - Pairwise Cache-Stats:
+2025-06-08 01:59:51,334 - result - INFO - Cache hits: 4
+2025-06-08 01:59:51,334 - result - INFO - Cache misses: 0
+2025-06-08 01:59:51,334 - result - DEBUG - printed cache stats
+
+2025-06-08 01:59:51,334 - result - INFO - Evaluation:
+2025-06-08 01:59:51,334 - result - INFO - MSE of Set 1: 0.04514
+2025-06-08 01:59:51,334 - result - INFO - Average MSE: 0.04514
+2025-06-08 01:59:51,334 - result - INFO - -----------------------------------------------------------------
+
+
+2025-06-08 02:04:10,296 - result - DEBUG - pairwise: True; testing: True; random seed: 81; fold ID: 1
+2025-06-08 02:04:10,296 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 02:04:10,296 - result - INFO - Run through essay sets 1 to 8
+2025-06-08 02:04:10,296 - result - INFO - Mode: Pairwise
+
+2025-06-08 02:04:10,296 - result - INFO - ESSAY SET 1:
+
+2025-06-08 02:04:10,406 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:10,454 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:10,484 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:10,484 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:04:10,484 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:04:10,484 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:04:10,590 - result - DEBUG - read cache file
+2025-06-08 02:04:10,591 - result - DEBUG - loaded cache
+2025-06-08 02:04:10,591 - result - INFO - score prediction started
+
+2025-06-08 02:04:10,592 - result - INFO - Datapoint 251 & Datapoint 309
+2025-06-08 02:04:10,594 - result - DEBUG - got score from cache
+2025-06-08 02:04:10,594 - result - INFO - Diff: 0
+2025-06-08 02:04:10,594 - result - INFO - Score of baseline essay: 8
+2025-06-08 02:04:10,594 - result - INFO - Score prediction: 8
+2025-06-08 02:04:10,595 - result - INFO - Datapoint 251 & Datapoint 104
+2025-06-08 02:04:10,596 - result - DEBUG - got score from cache
+2025-06-08 02:04:10,596 - result - INFO - Diff: 1
+2025-06-08 02:04:10,596 - result - INFO - Score of baseline essay: 10
+2025-06-08 02:04:10,596 - result - INFO - Score prediction: 11
+2025-06-08 02:04:10,596 - result - INFO - Avg score for essay 251: 10
+
+2025-06-08 02:04:10,597 - result - INFO - Datapoint 273 & Datapoint 309
+2025-06-08 02:04:10,598 - result - DEBUG - got score from cache
+2025-06-08 02:04:10,598 - result - INFO - Diff: 0
+2025-06-08 02:04:10,598 - result - INFO - Score of baseline essay: 8
+2025-06-08 02:04:10,599 - result - INFO - Score prediction: 8
+2025-06-08 02:04:10,599 - result - INFO - Datapoint 273 & Datapoint 104
+2025-06-08 02:04:10,600 - result - DEBUG - got score from cache
+2025-06-08 02:04:10,600 - result - INFO - Diff: 0
+2025-06-08 02:04:10,601 - result - INFO - Score of baseline essay: 10
+2025-06-08 02:04:10,601 - result - INFO - Score prediction: 10
+2025-06-08 02:04:10,601 - result - INFO - Avg score for essay 273: 9
+
+2025-06-08 02:04:10,601 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:04:10,601 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:04:10,601 - result - INFO - MSE of Set: 0.04514
+
+2025-06-08 02:04:10,617 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.833333 -0.166667
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.750000  0.250000
+
+2025-06-08 02:04:10,617 - result - INFO - ESSAY SET 2:
+
+2025-06-08 02:04:10,734 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:10,765 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:10,797 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:10,797 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:04:10,797 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:04:10,797 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:04:10,812 - result - DEBUG - read cache file
+2025-06-08 02:04:10,812 - result - DEBUG - loaded cache
+2025-06-08 02:04:10,812 - result - INFO - score prediction started
+
+2025-06-08 02:04:10,812 - result - INFO - Datapoint 249 & Datapoint 959
+2025-06-08 02:04:10,812 - result - DEBUG - got score from cache
+2025-06-08 02:04:10,812 - result - INFO - Diff: 0
+2025-06-08 02:04:10,812 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:04:10,812 - result - INFO - Score prediction: 6
+2025-06-08 02:04:10,812 - result - INFO - Datapoint 249 & Datapoint 40
+2025-06-08 02:04:10,812 - result - DEBUG - got score from cache
+2025-06-08 02:04:10,812 - result - INFO - Diff: 0
+2025-06-08 02:04:10,812 - result - INFO - Score of baseline essay: 8
+2025-06-08 02:04:10,812 - result - INFO - Score prediction: 8
+2025-06-08 02:04:10,812 - result - INFO - Avg score for essay 249: 7
+
+2025-06-08 02:04:10,812 - result - INFO - Datapoint 108 & Datapoint 959
+2025-06-08 02:04:10,812 - result - DEBUG - got score from cache
+2025-06-08 02:04:10,812 - result - INFO - Diff: 0
+2025-06-08 02:04:10,812 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:04:10,812 - result - INFO - Score prediction: 6
+2025-06-08 02:04:10,812 - result - INFO - Datapoint 108 & Datapoint 40
+2025-06-08 02:04:10,812 - result - DEBUG - got score from cache
+2025-06-08 02:04:10,812 - result - INFO - Diff: 0
+2025-06-08 02:04:10,812 - result - INFO - Score of baseline essay: 8
+2025-06-08 02:04:10,812 - result - INFO - Score prediction: 8
+2025-06-08 02:04:10,812 - result - INFO - Avg score for essay 108: 7
+
+2025-06-08 02:04:10,812 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:04:10,812 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:04:10,812 - result - INFO - MSE of Set: 0.00500
+
+2025-06-08 02:04:10,812 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+249  "Censorship in libraries? Is it a problem? Sho...    0.8     0.7   0.1
+108  "My views on cencorship @MONTH1 not  be what o...    0.7     0.7   0.0
+
+2025-06-08 02:04:10,812 - result - INFO - ESSAY SET 3:
+
+2025-06-08 02:04:10,922 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:10,969 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,017 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,017 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:04:11,017 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:04:11,017 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:04:11,033 - result - DEBUG - read cache file
+2025-06-08 02:04:11,033 - result - DEBUG - loaded cache
+2025-06-08 02:04:11,033 - result - INFO - score prediction started
+
+2025-06-08 02:04:11,033 - result - INFO - Datapoint 99 & Datapoint 839
+2025-06-08 02:04:11,033 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,033 - result - INFO - Diff: 1
+2025-06-08 02:04:11,033 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:04:11,033 - result - INFO - Score prediction: 4
+2025-06-08 02:04:11,033 - result - INFO - Datapoint 99 & Datapoint 848
+2025-06-08 02:04:11,033 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,033 - result - INFO - Diff: 1
+2025-06-08 02:04:11,033 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:04:11,033 - result - INFO - Score prediction: 3
+2025-06-08 02:04:11,033 - result - INFO - Avg score for essay 99: 4
+
+2025-06-08 02:04:11,033 - result - INFO - Datapoint 303 & Datapoint 839
+2025-06-08 02:04:11,033 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,033 - result - INFO - Diff: 1
+2025-06-08 02:04:11,033 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:04:11,033 - result - INFO - Score prediction: 4
+2025-06-08 02:04:11,033 - result - INFO - Datapoint 303 & Datapoint 848
+2025-06-08 02:04:11,033 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,033 - result - INFO - Diff: 1
+2025-06-08 02:04:11,033 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:04:11,033 - result - INFO - Score prediction: 3
+2025-06-08 02:04:11,033 - result - INFO - Avg score for essay 303: 4
+
+2025-06-08 02:04:11,033 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:04:11,033 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:04:11,033 - result - INFO - MSE of Set: 0.72222
+
+2025-06-08 02:04:11,033 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+99   "In the story the setting has a large affect o...  0.666667  1.333333 -0.666667
+303  "The cyclist is most affected by e heat. He is...  0.333333  1.333333 -1.000000
+
+2025-06-08 02:04:11,033 - result - INFO - ESSAY SET 4:
+
+2025-06-08 02:04:11,147 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,179 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,227 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,227 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:04:11,228 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:04:11,229 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:04:11,234 - result - DEBUG - read cache file
+2025-06-08 02:04:11,234 - result - DEBUG - loaded cache
+2025-06-08 02:04:11,234 - result - INFO - score prediction started
+
+2025-06-08 02:04:11,234 - result - INFO - Datapoint 249 & Datapoint 289
+2025-06-08 02:04:11,234 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,234 - result - INFO - Diff: 0
+2025-06-08 02:04:11,234 - result - INFO - Score of baseline essay: 1
+2025-06-08 02:04:11,234 - result - INFO - Score prediction: 1
+2025-06-08 02:04:11,234 - result - INFO - Datapoint 249 & Datapoint 686
+2025-06-08 02:04:11,234 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,234 - result - INFO - Diff: 0
+2025-06-08 02:04:11,234 - result - INFO - Score of baseline essay: 1
+2025-06-08 02:04:11,234 - result - INFO - Score prediction: 1
+2025-06-08 02:04:11,234 - result - INFO - Avg score for essay 249: 1
+
+2025-06-08 02:04:11,234 - result - INFO - Datapoint 354 & Datapoint 289
+2025-06-08 02:04:11,234 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,234 - result - INFO - Diff: 1
+2025-06-08 02:04:11,234 - result - INFO - Score of baseline essay: 1
+2025-06-08 02:04:11,234 - result - INFO - Score prediction: 2
+2025-06-08 02:04:11,234 - result - INFO - Datapoint 354 & Datapoint 686
+2025-06-08 02:04:11,234 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,234 - result - INFO - Diff: 1
+2025-06-08 02:04:11,234 - result - INFO - Score of baseline essay: 1
+2025-06-08 02:04:11,234 - result - INFO - Score prediction: 2
+2025-06-08 02:04:11,234 - result - INFO - Avg score for essay 354: 2
+
+2025-06-08 02:04:11,234 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:04:11,234 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:04:11,234 - result - INFO - MSE of Set: 0.05556
+
+2025-06-08 02:04:11,234 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+249  "Yes, I do think that this concludes the story...  0.000000  0.333333 -0.333333
+354  "The author concludes the story with the parag...  0.666667  0.666667  0.000000
+
+2025-06-08 02:04:11,234 - result - INFO - ESSAY SET 5:
+
+2025-06-08 02:04:11,344 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,390 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,422 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,422 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:04:11,422 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:04:11,422 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:04:11,422 - result - DEBUG - read cache file
+2025-06-08 02:04:11,422 - result - DEBUG - loaded cache
+2025-06-08 02:04:11,422 - result - INFO - score prediction started
+
+2025-06-08 02:04:11,422 - result - INFO - Datapoint 250 & Datapoint 592
+2025-06-08 02:04:11,422 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,422 - result - INFO - Diff: 1
+2025-06-08 02:04:11,422 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:04:11,422 - result - INFO - Score prediction: 3
+2025-06-08 02:04:11,422 - result - INFO - Datapoint 250 & Datapoint 336
+2025-06-08 02:04:11,437 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,437 - result - INFO - Diff: 0
+2025-06-08 02:04:11,437 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:04:11,437 - result - INFO - Score prediction: 2
+2025-06-08 02:04:11,437 - result - INFO - Avg score for essay 250: 2
+
+2025-06-08 02:04:11,437 - result - INFO - Datapoint 108 & Datapoint 592
+2025-06-08 02:04:11,437 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,437 - result - INFO - Diff: 1
+2025-06-08 02:04:11,437 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:04:11,437 - result - INFO - Score prediction: 3
+2025-06-08 02:04:11,437 - result - INFO - Datapoint 108 & Datapoint 336
+2025-06-08 02:04:11,437 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,437 - result - INFO - Diff: 1
+2025-06-08 02:04:11,437 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:04:11,437 - result - INFO - Score prediction: 3
+2025-06-08 02:04:11,437 - result - INFO - Avg score for essay 108: 3
+
+2025-06-08 02:04:11,437 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:04:11,437 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:04:11,437 - result - INFO - MSE of Set: 0.12500
+
+2025-06-08 02:04:11,437 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+250  The authors mood towards the memior was ok I g...   0.00    0.50  -0.5
+108  "In the memoir, ""@PERSON1"" from Home: ""The ...   0.75    0.75   0.0
+
+2025-06-08 02:04:11,437 - result - INFO - ESSAY SET 6:
+
+2025-06-08 02:04:11,554 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,601 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,632 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,632 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:04:11,632 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:04:11,632 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:04:11,632 - result - DEBUG - read cache file
+2025-06-08 02:04:11,632 - result - DEBUG - loaded cache
+2025-06-08 02:04:11,632 - result - INFO - score prediction started
+
+2025-06-08 02:04:11,632 - result - INFO - Datapoint 249 & Datapoint 959
+2025-06-08 02:04:11,632 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,632 - result - INFO - Diff: 1
+2025-06-08 02:04:11,632 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:04:11,632 - result - INFO - Score prediction: 4
+2025-06-08 02:04:11,632 - result - INFO - Datapoint 249 & Datapoint 40
+2025-06-08 02:04:11,632 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,632 - result - INFO - Diff: 1
+2025-06-08 02:04:11,632 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:04:11,632 - result - INFO - Score prediction: 4
+2025-06-08 02:04:11,632 - result - INFO - Avg score for essay 249: 4
+
+2025-06-08 02:04:11,632 - result - INFO - Datapoint 108 & Datapoint 959
+2025-06-08 02:04:11,648 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,648 - result - INFO - Diff: 1
+2025-06-08 02:04:11,648 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:04:11,648 - result - INFO - Score prediction: 4
+2025-06-08 02:04:11,648 - result - INFO - Datapoint 108 & Datapoint 40
+2025-06-08 02:04:11,648 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,648 - result - INFO - Diff: 1
+2025-06-08 02:04:11,648 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:04:11,648 - result - INFO - Score prediction: 4
+2025-06-08 02:04:11,648 - result - INFO - Avg score for essay 108: 4
+
+2025-06-08 02:04:11,648 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:04:11,648 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:04:11,648 - result - INFO - MSE of Set: 0.15625
+
+2025-06-08 02:04:11,648 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+249  "Based on the excerpt ""The Mooring Mast"" by ...   0.75     1.0 -0.25
+108  "The architects had few problems. As said in @...   0.50     1.0 -0.50
+
+2025-06-08 02:04:11,648 - result - INFO - ESSAY SET 7:
+
+2025-06-08 02:04:11,765 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,815 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,850 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:11,850 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:04:11,865 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:04:11,865 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:04:11,865 - result - DEBUG - read cache file
+2025-06-08 02:04:11,865 - result - DEBUG - loaded cache
+2025-06-08 02:04:11,865 - result - INFO - score prediction started
+
+2025-06-08 02:04:11,865 - result - INFO - Datapoint 240 & Datapoint 935
+2025-06-08 02:04:11,865 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,865 - result - INFO - Diff: 0
+2025-06-08 02:04:11,865 - result - INFO - Score of baseline essay: 16
+2025-06-08 02:04:11,865 - result - INFO - Score prediction: 16
+2025-06-08 02:04:11,865 - result - INFO - Datapoint 240 & Datapoint 372
+2025-06-08 02:04:11,865 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,865 - result - INFO - Diff: 0
+2025-06-08 02:04:11,865 - result - INFO - Score of baseline essay: 13
+2025-06-08 02:04:11,865 - result - INFO - Score prediction: 13
+2025-06-08 02:04:11,865 - result - INFO - Avg score for essay 240: 14
+
+2025-06-08 02:04:11,865 - result - INFO - Datapoint 124 & Datapoint 935
+2025-06-08 02:04:11,865 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,865 - result - INFO - Diff: 0
+2025-06-08 02:04:11,865 - result - INFO - Score of baseline essay: 16
+2025-06-08 02:04:11,865 - result - INFO - Score prediction: 16
+2025-06-08 02:04:11,865 - result - INFO - Datapoint 124 & Datapoint 372
+2025-06-08 02:04:11,865 - result - DEBUG - got score from cache
+2025-06-08 02:04:11,865 - result - INFO - Diff: 0
+2025-06-08 02:04:11,865 - result - INFO - Score of baseline essay: 13
+2025-06-08 02:04:11,865 - result - INFO - Score prediction: 13
+2025-06-08 02:04:11,865 - result - INFO - Avg score for essay 124: 14
+
+2025-06-08 02:04:11,865 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:04:11,865 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:04:11,865 - result - INFO - MSE of Set: 0.01389
+
+2025-06-08 02:04:11,881 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+240  When im patient is mostly in the woods. This i...  0.566667  0.466667  0.100000
+124  "I remember when I wanted to ride my dirt bike...  0.333333  0.466667 -0.133333
+
+2025-06-08 02:04:11,881 - result - INFO - ESSAY SET 8:
+
+2025-06-08 02:04:11,990 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:12,023 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:12,070 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:04:12,070 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:04:12,070 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:04:12,070 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:04:12,090 - result - DEBUG - read cache file
+2025-06-08 02:04:12,090 - result - DEBUG - loaded cache
+2025-06-08 02:04:12,090 - result - INFO - score prediction started
+
+2025-06-08 02:04:12,090 - result - INFO - Datapoint 30 & Datapoint 135
+2025-06-08 02:04:12,091 - result - DEBUG - got score from cache
+2025-06-08 02:04:12,091 - result - INFO - Diff: 0
+2025-06-08 02:04:12,091 - result - INFO - Score of baseline essay: 31
+2025-06-08 02:04:12,091 - result - INFO - Score prediction: 31
+2025-06-08 02:04:12,091 - result - INFO - Datapoint 30 & Datapoint 151
+2025-06-08 02:04:12,092 - result - DEBUG - got score from cache
+2025-06-08 02:04:12,092 - result - INFO - Diff: 0
+2025-06-08 02:04:12,092 - result - INFO - Score of baseline essay: 33
+2025-06-08 02:04:12,092 - result - INFO - Score prediction: 33
+2025-06-08 02:04:12,092 - result - INFO - Avg score for essay 30: 32
+
+2025-06-08 02:04:12,092 - result - INFO - Datapoint 112 & Datapoint 135
+2025-06-08 02:04:12,092 - result - DEBUG - got score from cache
+2025-06-08 02:04:12,092 - result - INFO - Diff: 0
+2025-06-08 02:04:12,093 - result - INFO - Score of baseline essay: 31
+2025-06-08 02:04:12,093 - result - INFO - Score prediction: 31
+2025-06-08 02:04:12,093 - result - INFO - Datapoint 112 & Datapoint 151
+2025-06-08 02:04:12,093 - result - DEBUG - got score from cache
+2025-06-08 02:04:12,093 - result - INFO - Diff: 0
+2025-06-08 02:04:12,093 - result - INFO - Score of baseline essay: 33
+2025-06-08 02:04:12,093 - result - INFO - Score prediction: 33
+2025-06-08 02:04:12,094 - result - INFO - Avg score for essay 112: 32
+
+2025-06-08 02:04:12,094 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:04:12,094 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:04:12,095 - result - INFO - MSE of Set: 0.01569
+
+2025-06-08 02:04:12,099 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+30   "                                @CAPS4 @CAPS1...  0.666667  0.533333  0.133333
+112  "            ""Laughter"" @CAPS1 you ever felt...  0.650000  0.533333  0.116667
+
+2025-06-08 02:04:12,100 - result - INFO - Pairwise Cache-Stats:
+2025-06-08 02:04:12,100 - result - INFO - Cache hits: 32
+2025-06-08 02:04:12,100 - result - INFO - Cache misses: 0
+2025-06-08 02:04:12,100 - result - DEBUG - printed cache stats
+
+2025-06-08 02:04:12,100 - result - INFO - Evaluation:
+2025-06-08 02:04:12,100 - result - INFO - MSE of Set 1: 0.04514
+2025-06-08 02:04:12,100 - result - INFO - MSE of Set 2: 0.00500
+2025-06-08 02:04:12,100 - result - INFO - MSE of Set 3: 0.72222
+2025-06-08 02:04:12,100 - result - INFO - MSE of Set 4: 0.05556
+2025-06-08 02:04:12,100 - result - INFO - MSE of Set 5: 0.12500
+2025-06-08 02:04:12,100 - result - INFO - MSE of Set 6: 0.15625
+2025-06-08 02:04:12,100 - result - INFO - MSE of Set 7: 0.01389
+2025-06-08 02:04:12,101 - result - INFO - MSE of Set 8: 0.01569
+2025-06-08 02:04:12,101 - result - INFO - Average MSE: 0.14234
+
+2025-06-08 02:04:12,101 - result - INFO - -----------------------------------------------------------------
+
+
+2025-06-08 02:08:05,402 - result - DEBUG - pairwise: True; testing: True; random seed: 17; fold ID: 1
+2025-06-08 02:08:05,407 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 02:08:05,407 - result - INFO - Run through essay sets 1 to 8
+2025-06-08 02:08:05,407 - result - INFO - Mode: Pairwise
+
+2025-06-08 02:08:05,407 - result - INFO - ESSAY SET 1:
+
+2025-06-08 02:08:05,619 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:05,677 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:05,729 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:05,730 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:08:05,732 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:08:05,734 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:08:05,795 - result - DEBUG - read cache file
+2025-06-08 02:08:05,795 - result - DEBUG - loaded cache
+2025-06-08 02:08:05,795 - result - INFO - score prediction started
+
+2025-06-08 02:08:05,795 - result - INFO - Datapoint 173 & Datapoint 396
+2025-06-08 02:08:05,796 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:07,712 - result - DEBUG - queried the API
+2025-06-08 02:08:07,742 - result - DEBUG - saved cache file
+2025-06-08 02:08:07,742 - result - DEBUG - created new cache entry
+2025-06-08 02:08:07,742 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:07,742 - result - INFO - Diff: 0
+2025-06-08 02:08:07,742 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:08:07,742 - result - INFO - Score prediction: 6
+2025-06-08 02:08:07,742 - result - INFO - Datapoint 173 & Datapoint 227
+2025-06-08 02:08:07,742 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:08,792 - result - DEBUG - queried the API
+2025-06-08 02:08:08,820 - result - DEBUG - saved cache file
+2025-06-08 02:08:08,820 - result - DEBUG - created new cache entry
+2025-06-08 02:08:08,820 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:08,821 - result - INFO - Diff: 0
+2025-06-08 02:08:08,821 - result - INFO - Score of baseline essay: 8
+2025-06-08 02:08:08,821 - result - INFO - Score prediction: 8
+2025-06-08 02:08:08,822 - result - INFO - Avg score for essay 173: 7
+
+2025-06-08 02:08:08,824 - result - INFO - Datapoint 161 & Datapoint 396
+2025-06-08 02:08:08,827 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:09,380 - result - DEBUG - queried the API
+2025-06-08 02:08:09,414 - result - DEBUG - saved cache file
+2025-06-08 02:08:09,415 - result - DEBUG - created new cache entry
+2025-06-08 02:08:09,415 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:09,415 - result - INFO - Diff: 0
+2025-06-08 02:08:09,415 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:08:09,416 - result - INFO - Score prediction: 6
+2025-06-08 02:08:09,416 - result - INFO - Datapoint 161 & Datapoint 227
+2025-06-08 02:08:09,418 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:10,019 - result - DEBUG - queried the API
+2025-06-08 02:08:10,055 - result - DEBUG - saved cache file
+2025-06-08 02:08:10,055 - result - DEBUG - created new cache entry
+2025-06-08 02:08:10,055 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:10,055 - result - INFO - Diff: 0
+2025-06-08 02:08:10,055 - result - INFO - Score of baseline essay: 8
+2025-06-08 02:08:10,055 - result - INFO - Score prediction: 8
+2025-06-08 02:08:10,055 - result - INFO - Avg score for essay 161: 7
+
+2025-06-08 02:08:10,055 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:08:10,055 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:08:10,055 - result - INFO - MSE of Set: 0.00694
+
+2025-06-08 02:08:10,066 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+173  "Dear local news paper, In @CAPS1 oppinion I t...  0.666667  0.583333  0.083333
+161  I think that you can never spend enuf time on ...  0.666667  0.583333  0.083333
+
+2025-06-08 02:08:10,067 - result - INFO - ESSAY SET 2:
+
+2025-06-08 02:08:10,211 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:10,248 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:10,287 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:10,287 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:08:10,288 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:08:10,290 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:08:10,313 - result - DEBUG - read cache file
+2025-06-08 02:08:10,313 - result - DEBUG - loaded cache
+2025-06-08 02:08:10,313 - result - INFO - score prediction started
+
+2025-06-08 02:08:10,313 - result - INFO - Datapoint 269 & Datapoint 723
+2025-06-08 02:08:10,313 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:11,035 - result - DEBUG - queried the API
+2025-06-08 02:08:11,065 - result - DEBUG - saved cache file
+2025-06-08 02:08:11,065 - result - DEBUG - created new cache entry
+2025-06-08 02:08:11,065 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:11,065 - result - INFO - Diff: 0
+2025-06-08 02:08:11,065 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:08:11,065 - result - INFO - Score prediction: 6
+2025-06-08 02:08:11,065 - result - INFO - Datapoint 269 & Datapoint 537
+2025-06-08 02:08:11,065 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:11,761 - result - DEBUG - queried the API
+2025-06-08 02:08:11,784 - result - DEBUG - saved cache file
+2025-06-08 02:08:11,785 - result - DEBUG - created new cache entry
+2025-06-08 02:08:11,785 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:11,785 - result - INFO - Diff: 0
+2025-06-08 02:08:11,786 - result - INFO - Score of baseline essay: 7
+2025-06-08 02:08:11,786 - result - INFO - Score prediction: 7
+2025-06-08 02:08:11,787 - result - INFO - Avg score for essay 269: 6
+
+2025-06-08 02:08:11,788 - result - INFO - Datapoint 112 & Datapoint 723
+2025-06-08 02:08:11,789 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:12,472 - result - DEBUG - queried the API
+2025-06-08 02:08:12,502 - result - DEBUG - saved cache file
+2025-06-08 02:08:12,502 - result - DEBUG - created new cache entry
+2025-06-08 02:08:12,502 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:12,502 - result - INFO - Diff: 0
+2025-06-08 02:08:12,503 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:08:12,503 - result - INFO - Score prediction: 6
+2025-06-08 02:08:12,503 - result - INFO - Datapoint 112 & Datapoint 537
+2025-06-08 02:08:12,504 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:13,428 - result - DEBUG - queried the API
+2025-06-08 02:08:13,451 - result - DEBUG - saved cache file
+2025-06-08 02:08:13,451 - result - DEBUG - created new cache entry
+2025-06-08 02:08:13,452 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:13,452 - result - INFO - Diff: 0
+2025-06-08 02:08:13,452 - result - INFO - Score of baseline essay: 7
+2025-06-08 02:08:13,453 - result - INFO - Score prediction: 7
+2025-06-08 02:08:13,453 - result - INFO - Avg score for essay 112: 6
+
+2025-06-08 02:08:13,454 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:08:13,455 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:08:13,457 - result - INFO - MSE of Set: 0.02500
+
+2025-06-08 02:08:13,470 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+269  "I don't believe that we should romove any boo...    0.8     0.6   0.2
+112  "No, I don't think that books or any other mat...    0.7     0.6   0.1
+
+2025-06-08 02:08:13,470 - result - INFO - ESSAY SET 3:
+
+2025-06-08 02:08:13,593 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:13,630 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:13,666 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:13,666 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:08:13,666 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:08:13,666 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:08:13,693 - result - DEBUG - read cache file
+2025-06-08 02:08:13,693 - result - DEBUG - loaded cache
+2025-06-08 02:08:13,693 - result - INFO - score prediction started
+
+2025-06-08 02:08:13,694 - result - INFO - Datapoint 247 & Datapoint 606
+2025-06-08 02:08:13,694 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:14,262 - result - DEBUG - queried the API
+2025-06-08 02:08:14,316 - result - DEBUG - saved cache file
+2025-06-08 02:08:14,317 - result - DEBUG - created new cache entry
+2025-06-08 02:08:14,317 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:14,317 - result - INFO - Diff: 0
+2025-06-08 02:08:14,317 - result - INFO - Score of baseline essay: 1
+2025-06-08 02:08:14,317 - result - INFO - Score prediction: 1
+2025-06-08 02:08:14,318 - result - INFO - Datapoint 247 & Datapoint 611
+2025-06-08 02:08:14,319 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:14,810 - result - DEBUG - queried the API
+2025-06-08 02:08:14,848 - result - DEBUG - saved cache file
+2025-06-08 02:08:14,848 - result - DEBUG - created new cache entry
+2025-06-08 02:08:14,849 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:14,849 - result - INFO - Diff: 1
+2025-06-08 02:08:14,849 - result - INFO - Score of baseline essay: 0
+2025-06-08 02:08:14,849 - result - INFO - Score prediction: 1
+2025-06-08 02:08:14,849 - result - INFO - Avg score for essay 247: 1
+
+2025-06-08 02:08:14,850 - result - INFO - Datapoint 52 & Datapoint 606
+2025-06-08 02:08:14,851 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:15,410 - result - DEBUG - queried the API
+2025-06-08 02:08:15,438 - result - DEBUG - saved cache file
+2025-06-08 02:08:15,438 - result - DEBUG - created new cache entry
+2025-06-08 02:08:15,439 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:15,439 - result - INFO - Diff: 0
+2025-06-08 02:08:15,439 - result - INFO - Score of baseline essay: 1
+2025-06-08 02:08:15,439 - result - INFO - Score prediction: 1
+2025-06-08 02:08:15,439 - result - INFO - Datapoint 52 & Datapoint 611
+2025-06-08 02:08:15,442 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:16,363 - result - DEBUG - queried the API
+2025-06-08 02:08:16,383 - result - DEBUG - saved cache file
+2025-06-08 02:08:16,383 - result - DEBUG - created new cache entry
+2025-06-08 02:08:16,383 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:16,383 - result - INFO - Diff: 1
+2025-06-08 02:08:16,383 - result - INFO - Score of baseline essay: 0
+2025-06-08 02:08:16,383 - result - INFO - Score prediction: 1
+2025-06-08 02:08:16,383 - result - INFO - Avg score for essay 52: 1
+
+2025-06-08 02:08:16,383 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:08:16,383 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:08:16,399 - result - INFO - MSE of Set: 0.05556
+
+2025-06-08 02:08:16,406 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+247  "In the short story “ Rough Road Ahead Do not ...  0.333333  0.333333  0.000000
+52   The features of setting affect the cyclist in ...  0.666667  0.333333  0.333333
+
+2025-06-08 02:08:16,406 - result - INFO - ESSAY SET 4:
+
+2025-06-08 02:08:16,527 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:16,580 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:16,619 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:16,620 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:08:16,621 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:08:16,622 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:08:16,656 - result - DEBUG - read cache file
+2025-06-08 02:08:16,656 - result - DEBUG - loaded cache
+2025-06-08 02:08:16,656 - result - INFO - score prediction started
+
+2025-06-08 02:08:16,657 - result - INFO - Datapoint 269 & Datapoint 966
+2025-06-08 02:08:16,657 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:22,014 - result - DEBUG - queried the API
+2025-06-08 02:08:22,027 - result - DEBUG - saved cache file
+2025-06-08 02:08:22,027 - result - DEBUG - created new cache entry
+2025-06-08 02:08:22,027 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:22,027 - result - INFO - Diff: 0
+2025-06-08 02:08:22,027 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:08:22,027 - result - INFO - Score prediction: 2
+2025-06-08 02:08:22,027 - result - INFO - Datapoint 269 & Datapoint 274
+2025-06-08 02:08:22,027 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:27,819 - result - DEBUG - queried the API
+2025-06-08 02:08:27,852 - result - DEBUG - saved cache file
+2025-06-08 02:08:27,852 - result - DEBUG - created new cache entry
+2025-06-08 02:08:27,852 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:27,852 - result - INFO - Diff: 1
+2025-06-08 02:08:27,853 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:08:27,853 - result - INFO - Score prediction: 3
+2025-06-08 02:08:27,853 - result - INFO - Avg score for essay 269: 2
+
+2025-06-08 02:08:27,854 - result - INFO - Datapoint 342 & Datapoint 966
+2025-06-08 02:08:27,855 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:32,941 - result - DEBUG - queried the API
+2025-06-08 02:08:32,959 - result - DEBUG - saved cache file
+2025-06-08 02:08:32,959 - result - DEBUG - created new cache entry
+2025-06-08 02:08:32,959 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:32,959 - result - INFO - Diff: 1
+2025-06-08 02:08:32,960 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:08:32,960 - result - INFO - Score prediction: 3
+2025-06-08 02:08:32,960 - result - INFO - Datapoint 342 & Datapoint 274
+2025-06-08 02:08:32,961 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:38,713 - result - DEBUG - queried the API
+2025-06-08 02:08:38,733 - result - DEBUG - saved cache file
+2025-06-08 02:08:38,733 - result - DEBUG - created new cache entry
+2025-06-08 02:08:38,734 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:38,734 - result - INFO - Diff: 0
+2025-06-08 02:08:38,734 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:08:38,734 - result - INFO - Score prediction: 2
+2025-06-08 02:08:38,735 - result - INFO - Avg score for essay 342: 2
+
+2025-06-08 02:08:38,736 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:08:38,737 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:08:38,739 - result - INFO - MSE of Set: 0.00000
+
+2025-06-08 02:08:38,749 - result - DEBUG - 
+                                                 essay     score    y_pred  diff
+269  "The author concludes the story with this para...  0.666667  0.666667   0.0
+342  "In the end of the story the girl Saeng vowes ...  0.666667  0.666667   0.0
+
+2025-06-08 02:08:38,749 - result - INFO - ESSAY SET 5:
+
+2025-06-08 02:08:38,907 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:38,954 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:38,999 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:39,000 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:08:39,002 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:08:39,003 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:08:39,032 - result - DEBUG - read cache file
+2025-06-08 02:08:39,032 - result - DEBUG - loaded cache
+2025-06-08 02:08:39,032 - result - INFO - score prediction started
+
+2025-06-08 02:08:39,032 - result - INFO - Datapoint 333 & Datapoint 842
+2025-06-08 02:08:39,032 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:42,425 - result - DEBUG - queried the API
+2025-06-08 02:08:42,447 - result - DEBUG - saved cache file
+2025-06-08 02:08:42,447 - result - DEBUG - created new cache entry
+2025-06-08 02:08:42,448 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:42,448 - result - INFO - Diff: 1
+2025-06-08 02:08:42,448 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:08:42,448 - result - INFO - Score prediction: 3
+2025-06-08 02:08:42,449 - result - INFO - Datapoint 333 & Datapoint 574
+2025-06-08 02:08:42,450 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:45,851 - result - DEBUG - queried the API
+2025-06-08 02:08:45,870 - result - DEBUG - saved cache file
+2025-06-08 02:08:45,871 - result - DEBUG - created new cache entry
+2025-06-08 02:08:45,871 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:45,871 - result - INFO - Diff: 1
+2025-06-08 02:08:45,871 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:08:45,872 - result - INFO - Score prediction: 4
+2025-06-08 02:08:45,872 - result - INFO - Avg score for essay 333: 4
+
+2025-06-08 02:08:45,873 - result - INFO - Datapoint 133 & Datapoint 842
+2025-06-08 02:08:45,873 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:50,048 - result - DEBUG - queried the API
+2025-06-08 02:08:50,072 - result - DEBUG - saved cache file
+2025-06-08 02:08:50,072 - result - DEBUG - created new cache entry
+2025-06-08 02:08:50,072 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:50,073 - result - INFO - Diff: 1
+2025-06-08 02:08:50,073 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:08:50,073 - result - INFO - Score prediction: 3
+2025-06-08 02:08:50,074 - result - INFO - Datapoint 133 & Datapoint 574
+2025-06-08 02:08:50,075 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:08:53,957 - result - DEBUG - queried the API
+2025-06-08 02:08:53,980 - result - DEBUG - saved cache file
+2025-06-08 02:08:53,980 - result - DEBUG - created new cache entry
+2025-06-08 02:08:53,980 - result - DEBUG - got score from new prediction
+2025-06-08 02:08:53,981 - result - INFO - Diff: 1
+2025-06-08 02:08:53,981 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:08:53,981 - result - INFO - Score prediction: 4
+2025-06-08 02:08:53,981 - result - INFO - Avg score for essay 133: 4
+
+2025-06-08 02:08:53,983 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:08:53,986 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:08:53,988 - result - INFO - MSE of Set: 0.00000
+
+2025-06-08 02:08:54,003 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+333  "In the memoir ""@PERSON1"" by @PERSON2, the m...    1.0     1.0   0.0
+133  "The author creates a loving, warm mood that i...    1.0     1.0   0.0
+
+2025-06-08 02:08:54,003 - result - INFO - ESSAY SET 6:
+
+2025-06-08 02:08:54,175 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:54,220 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:54,267 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:08:54,267 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:08:54,268 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:08:54,270 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:08:54,310 - result - DEBUG - read cache file
+2025-06-08 02:08:54,310 - result - DEBUG - loaded cache
+2025-06-08 02:08:54,310 - result - INFO - score prediction started
+
+2025-06-08 02:08:54,311 - result - INFO - Datapoint 269 & Datapoint 723
+2025-06-08 02:08:54,311 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:09:00,429 - result - DEBUG - queried the API
+2025-06-08 02:09:00,456 - result - DEBUG - saved cache file
+2025-06-08 02:09:00,456 - result - DEBUG - created new cache entry
+2025-06-08 02:09:00,457 - result - DEBUG - got score from new prediction
+2025-06-08 02:09:00,457 - result - INFO - Diff: 1
+2025-06-08 02:09:00,457 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:09:00,457 - result - INFO - Score prediction: 4
+2025-06-08 02:09:00,457 - result - INFO - Datapoint 269 & Datapoint 537
+2025-06-08 02:09:00,457 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:21,553 - result - DEBUG - pairwise: True; testing: True; random seed: 17; fold ID: 1
+2025-06-08 02:10:21,568 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 02:10:21,568 - result - INFO - Run through essay sets 1 to 8
+2025-06-08 02:10:21,568 - result - INFO - Mode: Pairwise
+
+2025-06-08 02:10:21,568 - result - INFO - ESSAY SET 1:
+
+2025-06-08 02:10:21,662 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:21,709 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:21,740 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:21,740 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:10:21,740 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:10:21,740 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:10:21,822 - result - DEBUG - read cache file
+2025-06-08 02:10:21,822 - result - DEBUG - loaded cache
+2025-06-08 02:10:21,822 - result - INFO - score prediction started
+
+2025-06-08 02:10:21,822 - result - INFO - Datapoint 173 & Datapoint 396
+2025-06-08 02:10:21,824 - result - DEBUG - got score from cache
+2025-06-08 02:10:21,824 - result - INFO - Diff: 0
+2025-06-08 02:10:21,824 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:10:21,824 - result - INFO - Score prediction: 6
+2025-06-08 02:10:21,824 - result - INFO - Datapoint 173 & Datapoint 227
+2025-06-08 02:10:21,825 - result - DEBUG - got score from cache
+2025-06-08 02:10:21,825 - result - INFO - Diff: 0
+2025-06-08 02:10:21,825 - result - INFO - Score of baseline essay: 8
+2025-06-08 02:10:21,825 - result - INFO - Score prediction: 8
+2025-06-08 02:10:21,825 - result - INFO - Avg score for essay 173: 7
+
+2025-06-08 02:10:21,825 - result - INFO - Datapoint 161 & Datapoint 396
+2025-06-08 02:10:21,826 - result - DEBUG - got score from cache
+2025-06-08 02:10:21,826 - result - INFO - Diff: 0
+2025-06-08 02:10:21,826 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:10:21,826 - result - INFO - Score prediction: 6
+2025-06-08 02:10:21,826 - result - INFO - Datapoint 161 & Datapoint 227
+2025-06-08 02:10:21,826 - result - DEBUG - got score from cache
+2025-06-08 02:10:21,826 - result - INFO - Diff: 0
+2025-06-08 02:10:21,826 - result - INFO - Score of baseline essay: 8
+2025-06-08 02:10:21,826 - result - INFO - Score prediction: 8
+2025-06-08 02:10:21,826 - result - INFO - Avg score for essay 161: 7
+
+2025-06-08 02:10:21,827 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:10:21,827 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:10:21,828 - result - INFO - MSE of Set: 0.00694
+
+2025-06-08 02:10:21,835 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+173  "Dear local news paper, In @CAPS1 oppinion I t...  0.666667  0.583333  0.083333
+161  I think that you can never spend enuf time on ...  0.666667  0.583333  0.083333
+
+2025-06-08 02:10:21,835 - result - INFO - ESSAY SET 2:
+
+2025-06-08 02:10:21,932 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:21,981 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,004 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,004 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:10:22,020 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:10:22,022 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:10:22,034 - result - DEBUG - read cache file
+2025-06-08 02:10:22,034 - result - DEBUG - loaded cache
+2025-06-08 02:10:22,034 - result - INFO - score prediction started
+
+2025-06-08 02:10:22,034 - result - INFO - Datapoint 269 & Datapoint 723
+2025-06-08 02:10:22,035 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,035 - result - INFO - Diff: 0
+2025-06-08 02:10:22,035 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:10:22,035 - result - INFO - Score prediction: 6
+2025-06-08 02:10:22,036 - result - INFO - Datapoint 269 & Datapoint 537
+2025-06-08 02:10:22,038 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,038 - result - INFO - Diff: 0
+2025-06-08 02:10:22,038 - result - INFO - Score of baseline essay: 7
+2025-06-08 02:10:22,038 - result - INFO - Score prediction: 7
+2025-06-08 02:10:22,038 - result - INFO - Avg score for essay 269: 6
+
+2025-06-08 02:10:22,038 - result - INFO - Datapoint 112 & Datapoint 723
+2025-06-08 02:10:22,038 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,039 - result - INFO - Diff: 0
+2025-06-08 02:10:22,039 - result - INFO - Score of baseline essay: 6
+2025-06-08 02:10:22,039 - result - INFO - Score prediction: 6
+2025-06-08 02:10:22,039 - result - INFO - Datapoint 112 & Datapoint 537
+2025-06-08 02:10:22,039 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,039 - result - INFO - Diff: 0
+2025-06-08 02:10:22,039 - result - INFO - Score of baseline essay: 7
+2025-06-08 02:10:22,039 - result - INFO - Score prediction: 7
+2025-06-08 02:10:22,039 - result - INFO - Avg score for essay 112: 6
+
+2025-06-08 02:10:22,040 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:10:22,040 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:10:22,041 - result - INFO - MSE of Set: 0.02500
+
+2025-06-08 02:10:22,044 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+269  "I don't believe that we should romove any boo...    0.8     0.6   0.2
+112  "No, I don't think that books or any other mat...    0.7     0.6   0.1
+
+2025-06-08 02:10:22,045 - result - INFO - ESSAY SET 3:
+
+2025-06-08 02:10:22,152 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,183 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,230 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,230 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:10:22,230 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:10:22,230 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:10:22,246 - result - DEBUG - read cache file
+2025-06-08 02:10:22,246 - result - DEBUG - loaded cache
+2025-06-08 02:10:22,246 - result - INFO - score prediction started
+
+2025-06-08 02:10:22,246 - result - INFO - Datapoint 247 & Datapoint 606
+2025-06-08 02:10:22,246 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,246 - result - INFO - Diff: 0
+2025-06-08 02:10:22,246 - result - INFO - Score of baseline essay: 1
+2025-06-08 02:10:22,246 - result - INFO - Score prediction: 1
+2025-06-08 02:10:22,246 - result - INFO - Datapoint 247 & Datapoint 611
+2025-06-08 02:10:22,246 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,246 - result - INFO - Diff: 1
+2025-06-08 02:10:22,246 - result - INFO - Score of baseline essay: 0
+2025-06-08 02:10:22,246 - result - INFO - Score prediction: 1
+2025-06-08 02:10:22,246 - result - INFO - Avg score for essay 247: 1
+
+2025-06-08 02:10:22,246 - result - INFO - Datapoint 52 & Datapoint 606
+2025-06-08 02:10:22,246 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,246 - result - INFO - Diff: 0
+2025-06-08 02:10:22,246 - result - INFO - Score of baseline essay: 1
+2025-06-08 02:10:22,246 - result - INFO - Score prediction: 1
+2025-06-08 02:10:22,246 - result - INFO - Datapoint 52 & Datapoint 611
+2025-06-08 02:10:22,246 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,246 - result - INFO - Diff: 1
+2025-06-08 02:10:22,246 - result - INFO - Score of baseline essay: 0
+2025-06-08 02:10:22,246 - result - INFO - Score prediction: 1
+2025-06-08 02:10:22,246 - result - INFO - Avg score for essay 52: 1
+
+2025-06-08 02:10:22,246 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:10:22,246 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:10:22,246 - result - INFO - MSE of Set: 0.05556
+
+2025-06-08 02:10:22,246 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+247  "In the short story “ Rough Road Ahead Do not ...  0.333333  0.333333  0.000000
+52   The features of setting affect the cyclist in ...  0.666667  0.333333  0.333333
+
+2025-06-08 02:10:22,246 - result - INFO - ESSAY SET 4:
+
+2025-06-08 02:10:22,370 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,417 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,448 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,448 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:10:22,448 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:10:22,463 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:10:22,474 - result - DEBUG - read cache file
+2025-06-08 02:10:22,475 - result - DEBUG - loaded cache
+2025-06-08 02:10:22,475 - result - INFO - score prediction started
+
+2025-06-08 02:10:22,475 - result - INFO - Datapoint 269 & Datapoint 966
+2025-06-08 02:10:22,475 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,476 - result - INFO - Diff: 0
+2025-06-08 02:10:22,476 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:10:22,476 - result - INFO - Score prediction: 2
+2025-06-08 02:10:22,476 - result - INFO - Datapoint 269 & Datapoint 274
+2025-06-08 02:10:22,476 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,476 - result - INFO - Diff: 1
+2025-06-08 02:10:22,476 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:10:22,476 - result - INFO - Score prediction: 3
+2025-06-08 02:10:22,476 - result - INFO - Avg score for essay 269: 2
+
+2025-06-08 02:10:22,477 - result - INFO - Datapoint 342 & Datapoint 966
+2025-06-08 02:10:22,477 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,477 - result - INFO - Diff: 1
+2025-06-08 02:10:22,477 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:10:22,477 - result - INFO - Score prediction: 3
+2025-06-08 02:10:22,477 - result - INFO - Datapoint 342 & Datapoint 274
+2025-06-08 02:10:22,477 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,477 - result - INFO - Diff: 0
+2025-06-08 02:10:22,478 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:10:22,478 - result - INFO - Score prediction: 2
+2025-06-08 02:10:22,478 - result - INFO - Avg score for essay 342: 2
+
+2025-06-08 02:10:22,478 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:10:22,478 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:10:22,479 - result - INFO - MSE of Set: 0.00000
+
+2025-06-08 02:10:22,483 - result - DEBUG - 
+                                                 essay     score    y_pred  diff
+269  "The author concludes the story with this para...  0.666667  0.666667   0.0
+342  "In the end of the story the girl Saeng vowes ...  0.666667  0.666667   0.0
+
+2025-06-08 02:10:22,483 - result - INFO - ESSAY SET 5:
+
+2025-06-08 02:10:22,587 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,634 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,665 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,665 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:10:22,665 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:10:22,665 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:10:22,681 - result - DEBUG - read cache file
+2025-06-08 02:10:22,681 - result - DEBUG - loaded cache
+2025-06-08 02:10:22,681 - result - INFO - score prediction started
+
+2025-06-08 02:10:22,681 - result - INFO - Datapoint 333 & Datapoint 842
+2025-06-08 02:10:22,681 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,681 - result - INFO - Diff: 1
+2025-06-08 02:10:22,681 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:10:22,681 - result - INFO - Score prediction: 3
+2025-06-08 02:10:22,681 - result - INFO - Datapoint 333 & Datapoint 574
+2025-06-08 02:10:22,681 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,681 - result - INFO - Diff: 1
+2025-06-08 02:10:22,681 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:10:22,681 - result - INFO - Score prediction: 4
+2025-06-08 02:10:22,681 - result - INFO - Avg score for essay 333: 4
+
+2025-06-08 02:10:22,681 - result - INFO - Datapoint 133 & Datapoint 842
+2025-06-08 02:10:22,681 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,681 - result - INFO - Diff: 1
+2025-06-08 02:10:22,681 - result - INFO - Score of baseline essay: 2
+2025-06-08 02:10:22,681 - result - INFO - Score prediction: 3
+2025-06-08 02:10:22,681 - result - INFO - Datapoint 133 & Datapoint 574
+2025-06-08 02:10:22,681 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,681 - result - INFO - Diff: 1
+2025-06-08 02:10:22,681 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:10:22,681 - result - INFO - Score prediction: 4
+2025-06-08 02:10:22,681 - result - INFO - Avg score for essay 133: 4
+
+2025-06-08 02:10:22,681 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:10:22,681 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:10:22,681 - result - INFO - MSE of Set: 0.00000
+
+2025-06-08 02:10:22,681 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+333  "In the memoir ""@PERSON1"" by @PERSON2, the m...    1.0     1.0   0.0
+133  "The author creates a loving, warm mood that i...    1.0     1.0   0.0
+
+2025-06-08 02:10:22,681 - result - INFO - ESSAY SET 6:
+
+2025-06-08 02:10:22,831 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,870 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,917 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:22,932 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:10:22,932 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:10:22,935 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:10:22,935 - result - DEBUG - read cache file
+2025-06-08 02:10:22,935 - result - DEBUG - loaded cache
+2025-06-08 02:10:22,935 - result - INFO - score prediction started
+
+2025-06-08 02:10:22,935 - result - INFO - Datapoint 269 & Datapoint 723
+2025-06-08 02:10:22,935 - result - DEBUG - got score from cache
+2025-06-08 02:10:22,935 - result - INFO - Diff: 1
+2025-06-08 02:10:22,935 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:10:22,935 - result - INFO - Score prediction: 4
+2025-06-08 02:10:22,935 - result - INFO - Datapoint 269 & Datapoint 537
+2025-06-08 02:10:22,935 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:23,851 - result - DEBUG - queried the API
+2025-06-08 02:10:23,873 - result - DEBUG - saved cache file
+2025-06-08 02:10:23,873 - result - DEBUG - created new cache entry
+2025-06-08 02:10:23,873 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:23,874 - result - INFO - Diff: 1
+2025-06-08 02:10:23,874 - result - INFO - Score of baseline essay: 4
+2025-06-08 02:10:23,874 - result - INFO - Score prediction: 5
+2025-06-08 02:10:23,874 - result - INFO - Avg score for essay 269: 4
+
+2025-06-08 02:10:23,874 - result - INFO - Datapoint 112 & Datapoint 723
+2025-06-08 02:10:23,875 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:24,330 - result - DEBUG - queried the API
+2025-06-08 02:10:24,347 - result - DEBUG - saved cache file
+2025-06-08 02:10:24,347 - result - DEBUG - created new cache entry
+2025-06-08 02:10:24,347 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:24,347 - result - INFO - Diff: 1
+2025-06-08 02:10:24,347 - result - INFO - Score of baseline essay: 3
+2025-06-08 02:10:24,347 - result - INFO - Score prediction: 4
+2025-06-08 02:10:24,347 - result - INFO - Datapoint 112 & Datapoint 537
+2025-06-08 02:10:24,347 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:24,836 - result - DEBUG - queried the API
+2025-06-08 02:10:24,859 - result - DEBUG - saved cache file
+2025-06-08 02:10:24,859 - result - DEBUG - created new cache entry
+2025-06-08 02:10:24,859 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:24,859 - result - INFO - Diff: 1
+2025-06-08 02:10:24,859 - result - INFO - Score of baseline essay: 4
+2025-06-08 02:10:24,859 - result - INFO - Score prediction: 5
+2025-06-08 02:10:24,859 - result - INFO - Avg score for essay 112: 4
+
+2025-06-08 02:10:24,859 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:10:24,859 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:10:24,859 - result - INFO - MSE of Set: 0.15625
+
+2025-06-08 02:10:24,873 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+269  "From my reading, I understand that the diffic...   0.75     1.0 -0.25
+112  There were many obstacles the builders had to ...   0.50     1.0 -0.50
+
+2025-06-08 02:10:24,873 - result - INFO - ESSAY SET 7:
+
+2025-06-08 02:10:25,035 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:25,082 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:25,137 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:25,137 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:10:25,137 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:10:25,137 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:10:25,153 - result - DEBUG - read cache file
+2025-06-08 02:10:25,153 - result - DEBUG - loaded cache
+2025-06-08 02:10:25,153 - result - INFO - score prediction started
+
+2025-06-08 02:10:25,153 - result - INFO - Datapoint 137 & Datapoint 585
+2025-06-08 02:10:25,153 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:25,677 - result - DEBUG - queried the API
+2025-06-08 02:10:25,715 - result - DEBUG - saved cache file
+2025-06-08 02:10:25,715 - result - DEBUG - created new cache entry
+2025-06-08 02:10:25,715 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:25,715 - result - INFO - Diff: 1
+2025-06-08 02:10:25,715 - result - INFO - Score of baseline essay: 20
+2025-06-08 02:10:25,715 - result - INFO - Score prediction: 21
+2025-06-08 02:10:25,715 - result - INFO - Datapoint 137 & Datapoint 836
+2025-06-08 02:10:25,715 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:26,129 - result - DEBUG - queried the API
+2025-06-08 02:10:26,144 - result - DEBUG - saved cache file
+2025-06-08 02:10:26,144 - result - DEBUG - created new cache entry
+2025-06-08 02:10:26,144 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:26,144 - result - INFO - Diff: 0
+2025-06-08 02:10:26,144 - result - INFO - Score of baseline essay: 24
+2025-06-08 02:10:26,144 - result - INFO - Score prediction: 24
+2025-06-08 02:10:26,144 - result - INFO - Avg score for essay 137: 22
+
+2025-06-08 02:10:26,154 - result - INFO - Datapoint 147 & Datapoint 585
+2025-06-08 02:10:26,155 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:26,566 - result - DEBUG - queried the API
+2025-06-08 02:10:26,598 - result - DEBUG - saved cache file
+2025-06-08 02:10:26,598 - result - DEBUG - created new cache entry
+2025-06-08 02:10:26,598 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:26,598 - result - INFO - Diff: 0
+2025-06-08 02:10:26,598 - result - INFO - Score of baseline essay: 20
+2025-06-08 02:10:26,598 - result - INFO - Score prediction: 20
+2025-06-08 02:10:26,604 - result - INFO - Datapoint 147 & Datapoint 836
+2025-06-08 02:10:26,605 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:27,019 - result - DEBUG - queried the API
+2025-06-08 02:10:27,047 - result - DEBUG - saved cache file
+2025-06-08 02:10:27,047 - result - DEBUG - created new cache entry
+2025-06-08 02:10:27,048 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:27,048 - result - INFO - Diff: 0
+2025-06-08 02:10:27,048 - result - INFO - Score of baseline essay: 24
+2025-06-08 02:10:27,048 - result - INFO - Score prediction: 24
+2025-06-08 02:10:27,048 - result - INFO - Avg score for essay 147: 22
+
+2025-06-08 02:10:27,048 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:10:27,048 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:10:27,048 - result - INFO - MSE of Set: 0.02278
+
+2025-06-08 02:10:27,058 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+137  "My favorite books, now a movie, I have to see...  0.600000  0.733333 -0.133333
+147  "I ride a beautiful paint horse named @CAPS1, ...  0.566667  0.733333 -0.166667
+
+2025-06-08 02:10:27,058 - result - INFO - ESSAY SET 8:
+
+2025-06-08 02:10:27,168 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:27,200 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:27,231 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:10:27,231 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:10:27,231 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:10:27,231 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:10:27,278 - result - DEBUG - read cache file
+2025-06-08 02:10:27,278 - result - DEBUG - loaded cache
+2025-06-08 02:10:27,278 - result - INFO - score prediction started
+
+2025-06-08 02:10:27,278 - result - INFO - Datapoint 29 & Datapoint 413
+2025-06-08 02:10:27,278 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:28,073 - result - DEBUG - queried the API
+2025-06-08 02:10:28,114 - result - DEBUG - saved cache file
+2025-06-08 02:10:28,115 - result - DEBUG - created new cache entry
+2025-06-08 02:10:28,115 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:28,115 - result - INFO - Diff: 0
+2025-06-08 02:10:28,115 - result - INFO - Score of baseline essay: 50
+2025-06-08 02:10:28,115 - result - INFO - Score prediction: 50
+2025-06-08 02:10:28,115 - result - INFO - Datapoint 29 & Datapoint 383
+2025-06-08 02:10:28,115 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:28,772 - result - DEBUG - queried the API
+2025-06-08 02:10:28,795 - result - DEBUG - saved cache file
+2025-06-08 02:10:28,795 - result - DEBUG - created new cache entry
+2025-06-08 02:10:28,795 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:28,795 - result - INFO - Diff: 0
+2025-06-08 02:10:28,796 - result - INFO - Score of baseline essay: 26
+2025-06-08 02:10:28,796 - result - INFO - Score prediction: 26
+2025-06-08 02:10:28,796 - result - INFO - Avg score for essay 29: 38
+
+2025-06-08 02:10:28,797 - result - INFO - Datapoint 16 & Datapoint 413
+2025-06-08 02:10:28,798 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:34,888 - result - DEBUG - queried the API
+2025-06-08 02:10:34,909 - result - DEBUG - saved cache file
+2025-06-08 02:10:34,909 - result - DEBUG - created new cache entry
+2025-06-08 02:10:34,909 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:34,909 - result - INFO - Diff: 0
+2025-06-08 02:10:34,910 - result - INFO - Score of baseline essay: 50
+2025-06-08 02:10:34,910 - result - INFO - Score prediction: 50
+2025-06-08 02:10:34,910 - result - INFO - Datapoint 16 & Datapoint 383
+2025-06-08 02:10:34,911 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:10:47,460 - result - DEBUG - queried the API
+2025-06-08 02:10:47,482 - result - DEBUG - saved cache file
+2025-06-08 02:10:47,482 - result - DEBUG - created new cache entry
+2025-06-08 02:10:47,483 - result - DEBUG - got score from new prediction
+2025-06-08 02:10:47,483 - result - INFO - Diff: 0
+2025-06-08 02:10:47,483 - result - INFO - Score of baseline essay: 26
+2025-06-08 02:10:47,483 - result - INFO - Score prediction: 26
+2025-06-08 02:10:47,483 - result - INFO - Avg score for essay 16: 38
+
+2025-06-08 02:10:47,483 - result - DEBUG - predicted scores pairwise
+2025-06-08 02:10:47,486 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:10:47,489 - result - INFO - MSE of Set: 0.00722
+
+2025-06-08 02:10:47,495 - result - DEBUG - 
+                                                essay     score    y_pred      diff
+29  "A true story for me in laughter. My favorite ...  0.533333  0.633333 -0.100000
+16  " The night was dark and cloudy giving my surr...  0.700000  0.633333  0.066667
+
+2025-06-08 02:10:47,495 - result - INFO - Pairwise Cache-Stats:
+2025-06-08 02:10:47,495 - result - INFO - Cache hits: 21
+2025-06-08 02:10:47,495 - result - INFO - Cache misses: 11
+2025-06-08 02:10:47,495 - result - DEBUG - printed cache stats
+
+2025-06-08 02:10:47,495 - result - INFO - Evaluation:
+2025-06-08 02:10:47,495 - result - INFO - MSE of Set 1: 0.00694
+2025-06-08 02:10:47,495 - result - INFO - MSE of Set 2: 0.02500
+2025-06-08 02:10:47,495 - result - INFO - MSE of Set 3: 0.05556
+2025-06-08 02:10:47,495 - result - INFO - MSE of Set 4: 0.00000
+2025-06-08 02:10:47,495 - result - INFO - MSE of Set 5: 0.00000
+2025-06-08 02:10:47,495 - result - INFO - MSE of Set 6: 0.15625
+2025-06-08 02:10:47,495 - result - INFO - MSE of Set 7: 0.02278
+2025-06-08 02:10:47,495 - result - INFO - MSE of Set 8: 0.00722
+2025-06-08 02:10:47,495 - result - INFO - Average MSE: 0.03422
+
+2025-06-08 02:10:47,495 - result - INFO - -----------------------------------------------------------------
+
+
+2025-06-08 02:15:58,828 - result - DEBUG - pairwise: False; testing: True; random seed: 17; fold ID: 1
+2025-06-08 02:15:58,831 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 02:15:58,831 - result - INFO - Run through essay sets 1 to 8
+2025-06-08 02:15:58,831 - result - INFO - Mode: Solo
+
+2025-06-08 02:15:58,831 - result - INFO - ESSAY SET 1:
+
+2025-06-08 02:15:58,932 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:15:58,979 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:15:59,022 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:15:59,022 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:15:59,022 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:15:59,022 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:15:59,101 - result - DEBUG - read cache file
+2025-06-08 02:15:59,101 - result - DEBUG - loaded cache
+2025-06-08 02:15:59,101 - result - INFO - score prediction started
+2025-06-08 02:15:59,101 - result - INFO - Datapoint 173
+2025-06-08 02:15:59,101 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:00,467 - result - DEBUG - queried the API
+2025-06-08 02:16:00,475 - result - DEBUG - saved cache file
+2025-06-08 02:16:00,475 - result - DEBUG - created new cache entry
+2025-06-08 02:16:00,476 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:00,476 - result - INFO - Datapoint 161
+2025-06-08 02:16:00,477 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:00,945 - result - DEBUG - queried the API
+2025-06-08 02:16:00,952 - result - DEBUG - saved cache file
+2025-06-08 02:16:00,952 - result - DEBUG - created new cache entry
+2025-06-08 02:16:00,952 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:00,952 - result - INFO - Datapoint 99
+2025-06-08 02:16:00,952 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:01,337 - result - DEBUG - queried the API
+2025-06-08 02:16:01,337 - result - DEBUG - saved cache file
+2025-06-08 02:16:01,337 - result - DEBUG - created new cache entry
+2025-06-08 02:16:01,337 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:01,337 - result - INFO - Datapoint 64
+2025-06-08 02:16:01,353 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:01,773 - result - DEBUG - queried the API
+2025-06-08 02:16:01,773 - result - DEBUG - saved cache file
+2025-06-08 02:16:01,773 - result - DEBUG - created new cache entry
+2025-06-08 02:16:01,789 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:01,790 - result - INFO - predicted scores solo
+2025-06-08 02:16:01,790 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:16:01,793 - result - INFO - MSE of Set: 0.06944
+
+2025-06-08 02:16:01,796 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+173  "Dear local news paper, In @CAPS1 oppinion I t...  0.666667  0.333333  0.333333
+161  I think that you can never spend enuf time on ...  0.666667  0.333333  0.333333
+99   "Dear Local newpaper editor, I think computers...  0.666667  0.500000  0.166667
+64   "Imagine a world without computers chaos in wa...  0.666667  0.500000  0.166667
+
+2025-06-08 02:16:01,796 - result - INFO - ESSAY SET 2:
+
+2025-06-08 02:16:01,938 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:01,989 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:02,038 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:02,038 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:16:02,038 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:16:02,038 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:16:02,054 - result - DEBUG - read cache file
+2025-06-08 02:16:02,054 - result - DEBUG - loaded cache
+2025-06-08 02:16:02,054 - result - INFO - score prediction started
+2025-06-08 02:16:02,054 - result - INFO - Datapoint 269
+2025-06-08 02:16:02,054 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:02,576 - result - DEBUG - queried the API
+2025-06-08 02:16:02,591 - result - DEBUG - saved cache file
+2025-06-08 02:16:02,591 - result - DEBUG - created new cache entry
+2025-06-08 02:16:02,591 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:02,593 - result - INFO - Datapoint 112
+2025-06-08 02:16:02,594 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:03,054 - result - DEBUG - queried the API
+2025-06-08 02:16:03,078 - result - DEBUG - saved cache file
+2025-06-08 02:16:03,079 - result - DEBUG - created new cache entry
+2025-06-08 02:16:03,079 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:03,079 - result - INFO - Datapoint 70
+2025-06-08 02:16:03,082 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:03,518 - result - DEBUG - queried the API
+2025-06-08 02:16:03,525 - result - DEBUG - saved cache file
+2025-06-08 02:16:03,525 - result - DEBUG - created new cache entry
+2025-06-08 02:16:03,525 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:03,525 - result - INFO - Datapoint 190
+2025-06-08 02:16:03,525 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:03,990 - result - DEBUG - queried the API
+2025-06-08 02:16:04,005 - result - DEBUG - saved cache file
+2025-06-08 02:16:04,006 - result - DEBUG - created new cache entry
+2025-06-08 02:16:04,006 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:04,008 - result - INFO - predicted scores solo
+2025-06-08 02:16:04,010 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:16:04,010 - result - INFO - MSE of Set: 0.00750
+
+2025-06-08 02:16:04,082 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+269  "I don't believe that we should romove any boo...    0.8     0.7   0.1
+112  "No, I don't think that books or any other mat...    0.7     0.7   0.0
+70   "Censorships in the libraris  would be liked c...    0.6     0.5   0.1
+190  "Browsing for a book at your local library tha...    0.8     0.7   0.1
+
+2025-06-08 02:16:04,082 - result - INFO - ESSAY SET 3:
+
+2025-06-08 02:16:04,274 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:04,326 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:04,377 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:04,378 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:16:04,379 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:16:04,381 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:16:04,414 - result - DEBUG - read cache file
+2025-06-08 02:16:04,414 - result - DEBUG - loaded cache
+2025-06-08 02:16:04,414 - result - INFO - score prediction started
+2025-06-08 02:16:04,415 - result - INFO - Datapoint 247
+2025-06-08 02:16:04,416 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:04,887 - result - DEBUG - queried the API
+2025-06-08 02:16:04,898 - result - DEBUG - saved cache file
+2025-06-08 02:16:04,898 - result - DEBUG - created new cache entry
+2025-06-08 02:16:04,898 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:04,898 - result - INFO - Datapoint 52
+2025-06-08 02:16:04,906 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:05,282 - result - DEBUG - queried the API
+2025-06-08 02:16:05,298 - result - DEBUG - saved cache file
+2025-06-08 02:16:05,298 - result - DEBUG - created new cache entry
+2025-06-08 02:16:05,298 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:05,299 - result - INFO - Datapoint 130
+2025-06-08 02:16:05,300 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:05,761 - result - DEBUG - queried the API
+2025-06-08 02:16:05,774 - result - DEBUG - saved cache file
+2025-06-08 02:16:05,775 - result - DEBUG - created new cache entry
+2025-06-08 02:16:05,775 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:05,775 - result - INFO - Datapoint 35
+2025-06-08 02:16:05,777 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:06,156 - result - DEBUG - queried the API
+2025-06-08 02:16:06,177 - result - DEBUG - saved cache file
+2025-06-08 02:16:06,177 - result - DEBUG - created new cache entry
+2025-06-08 02:16:06,178 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:06,180 - result - INFO - predicted scores solo
+2025-06-08 02:16:06,181 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:16:06,187 - result - INFO - MSE of Set: 0.05556
+
+2025-06-08 02:16:06,197 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+247  "In the short story “ Rough Road Ahead Do not ...  0.333333  0.666667 -0.333333
+52   The features of setting affect the cyclist in ...  0.666667  0.666667  0.000000
+130  "The cyclist pedaled through all types of diff...  0.666667  0.666667  0.000000
+35   "The settings of cyclist affects the way cycli...  0.333333  0.666667 -0.333333
+
+2025-06-08 02:16:06,197 - result - INFO - ESSAY SET 4:
+
+2025-06-08 02:16:06,322 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:06,370 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:06,401 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:06,401 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:16:06,401 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:16:06,401 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:16:06,417 - result - DEBUG - read cache file
+2025-06-08 02:16:06,417 - result - DEBUG - loaded cache
+2025-06-08 02:16:06,417 - result - INFO - score prediction started
+2025-06-08 02:16:06,417 - result - INFO - Datapoint 269
+2025-06-08 02:16:06,417 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:06,856 - result - DEBUG - queried the API
+2025-06-08 02:16:06,876 - result - DEBUG - saved cache file
+2025-06-08 02:16:06,876 - result - DEBUG - created new cache entry
+2025-06-08 02:16:06,876 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:06,876 - result - INFO - Datapoint 342
+2025-06-08 02:16:06,878 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:11,670 - result - DEBUG - queried the API
+2025-06-08 02:16:11,693 - result - DEBUG - saved cache file
+2025-06-08 02:16:11,693 - result - DEBUG - created new cache entry
+2025-06-08 02:16:11,695 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:11,696 - result - INFO - Datapoint 35
+2025-06-08 02:16:11,697 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:16,800 - result - DEBUG - queried the API
+2025-06-08 02:16:16,815 - result - DEBUG - saved cache file
+2025-06-08 02:16:16,815 - result - DEBUG - created new cache entry
+2025-06-08 02:16:16,815 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:16,816 - result - INFO - Datapoint 64
+2025-06-08 02:16:16,817 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:21,820 - result - DEBUG - queried the API
+2025-06-08 02:16:21,845 - result - DEBUG - saved cache file
+2025-06-08 02:16:21,845 - result - DEBUG - created new cache entry
+2025-06-08 02:16:21,845 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:21,847 - result - INFO - predicted scores solo
+2025-06-08 02:16:21,849 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:16:21,851 - result - INFO - MSE of Set: 0.22222
+
+2025-06-08 02:16:21,861 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+269  "The author concludes the story with this para...  0.666667  1.333333 -0.666667
+342  "In the end of the story the girl Saeng vowes ...  0.666667  0.666667  0.000000
+35   "The author concluded the story with his parag...  0.666667  1.333333 -0.666667
+64   When the snow melts & the geese return then me...  0.000000  0.000000  0.000000
+
+2025-06-08 02:16:21,861 - result - INFO - ESSAY SET 5:
+
+2025-06-08 02:16:21,986 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:22,017 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:22,049 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:22,049 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:16:22,049 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:16:22,049 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:16:22,100 - result - DEBUG - read cache file
+2025-06-08 02:16:22,100 - result - DEBUG - loaded cache
+2025-06-08 02:16:22,100 - result - INFO - score prediction started
+2025-06-08 02:16:22,101 - result - INFO - Datapoint 333
+2025-06-08 02:16:22,102 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:25,591 - result - DEBUG - queried the API
+2025-06-08 02:16:25,602 - result - DEBUG - saved cache file
+2025-06-08 02:16:25,603 - result - DEBUG - created new cache entry
+2025-06-08 02:16:25,603 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:25,604 - result - INFO - Datapoint 133
+2025-06-08 02:16:25,605 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:29,941 - result - DEBUG - queried the API
+2025-06-08 02:16:29,960 - result - DEBUG - saved cache file
+2025-06-08 02:16:29,961 - result - DEBUG - created new cache entry
+2025-06-08 02:16:29,961 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:29,961 - result - INFO - Datapoint 214
+2025-06-08 02:16:29,961 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:32,356 - result - DEBUG - queried the API
+2025-06-08 02:16:32,365 - result - DEBUG - saved cache file
+2025-06-08 02:16:32,365 - result - DEBUG - created new cache entry
+2025-06-08 02:16:32,365 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:32,365 - result - INFO - Datapoint 122
+2025-06-08 02:16:32,376 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:35,822 - result - DEBUG - queried the API
+2025-06-08 02:16:35,851 - result - DEBUG - saved cache file
+2025-06-08 02:16:35,851 - result - DEBUG - created new cache entry
+2025-06-08 02:16:35,851 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:35,853 - result - INFO - predicted scores solo
+2025-06-08 02:16:35,854 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:16:35,854 - result - INFO - MSE of Set: 0.07812
+
+2025-06-08 02:16:35,863 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+333  "In the memoir ""@PERSON1"" by @PERSON2, the m...   1.00     1.5 -0.50
+133  "The author creates a loving, warm mood that i...   1.00     1.0  0.00
+214  The author that wrote this put this in a sad o...   0.00     0.0  0.00
+122  "Narciso Rodriguez is very grateful of his fam...   0.75     1.0 -0.25
+
+2025-06-08 02:16:35,863 - result - INFO - ESSAY SET 6:
+
+2025-06-08 02:16:35,991 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:36,022 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:36,054 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:36,054 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:16:36,069 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:16:36,069 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:16:36,088 - result - DEBUG - read cache file
+2025-06-08 02:16:36,088 - result - DEBUG - loaded cache
+2025-06-08 02:16:36,089 - result - INFO - score prediction started
+2025-06-08 02:16:36,089 - result - INFO - Datapoint 269
+2025-06-08 02:16:36,089 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:41,725 - result - DEBUG - queried the API
+2025-06-08 02:16:41,725 - result - DEBUG - saved cache file
+2025-06-08 02:16:41,725 - result - DEBUG - created new cache entry
+2025-06-08 02:16:41,725 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:41,725 - result - INFO - Datapoint 112
+2025-06-08 02:16:41,725 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:47,087 - result - DEBUG - queried the API
+2025-06-08 02:16:47,104 - result - DEBUG - saved cache file
+2025-06-08 02:16:47,104 - result - DEBUG - created new cache entry
+2025-06-08 02:16:47,104 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:47,105 - result - INFO - Datapoint 70
+2025-06-08 02:16:47,106 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:52,825 - result - DEBUG - queried the API
+2025-06-08 02:16:52,835 - result - DEBUG - saved cache file
+2025-06-08 02:16:52,835 - result - DEBUG - created new cache entry
+2025-06-08 02:16:52,835 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:52,835 - result - INFO - Datapoint 190
+2025-06-08 02:16:52,836 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:58,292 - result - DEBUG - queried the API
+2025-06-08 02:16:58,319 - result - DEBUG - saved cache file
+2025-06-08 02:16:58,319 - result - DEBUG - created new cache entry
+2025-06-08 02:16:58,320 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:58,320 - result - INFO - predicted scores solo
+2025-06-08 02:16:58,320 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:16:58,326 - result - INFO - MSE of Set: 0.46875
+
+2025-06-08 02:16:58,344 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+269  "From my reading, I understand that the diffic...   0.75     1.5 -0.75
+112  There were many obstacles the builders had to ...   0.50     1.0 -0.50
+70   "Dirigibles, or blimps, were seen as the trans...   0.50     1.5 -1.00
+190  "Although the plans for the mooring mast were ...   0.75     1.0 -0.25
+
+2025-06-08 02:16:58,344 - result - INFO - ESSAY SET 7:
+
+2025-06-08 02:16:58,486 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:58,533 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:58,610 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:16:58,611 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:16:58,612 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:16:58,613 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:16:58,625 - result - DEBUG - read cache file
+2025-06-08 02:16:58,625 - result - DEBUG - loaded cache
+2025-06-08 02:16:58,625 - result - INFO - score prediction started
+2025-06-08 02:16:58,625 - result - INFO - Datapoint 137
+2025-06-08 02:16:58,625 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:16:59,759 - result - DEBUG - queried the API
+2025-06-08 02:16:59,764 - result - DEBUG - saved cache file
+2025-06-08 02:16:59,764 - result - DEBUG - created new cache entry
+2025-06-08 02:16:59,764 - result - DEBUG - got score from new prediction
+2025-06-08 02:16:59,764 - result - INFO - Datapoint 147
+2025-06-08 02:16:59,764 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:17:01,977 - result - DEBUG - queried the API
+2025-06-08 02:17:02,007 - result - DEBUG - saved cache file
+2025-06-08 02:17:02,008 - result - DEBUG - created new cache entry
+2025-06-08 02:17:02,008 - result - DEBUG - got score from new prediction
+2025-06-08 02:17:02,009 - result - INFO - Datapoint 140
+2025-06-08 02:17:02,011 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:17:03,594 - result - DEBUG - queried the API
+2025-06-08 02:17:03,607 - result - DEBUG - saved cache file
+2025-06-08 02:17:03,608 - result - DEBUG - created new cache entry
+2025-06-08 02:17:03,608 - result - DEBUG - got score from new prediction
+2025-06-08 02:17:03,609 - result - INFO - Datapoint 13
+2025-06-08 02:17:03,610 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:17:05,493 - result - DEBUG - queried the API
+2025-06-08 02:17:05,511 - result - DEBUG - saved cache file
+2025-06-08 02:17:05,511 - result - DEBUG - created new cache entry
+2025-06-08 02:17:05,511 - result - DEBUG - got score from new prediction
+2025-06-08 02:17:05,512 - result - INFO - predicted scores solo
+2025-06-08 02:17:05,513 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:17:05,517 - result - INFO - MSE of Set: 0.01389
+
+2025-06-08 02:17:05,527 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+137  "My favorite books, now a movie, I have to see...  0.600000  0.533333  0.066667
+147  "I ride a beautiful paint horse named @CAPS1, ...  0.566667  0.600000 -0.033333
+140  "My cousin was patient when we were waiting in...  0.733333  0.533333  0.200000
+13   One day I had to wait in a line for @NUM1 hour...  0.300000  0.400000 -0.100000
+
+2025-06-08 02:17:05,527 - result - INFO - ESSAY SET 8:
+
+2025-06-08 02:17:05,659 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:17:05,710 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:17:05,749 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:17:05,750 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:17:05,750 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:17:05,752 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:17:05,781 - result - DEBUG - read cache file
+2025-06-08 02:17:05,781 - result - DEBUG - loaded cache
+2025-06-08 02:17:05,781 - result - INFO - score prediction started
+2025-06-08 02:17:05,782 - result - INFO - Datapoint 29
+2025-06-08 02:17:05,782 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:17:19,211 - result - DEBUG - queried the API
+2025-06-08 02:17:19,226 - result - DEBUG - saved cache file
+2025-06-08 02:17:19,226 - result - DEBUG - created new cache entry
+2025-06-08 02:17:19,227 - result - DEBUG - got score from new prediction
+2025-06-08 02:17:19,227 - result - INFO - Datapoint 16
+2025-06-08 02:17:19,229 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:17:34,145 - result - DEBUG - queried the API
+2025-06-08 02:17:34,169 - result - DEBUG - saved cache file
+2025-06-08 02:17:34,169 - result - DEBUG - created new cache entry
+2025-06-08 02:17:34,169 - result - DEBUG - got score from new prediction
+2025-06-08 02:17:34,169 - result - INFO - Datapoint 71
+2025-06-08 02:17:34,169 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:17:43,179 - result - DEBUG - queried the API
+2025-06-08 02:17:43,203 - result - DEBUG - saved cache file
+2025-06-08 02:17:43,203 - result - DEBUG - created new cache entry
+2025-06-08 02:17:43,204 - result - DEBUG - got score from new prediction
+2025-06-08 02:17:43,205 - result - INFO - Datapoint 66
+2025-06-08 02:17:43,207 - result - DEBUG - looked-up prompt in cache
+2025-06-08 02:17:57,953 - result - DEBUG - queried the API
+2025-06-08 02:17:57,969 - result - DEBUG - saved cache file
+2025-06-08 02:17:57,970 - result - DEBUG - created new cache entry
+2025-06-08 02:17:57,970 - result - DEBUG - got score from new prediction
+2025-06-08 02:17:57,971 - result - INFO - predicted scores solo
+2025-06-08 02:17:57,973 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:17:57,973 - result - INFO - MSE of Set: 0.01979
+
+2025-06-08 02:17:57,982 - result - DEBUG - 
+                                                essay     score    y_pred      diff
+29  "A true story for me in laughter. My favorite ...  0.533333  0.333333  0.200000
+16  " The night was dark and cloudy giving my surr...  0.700000  0.633333  0.066667
+71  "The mood was sweet and the room was worm with...  0.433333  0.400000  0.033333
+66  "    Laughter is one of the many ways to share...  0.783333  0.600000  0.183333
+
+2025-06-08 02:17:57,982 - result - INFO - Baseline Cache-Stats:
+2025-06-08 02:17:57,982 - result - INFO - Cache hits: 0
+2025-06-08 02:17:57,982 - result - INFO - Cache misses: 32
+2025-06-08 02:17:57,982 - result - DEBUG - printed cache stats
+
+2025-06-08 02:17:57,982 - result - INFO - Evaluation:
+2025-06-08 02:17:57,982 - result - INFO - MSE of Set 1: 0.06944
+2025-06-08 02:17:57,982 - result - INFO - MSE of Set 2: 0.00750
+2025-06-08 02:17:57,982 - result - INFO - MSE of Set 3: 0.05556
+2025-06-08 02:17:57,982 - result - INFO - MSE of Set 4: 0.22222
+2025-06-08 02:17:57,982 - result - INFO - MSE of Set 5: 0.07812
+2025-06-08 02:17:57,982 - result - INFO - MSE of Set 6: 0.46875
+2025-06-08 02:17:57,982 - result - INFO - MSE of Set 7: 0.01389
+2025-06-08 02:17:57,982 - result - INFO - MSE of Set 8: 0.01979
+2025-06-08 02:17:57,982 - result - INFO - Average MSE: 0.11691
+
+2025-06-08 02:17:57,982 - result - INFO - -----------------------------------------------------------------
+
+
+2025-06-08 02:20:06,437 - result - DEBUG - pairwise: False; testing: True; random seed: 17; fold ID: 1
+2025-06-08 02:20:06,439 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-08 02:20:06,439 - result - INFO - Run through essay sets 1 to 8
+2025-06-08 02:20:06,439 - result - INFO - Mode: Solo
+
+2025-06-08 02:20:06,439 - result - INFO - ESSAY SET 1:
+
+2025-06-08 02:20:06,577 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:06,618 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:06,651 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:06,651 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:20:06,651 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:20:06,651 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:20:06,762 - result - DEBUG - read cache file
+2025-06-08 02:20:06,763 - result - DEBUG - loaded cache
+2025-06-08 02:20:06,763 - result - INFO - score prediction started
+2025-06-08 02:20:06,763 - result - INFO - Datapoint 173
+2025-06-08 02:20:06,765 - result - DEBUG - got score from cache
+2025-06-08 02:20:06,765 - result - INFO - Datapoint 161
+2025-06-08 02:20:06,766 - result - DEBUG - got score from cache
+2025-06-08 02:20:06,766 - result - INFO - Datapoint 99
+2025-06-08 02:20:06,766 - result - DEBUG - got score from cache
+2025-06-08 02:20:06,766 - result - INFO - Datapoint 64
+2025-06-08 02:20:06,767 - result - DEBUG - got score from cache
+2025-06-08 02:20:06,768 - result - INFO - predicted scores solo
+2025-06-08 02:20:06,770 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:20:06,771 - result - INFO - MSE of Set: 0.06944
+
+2025-06-08 02:20:06,777 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+173  "Dear local news paper, In @CAPS1 oppinion I t...  0.666667  0.333333  0.333333
+161  I think that you can never spend enuf time on ...  0.666667  0.333333  0.333333
+99   "Dear Local newpaper editor, I think computers...  0.666667  0.500000  0.166667
+64   "Imagine a world without computers chaos in wa...  0.666667  0.500000  0.166667
+
+
+
+2025-06-08 02:20:06,777 - result - INFO - ESSAY SET 2:
+
+2025-06-08 02:20:06,898 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:06,935 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:06,982 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:06,982 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:20:06,982 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:20:06,982 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:20:06,982 - result - DEBUG - read cache file
+2025-06-08 02:20:06,982 - result - DEBUG - loaded cache
+2025-06-08 02:20:06,982 - result - INFO - score prediction started
+2025-06-08 02:20:06,982 - result - INFO - Datapoint 269
+2025-06-08 02:20:06,982 - result - DEBUG - got score from cache
+2025-06-08 02:20:06,982 - result - INFO - Datapoint 112
+2025-06-08 02:20:06,982 - result - DEBUG - got score from cache
+2025-06-08 02:20:06,982 - result - INFO - Datapoint 70
+2025-06-08 02:20:06,982 - result - DEBUG - got score from cache
+2025-06-08 02:20:06,982 - result - INFO - Datapoint 190
+2025-06-08 02:20:06,982 - result - DEBUG - got score from cache
+2025-06-08 02:20:06,982 - result - INFO - predicted scores solo
+2025-06-08 02:20:06,982 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:20:06,982 - result - INFO - MSE of Set: 0.00750
+
+2025-06-08 02:20:07,002 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+269  "I don't believe that we should romove any boo...    0.8     0.7   0.1
+112  "No, I don't think that books or any other mat...    0.7     0.7   0.0
+70   "Censorships in the libraris  would be liked c...    0.6     0.5   0.1
+190  "Browsing for a book at your local library tha...    0.8     0.7   0.1
+
+
+
+2025-06-08 02:20:07,002 - result - INFO - ESSAY SET 3:
+
+2025-06-08 02:20:07,123 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,167 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,198 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,198 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:20:07,198 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:20:07,198 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:20:07,198 - result - DEBUG - read cache file
+2025-06-08 02:20:07,198 - result - DEBUG - loaded cache
+2025-06-08 02:20:07,198 - result - INFO - score prediction started
+2025-06-08 02:20:07,198 - result - INFO - Datapoint 247
+2025-06-08 02:20:07,198 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,198 - result - INFO - Datapoint 52
+2025-06-08 02:20:07,198 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,198 - result - INFO - Datapoint 130
+2025-06-08 02:20:07,198 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,213 - result - INFO - Datapoint 35
+2025-06-08 02:20:07,213 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,213 - result - INFO - predicted scores solo
+2025-06-08 02:20:07,213 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:20:07,213 - result - INFO - MSE of Set: 0.05556
+
+2025-06-08 02:20:07,213 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+247  "In the short story “ Rough Road Ahead Do not ...  0.333333  0.666667 -0.333333
+52   The features of setting affect the cyclist in ...  0.666667  0.666667  0.000000
+130  "The cyclist pedaled through all types of diff...  0.666667  0.666667  0.000000
+35   "The settings of cyclist affects the way cycli...  0.333333  0.666667 -0.333333
+
+
+
+2025-06-08 02:20:07,213 - result - INFO - ESSAY SET 4:
+
+2025-06-08 02:20:07,331 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,362 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,393 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,393 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:20:07,409 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:20:07,409 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:20:07,409 - result - DEBUG - read cache file
+2025-06-08 02:20:07,409 - result - DEBUG - loaded cache
+2025-06-08 02:20:07,409 - result - INFO - score prediction started
+2025-06-08 02:20:07,409 - result - INFO - Datapoint 269
+2025-06-08 02:20:07,409 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,409 - result - INFO - Datapoint 342
+2025-06-08 02:20:07,409 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,409 - result - INFO - Datapoint 35
+2025-06-08 02:20:07,409 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,409 - result - INFO - Datapoint 64
+2025-06-08 02:20:07,409 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,409 - result - INFO - predicted scores solo
+2025-06-08 02:20:07,409 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:20:07,409 - result - INFO - MSE of Set: 0.22222
+
+2025-06-08 02:20:07,409 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+269  "The author concludes the story with this para...  0.666667  1.333333 -0.666667
+342  "In the end of the story the girl Saeng vowes ...  0.666667  0.666667  0.000000
+35   "The author concluded the story with his parag...  0.666667  1.333333 -0.666667
+64   When the snow melts & the geese return then me...  0.000000  0.000000  0.000000
+
+
+
+2025-06-08 02:20:07,409 - result - INFO - ESSAY SET 5:
+
+2025-06-08 02:20:07,520 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,566 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,606 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,606 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:20:07,607 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:20:07,608 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:20:07,614 - result - DEBUG - read cache file
+2025-06-08 02:20:07,614 - result - DEBUG - loaded cache
+2025-06-08 02:20:07,614 - result - INFO - score prediction started
+2025-06-08 02:20:07,614 - result - INFO - Datapoint 333
+2025-06-08 02:20:07,615 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,615 - result - INFO - Datapoint 133
+2025-06-08 02:20:07,615 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,615 - result - INFO - Datapoint 214
+2025-06-08 02:20:07,616 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,616 - result - INFO - Datapoint 122
+2025-06-08 02:20:07,616 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,616 - result - INFO - predicted scores solo
+2025-06-08 02:20:07,617 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:20:07,618 - result - INFO - MSE of Set: 0.07812
+
+2025-06-08 02:20:07,622 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+333  "In the memoir ""@PERSON1"" by @PERSON2, the m...   1.00     1.5 -0.50
+133  "The author creates a loving, warm mood that i...   1.00     1.0  0.00
+214  The author that wrote this put this in a sad o...   0.00     0.0  0.00
+122  "Narciso Rodriguez is very grateful of his fam...   0.75     1.0 -0.25
+
+
+
+2025-06-08 02:20:07,623 - result - INFO - ESSAY SET 6:
+
+2025-06-08 02:20:07,735 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,785 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,827 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:07,827 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:20:07,829 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:20:07,831 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:20:07,836 - result - DEBUG - read cache file
+2025-06-08 02:20:07,836 - result - DEBUG - loaded cache
+2025-06-08 02:20:07,837 - result - INFO - score prediction started
+2025-06-08 02:20:07,837 - result - INFO - Datapoint 269
+2025-06-08 02:20:07,838 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,838 - result - INFO - Datapoint 112
+2025-06-08 02:20:07,838 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,838 - result - INFO - Datapoint 70
+2025-06-08 02:20:07,839 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,839 - result - INFO - Datapoint 190
+2025-06-08 02:20:07,839 - result - DEBUG - got score from cache
+2025-06-08 02:20:07,839 - result - INFO - predicted scores solo
+2025-06-08 02:20:07,840 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:20:07,840 - result - INFO - MSE of Set: 0.46875
+
+2025-06-08 02:20:07,847 - result - DEBUG - 
+                                                 essay  score  y_pred  diff
+269  "From my reading, I understand that the diffic...   0.75     1.5 -0.75
+112  There were many obstacles the builders had to ...   0.50     1.0 -0.50
+70   "Dirigibles, or blimps, were seen as the trans...   0.50     1.5 -1.00
+190  "Although the plans for the mooring mast were ...   0.75     1.0 -0.25
+
+
+
+2025-06-08 02:20:07,847 - result - INFO - ESSAY SET 7:
+
+2025-06-08 02:20:07,974 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:08,001 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:08,033 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:08,033 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:20:08,033 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:20:08,050 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:20:08,056 - result - DEBUG - read cache file
+2025-06-08 02:20:08,056 - result - DEBUG - loaded cache
+2025-06-08 02:20:08,056 - result - INFO - score prediction started
+2025-06-08 02:20:08,056 - result - INFO - Datapoint 137
+2025-06-08 02:20:08,057 - result - DEBUG - got score from cache
+2025-06-08 02:20:08,057 - result - INFO - Datapoint 147
+2025-06-08 02:20:08,057 - result - DEBUG - got score from cache
+2025-06-08 02:20:08,057 - result - INFO - Datapoint 140
+2025-06-08 02:20:08,058 - result - DEBUG - got score from cache
+2025-06-08 02:20:08,058 - result - INFO - Datapoint 13
+2025-06-08 02:20:08,058 - result - DEBUG - got score from cache
+2025-06-08 02:20:08,058 - result - INFO - predicted scores solo
+2025-06-08 02:20:08,058 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:20:08,059 - result - INFO - MSE of Set: 0.01389
+
+2025-06-08 02:20:08,063 - result - DEBUG - 
+                                                 essay     score    y_pred      diff
+137  "My favorite books, now a movie, I have to see...  0.600000  0.533333  0.066667
+147  "I ride a beautiful paint horse named @CAPS1, ...  0.566667  0.600000 -0.033333
+140  "My cousin was patient when we were waiting in...  0.733333  0.533333  0.200000
+13   One day I had to wait in a line for @NUM1 hour...  0.300000  0.400000 -0.100000
+
+
+
+2025-06-08 02:20:08,063 - result - INFO - ESSAY SET 8:
+
+2025-06-08 02:20:08,183 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:08,214 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:08,259 - result - DEBUG - read dataset and split off target variable
+2025-06-08 02:20:08,259 - result - DEBUG - split data in train, dev, test set
+2025-06-08 02:20:08,260 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-08 02:20:08,261 - result - INFO - amount of datapoints was limited due to active testing
+2025-06-08 02:20:08,266 - result - DEBUG - read cache file
+2025-06-08 02:20:08,266 - result - DEBUG - loaded cache
+2025-06-08 02:20:08,266 - result - INFO - score prediction started
+2025-06-08 02:20:08,266 - result - INFO - Datapoint 29
+2025-06-08 02:20:08,267 - result - DEBUG - got score from cache
+2025-06-08 02:20:08,267 - result - INFO - Datapoint 16
+2025-06-08 02:20:08,267 - result - DEBUG - got score from cache
+2025-06-08 02:20:08,267 - result - INFO - Datapoint 71
+2025-06-08 02:20:08,268 - result - DEBUG - got score from cache
+2025-06-08 02:20:08,268 - result - INFO - Datapoint 66
+2025-06-08 02:20:08,269 - result - DEBUG - got score from cache
+2025-06-08 02:20:08,269 - result - INFO - predicted scores solo
+2025-06-08 02:20:08,269 - result - DEBUG - normalized score with the corresponding max value
+2025-06-08 02:20:08,269 - result - INFO - MSE of Set: 0.01979
+
+2025-06-08 02:20:08,269 - result - DEBUG - 
+                                                essay     score    y_pred      diff
+29  "A true story for me in laughter. My favorite ...  0.533333  0.333333  0.200000
+16  " The night was dark and cloudy giving my surr...  0.700000  0.633333  0.066667
+71  "The mood was sweet and the room was worm with...  0.433333  0.400000  0.033333
+66  "    Laughter is one of the many ways to share...  0.783333  0.600000  0.183333
+
+
+
+2025-06-08 02:20:08,269 - result - INFO - Baseline Cache-Stats:
+2025-06-08 02:20:08,269 - result - INFO - Cache hits: 32
+2025-06-08 02:20:08,269 - result - INFO - Cache misses: 0
+2025-06-08 02:20:08,269 - result - DEBUG - printed cache stats
+
+2025-06-08 02:20:08,269 - result - INFO - Evaluation:
+2025-06-08 02:20:08,269 - result - INFO - MSE of Set 1: 0.06944
+2025-06-08 02:20:08,269 - result - INFO - MSE of Set 2: 0.00750
+2025-06-08 02:20:08,269 - result - INFO - MSE of Set 3: 0.05556
+2025-06-08 02:20:08,269 - result - INFO - MSE of Set 4: 0.22222
+2025-06-08 02:20:08,269 - result - INFO - MSE of Set 5: 0.07812
+2025-06-08 02:20:08,269 - result - INFO - MSE of Set 6: 0.46875
+2025-06-08 02:20:08,269 - result - INFO - MSE of Set 7: 0.01389
+2025-06-08 02:20:08,269 - result - INFO - MSE of Set 8: 0.01979
+2025-06-08 02:20:08,269 - result - INFO - Average MSE: 0.11691
+
+2025-06-08 02:20:08,269 - result - INFO - -----------------------------------------------------------------
+
+
+
+
