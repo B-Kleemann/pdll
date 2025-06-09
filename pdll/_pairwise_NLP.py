@@ -37,12 +37,12 @@ def get_pair_diff_as_int(
     {essay2}
     """
 
-    from_cache = caching.lookup_in_cache(prompt, True)
+    from_cache = caching.lookup_in_cache(model, prompt, True)
 
     if from_cache is None:
         try:
             pred_score = int(query_the_api(model, prompt))
-            caching.new_cache_entry(prompt, pred_score, True)
+            caching.new_cache_entry(model, prompt, pred_score, True)
             logger.debug("got score from new prediction")
             return pred_score
 

@@ -45,12 +45,12 @@ def get_essay_score_as_float(
     {essay}
     """
 
-    from_cache = caching.lookup_in_cache(prompt, False)
+    from_cache = caching.lookup_in_cache(model, prompt, False)
 
     if from_cache is None:
         try:
             pred_score = float(query_the_api(model, prompt))
-            caching.new_cache_entry(prompt, pred_score, False)
+            caching.new_cache_entry(model, prompt, pred_score, False)
             logger.debug("got score from new prediction")
             return pred_score
 
