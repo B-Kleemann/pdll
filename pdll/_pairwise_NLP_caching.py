@@ -70,7 +70,8 @@ def lookup_in_cache(model: str, prompt: str, is_pairwise: bool):
         if not cached_row.empty:
             cache_stats_PW["hits"] += 1
             return cached_row.iloc[0]["score"]
-        cache_stats_PW["misses"] += 1
+        else:
+            cache_stats_PW["misses"] += 1
 
     else:
         global cache_BL, cache_stats_BL
@@ -80,7 +81,8 @@ def lookup_in_cache(model: str, prompt: str, is_pairwise: bool):
         if not cached_row.empty:
             cache_stats_BL["hits"] += 1
             return cached_row.iloc[0]["score"]
-        cache_stats_BL["misses"] += 1
+        else:
+            cache_stats_BL["misses"] += 1
 
 
 def new_cache_entry(model: str, prompt: str, score, is_pairwise: bool):

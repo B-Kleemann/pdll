@@ -73,7 +73,7 @@ def predict_scores_solo(
     model: str,
 ) -> pd.DataFrame:
     caching.load_cache(False)
-    logger.info("score prediction started")
+    logger.info("score prediction started\n")
 
     predictions = []
 

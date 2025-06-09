@@ -29,9 +29,7 @@ LIMIT_ANCHORS = _.limit_anchors
 LIMIT_REASONABLE = _.limit_reasonable
 
 
-logger.debug(
-    f"pairwise: {PAIRWISE}; testing: {TESTING}; random seed: {SEED}; fold ID: {FOLD_ID}"
-)
+logger.debug(f"random seed: {SEED}; fold ID: {FOLD_ID}")
 logger.critical(f"LLM: {MODEL}")
 
 # Set limit of rows for testing
@@ -47,7 +45,7 @@ gathered_mse = 0
 # Load scoring rubrics
 scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
-logger.info(f"Run through essay sets {START} to {STOP}")
+logger.info(f"Run through essay sets {START} to {STOP}\n")
 
 
 def main(essay_set_ID):
