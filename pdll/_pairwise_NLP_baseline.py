@@ -20,7 +20,11 @@ logging.config.fileConfig("pdll\\\\log\\_logging.conf")
 logger = logging.getLogger("result")
 
 
-def get_essay_score_as_float(essay: str, rubric: str) -> float:
+def get_essay_score_as_float(
+    essay: str,
+    rubric: str,
+    model: str,
+) -> float:
     prompt = f"""
     You are an expert text comparison assistant.
     
@@ -45,7 +49,7 @@ def get_essay_score_as_float(essay: str, rubric: str) -> float:
 
     if from_cache is None:
         try:
-            pred_score = float(query_the_api("gpt-4o", prompt))
+            pred_score = float(query_the_api(model, prompt))
             caching.new_cache_entry(prompt, pred_score, False)
             logger.debug("got score from new prediction")
             return pred_score
@@ -63,7 +67,11 @@ def get_essay_score_as_float(essay: str, rubric: str) -> float:
         return float(from_cache)
 
 
-def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
+def predict_scores_solo(
+    test_data: pd.DataFrame,
+    rubric: str,
+    model: str,
+) -> pd.DataFrame:
     caching.load_cache(False)
     logger.info("score prediction started")
 
@@ -73,9 +81,10 @@ def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
         logger.info(f"Datapoint {i}")
         try:
             # the score here is predicted and then doubled to mimic the composition of the original score (the sum of two single scores by two different experts)
-            score_pred_1 = get_essay_score_as_float(row_i["essay"], rubric)
+            score_pred_1 = get_essay_score_as_float(row_i["essay"], rubric, model)
 
             score_pred = score_pred_1 * 2
+
             logger.info(f"Score prediction: {score_pred}\n")
             predictions.append(score_pred)
 
@@ -90,44 +99,44 @@ def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
 # done: test output with float to avoid multi-queriying of the same
 
 
-def get_essay_score_as_int(essay: str, rubric: str) -> int:
-    prompt = f"""
-    Task:
-    Strictly evaluate the essay according to the rubric below.
-    
-    Rules:
-    Return only one integer: the score for the essay.
-    Do NOT include any explanations, comments, extra characters, whitespace, or anything besides a single integer.
-    Any output other than a single integer will be considered invalid.
+# def get_essay_score_as_int(essay: str, rubric: str) -> int:
+#     prompt = f"""
+#     Task:
+#     Strictly evaluate the essay according to the rubric below.
 
-    Rubric:
-    {rubric}
+#     Rules:
+#     Return only one integer: the score for the essay.
+#     Do NOT include any explanations, comments, extra characters, whitespace, or anything besides a single integer.
+#     Any output other than a single integer will be considered invalid.
 
-    Essay:
-    {essay}
-    """
+#     Rubric:
+#     {rubric}
 
-    try:
-        # implement cashing here!
-        # parqet file for dataframe for cashing
-        # ask chat gpt, whole message as needed
-        response = openai.chat.completions.create(
-            model="gpt-4o",
-            temperature=0,
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You are an expert text comparison assistant.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-        )
+#     Essay:
+#     {essay}
+#     """
 
-        result = response.choices[0].message.content.strip()  # type: ignore
-        return int(result)
+#     try:
+#         # implement cashing here!
+#         # parqet file for dataframe for cashing
+#         # ask chat gpt, whole message as needed
+#         response = openai.chat.completions.create(
+#             model="gpt-4o",
+#             temperature=0,
+#             messages=[
+#                 {
+#                     "role": "system",
+#                     "content": "You are an expert text comparison assistant.",
+#                 },
+#                 {"role": "user", "content": prompt},
+#             ],
+#         )
 
-    except (ValueError, IndexError, AttributeError) as parse_err:
-        raise RuntimeError(f"Failed to parse score difference: {parse_err}")
+#         result = response.choices[0].message.content.strip()  # type: ignore
+#         return int(result)
 
-    except Exception as api_err:
-        raise RuntimeError(f"OpenAI API call failed: {api_err}")
+#     except (ValueError, IndexError, AttributeError) as parse_err:
+#         raise RuntimeError(f"Failed to parse score difference: {parse_err}")
+
+#     except Exception as api_err:
+#         raise RuntimeError(f"OpenAI API call failed: {api_err}")

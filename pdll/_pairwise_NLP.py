@@ -10,7 +10,12 @@ logging.config.fileConfig("pdll\\\\log\\_logging.conf")
 logger = logging.getLogger("result")
 
 
-def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
+def get_pair_diff_as_int(
+    essay1: str,
+    essay2: str,
+    rubric: str,
+    model: str,
+) -> int:
     prompt = f"""
     You are an expert text comparison assistant.
     
@@ -36,7 +41,7 @@ def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
 
     if from_cache is None:
         try:
-            pred_score = int(query_the_api("gpt-4o", prompt))
+            pred_score = int(query_the_api(model, prompt))
             caching.new_cache_entry(prompt, pred_score, True)
             logger.debug("got score from new prediction")
             return pred_score
@@ -55,7 +60,10 @@ def get_pair_diff_as_int(essay1: str, essay2: str, rubric: str) -> int:
 
 
 def predict_scores_pairwise(
-    test_data: pd.DataFrame, training_data: pd.DataFrame, rubric: str
+    test_data: pd.DataFrame,
+    training_data: pd.DataFrame,
+    rubric: str,
+    model: str,
 ) -> pd.DataFrame:
     caching.load_cache(True)
     logger.info("score prediction started\n")
@@ -73,7 +81,12 @@ def predict_scores_pairwise(
             # Todo for debugging: isolated predictions, give same pair twice, then see if difference is 0
             # continue
             try:
-                diff = get_pair_diff_as_int(row_i["essay"], row_j["essay"], rubric)
+                diff = get_pair_diff_as_int(
+                    row_i["essay"],
+                    row_j["essay"],
+                    rubric,
+                    model,
+                )
                 logger.info(f"Diff: {diff}")
 
                 score_of_baseline_essay = int(row_j.iloc[1])

@@ -638,3 +638,184 @@
 
 
 
+2025-06-10 00:27:25,685 - result - INFO - Run through essay sets 1 to 3
+2025-06-10 00:27:25,685 - result - CRITICAL - Mode: Pairwise
+
+2025-06-10 00:27:25,685 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 00:27:26,010 - result - INFO - score prediction started
+
+2025-06-10 00:27:26,010 - result - INFO - Datapoint 251 & Datapoint 309
+2025-06-10 00:27:26,010 - result - INFO - Diff: 0
+2025-06-10 00:27:26,010 - result - INFO - Score of baseline essay: 8
+2025-06-10 00:27:26,010 - result - INFO - Score prediction: 8
+2025-06-10 00:27:26,010 - result - INFO - Datapoint 251 & Datapoint 104
+2025-06-10 00:27:26,010 - result - INFO - Diff: 1
+2025-06-10 00:27:26,010 - result - INFO - Score of baseline essay: 10
+2025-06-10 00:27:26,010 - result - INFO - Score prediction: 11
+2025-06-10 00:27:26,010 - result - INFO - Datapoint 251 & Datapoint 796
+2025-06-10 00:27:26,010 - result - INFO - Diff: 1
+2025-06-10 00:27:26,010 - result - INFO - Score of baseline essay: 8
+2025-06-10 00:27:26,010 - result - INFO - Score prediction: 9
+2025-06-10 00:27:26,010 - result - INFO - Avg score for essay 251: 9
+
+2025-06-10 00:27:26,010 - result - INFO - Datapoint 273 & Datapoint 309
+2025-06-10 00:27:26,010 - result - INFO - Diff: 0
+2025-06-10 00:27:26,010 - result - INFO - Score of baseline essay: 8
+2025-06-10 00:27:26,010 - result - INFO - Score prediction: 8
+2025-06-10 00:27:26,010 - result - INFO - Datapoint 273 & Datapoint 104
+2025-06-10 00:27:26,010 - result - INFO - Diff: 0
+2025-06-10 00:27:26,010 - result - INFO - Score of baseline essay: 10
+2025-06-10 00:27:26,010 - result - INFO - Score prediction: 10
+2025-06-10 00:27:26,010 - result - INFO - Datapoint 273 & Datapoint 796
+2025-06-10 00:27:26,026 - result - INFO - Diff: 1
+2025-06-10 00:27:26,027 - result - INFO - Score of baseline essay: 8
+2025-06-10 00:27:26,027 - result - INFO - Score prediction: 9
+2025-06-10 00:27:26,027 - result - INFO - Avg score for essay 273: 9
+
+2025-06-10 00:27:26,028 - result - INFO - Datapoint 38 & Datapoint 309
+2025-06-10 00:27:26,028 - result - INFO - Diff: 0
+2025-06-10 00:27:26,028 - result - INFO - Score of baseline essay: 8
+2025-06-10 00:27:26,028 - result - INFO - Score prediction: 8
+2025-06-10 00:27:26,029 - result - INFO - Datapoint 38 & Datapoint 104
+2025-06-10 00:27:26,029 - result - INFO - Diff: 0
+2025-06-10 00:27:26,029 - result - INFO - Score of baseline essay: 10
+2025-06-10 00:27:26,029 - result - INFO - Score prediction: 10
+2025-06-10 00:27:26,030 - result - INFO - Datapoint 38 & Datapoint 796
+2025-06-10 00:27:26,030 - result - INFO - Diff: 0
+2025-06-10 00:27:26,030 - result - INFO - Score of baseline essay: 8
+2025-06-10 00:27:26,030 - result - INFO - Score prediction: 8
+2025-06-10 00:27:26,031 - result - INFO - Avg score for essay 38: 9
+
+2025-06-10 00:27:26,034 - result - INFO - MSE of Set: 0.02546
+
+2025-06-10 00:27:26,040 - result - CRITICAL - 
+                                                 essay     score  y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667    0.75 -0.083333
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000    0.75  0.250000
+38   "I completely agree with those people who thin...  0.666667    0.75 -0.083333
+
+
+2025-06-10 00:27:26,040 - result - CRITICAL - ESSAY SET 2:
+
+2025-06-10 00:27:26,235 - result - INFO - score prediction started
+
+2025-06-10 00:27:26,235 - result - INFO - Datapoint 249 & Datapoint 959
+2025-06-10 00:27:26,235 - result - INFO - Diff: 0
+2025-06-10 00:27:26,235 - result - INFO - Score of baseline essay: 6
+2025-06-10 00:27:26,235 - result - INFO - Score prediction: 6
+2025-06-10 00:27:26,235 - result - INFO - Datapoint 249 & Datapoint 40
+2025-06-10 00:27:26,235 - result - INFO - Diff: 0
+2025-06-10 00:27:26,235 - result - INFO - Score of baseline essay: 8
+2025-06-10 00:27:26,235 - result - INFO - Score prediction: 8
+2025-06-10 00:27:26,235 - result - INFO - Datapoint 249 & Datapoint 1055
+2025-06-10 00:27:26,235 - result - INFO - Diff: 0
+2025-06-10 00:27:26,235 - result - INFO - Score of baseline essay: 7
+2025-06-10 00:27:26,235 - result - INFO - Score prediction: 7
+2025-06-10 00:27:26,235 - result - INFO - Avg score for essay 249: 7
+
+2025-06-10 00:27:26,235 - result - INFO - Datapoint 108 & Datapoint 959
+2025-06-10 00:27:26,235 - result - INFO - Diff: 0
+2025-06-10 00:27:26,235 - result - INFO - Score of baseline essay: 6
+2025-06-10 00:27:26,235 - result - INFO - Score prediction: 6
+2025-06-10 00:27:26,235 - result - INFO - Datapoint 108 & Datapoint 40
+2025-06-10 00:27:26,235 - result - INFO - Diff: 0
+2025-06-10 00:27:26,235 - result - INFO - Score of baseline essay: 8
+2025-06-10 00:27:26,235 - result - INFO - Score prediction: 8
+2025-06-10 00:27:26,235 - result - INFO - Datapoint 108 & Datapoint 1055
+2025-06-10 00:27:26,235 - result - INFO - Diff: 0
+2025-06-10 00:27:26,235 - result - INFO - Score of baseline essay: 7
+2025-06-10 00:27:26,235 - result - INFO - Score prediction: 7
+2025-06-10 00:27:26,235 - result - INFO - Avg score for essay 108: 7
+
+2025-06-10 00:27:26,235 - result - INFO - Datapoint 85 & Datapoint 959
+2025-06-10 00:27:26,235 - result - INFO - Diff: 0
+2025-06-10 00:27:26,235 - result - INFO - Score of baseline essay: 6
+2025-06-10 00:27:26,235 - result - INFO - Score prediction: 6
+2025-06-10 00:27:26,235 - result - INFO - Datapoint 85 & Datapoint 40
+2025-06-10 00:27:26,235 - result - INFO - Diff: 0
+2025-06-10 00:27:26,235 - result - INFO - Score of baseline essay: 8
+2025-06-10 00:27:26,235 - result - INFO - Score prediction: 8
+2025-06-10 00:27:26,235 - result - INFO - Datapoint 85 & Datapoint 1055
+2025-06-10 00:27:26,235 - result - INFO - Diff: 0
+2025-06-10 00:27:26,235 - result - INFO - Score of baseline essay: 7
+2025-06-10 00:27:26,235 - result - INFO - Score prediction: 7
+2025-06-10 00:27:26,235 - result - INFO - Avg score for essay 85: 7
+
+2025-06-10 00:27:26,235 - result - INFO - MSE of Set: 0.00333
+
+2025-06-10 00:27:26,251 - result - CRITICAL - 
+                                                 essay  score  y_pred  diff
+249  "Censorship in libraries? Is it a problem? Sho...    0.8     0.7   0.1
+108  "My views on cencorship @MONTH1 not  be what o...    0.7     0.7   0.0
+85   "Have you ever imagined a @CAPS1 without movie...    0.7     0.7   0.0
+
+
+2025-06-10 00:27:26,251 - result - CRITICAL - ESSAY SET 3:
+
+2025-06-10 00:27:26,476 - result - INFO - score prediction started
+
+2025-06-10 00:27:26,476 - result - INFO - Datapoint 99 & Datapoint 839
+2025-06-10 00:27:26,476 - result - INFO - Diff: 1
+2025-06-10 00:27:26,476 - result - INFO - Score of baseline essay: 3
+2025-06-10 00:27:26,476 - result - INFO - Score prediction: 4
+2025-06-10 00:27:26,476 - result - INFO - Datapoint 99 & Datapoint 848
+2025-06-10 00:27:26,476 - result - INFO - Diff: 1
+2025-06-10 00:27:26,476 - result - INFO - Score of baseline essay: 2
+2025-06-10 00:27:26,476 - result - INFO - Score prediction: 3
+2025-06-10 00:27:26,476 - result - INFO - Datapoint 99 & Datapoint 108
+2025-06-10 00:27:26,476 - result - INFO - Diff: 1
+2025-06-10 00:27:26,476 - result - INFO - Score of baseline essay: 3
+2025-06-10 00:27:26,476 - result - INFO - Score prediction: 4
+2025-06-10 00:27:26,476 - result - INFO - Avg score for essay 99: 4
+
+2025-06-10 00:27:26,476 - result - INFO - Datapoint 303 & Datapoint 839
+2025-06-10 00:27:26,476 - result - INFO - Diff: 1
+2025-06-10 00:27:26,476 - result - INFO - Score of baseline essay: 3
+2025-06-10 00:27:26,476 - result - INFO - Score prediction: 4
+2025-06-10 00:27:26,476 - result - INFO - Datapoint 303 & Datapoint 848
+2025-06-10 00:27:26,476 - result - INFO - Diff: 1
+2025-06-10 00:27:26,476 - result - INFO - Score of baseline essay: 2
+2025-06-10 00:27:26,476 - result - INFO - Score prediction: 3
+2025-06-10 00:27:26,476 - result - INFO - Datapoint 303 & Datapoint 108
+2025-06-10 00:27:26,476 - result - INFO - Diff: 1
+2025-06-10 00:27:26,476 - result - INFO - Score of baseline essay: 3
+2025-06-10 00:27:26,476 - result - INFO - Score prediction: 4
+2025-06-10 00:27:26,476 - result - INFO - Avg score for essay 303: 4
+
+2025-06-10 00:27:26,476 - result - INFO - Datapoint 252 & Datapoint 839
+2025-06-10 00:27:26,476 - result - INFO - Diff: 1
+2025-06-10 00:27:26,491 - result - INFO - Score of baseline essay: 3
+2025-06-10 00:27:26,491 - result - INFO - Score prediction: 4
+2025-06-10 00:27:26,491 - result - INFO - Datapoint 252 & Datapoint 848
+2025-06-10 00:27:26,491 - result - INFO - Diff: 1
+2025-06-10 00:27:26,491 - result - INFO - Score of baseline essay: 2
+2025-06-10 00:27:26,491 - result - INFO - Score prediction: 3
+2025-06-10 00:27:26,491 - result - INFO - Datapoint 252 & Datapoint 108
+2025-06-10 00:27:26,491 - result - INFO - Diff: 1
+2025-06-10 00:27:26,491 - result - INFO - Score of baseline essay: 3
+2025-06-10 00:27:26,491 - result - INFO - Score prediction: 4
+2025-06-10 00:27:26,491 - result - INFO - Avg score for essay 252: 4
+
+2025-06-10 00:27:26,491 - result - INFO - MSE of Set: 0.81481
+
+2025-06-10 00:27:26,491 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+99   "In the story the setting has a large affect o...  0.666667  1.333333 -0.666667
+303  "The cyclist is most affected by e heat. He is...  0.333333  1.333333 -1.000000
+252  "The features  of the   setting   does   affec...  0.333333  1.333333 -1.000000
+
+
+2025-06-10 00:27:26,491 - result - INFO - Pairwise Cache-Stats:
+2025-06-10 00:27:26,491 - result - INFO - Cache hits: 27
+2025-06-10 00:27:26,491 - result - INFO - Cache misses: 0
+2025-06-10 00:27:26,491 - result - CRITICAL - Evaluation:
+2025-06-10 00:27:26,491 - result - CRITICAL - MSE of Set 1: 0.02546
+2025-06-10 00:27:26,491 - result - CRITICAL - MSE of Set 2: 0.00333
+2025-06-10 00:27:26,491 - result - CRITICAL - MSE of Set 3: 0.81481
+2025-06-10 00:27:26,491 - result - CRITICAL - Average MSE: 0.28120
+
+2025-06-10 00:27:26,491 - result - CRITICAL - -----------------------------------------------------------------
+
+
+

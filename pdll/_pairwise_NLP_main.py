@@ -8,28 +8,32 @@ import pdll._pairwise_NLP_baseline as baseline
 import pdll._pairwise_NLP_caching as caching
 import pdll._pairwise_NLP_dataprocessing as data_processing
 import pdll._pairwise_NLP_rubricextraction as rubric_extraction
+import pdll.config_NLP_pair_or_base as _
 
 logging.config.fileConfig("pdll\\\\log\\_logging.conf")
 logger = logging.getLogger("result")
 
 # Set control variables
-TESTING = True
-PAIRWISE = True
-START_AT_ESSAY_SET = 1
-STOP_AT_ESSAY_SET = 3
-SEED = 81
-FOLD_ID = 1
+TESTING = _.is_test_run
+PAIRWISE = _.is_pairwise
+MODEL = _.llm_model
+
+START = _.start_at_essay_set
+STOP = _.stop_at_essay_set
+
+SEED = _.random_seed
+FOLD_ID = _.fold_ID
+
+
 logger.debug(
     f"pairwise: {PAIRWISE}; testing: {TESTING}; random seed: {SEED}; fold ID: {FOLD_ID}"
 )
 
-# Set variables for data
-as_list_of_tuples = True
 
 # Load scoring rubrics
 scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
-logger.info(f"Run through essay sets {START_AT_ESSAY_SET} to {STOP_AT_ESSAY_SET}")
+logger.info(f"Run through essay sets {START} to {STOP}")
 
 # Set limit of rows for testing
 if PAIRWISE:
@@ -52,10 +56,11 @@ gathered_mse = 0
 
 def main(essay_set_ID):
     logger.critical(f"ESSAY SET {essay_set_ID}:\n")
+
     data_train, data_dev, data_test = data_processing.get_data(
         FOLD_ID,
         essay_set_ID,
-        as_list_of_tuples,
+        True,
     )
 
     # conversion to DataFrame
@@ -85,15 +90,14 @@ def main(essay_set_ID):
             data_dev,
             data_train,
             scoring_rubrics[essay_set_ID],
+            MODEL,
         )
     else:
         score_prediction = baseline.predict_scores_solo(
             data_dev,
             scoring_rubrics[essay_set_ID],
+            MODEL,
         )
-
-    # Print results
-    # print(score_prediction)
 
     if score_prediction is not None:
         # Compute and print error metrics
@@ -106,20 +110,21 @@ def main(essay_set_ID):
 
         mse = mean_squared_error(y_true, y_pred)
         list_mse.append(mse)
+
         logger.info(f"MSE of Set: {mse:.5f}\n")
         logger.critical(f"\n{score_prediction}\n\n")
     else:
         logger.info("No score prediction available.")
 
 
-for i in range(START_AT_ESSAY_SET, STOP_AT_ESSAY_SET + 1):
+for i in range(START, STOP + 1):
     main(i)
 
 caching.print_cache_stats(PAIRWISE)
 
 # evaluation
 logger.critical("Evaluation:")
-for j in range(START_AT_ESSAY_SET, STOP_AT_ESSAY_SET + 1):
+for j in range(START, STOP + 1):
     logger.critical(f"MSE of Set {j}: {list_mse[j - 1]:.5f}")
     gathered_mse += list_mse[j - 1]
 
