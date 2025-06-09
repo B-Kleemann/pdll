@@ -68,7 +68,7 @@ def get_essay_score_as_float(
 
 
 def predict_scores_solo(
-    test_data: pd.DataFrame,
+    data: pd.DataFrame,
     rubric: str,
     model: str,
 ) -> pd.DataFrame:
@@ -77,7 +77,7 @@ def predict_scores_solo(
 
     predictions = []
 
-    for i, row_i in test_data.iterrows():
+    for i, row_i in data.iterrows():
         logger.info(f"Datapoint {i}")
         try:
             # the score here is predicted and then doubled to mimic the composition of the original score (the sum of two single scores by two different experts)
@@ -91,9 +91,9 @@ def predict_scores_solo(
         except RuntimeError:
             raise RuntimeError(logger.exception(f"prediction failed for: {row_i}"))
 
-    test_data["y_pred"] = predictions
+    data["y_pred"] = predictions
     logger.info("predicted scores solo")
-    return test_data
+    return data
 
 
 # done: test output with float to avoid multi-queriying of the same

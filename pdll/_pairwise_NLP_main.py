@@ -16,7 +16,7 @@ logger = logging.getLogger("result")
 # Set control variables
 TESTING = _.is_test_run
 PAIRWISE = _.is_pairwise
-MODEL = _.llm_model
+MODEL = _.llm
 
 START = _.start_at_essay_set
 STOP = _.stop_at_essay_set
@@ -24,34 +24,30 @@ STOP = _.stop_at_essay_set
 SEED = _.random_seed
 FOLD_ID = _.fold_ID
 
+LIMIT_DATA = _.limit_data
+LIMIT_ANCHORS = _.limit_anchors
+LIMIT_REASONABLE = _.limit_reasonable
+
 
 logger.debug(
     f"pairwise: {PAIRWISE}; testing: {TESTING}; random seed: {SEED}; fold ID: {FOLD_ID}"
 )
-
-
-# Load scoring rubrics
-scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
-
-logger.info(f"Run through essay sets {START} to {STOP}")
+logger.critical(f"LLM: {MODEL}")
 
 # Set limit of rows for testing
 if PAIRWISE:
-    limit = 3
-    limit_data = limit
-    limit_baseline = limit
-    reasonable = 8
     logger.critical("Mode: Pairwise\n")
 else:
-    limit = 6
-    limit_data = limit
-    limit_baseline = limit
-    reasonable = 30
     logger.critical("Mode: Solo\n")
 
 # set up variable for collecting results
 list_mse = []
 gathered_mse = 0
+
+# Load scoring rubrics
+scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
+
+logger.info(f"Run through essay sets {START} to {STOP}")
 
 
 def main(essay_set_ID):
@@ -70,31 +66,30 @@ def main(essay_set_ID):
 
     if TESTING:
         #! limits data for development and testing
-        assert limit > 0, logger.warning(
+        assert LIMIT_DATA > 0, logger.warning(
             "Limit for data reduction must be greater than 0."
         )
-        assert limit <= reasonable, logger.warning(
+        assert LIMIT_DATA <= LIMIT_REASONABLE, logger.warning(
             "Limit for data reduction exceeds number of reasonable rows."
         )
         # use random sample for testing
-        data_train, data_dev, data_test = (
-            data_train.sample(limit_baseline, random_state=SEED),
-            data_dev.sample(limit_data, random_state=SEED),
-            data_test.sample(limit, random_state=SEED),
+        data_train, data_dev = (
+            data_train.sample(LIMIT_DATA, random_state=SEED),
+            data_dev.sample(LIMIT_ANCHORS, random_state=SEED),
         )
         logger.debug("amount of datapoints was limited due to active testing")
 
     score_prediction = None
     if PAIRWISE:
         score_prediction = pairwise.predict_scores_pairwise(
-            data_dev,
             data_train,
+            data_dev,
             scoring_rubrics[essay_set_ID],
             MODEL,
         )
     else:
         score_prediction = baseline.predict_scores_solo(
-            data_dev,
+            data_train,
             scoring_rubrics[essay_set_ID],
             MODEL,
         )

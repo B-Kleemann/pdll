@@ -12,15 +12,6 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
 
-# dictionary of openAI models
-LLM_MODEL = {
-    "4o": "gpt-4o",
-    "mini4o": "gpt-4o-mini",
-    "41": "gpt-4.1",
-    "mini41": "gpt-4.1-mini",
-    "nano41": "gpt-4.1-nano",
-}
-
 MAX_SCORE_PER_SET = {
     1: 12,
     2: 10,
@@ -120,7 +111,7 @@ def convert_to_dataframe(list_data) -> list[pd.DataFrame]:
 
 def query_the_api(model: str, prompt: str):
     response = openai.chat.completions.create(
-        model=LLM_MODEL[model],
+        model=model,
         temperature=0,
         # try put sentence actually in the prompt, not system, no separation
         messages=[

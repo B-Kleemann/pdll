@@ -60,8 +60,8 @@ def get_pair_diff_as_int(
 
 
 def predict_scores_pairwise(
-    test_data: pd.DataFrame,
-    training_data: pd.DataFrame,
+    data: pd.DataFrame,
+    anchors: pd.DataFrame,
     rubric: str,
     model: str,
 ) -> pd.DataFrame:
@@ -70,10 +70,10 @@ def predict_scores_pairwise(
 
     predictions = []
 
-    for i, row_i in test_data.iterrows():
+    for i, row_i in data.iterrows():
         store_pred_scores = []
 
-        for j, row_j in training_data.iterrows():
+        for j, row_j in anchors.iterrows():
             logger.info(f"Datapoint {i} & Datapoint {j}")
 
             # if i <= j:  # type: ignore
@@ -108,9 +108,9 @@ def predict_scores_pairwise(
 
         predictions.append(int(avg_score))
 
-    test_data["y_pred"] = predictions
+    data["y_pred"] = predictions
     logger.debug("predicted scores pairwise")
-    return test_data
+    return data
 
 
 # run large scale tests with 300 essays
