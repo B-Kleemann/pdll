@@ -1,7 +1,6 @@
 import logging
 import logging.config
 
-import pandas as pd
 from sklearn.metrics import mean_squared_error
 
 import pdll._pairwise_NLP as pairwise
@@ -10,14 +9,14 @@ import pdll._pairwise_NLP_caching as caching
 import pdll._pairwise_NLP_dataprocessing as data_processing
 import pdll._pairwise_NLP_rubricextraction as rubric_extraction
 
-logging.config.fileConfig("pdll\\logging.conf")
+logging.config.fileConfig("pdll\\\\log\\_logging.conf")
 logger = logging.getLogger("result")
 
 # Set control variables
 TESTING = True
-PAIRWISE = False
+PAIRWISE = True
 START_AT_ESSAY_SET = 1
-STOP_AT_ESSAY_SET = 8
+STOP_AT_ESSAY_SET = 3
 SEED = 81
 FOLD_ID = 1
 logger.debug(
@@ -34,17 +33,17 @@ logger.info(f"Run through essay sets {START_AT_ESSAY_SET} to {STOP_AT_ESSAY_SET}
 
 # Set limit of rows for testing
 if PAIRWISE:
-    limit = 2
+    limit = 3
     limit_data = limit
     limit_baseline = limit
     reasonable = 8
-    logger.info("Mode: Pairwise\n")
+    logger.critical("Mode: Pairwise\n")
 else:
-    limit = 4
+    limit = 6
     limit_data = limit
     limit_baseline = limit
     reasonable = 30
-    logger.info("Mode: Solo\n")
+    logger.critical("Mode: Solo\n")
 
 # set up variable for collecting results
 list_mse = []
@@ -52,7 +51,7 @@ gathered_mse = 0
 
 
 def main(essay_set_ID):
-    logger.info(f"ESSAY SET {essay_set_ID}:\n")
+    logger.critical(f"ESSAY SET {essay_set_ID}:\n")
     data_train, data_dev, data_test = data_processing.get_data(
         FOLD_ID,
         essay_set_ID,
@@ -78,18 +77,18 @@ def main(essay_set_ID):
             data_dev.sample(limit_data, random_state=SEED),
             data_test.sample(limit, random_state=SEED),
         )
-        logger.info("amount of datapoints was limited due to active testing")
+        logger.debug("amount of datapoints was limited due to active testing")
 
     score_prediction = None
     if PAIRWISE:
         score_prediction = pairwise.predict_scores_pairwise(
-            pd.DataFrame(data_dev),
-            pd.DataFrame(data_train),
+            data_dev,
+            data_train,
             scoring_rubrics[essay_set_ID],
         )
     else:
         score_prediction = baseline.predict_scores_solo(
-            pd.DataFrame(data_dev),
+            data_dev,
             scoring_rubrics[essay_set_ID],
         )
 
@@ -108,7 +107,7 @@ def main(essay_set_ID):
         mse = mean_squared_error(y_true, y_pred)
         list_mse.append(mse)
         logger.info(f"MSE of Set: {mse:.5f}\n")
-        logger.debug(f"\n{score_prediction}\n\n\n")
+        logger.critical(f"\n{score_prediction}\n\n")
     else:
         logger.info("No score prediction available.")
 
@@ -119,15 +118,15 @@ for i in range(START_AT_ESSAY_SET, STOP_AT_ESSAY_SET + 1):
 caching.print_cache_stats(PAIRWISE)
 
 # evaluation
-logger.info("Evaluation:")
+logger.critical("Evaluation:")
 for j in range(START_AT_ESSAY_SET, STOP_AT_ESSAY_SET + 1):
-    logger.info(f"MSE of Set {j}: {list_mse[j - 1]:.5f}")
+    logger.critical(f"MSE of Set {j}: {list_mse[j - 1]:.5f}")
     gathered_mse += list_mse[j - 1]
 
 avg_mse = gathered_mse / len(list_mse)
-logger.info(f"Average MSE: {avg_mse:.5f}\n")
-logger.info(
-    "-----------------------------------------------------------------\n\n\n\n\n"
+logger.critical(f"Average MSE: {avg_mse:.5f}\n")
+logger.critical(
+    "-----------------------------------------------------------------\n\n\n"
 )
 
 

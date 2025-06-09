@@ -4,13 +4,12 @@ import os
 from datetime import datetime
 
 import pandas as pd
-from anyio import Path
 
-logging.config.fileConfig("pdll\\logging.conf")
+logging.config.fileConfig("pdll\\\\log\\_logging.conf")
 logger = logging.getLogger("result")
 
-CACHE_PATH_BASELINE = "pdll\\baseline_cache.parquet"
-CACHE_PATH_PAIRWISE = "pdll\\pairwise_cache.parquet"
+CACHE_PATH_BASELINE = "pdll\\caching\\baseline_cache.parquet"
+CACHE_PATH_PAIRWISE = "pdll\\caching\\pairwise_cache.parquet"
 
 cache_baseline = pd.DataFrame()
 cache_pairwise = pd.DataFrame()
@@ -62,6 +61,7 @@ def save_cache(cache: pd.DataFrame, is_pairwise: bool):
 
 
 def lookup_in_cache(prompt: str, is_pairwise: bool):
+    logger.debug("looked-up prompt in cache")
     if is_pairwise:
         global cache_pairwise, cache_stats_pairwise
         cached_row = cache_pairwise[cache_pairwise["prompt"] == prompt]
@@ -77,7 +77,6 @@ def lookup_in_cache(prompt: str, is_pairwise: bool):
             cache_stats_baseline["hits"] += 1
             return cached_row.iloc[0]["score"]
         cache_stats_baseline["misses"] += 1
-    logger.debug("looked-up prompt in cache")
 
 
 def new_cache_entry(prompt: str, score, is_pairwise: bool):

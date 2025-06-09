@@ -16,7 +16,7 @@ openai.api_key = api_key
 # at the end ony one plot, showing the clear difference between baseline and pairwise
 # do anaysis and draw up convincing stats that go with it
 
-logging.config.fileConfig("pdll\\logging.conf")
+logging.config.fileConfig("pdll\\\\log\\_logging.conf")
 logger = logging.getLogger("result")
 
 
@@ -76,10 +76,11 @@ def predict_scores_solo(test_data: pd.DataFrame, rubric: str) -> pd.DataFrame:
             score_pred_1 = get_essay_score_as_float(row_i["essay"], rubric)
 
             score_pred = score_pred_1 * 2
+            logger.info(f"Score prediction: {score_pred}\n")
             predictions.append(score_pred)
 
         except RuntimeError:
-            raise RuntimeError(logger.exception(f"prediction failed"))
+            raise RuntimeError(logger.exception(f"prediction failed for: {row_i}"))
 
     test_data["y_pred"] = predictions
     logger.info("predicted scores solo")

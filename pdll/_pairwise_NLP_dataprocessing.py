@@ -12,7 +12,7 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
 
-logging.config.fileConfig("pdll\\logging.conf")
+logging.config.fileConfig("pdll\\\\log\\_logging.conf")
 logger = logging.getLogger("result")
 
 
