@@ -1,0 +1,415 @@
+2025-06-09 23:11:54,786 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.666667  0.000000
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.666667  0.333333
+
+
+2025-06-09 23:11:54,786 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-09 23:15:58,426 - result - CRITICAL - Mode: Solo
+
+2025-06-09 23:15:58,426 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-09 23:15:58,831 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.666667  0.000000
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.666667  0.333333
+
+
+2025-06-09 23:15:58,831 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-09 23:19:03,122 - result - CRITICAL - Mode: Solo
+
+2025-06-09 23:19:03,122 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-09 23:19:06,473 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.666667  0.000000
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.666667  0.333333
+38   "I completely agree with those people who thin...  0.666667  0.500000  0.166667
+69   "Dear local Newspaper, @CAPS1 the years comput...  0.666667  0.500000  0.166667
+301  "Many people have been talking about computers...  0.500000  0.333333  0.166667
+108  "Dear Newspaper @CAPS1, I believe that the com...  0.666667  0.333333  0.333333
+
+
+2025-06-09 23:19:06,473 - result - CRITICAL - ESSAY SET 2:
+
+2025-06-09 23:19:08,924 - result - CRITICAL - 
+                                                 essay  score  y_pred  diff
+249  "Censorship in libraries? Is it a problem? Sho...    0.8     0.7   0.1
+108  "My views on cencorship @MONTH1 not  be what o...    0.7     0.7   0.0
+85   "Have you ever imagined a @CAPS1 without movie...    0.7     0.7   0.0
+140  "I will be talking about, do think books, musi...    0.6     0.5   0.1
+310  "I believe that certain materials,such as book...    0.6     0.5   0.1
+255  "Do people take offensive books serious. There...    0.6     0.5   0.1
+
+
+2025-06-09 23:19:08,924 - result - CRITICAL - ESSAY SET 3:
+
+2025-06-09 23:19:10,471 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+99   "In the story the setting has a large affect o...  0.666667  0.666667  0.000000
+303  "The cyclist is most affected by e heat. He is...  0.333333  0.666667 -0.333333
+252  "The features  of the   setting   does   affec...  0.333333  0.666667 -0.333333
+196  "The setting affects the cyclist becuse it is ...  0.333333  0.666667 -0.333333
+168  The features of the setting affect the cyclist...  0.333333  0.666667 -0.333333
+224  "Alot of factors effected the cyclist. Tempera...  1.000000  0.666667  0.333333
+
+
+2025-06-09 23:19:10,471 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-09 23:26:46,924 - result - CRITICAL - Mode: Solo
+
+2025-06-09 23:26:46,924 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-09 23:26:47,235 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667  0.666667  0.000000
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000  0.666667  0.333333
+38   "I completely agree with those people who thin...  0.666667  0.500000  0.166667
+69   "Dear local Newspaper, @CAPS1 the years comput...  0.666667  0.500000  0.166667
+301  "Many people have been talking about computers...  0.500000  0.333333  0.166667
+108  "Dear Newspaper @CAPS1, I believe that the com...  0.666667  0.333333  0.333333
+
+
+2025-06-09 23:26:47,236 - result - CRITICAL - ESSAY SET 2:
+
+2025-06-09 23:26:47,448 - result - CRITICAL - 
+                                                 essay  score  y_pred  diff
+249  "Censorship in libraries? Is it a problem? Sho...    0.8     0.7   0.1
+108  "My views on cencorship @MONTH1 not  be what o...    0.7     0.7   0.0
+85   "Have you ever imagined a @CAPS1 without movie...    0.7     0.7   0.0
+140  "I will be talking about, do think books, musi...    0.6     0.5   0.1
+310  "I believe that certain materials,such as book...    0.6     0.5   0.1
+255  "Do people take offensive books serious. There...    0.6     0.5   0.1
+
+
+2025-06-09 23:26:47,448 - result - CRITICAL - ESSAY SET 3:
+
+2025-06-09 23:26:47,676 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+99   "In the story the setting has a large affect o...  0.666667  0.666667  0.000000
+303  "The cyclist is most affected by e heat. He is...  0.333333  0.666667 -0.333333
+252  "The features  of the   setting   does   affec...  0.333333  0.666667 -0.333333
+196  "The setting affects the cyclist becuse it is ...  0.333333  0.666667 -0.333333
+168  The features of the setting affect the cyclist...  0.333333  0.666667 -0.333333
+224  "Alot of factors effected the cyclist. Tempera...  1.000000  0.666667  0.333333
+
+
+2025-06-09 23:26:47,676 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-09 23:29:26,091 - result - CRITICAL - Mode: Pairwise
+
+2025-06-09 23:29:26,091 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-09 23:29:26,456 - result - CRITICAL - 
+                                                 essay     score  y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667    0.75 -0.083333
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000    0.75  0.250000
+38   "I completely agree with those people who thin...  0.666667    0.75 -0.083333
+
+
+2025-06-09 23:29:26,456 - result - CRITICAL - ESSAY SET 2:
+
+2025-06-09 23:29:26,689 - result - CRITICAL - 
+                                                 essay  score  y_pred  diff
+249  "Censorship in libraries? Is it a problem? Sho...    0.8     0.7   0.1
+108  "My views on cencorship @MONTH1 not  be what o...    0.7     0.7   0.0
+85   "Have you ever imagined a @CAPS1 without movie...    0.7     0.7   0.0
+
+
+2025-06-09 23:29:26,689 - result - CRITICAL - ESSAY SET 3:
+
+2025-06-09 23:29:26,924 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+99   "In the story the setting has a large affect o...  0.666667  1.333333 -0.666667
+303  "The cyclist is most affected by e heat. He is...  0.333333  1.333333 -1.000000
+252  "The features  of the   setting   does   affec...  0.333333  1.333333 -1.000000
+
+
+2025-06-09 23:29:26,931 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-09 23:32:11,398 - result - CRITICAL - Mode: Pairwise
+
+2025-06-09 23:32:11,398 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-09 23:32:11,742 - result - CRITICAL - 
+                                                 essay     score  y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667    0.75 -0.083333
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000    0.75  0.250000
+38   "I completely agree with those people who thin...  0.666667    0.75 -0.083333
+
+
+2025-06-09 23:32:11,742 - result - CRITICAL - ESSAY SET 2:
+
+2025-06-09 23:32:11,983 - result - CRITICAL - 
+                                                 essay  score  y_pred  diff
+249  "Censorship in libraries? Is it a problem? Sho...    0.8     0.7   0.1
+108  "My views on cencorship @MONTH1 not  be what o...    0.7     0.7   0.0
+85   "Have you ever imagined a @CAPS1 without movie...    0.7     0.7   0.0
+
+
+2025-06-09 23:32:11,983 - result - CRITICAL - ESSAY SET 3:
+
+2025-06-09 23:32:12,224 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+99   "In the story the setting has a large affect o...  0.666667  1.333333 -0.666667
+303  "The cyclist is most affected by e heat. He is...  0.333333  1.333333 -1.000000
+252  "The features  of the   setting   does   affec...  0.333333  1.333333 -1.000000
+
+
+2025-06-09 23:32:12,224 - result - CRITICAL - Evaluation:
+2025-06-09 23:32:12,224 - result - CRITICAL - MSE of Set 1: 0.02546
+2025-06-09 23:32:12,224 - result - CRITICAL - MSE of Set 2: 0.00333
+2025-06-09 23:32:12,225 - result - CRITICAL - MSE of Set 3: 0.81481
+2025-06-09 23:32:12,225 - result - CRITICAL - Average MSE: 0.28120
+
+2025-06-09 23:32:12,225 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 00:27:25,685 - result - CRITICAL - Mode: Pairwise
+
+2025-06-10 00:27:25,685 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 00:27:26,040 - result - CRITICAL - 
+                                                 essay     score  y_pred      diff
+251  "Computers are an incredibly important part of...  0.666667    0.75 -0.083333
+273  "Dear @PERSON4, I strongly believe that use of...  1.000000    0.75  0.250000
+38   "I completely agree with those people who thin...  0.666667    0.75 -0.083333
+
+
+2025-06-10 00:27:26,040 - result - CRITICAL - ESSAY SET 2:
+
+2025-06-10 00:27:26,251 - result - CRITICAL - 
+                                                 essay  score  y_pred  diff
+249  "Censorship in libraries? Is it a problem? Sho...    0.8     0.7   0.1
+108  "My views on cencorship @MONTH1 not  be what o...    0.7     0.7   0.0
+85   "Have you ever imagined a @CAPS1 without movie...    0.7     0.7   0.0
+
+
+2025-06-10 00:27:26,251 - result - CRITICAL - ESSAY SET 3:
+
+2025-06-10 00:27:26,491 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+99   "In the story the setting has a large affect o...  0.666667  1.333333 -0.666667
+303  "The cyclist is most affected by e heat. He is...  0.333333  1.333333 -1.000000
+252  "The features  of the   setting   does   affec...  0.333333  1.333333 -1.000000
+
+
+2025-06-10 00:27:26,491 - result - CRITICAL - Evaluation:
+2025-06-10 00:27:26,491 - result - CRITICAL - MSE of Set 1: 0.02546
+2025-06-10 00:27:26,491 - result - CRITICAL - MSE of Set 2: 0.00333
+2025-06-10 00:27:26,491 - result - CRITICAL - MSE of Set 3: 0.81481
+2025-06-10 00:27:26,491 - result - CRITICAL - Average MSE: 0.28120
+
+2025-06-10 00:27:26,491 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:35:28,804 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:35:28,804 - result - CRITICAL - Mode: Pairwise
+
+2025-06-10 01:35:28,820 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:35:39,848 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.750000 -0.083333
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667  0.166667
+796  I believe that computers benefit society. They...  0.666667  0.750000 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.750000 -0.083333
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+
+
+2025-06-10 01:35:39,848 - result - CRITICAL - Evaluation:
+2025-06-10 01:35:39,848 - result - CRITICAL - MSE of Set 1: 0.01528
+2025-06-10 01:35:39,848 - result - CRITICAL - Average MSE: 0.01528
+
+2025-06-10 01:35:39,848 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:35:39,848 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:35:39,848 - result - CRITICAL - Mode: Pairwise
+
+2025-06-10 01:35:39,848 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:35:40,163 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.750000 -0.083333
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667  0.166667
+796  I believe that computers benefit society. They...  0.666667  0.750000 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.750000 -0.083333
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+
+
+2025-06-10 01:35:40,163 - result - CRITICAL - Evaluation:
+2025-06-10 01:35:40,163 - result - CRITICAL - MSE of Set 1: 0.01528
+2025-06-10 01:35:40,163 - result - CRITICAL - Average MSE: 0.01528
+
+2025-06-10 01:35:40,163 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:42:33,267 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:42:33,268 - result - CRITICAL - Mode: Solo
+
+2025-06-10 01:42:33,271 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:42:41,500 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  1.333333 -0.666667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000  0.333333
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000  0.166667
+618  "In my opinion i think computers have a positi...  0.666667  1.166667 -0.500000
+408  "Computers and the @CAPS1 have changed the way...  0.750000  0.666667  0.083333
+289  "Dear @LOCATION1 harold, More and more people ...  0.750000  0.500000  0.250000
+687  "@CAPS8 more and more technology is being inve...  0.916667  0.666667  0.250000
+332  "I belive that computer technology is a positi...  0.666667  0.666667  0.000000
+196  "The effect computers have on humans is by far...  1.000000  1.333333 -0.333333
+100  "@ORGANIZATION1, @CAPS1 technology continues t...  0.750000  0.666667  0.083333
+993  "Dear local newspaper, I am sure you will agre...  0.833333  0.500000  0.333333
+704  "Dear local newspaper: I strongly feel that co...  0.750000  0.666667  0.083333
+
+
+2025-06-10 01:42:41,501 - result - CRITICAL - Evaluation:
+2025-06-10 01:42:41,501 - result - CRITICAL - MSE of Set 1: 0.08194
+2025-06-10 01:42:41,501 - result - CRITICAL - Average MSE: 0.08194
+
+2025-06-10 01:42:41,501 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:42:41,509 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:42:41,509 - result - CRITICAL - Mode: Solo
+
+2025-06-10 01:42:41,513 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:42:41,852 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  1.333333 -0.666667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000  0.333333
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000  0.166667
+618  "In my opinion i think computers have a positi...  0.666667  1.166667 -0.500000
+408  "Computers and the @CAPS1 have changed the way...  0.750000  0.666667  0.083333
+289  "Dear @LOCATION1 harold, More and more people ...  0.750000  0.500000  0.250000
+687  "@CAPS8 more and more technology is being inve...  0.916667  0.666667  0.250000
+332  "I belive that computer technology is a positi...  0.666667  0.666667  0.000000
+196  "The effect computers have on humans is by far...  1.000000  1.333333 -0.333333
+100  "@ORGANIZATION1, @CAPS1 technology continues t...  0.750000  0.666667  0.083333
+993  "Dear local newspaper, I am sure you will agre...  0.833333  0.500000  0.333333
+704  "Dear local newspaper: I strongly feel that co...  0.750000  0.666667  0.083333
+
+
+2025-06-10 01:42:41,852 - result - CRITICAL - Evaluation:
+2025-06-10 01:42:41,852 - result - CRITICAL - MSE of Set 1: 0.08194
+2025-06-10 01:42:41,852 - result - CRITICAL - Average MSE: 0.08194
+
+2025-06-10 01:42:41,852 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:50:27,203 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:50:27,203 - result - CRITICAL - Mode: Solo
+
+2025-06-10 01:50:27,203 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:50:27,559 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  1.333333 -0.666667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000  0.333333
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000  0.166667
+618  "In my opinion i think computers have a positi...  0.666667  1.166667 -0.500000
+408  "Computers and the @CAPS1 have changed the way...  0.750000  0.666667  0.083333
+289  "Dear @LOCATION1 harold, More and more people ...  0.750000  0.500000  0.250000
+687  "@CAPS8 more and more technology is being inve...  0.916667  0.666667  0.250000
+332  "I belive that computer technology is a positi...  0.666667  0.666667  0.000000
+196  "The effect computers have on humans is by far...  1.000000  1.333333 -0.333333
+100  "@ORGANIZATION1, @CAPS1 technology continues t...  0.750000  0.666667  0.083333
+993  "Dear local newspaper, I am sure you will agre...  0.833333  0.500000  0.333333
+704  "Dear local newspaper: I strongly feel that co...  0.750000  0.666667  0.083333
+
+
+2025-06-10 01:50:27,560 - result - CRITICAL - Evaluation:
+2025-06-10 01:50:27,560 - result - CRITICAL - MSE of Set 1: 0.08194
+2025-06-10 01:50:27,560 - result - CRITICAL - Average MSE: 0.08194
+
+2025-06-10 01:50:27,560 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:53:40,612 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:53:40,612 - result - CRITICAL - Mode: Solo
+2025-06-10 01:53:40,612 - result - CRITICAL - Datapoints: 15
+
+2025-06-10 01:53:40,621 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:53:40,965 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  1.333333 -0.666667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000  0.333333
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000  0.166667
+618  "In my opinion i think computers have a positi...  0.666667  1.166667 -0.500000
+408  "Computers and the @CAPS1 have changed the way...  0.750000  0.666667  0.083333
+289  "Dear @LOCATION1 harold, More and more people ...  0.750000  0.500000  0.250000
+687  "@CAPS8 more and more technology is being inve...  0.916667  0.666667  0.250000
+332  "I belive that computer technology is a positi...  0.666667  0.666667  0.000000
+196  "The effect computers have on humans is by far...  1.000000  1.333333 -0.333333
+100  "@ORGANIZATION1, @CAPS1 technology continues t...  0.750000  0.666667  0.083333
+993  "Dear local newspaper, I am sure you will agre...  0.833333  0.500000  0.333333
+704  "Dear local newspaper: I strongly feel that co...  0.750000  0.666667  0.083333
+
+
+2025-06-10 01:53:40,965 - result - CRITICAL - Evaluation:
+2025-06-10 01:53:40,965 - result - CRITICAL - MSE of Set 1: 0.08194
+2025-06-10 01:53:40,965 - result - CRITICAL - Average MSE: 0.08194
+
+2025-06-10 01:53:40,965 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:54:57,313 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:54:57,313 - result - CRITICAL - Mode: Pairwise
+2025-06-10 01:54:57,313 - result - CRITICAL - Datapoints: 5; Anchors: 3
+
+2025-06-10 01:54:57,313 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:54:57,661 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.750000 -0.083333
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667  0.166667
+796  I believe that computers benefit society. They...  0.666667  0.750000 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.750000 -0.083333
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+
+
+2025-06-10 01:54:57,662 - result - CRITICAL - Evaluation:
+2025-06-10 01:54:57,662 - result - CRITICAL - MSE of Set 1: 0.01528
+2025-06-10 01:54:57,663 - result - CRITICAL - Average MSE: 0.01528
+
+2025-06-10 01:54:57,663 - result - CRITICAL - -----------------------------------------------------------------
+
+
+

@@ -34,9 +34,11 @@ logger.critical(f"LLM: {MODEL}")
 
 # Set limit of rows for testing
 if PAIRWISE:
-    logger.critical("Mode: Pairwise\n")
+    logger.critical("Mode: Pairwise")
+    logger.critical(f"Datapoints: {LIMIT_DATA}; Anchors: {LIMIT_ANCHORS}\n")
 else:
-    logger.critical("Mode: Solo\n")
+    logger.critical("Mode: Solo")
+    logger.critical(f"Datapoints: {LIMIT_DATA}\n")
 
 # set up variable for collecting results
 list_mse = []

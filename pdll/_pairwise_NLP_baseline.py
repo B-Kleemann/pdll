@@ -51,7 +51,7 @@ def get_essay_score_as_float(
         try:
             pred_score = float(query_the_api(model, prompt))
             caching.new_cache_entry(model, prompt, pred_score, False)
-            logger.debug("got score from new prediction")
+            logger.info("got score from new prediction")
             return pred_score
 
         except (ValueError, IndexError, AttributeError) as parse_err:
@@ -63,7 +63,7 @@ def get_essay_score_as_float(
             raise RuntimeError(logger.exception(f"OpenAI API call failed: {api_err}"))
 
     else:
-        logger.debug("got score from cache")
+        logger.info("got score from cache")
         return float(from_cache)
 
 
