@@ -3423,3 +3423,1046 @@
 
 
 
+2025-06-10 01:35:28,804 - result - DEBUG - pairwise: True; testing: True; random seed: 81; fold ID: 1
+2025-06-10 01:35:28,804 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:35:28,804 - result - CRITICAL - Mode: Pairwise
+
+2025-06-10 01:35:28,820 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-10 01:35:28,820 - result - INFO - Run through essay sets 1 to 1
+2025-06-10 01:35:28,820 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:35:28,933 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:35:28,962 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:35:29,012 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:35:29,012 - result - DEBUG - split data in train, dev, test set
+2025-06-10 01:35:29,012 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-10 01:35:29,012 - result - DEBUG - amount of datapoints was limited due to active testing
+2025-06-10 01:35:29,012 - result - DEBUG - initialized new cache
+2025-06-10 01:35:29,012 - result - DEBUG - loaded cache
+2025-06-10 01:35:29,012 - result - INFO - score prediction started
+
+2025-06-10 01:35:29,012 - result - INFO - Datapoint 309 & Datapoint 251
+2025-06-10 01:35:29,012 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:30,594 - result - DEBUG - queried the API
+2025-06-10 01:35:30,651 - result - DEBUG - saved cache file
+2025-06-10 01:35:30,651 - result - DEBUG - created new cache entry
+2025-06-10 01:35:30,651 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:30,651 - result - INFO - Diff: 1
+2025-06-10 01:35:30,651 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:30,651 - result - INFO - Score prediction: 9
+2025-06-10 01:35:30,651 - result - INFO - Datapoint 309 & Datapoint 273
+2025-06-10 01:35:30,651 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:31,517 - result - DEBUG - queried the API
+2025-06-10 01:35:31,527 - result - DEBUG - saved cache file
+2025-06-10 01:35:31,527 - result - DEBUG - created new cache entry
+2025-06-10 01:35:31,528 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:31,528 - result - INFO - Diff: -1
+2025-06-10 01:35:31,529 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:31,529 - result - INFO - Score prediction: 11
+2025-06-10 01:35:31,530 - result - INFO - Datapoint 309 & Datapoint 38
+2025-06-10 01:35:31,530 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:32,280 - result - DEBUG - queried the API
+2025-06-10 01:35:32,296 - result - DEBUG - saved cache file
+2025-06-10 01:35:32,296 - result - DEBUG - created new cache entry
+2025-06-10 01:35:32,296 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:32,296 - result - INFO - Diff: -2
+2025-06-10 01:35:32,296 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:32,296 - result - INFO - Score prediction: 6
+2025-06-10 01:35:32,296 - result - INFO - Avg score for essay 309: 9
+
+2025-06-10 01:35:32,296 - result - INFO - Datapoint 104 & Datapoint 251
+2025-06-10 01:35:32,296 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:32,838 - result - DEBUG - queried the API
+2025-06-10 01:35:32,838 - result - DEBUG - saved cache file
+2025-06-10 01:35:32,838 - result - DEBUG - created new cache entry
+2025-06-10 01:35:32,838 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:32,838 - result - INFO - Diff: -2
+2025-06-10 01:35:32,854 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:32,854 - result - INFO - Score prediction: 6
+2025-06-10 01:35:32,854 - result - INFO - Datapoint 104 & Datapoint 273
+2025-06-10 01:35:32,854 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:33,407 - result - DEBUG - queried the API
+2025-06-10 01:35:33,418 - result - DEBUG - saved cache file
+2025-06-10 01:35:33,419 - result - DEBUG - created new cache entry
+2025-06-10 01:35:33,419 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:33,419 - result - INFO - Diff: -2
+2025-06-10 01:35:33,420 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:33,420 - result - INFO - Score prediction: 10
+2025-06-10 01:35:33,421 - result - INFO - Datapoint 104 & Datapoint 38
+2025-06-10 01:35:33,421 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:33,911 - result - DEBUG - queried the API
+2025-06-10 01:35:33,922 - result - DEBUG - saved cache file
+2025-06-10 01:35:33,922 - result - DEBUG - created new cache entry
+2025-06-10 01:35:33,923 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:33,923 - result - INFO - Diff: -1
+2025-06-10 01:35:33,923 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:33,923 - result - INFO - Score prediction: 7
+2025-06-10 01:35:33,924 - result - INFO - Avg score for essay 104: 8
+
+2025-06-10 01:35:33,924 - result - INFO - Datapoint 796 & Datapoint 251
+2025-06-10 01:35:33,925 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:34,461 - result - DEBUG - queried the API
+2025-06-10 01:35:34,461 - result - DEBUG - saved cache file
+2025-06-10 01:35:34,461 - result - DEBUG - created new cache entry
+2025-06-10 01:35:34,461 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:34,461 - result - INFO - Diff: 1
+2025-06-10 01:35:34,461 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:34,461 - result - INFO - Score prediction: 9
+2025-06-10 01:35:34,461 - result - INFO - Datapoint 796 & Datapoint 273
+2025-06-10 01:35:34,461 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:35,798 - result - DEBUG - queried the API
+2025-06-10 01:35:35,819 - result - DEBUG - saved cache file
+2025-06-10 01:35:35,819 - result - DEBUG - created new cache entry
+2025-06-10 01:35:35,819 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:35,819 - result - INFO - Diff: -1
+2025-06-10 01:35:35,819 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:35,819 - result - INFO - Score prediction: 11
+2025-06-10 01:35:35,819 - result - INFO - Datapoint 796 & Datapoint 38
+2025-06-10 01:35:35,819 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:36,345 - result - DEBUG - queried the API
+2025-06-10 01:35:36,348 - result - DEBUG - saved cache file
+2025-06-10 01:35:36,348 - result - DEBUG - created new cache entry
+2025-06-10 01:35:36,348 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:36,348 - result - INFO - Diff: -2
+2025-06-10 01:35:36,348 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:36,348 - result - INFO - Score prediction: 6
+2025-06-10 01:35:36,348 - result - INFO - Avg score for essay 796: 9
+
+2025-06-10 01:35:36,348 - result - INFO - Datapoint 579 & Datapoint 251
+2025-06-10 01:35:36,348 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:36,914 - result - DEBUG - queried the API
+2025-06-10 01:35:36,929 - result - DEBUG - saved cache file
+2025-06-10 01:35:36,929 - result - DEBUG - created new cache entry
+2025-06-10 01:35:36,929 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:36,930 - result - INFO - Diff: 1
+2025-06-10 01:35:36,930 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:36,931 - result - INFO - Score prediction: 9
+2025-06-10 01:35:36,931 - result - INFO - Datapoint 579 & Datapoint 273
+2025-06-10 01:35:36,932 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:37,496 - result - DEBUG - queried the API
+2025-06-10 01:35:37,512 - result - DEBUG - saved cache file
+2025-06-10 01:35:37,512 - result - DEBUG - created new cache entry
+2025-06-10 01:35:37,512 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:37,512 - result - INFO - Diff: -1
+2025-06-10 01:35:37,512 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:37,512 - result - INFO - Score prediction: 11
+2025-06-10 01:35:37,512 - result - INFO - Datapoint 579 & Datapoint 38
+2025-06-10 01:35:37,512 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:38,029 - result - DEBUG - queried the API
+2025-06-10 01:35:38,029 - result - DEBUG - saved cache file
+2025-06-10 01:35:38,029 - result - DEBUG - created new cache entry
+2025-06-10 01:35:38,045 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:38,045 - result - INFO - Diff: -2
+2025-06-10 01:35:38,045 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:38,045 - result - INFO - Score prediction: 6
+2025-06-10 01:35:38,045 - result - INFO - Avg score for essay 579: 9
+
+2025-06-10 01:35:38,045 - result - INFO - Datapoint 857 & Datapoint 251
+2025-06-10 01:35:38,045 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:38,596 - result - DEBUG - queried the API
+2025-06-10 01:35:38,613 - result - DEBUG - saved cache file
+2025-06-10 01:35:38,613 - result - DEBUG - created new cache entry
+2025-06-10 01:35:38,613 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:38,613 - result - INFO - Diff: -1
+2025-06-10 01:35:38,613 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:38,613 - result - INFO - Score prediction: 7
+2025-06-10 01:35:38,613 - result - INFO - Datapoint 857 & Datapoint 273
+2025-06-10 01:35:38,613 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:39,157 - result - DEBUG - queried the API
+2025-06-10 01:35:39,173 - result - DEBUG - saved cache file
+2025-06-10 01:35:39,173 - result - DEBUG - created new cache entry
+2025-06-10 01:35:39,173 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:39,173 - result - INFO - Diff: -1
+2025-06-10 01:35:39,173 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:39,173 - result - INFO - Score prediction: 11
+2025-06-10 01:35:39,173 - result - INFO - Datapoint 857 & Datapoint 38
+2025-06-10 01:35:39,173 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:39,802 - result - DEBUG - queried the API
+2025-06-10 01:35:39,817 - result - DEBUG - saved cache file
+2025-06-10 01:35:39,817 - result - DEBUG - created new cache entry
+2025-06-10 01:35:39,817 - result - DEBUG - got score from new prediction
+2025-06-10 01:35:39,817 - result - INFO - Diff: -2
+2025-06-10 01:35:39,817 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:39,817 - result - INFO - Score prediction: 6
+2025-06-10 01:35:39,817 - result - INFO - Avg score for essay 857: 8
+
+2025-06-10 01:35:39,817 - result - DEBUG - predicted scores pairwise
+2025-06-10 01:35:39,817 - result - DEBUG - normalized score with the corresponding max value
+2025-06-10 01:35:39,833 - result - INFO - MSE of Set: 0.01528
+
+2025-06-10 01:35:39,848 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.750000 -0.083333
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667  0.166667
+796  I believe that computers benefit society. They...  0.666667  0.750000 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.750000 -0.083333
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+
+
+2025-06-10 01:35:39,848 - result - INFO - Pairwise Cache-Stats:
+2025-06-10 01:35:39,848 - result - INFO - Cache hits: 0
+2025-06-10 01:35:39,848 - result - INFO - Cache misses: 15
+2025-06-10 01:35:39,848 - result - DEBUG - printed cache stats
+
+2025-06-10 01:35:39,848 - result - CRITICAL - Evaluation:
+2025-06-10 01:35:39,848 - result - CRITICAL - MSE of Set 1: 0.01528
+2025-06-10 01:35:39,848 - result - CRITICAL - Average MSE: 0.01528
+
+2025-06-10 01:35:39,848 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:35:39,848 - result - DEBUG - pairwise: True; testing: True; random seed: 81; fold ID: 1
+2025-06-10 01:35:39,848 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:35:39,848 - result - CRITICAL - Mode: Pairwise
+
+2025-06-10 01:35:39,848 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-10 01:35:39,848 - result - INFO - Run through essay sets 1 to 1
+2025-06-10 01:35:39,848 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:35:39,977 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:35:40,014 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:35:40,061 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:35:40,061 - result - DEBUG - split data in train, dev, test set
+2025-06-10 01:35:40,061 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-10 01:35:40,061 - result - DEBUG - amount of datapoints was limited due to active testing
+2025-06-10 01:35:40,129 - result - DEBUG - read cache file
+2025-06-10 01:35:40,129 - result - DEBUG - loaded cache
+2025-06-10 01:35:40,129 - result - INFO - score prediction started
+
+2025-06-10 01:35:40,129 - result - INFO - Datapoint 309 & Datapoint 251
+2025-06-10 01:35:40,129 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,129 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,129 - result - INFO - Diff: 1
+2025-06-10 01:35:40,129 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,129 - result - INFO - Score prediction: 9
+2025-06-10 01:35:40,129 - result - INFO - Datapoint 309 & Datapoint 273
+2025-06-10 01:35:40,129 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,129 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,129 - result - INFO - Diff: -1
+2025-06-10 01:35:40,129 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:40,129 - result - INFO - Score prediction: 11
+2025-06-10 01:35:40,129 - result - INFO - Datapoint 309 & Datapoint 38
+2025-06-10 01:35:40,129 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,129 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,129 - result - INFO - Diff: -2
+2025-06-10 01:35:40,129 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,129 - result - INFO - Score prediction: 6
+2025-06-10 01:35:40,129 - result - INFO - Avg score for essay 309: 9
+
+2025-06-10 01:35:40,129 - result - INFO - Datapoint 104 & Datapoint 251
+2025-06-10 01:35:40,129 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,129 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,129 - result - INFO - Diff: -2
+2025-06-10 01:35:40,129 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,129 - result - INFO - Score prediction: 6
+2025-06-10 01:35:40,129 - result - INFO - Datapoint 104 & Datapoint 273
+2025-06-10 01:35:40,129 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,129 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,129 - result - INFO - Diff: -2
+2025-06-10 01:35:40,129 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:40,129 - result - INFO - Score prediction: 10
+2025-06-10 01:35:40,144 - result - INFO - Datapoint 104 & Datapoint 38
+2025-06-10 01:35:40,144 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,144 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,144 - result - INFO - Diff: -1
+2025-06-10 01:35:40,144 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,144 - result - INFO - Score prediction: 7
+2025-06-10 01:35:40,144 - result - INFO - Avg score for essay 104: 8
+
+2025-06-10 01:35:40,144 - result - INFO - Datapoint 796 & Datapoint 251
+2025-06-10 01:35:40,144 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,147 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,147 - result - INFO - Diff: 1
+2025-06-10 01:35:40,147 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,147 - result - INFO - Score prediction: 9
+2025-06-10 01:35:40,147 - result - INFO - Datapoint 796 & Datapoint 273
+2025-06-10 01:35:40,147 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,147 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,147 - result - INFO - Diff: -1
+2025-06-10 01:35:40,147 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:40,147 - result - INFO - Score prediction: 11
+2025-06-10 01:35:40,147 - result - INFO - Datapoint 796 & Datapoint 38
+2025-06-10 01:35:40,147 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,147 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,147 - result - INFO - Diff: -2
+2025-06-10 01:35:40,147 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,147 - result - INFO - Score prediction: 6
+2025-06-10 01:35:40,147 - result - INFO - Avg score for essay 796: 9
+
+2025-06-10 01:35:40,147 - result - INFO - Datapoint 579 & Datapoint 251
+2025-06-10 01:35:40,147 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,147 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,147 - result - INFO - Diff: 1
+2025-06-10 01:35:40,147 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,147 - result - INFO - Score prediction: 9
+2025-06-10 01:35:40,147 - result - INFO - Datapoint 579 & Datapoint 273
+2025-06-10 01:35:40,147 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,147 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,147 - result - INFO - Diff: -1
+2025-06-10 01:35:40,147 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:40,147 - result - INFO - Score prediction: 11
+2025-06-10 01:35:40,147 - result - INFO - Datapoint 579 & Datapoint 38
+2025-06-10 01:35:40,147 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,147 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,147 - result - INFO - Diff: -2
+2025-06-10 01:35:40,147 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,147 - result - INFO - Score prediction: 6
+2025-06-10 01:35:40,147 - result - INFO - Avg score for essay 579: 9
+
+2025-06-10 01:35:40,147 - result - INFO - Datapoint 857 & Datapoint 251
+2025-06-10 01:35:40,147 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,147 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,147 - result - INFO - Diff: -1
+2025-06-10 01:35:40,147 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,147 - result - INFO - Score prediction: 7
+2025-06-10 01:35:40,163 - result - INFO - Datapoint 857 & Datapoint 273
+2025-06-10 01:35:40,163 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,163 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,163 - result - INFO - Diff: -1
+2025-06-10 01:35:40,163 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:35:40,163 - result - INFO - Score prediction: 11
+2025-06-10 01:35:40,163 - result - INFO - Datapoint 857 & Datapoint 38
+2025-06-10 01:35:40,163 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:35:40,163 - result - DEBUG - got score from cache
+2025-06-10 01:35:40,163 - result - INFO - Diff: -2
+2025-06-10 01:35:40,163 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:35:40,163 - result - INFO - Score prediction: 6
+2025-06-10 01:35:40,163 - result - INFO - Avg score for essay 857: 8
+
+2025-06-10 01:35:40,163 - result - DEBUG - predicted scores pairwise
+2025-06-10 01:35:40,163 - result - DEBUG - normalized score with the corresponding max value
+2025-06-10 01:35:40,163 - result - INFO - MSE of Set: 0.01528
+
+2025-06-10 01:35:40,163 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.750000 -0.083333
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667  0.166667
+796  I believe that computers benefit society. They...  0.666667  0.750000 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.750000 -0.083333
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+
+
+2025-06-10 01:35:40,163 - result - INFO - Pairwise Cache-Stats:
+2025-06-10 01:35:40,163 - result - INFO - Cache hits: 15
+2025-06-10 01:35:40,163 - result - INFO - Cache misses: 15
+2025-06-10 01:35:40,163 - result - DEBUG - printed cache stats
+
+2025-06-10 01:35:40,163 - result - CRITICAL - Evaluation:
+2025-06-10 01:35:40,163 - result - CRITICAL - MSE of Set 1: 0.01528
+2025-06-10 01:35:40,163 - result - CRITICAL - Average MSE: 0.01528
+
+2025-06-10 01:35:40,163 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:42:33,267 - result - DEBUG - random seed: 81; fold ID: 1
+2025-06-10 01:42:33,267 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:42:33,268 - result - CRITICAL - Mode: Solo
+
+2025-06-10 01:42:33,271 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-10 01:42:33,271 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-10 01:42:33,271 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:42:33,415 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:42:33,450 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:42:33,499 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:42:33,499 - result - DEBUG - split data in train, dev, test set
+2025-06-10 01:42:33,499 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-10 01:42:33,499 - result - DEBUG - amount of datapoints was limited due to active testing
+2025-06-10 01:42:33,499 - result - DEBUG - initialized new cache
+2025-06-10 01:42:33,499 - result - DEBUG - loaded cache
+2025-06-10 01:42:33,499 - result - INFO - score prediction started
+2025-06-10 01:42:33,499 - result - INFO - Datapoint 309
+2025-06-10 01:42:33,499 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:34,823 - result - DEBUG - queried the API
+2025-06-10 01:42:34,885 - result - DEBUG - saved cache file
+2025-06-10 01:42:34,885 - result - DEBUG - created new cache entry
+2025-06-10 01:42:34,885 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:34,885 - result - INFO - Score prediction: 16.0
+
+2025-06-10 01:42:34,885 - result - INFO - Datapoint 104
+2025-06-10 01:42:34,885 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:35,504 - result - DEBUG - queried the API
+2025-06-10 01:42:35,504 - result - DEBUG - saved cache file
+2025-06-10 01:42:35,504 - result - DEBUG - created new cache entry
+2025-06-10 01:42:35,504 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:35,504 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:42:35,518 - result - INFO - Datapoint 796
+2025-06-10 01:42:35,518 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:35,921 - result - DEBUG - queried the API
+2025-06-10 01:42:35,936 - result - DEBUG - saved cache file
+2025-06-10 01:42:35,936 - result - DEBUG - created new cache entry
+2025-06-10 01:42:35,936 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:35,936 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:35,936 - result - INFO - Datapoint 579
+2025-06-10 01:42:35,936 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:36,388 - result - DEBUG - queried the API
+2025-06-10 01:42:36,388 - result - DEBUG - saved cache file
+2025-06-10 01:42:36,388 - result - DEBUG - created new cache entry
+2025-06-10 01:42:36,401 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:36,401 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:36,402 - result - INFO - Datapoint 857
+2025-06-10 01:42:36,403 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:37,032 - result - DEBUG - queried the API
+2025-06-10 01:42:37,048 - result - DEBUG - saved cache file
+2025-06-10 01:42:37,048 - result - DEBUG - created new cache entry
+2025-06-10 01:42:37,048 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:37,048 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:37,048 - result - INFO - Datapoint 133
+2025-06-10 01:42:37,048 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:37,435 - result - DEBUG - queried the API
+2025-06-10 01:42:37,435 - result - DEBUG - saved cache file
+2025-06-10 01:42:37,435 - result - DEBUG - created new cache entry
+2025-06-10 01:42:37,435 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:37,435 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:42:37,435 - result - INFO - Datapoint 618
+2025-06-10 01:42:37,435 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:37,801 - result - DEBUG - queried the API
+2025-06-10 01:42:37,801 - result - DEBUG - saved cache file
+2025-06-10 01:42:37,801 - result - DEBUG - created new cache entry
+2025-06-10 01:42:37,801 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:37,801 - result - INFO - Score prediction: 14.0
+
+2025-06-10 01:42:37,801 - result - INFO - Datapoint 408
+2025-06-10 01:42:37,801 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:38,168 - result - DEBUG - queried the API
+2025-06-10 01:42:38,172 - result - DEBUG - saved cache file
+2025-06-10 01:42:38,172 - result - DEBUG - created new cache entry
+2025-06-10 01:42:38,172 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:38,172 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:38,172 - result - INFO - Datapoint 289
+2025-06-10 01:42:38,172 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:38,534 - result - DEBUG - queried the API
+2025-06-10 01:42:38,541 - result - DEBUG - saved cache file
+2025-06-10 01:42:38,541 - result - DEBUG - created new cache entry
+2025-06-10 01:42:38,541 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:38,541 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:42:38,541 - result - INFO - Datapoint 687
+2025-06-10 01:42:38,541 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:39,053 - result - DEBUG - queried the API
+2025-06-10 01:42:39,071 - result - DEBUG - saved cache file
+2025-06-10 01:42:39,071 - result - DEBUG - created new cache entry
+2025-06-10 01:42:39,072 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:39,072 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:39,073 - result - INFO - Datapoint 332
+2025-06-10 01:42:39,073 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:39,568 - result - DEBUG - queried the API
+2025-06-10 01:42:39,577 - result - DEBUG - saved cache file
+2025-06-10 01:42:39,577 - result - DEBUG - created new cache entry
+2025-06-10 01:42:39,577 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:39,580 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:39,580 - result - INFO - Datapoint 196
+2025-06-10 01:42:39,580 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:40,001 - result - DEBUG - queried the API
+2025-06-10 01:42:40,017 - result - DEBUG - saved cache file
+2025-06-10 01:42:40,017 - result - DEBUG - created new cache entry
+2025-06-10 01:42:40,017 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:40,017 - result - INFO - Score prediction: 16.0
+
+2025-06-10 01:42:40,017 - result - INFO - Datapoint 100
+2025-06-10 01:42:40,017 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:40,512 - result - DEBUG - queried the API
+2025-06-10 01:42:40,523 - result - DEBUG - saved cache file
+2025-06-10 01:42:40,523 - result - DEBUG - created new cache entry
+2025-06-10 01:42:40,523 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:40,524 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:40,524 - result - INFO - Datapoint 993
+2025-06-10 01:42:40,524 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,053 - result - DEBUG - queried the API
+2025-06-10 01:42:41,070 - result - DEBUG - saved cache file
+2025-06-10 01:42:41,070 - result - DEBUG - created new cache entry
+2025-06-10 01:42:41,070 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:41,070 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:42:41,070 - result - INFO - Datapoint 704
+2025-06-10 01:42:41,070 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,468 - result - DEBUG - queried the API
+2025-06-10 01:42:41,478 - result - DEBUG - saved cache file
+2025-06-10 01:42:41,479 - result - DEBUG - created new cache entry
+2025-06-10 01:42:41,479 - result - DEBUG - got score from new prediction
+2025-06-10 01:42:41,479 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:41,482 - result - INFO - predicted scores solo
+2025-06-10 01:42:41,483 - result - DEBUG - normalized score with the corresponding max value
+2025-06-10 01:42:41,487 - result - INFO - MSE of Set: 0.08194
+
+2025-06-10 01:42:41,500 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  1.333333 -0.666667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000  0.333333
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000  0.166667
+618  "In my opinion i think computers have a positi...  0.666667  1.166667 -0.500000
+408  "Computers and the @CAPS1 have changed the way...  0.750000  0.666667  0.083333
+289  "Dear @LOCATION1 harold, More and more people ...  0.750000  0.500000  0.250000
+687  "@CAPS8 more and more technology is being inve...  0.916667  0.666667  0.250000
+332  "I belive that computer technology is a positi...  0.666667  0.666667  0.000000
+196  "The effect computers have on humans is by far...  1.000000  1.333333 -0.333333
+100  "@ORGANIZATION1, @CAPS1 technology continues t...  0.750000  0.666667  0.083333
+993  "Dear local newspaper, I am sure you will agre...  0.833333  0.500000  0.333333
+704  "Dear local newspaper: I strongly feel that co...  0.750000  0.666667  0.083333
+
+
+2025-06-10 01:42:41,500 - result - INFO - Baseline Cache-Stats:
+2025-06-10 01:42:41,501 - result - INFO - Cache hits: 0
+2025-06-10 01:42:41,501 - result - INFO - Cache misses: 15
+2025-06-10 01:42:41,501 - result - DEBUG - printed cache stats
+
+2025-06-10 01:42:41,501 - result - CRITICAL - Evaluation:
+2025-06-10 01:42:41,501 - result - CRITICAL - MSE of Set 1: 0.08194
+2025-06-10 01:42:41,501 - result - CRITICAL - Average MSE: 0.08194
+
+2025-06-10 01:42:41,501 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:42:41,508 - result - DEBUG - random seed: 81; fold ID: 1
+2025-06-10 01:42:41,509 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:42:41,509 - result - CRITICAL - Mode: Solo
+
+2025-06-10 01:42:41,513 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-10 01:42:41,513 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-10 01:42:41,513 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:42:41,665 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:42:41,709 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:42:41,752 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:42:41,752 - result - DEBUG - split data in train, dev, test set
+2025-06-10 01:42:41,769 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-10 01:42:41,769 - result - DEBUG - amount of datapoints was limited due to active testing
+2025-06-10 01:42:41,819 - result - DEBUG - read cache file
+2025-06-10 01:42:41,819 - result - DEBUG - loaded cache
+2025-06-10 01:42:41,819 - result - INFO - score prediction started
+2025-06-10 01:42:41,819 - result - INFO - Datapoint 309
+2025-06-10 01:42:41,819 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,819 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,819 - result - INFO - Score prediction: 16.0
+
+2025-06-10 01:42:41,819 - result - INFO - Datapoint 104
+2025-06-10 01:42:41,819 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,819 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,819 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:42:41,819 - result - INFO - Datapoint 796
+2025-06-10 01:42:41,819 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,819 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,819 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:41,819 - result - INFO - Datapoint 579
+2025-06-10 01:42:41,819 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,819 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,819 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:41,819 - result - INFO - Datapoint 857
+2025-06-10 01:42:41,819 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,819 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,819 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:41,819 - result - INFO - Datapoint 133
+2025-06-10 01:42:41,819 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,819 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,819 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:42:41,834 - result - INFO - Datapoint 618
+2025-06-10 01:42:41,834 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,835 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,835 - result - INFO - Score prediction: 14.0
+
+2025-06-10 01:42:41,835 - result - INFO - Datapoint 408
+2025-06-10 01:42:41,835 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,835 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,835 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:41,835 - result - INFO - Datapoint 289
+2025-06-10 01:42:41,835 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,835 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,835 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:42:41,840 - result - INFO - Datapoint 687
+2025-06-10 01:42:41,840 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,840 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,840 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:41,840 - result - INFO - Datapoint 332
+2025-06-10 01:42:41,840 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,840 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,840 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:41,840 - result - INFO - Datapoint 196
+2025-06-10 01:42:41,840 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,840 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,840 - result - INFO - Score prediction: 16.0
+
+2025-06-10 01:42:41,840 - result - INFO - Datapoint 100
+2025-06-10 01:42:41,840 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,840 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,840 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:41,840 - result - INFO - Datapoint 993
+2025-06-10 01:42:41,840 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,840 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,840 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:42:41,840 - result - INFO - Datapoint 704
+2025-06-10 01:42:41,840 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:42:41,840 - result - DEBUG - got score from cache
+2025-06-10 01:42:41,840 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:42:41,840 - result - INFO - predicted scores solo
+2025-06-10 01:42:41,840 - result - DEBUG - normalized score with the corresponding max value
+2025-06-10 01:42:41,840 - result - INFO - MSE of Set: 0.08194
+
+2025-06-10 01:42:41,852 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  1.333333 -0.666667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000  0.333333
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000  0.166667
+618  "In my opinion i think computers have a positi...  0.666667  1.166667 -0.500000
+408  "Computers and the @CAPS1 have changed the way...  0.750000  0.666667  0.083333
+289  "Dear @LOCATION1 harold, More and more people ...  0.750000  0.500000  0.250000
+687  "@CAPS8 more and more technology is being inve...  0.916667  0.666667  0.250000
+332  "I belive that computer technology is a positi...  0.666667  0.666667  0.000000
+196  "The effect computers have on humans is by far...  1.000000  1.333333 -0.333333
+100  "@ORGANIZATION1, @CAPS1 technology continues t...  0.750000  0.666667  0.083333
+993  "Dear local newspaper, I am sure you will agre...  0.833333  0.500000  0.333333
+704  "Dear local newspaper: I strongly feel that co...  0.750000  0.666667  0.083333
+
+
+2025-06-10 01:42:41,852 - result - INFO - Baseline Cache-Stats:
+2025-06-10 01:42:41,852 - result - INFO - Cache hits: 15
+2025-06-10 01:42:41,852 - result - INFO - Cache misses: 15
+2025-06-10 01:42:41,852 - result - DEBUG - printed cache stats
+
+2025-06-10 01:42:41,852 - result - CRITICAL - Evaluation:
+2025-06-10 01:42:41,852 - result - CRITICAL - MSE of Set 1: 0.08194
+2025-06-10 01:42:41,852 - result - CRITICAL - Average MSE: 0.08194
+
+2025-06-10 01:42:41,852 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:50:27,203 - result - DEBUG - random seed: 81; fold ID: 1
+2025-06-10 01:50:27,203 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:50:27,203 - result - CRITICAL - Mode: Solo
+
+2025-06-10 01:50:27,203 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-10 01:50:27,203 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-10 01:50:27,203 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:50:27,375 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:50:27,410 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:50:27,457 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:50:27,457 - result - DEBUG - split data in train, dev, test set
+2025-06-10 01:50:27,457 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-10 01:50:27,457 - result - DEBUG - amount of datapoints was limited due to active testing
+2025-06-10 01:50:27,527 - result - DEBUG - read cache file
+2025-06-10 01:50:27,527 - result - DEBUG - loaded cache
+2025-06-10 01:50:27,527 - result - INFO - score prediction started
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 309
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,527 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,527 - result - INFO - Score prediction: 16.0
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 104
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,527 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,527 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 796
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,527 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,527 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 579
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,527 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,527 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 857
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,527 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,527 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 133
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,527 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,527 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 618
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,527 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,527 - result - INFO - Score prediction: 14.0
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 408
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,527 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,527 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 289
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,527 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,527 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:50:27,527 - result - INFO - Datapoint 687
+2025-06-10 01:50:27,527 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,543 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,543 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:50:27,543 - result - INFO - Datapoint 332
+2025-06-10 01:50:27,543 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,544 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,544 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:50:27,544 - result - INFO - Datapoint 196
+2025-06-10 01:50:27,544 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,545 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,545 - result - INFO - Score prediction: 16.0
+
+2025-06-10 01:50:27,545 - result - INFO - Datapoint 100
+2025-06-10 01:50:27,545 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,545 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,545 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:50:27,546 - result - INFO - Datapoint 993
+2025-06-10 01:50:27,546 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,546 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,546 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:50:27,546 - result - INFO - Datapoint 704
+2025-06-10 01:50:27,546 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:50:27,547 - result - DEBUG - got score from cache
+2025-06-10 01:50:27,547 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:50:27,547 - result - INFO - predicted scores solo
+2025-06-10 01:50:27,548 - result - DEBUG - normalized score with the corresponding max value
+2025-06-10 01:50:27,549 - result - INFO - MSE of Set: 0.08194
+
+2025-06-10 01:50:27,559 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  1.333333 -0.666667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000  0.333333
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000  0.166667
+618  "In my opinion i think computers have a positi...  0.666667  1.166667 -0.500000
+408  "Computers and the @CAPS1 have changed the way...  0.750000  0.666667  0.083333
+289  "Dear @LOCATION1 harold, More and more people ...  0.750000  0.500000  0.250000
+687  "@CAPS8 more and more technology is being inve...  0.916667  0.666667  0.250000
+332  "I belive that computer technology is a positi...  0.666667  0.666667  0.000000
+196  "The effect computers have on humans is by far...  1.000000  1.333333 -0.333333
+100  "@ORGANIZATION1, @CAPS1 technology continues t...  0.750000  0.666667  0.083333
+993  "Dear local newspaper, I am sure you will agre...  0.833333  0.500000  0.333333
+704  "Dear local newspaper: I strongly feel that co...  0.750000  0.666667  0.083333
+
+
+2025-06-10 01:50:27,560 - result - INFO - Baseline Cache-Stats:
+2025-06-10 01:50:27,560 - result - INFO - Cache hits: 15
+2025-06-10 01:50:27,560 - result - INFO - Cache misses: 0
+2025-06-10 01:50:27,560 - result - DEBUG - printed cache stats
+
+2025-06-10 01:50:27,560 - result - CRITICAL - Evaluation:
+2025-06-10 01:50:27,560 - result - CRITICAL - MSE of Set 1: 0.08194
+2025-06-10 01:50:27,560 - result - CRITICAL - Average MSE: 0.08194
+
+2025-06-10 01:50:27,560 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:53:40,612 - result - DEBUG - random seed: 81; fold ID: 1
+2025-06-10 01:53:40,612 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:53:40,612 - result - CRITICAL - Mode: Solo
+2025-06-10 01:53:40,612 - result - CRITICAL - Datapoints: 15
+
+2025-06-10 01:53:40,621 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-10 01:53:40,621 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-10 01:53:40,621 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:53:40,804 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:53:40,849 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:53:40,896 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:53:40,897 - result - DEBUG - split data in train, dev, test set
+2025-06-10 01:53:40,898 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-10 01:53:40,900 - result - DEBUG - amount of datapoints was limited due to active testing
+2025-06-10 01:53:40,950 - result - DEBUG - read cache file
+2025-06-10 01:53:40,950 - result - DEBUG - loaded cache
+2025-06-10 01:53:40,950 - result - INFO - score prediction started
+
+2025-06-10 01:53:40,950 - result - INFO - Datapoint 309
+2025-06-10 01:53:40,950 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,950 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,950 - result - INFO - Score prediction: 16.0
+
+2025-06-10 01:53:40,950 - result - INFO - Datapoint 104
+2025-06-10 01:53:40,950 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,950 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,950 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:53:40,950 - result - INFO - Datapoint 796
+2025-06-10 01:53:40,950 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,950 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,950 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:53:40,950 - result - INFO - Datapoint 579
+2025-06-10 01:53:40,950 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,950 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,950 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:53:40,950 - result - INFO - Datapoint 857
+2025-06-10 01:53:40,950 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,950 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,950 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:53:40,950 - result - INFO - Datapoint 133
+2025-06-10 01:53:40,950 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,950 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,950 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:53:40,950 - result - INFO - Datapoint 618
+2025-06-10 01:53:40,950 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,950 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,950 - result - INFO - Score prediction: 14.0
+
+2025-06-10 01:53:40,950 - result - INFO - Datapoint 408
+2025-06-10 01:53:40,950 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,965 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,965 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:53:40,965 - result - INFO - Datapoint 289
+2025-06-10 01:53:40,965 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,965 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,965 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:53:40,965 - result - INFO - Datapoint 687
+2025-06-10 01:53:40,965 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,965 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,965 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:53:40,965 - result - INFO - Datapoint 332
+2025-06-10 01:53:40,965 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,965 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,965 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:53:40,965 - result - INFO - Datapoint 196
+2025-06-10 01:53:40,965 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,965 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,965 - result - INFO - Score prediction: 16.0
+
+2025-06-10 01:53:40,965 - result - INFO - Datapoint 100
+2025-06-10 01:53:40,965 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,965 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,965 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:53:40,965 - result - INFO - Datapoint 993
+2025-06-10 01:53:40,965 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,965 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,965 - result - INFO - Score prediction: 6.0
+
+2025-06-10 01:53:40,965 - result - INFO - Datapoint 704
+2025-06-10 01:53:40,965 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:53:40,965 - result - DEBUG - got score from cache
+2025-06-10 01:53:40,965 - result - INFO - Score prediction: 8.0
+
+2025-06-10 01:53:40,965 - result - INFO - predicted scores solo
+2025-06-10 01:53:40,965 - result - DEBUG - normalized score with the corresponding max value
+2025-06-10 01:53:40,965 - result - INFO - MSE of Set: 0.08194
+
+2025-06-10 01:53:40,965 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  1.333333 -0.666667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000  0.333333
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000  0.166667
+618  "In my opinion i think computers have a positi...  0.666667  1.166667 -0.500000
+408  "Computers and the @CAPS1 have changed the way...  0.750000  0.666667  0.083333
+289  "Dear @LOCATION1 harold, More and more people ...  0.750000  0.500000  0.250000
+687  "@CAPS8 more and more technology is being inve...  0.916667  0.666667  0.250000
+332  "I belive that computer technology is a positi...  0.666667  0.666667  0.000000
+196  "The effect computers have on humans is by far...  1.000000  1.333333 -0.333333
+100  "@ORGANIZATION1, @CAPS1 technology continues t...  0.750000  0.666667  0.083333
+993  "Dear local newspaper, I am sure you will agre...  0.833333  0.500000  0.333333
+704  "Dear local newspaper: I strongly feel that co...  0.750000  0.666667  0.083333
+
+
+2025-06-10 01:53:40,965 - result - INFO - Baseline Cache-Stats:
+2025-06-10 01:53:40,965 - result - INFO - Cache hits: 15
+2025-06-10 01:53:40,965 - result - INFO - Cache misses: 0
+2025-06-10 01:53:40,965 - result - DEBUG - printed cache stats
+
+2025-06-10 01:53:40,965 - result - CRITICAL - Evaluation:
+2025-06-10 01:53:40,965 - result - CRITICAL - MSE of Set 1: 0.08194
+2025-06-10 01:53:40,965 - result - CRITICAL - Average MSE: 0.08194
+
+2025-06-10 01:53:40,965 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 01:54:57,313 - result - DEBUG - random seed: 81; fold ID: 1
+2025-06-10 01:54:57,313 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 01:54:57,313 - result - CRITICAL - Mode: Pairwise
+2025-06-10 01:54:57,313 - result - CRITICAL - Datapoints: 5; Anchors: 3
+
+2025-06-10 01:54:57,313 - result - DEBUG - extracted rubric texts from corresponding files
+2025-06-10 01:54:57,313 - result - INFO - Run through essay sets 1 to 1
+
+2025-06-10 01:54:57,313 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 01:54:57,461 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:54:57,507 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:54:57,554 - result - DEBUG - read dataset and split off target variable
+2025-06-10 01:54:57,557 - result - DEBUG - split data in train, dev, test set
+2025-06-10 01:54:57,559 - result - DEBUG - converted list of datasets to list of dataframes
+2025-06-10 01:54:57,562 - result - DEBUG - amount of datapoints was limited due to active testing
+2025-06-10 01:54:57,613 - result - DEBUG - read cache file
+2025-06-10 01:54:57,613 - result - DEBUG - loaded cache
+2025-06-10 01:54:57,613 - result - INFO - score prediction started
+
+2025-06-10 01:54:57,613 - result - INFO - Datapoint 309 & Datapoint 251
+2025-06-10 01:54:57,624 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,625 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,625 - result - INFO - Diff: 1
+2025-06-10 01:54:57,625 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,625 - result - INFO - Score prediction: 9
+2025-06-10 01:54:57,626 - result - INFO - Datapoint 309 & Datapoint 273
+2025-06-10 01:54:57,626 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,627 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,627 - result - INFO - Diff: -1
+2025-06-10 01:54:57,627 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:54:57,627 - result - INFO - Score prediction: 11
+2025-06-10 01:54:57,627 - result - INFO - Datapoint 309 & Datapoint 38
+2025-06-10 01:54:57,628 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,629 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,629 - result - INFO - Diff: -2
+2025-06-10 01:54:57,629 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,629 - result - INFO - Score prediction: 6
+2025-06-10 01:54:57,629 - result - INFO - Avg score for essay 309: 9
+
+2025-06-10 01:54:57,630 - result - INFO - Datapoint 104 & Datapoint 251
+2025-06-10 01:54:57,630 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,631 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,631 - result - INFO - Diff: -2
+2025-06-10 01:54:57,631 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,632 - result - INFO - Score prediction: 6
+2025-06-10 01:54:57,632 - result - INFO - Datapoint 104 & Datapoint 273
+2025-06-10 01:54:57,632 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,633 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,633 - result - INFO - Diff: -2
+2025-06-10 01:54:57,633 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:54:57,633 - result - INFO - Score prediction: 10
+2025-06-10 01:54:57,633 - result - INFO - Datapoint 104 & Datapoint 38
+2025-06-10 01:54:57,633 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,635 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,635 - result - INFO - Diff: -1
+2025-06-10 01:54:57,635 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,635 - result - INFO - Score prediction: 7
+2025-06-10 01:54:57,635 - result - INFO - Avg score for essay 104: 8
+
+2025-06-10 01:54:57,636 - result - INFO - Datapoint 796 & Datapoint 251
+2025-06-10 01:54:57,636 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,637 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,637 - result - INFO - Diff: 1
+2025-06-10 01:54:57,637 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,637 - result - INFO - Score prediction: 9
+2025-06-10 01:54:57,637 - result - INFO - Datapoint 796 & Datapoint 273
+2025-06-10 01:54:57,637 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,638 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,639 - result - INFO - Diff: -1
+2025-06-10 01:54:57,639 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:54:57,639 - result - INFO - Score prediction: 11
+2025-06-10 01:54:57,639 - result - INFO - Datapoint 796 & Datapoint 38
+2025-06-10 01:54:57,639 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,641 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,641 - result - INFO - Diff: -2
+2025-06-10 01:54:57,641 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,641 - result - INFO - Score prediction: 6
+2025-06-10 01:54:57,641 - result - INFO - Avg score for essay 796: 9
+
+2025-06-10 01:54:57,641 - result - INFO - Datapoint 579 & Datapoint 251
+2025-06-10 01:54:57,641 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,642 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,642 - result - INFO - Diff: 1
+2025-06-10 01:54:57,642 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,642 - result - INFO - Score prediction: 9
+2025-06-10 01:54:57,642 - result - INFO - Datapoint 579 & Datapoint 273
+2025-06-10 01:54:57,642 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,643 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,643 - result - INFO - Diff: -1
+2025-06-10 01:54:57,643 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:54:57,643 - result - INFO - Score prediction: 11
+2025-06-10 01:54:57,643 - result - INFO - Datapoint 579 & Datapoint 38
+2025-06-10 01:54:57,643 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,644 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,644 - result - INFO - Diff: -2
+2025-06-10 01:54:57,644 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,644 - result - INFO - Score prediction: 6
+2025-06-10 01:54:57,644 - result - INFO - Avg score for essay 579: 9
+
+2025-06-10 01:54:57,644 - result - INFO - Datapoint 857 & Datapoint 251
+2025-06-10 01:54:57,644 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,645 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,645 - result - INFO - Diff: -1
+2025-06-10 01:54:57,645 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,645 - result - INFO - Score prediction: 7
+2025-06-10 01:54:57,645 - result - INFO - Datapoint 857 & Datapoint 273
+2025-06-10 01:54:57,645 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,646 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,646 - result - INFO - Diff: -1
+2025-06-10 01:54:57,646 - result - INFO - Score of baseline essay: 12
+2025-06-10 01:54:57,646 - result - INFO - Score prediction: 11
+2025-06-10 01:54:57,646 - result - INFO - Datapoint 857 & Datapoint 38
+2025-06-10 01:54:57,646 - result - DEBUG - looked-up prompt in cache
+2025-06-10 01:54:57,647 - result - DEBUG - got score from cache
+2025-06-10 01:54:57,647 - result - INFO - Diff: -2
+2025-06-10 01:54:57,648 - result - INFO - Score of baseline essay: 8
+2025-06-10 01:54:57,648 - result - INFO - Score prediction: 6
+2025-06-10 01:54:57,648 - result - INFO - Avg score for essay 857: 8
+
+2025-06-10 01:54:57,649 - result - DEBUG - predicted scores pairwise
+2025-06-10 01:54:57,650 - result - DEBUG - normalized score with the corresponding max value
+2025-06-10 01:54:57,651 - result - INFO - MSE of Set: 0.01528
+
+2025-06-10 01:54:57,661 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.750000 -0.083333
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667  0.166667
+796  I believe that computers benefit society. They...  0.666667  0.750000 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.750000 -0.083333
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+
+
+2025-06-10 01:54:57,662 - result - INFO - Pairwise Cache-Stats:
+2025-06-10 01:54:57,662 - result - INFO - Cache hits: 15
+2025-06-10 01:54:57,662 - result - INFO - Cache misses: 0
+2025-06-10 01:54:57,662 - result - DEBUG - printed cache stats
+
+2025-06-10 01:54:57,662 - result - CRITICAL - Evaluation:
+2025-06-10 01:54:57,662 - result - CRITICAL - MSE of Set 1: 0.01528
+2025-06-10 01:54:57,663 - result - CRITICAL - Average MSE: 0.01528
+
+2025-06-10 01:54:57,663 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
