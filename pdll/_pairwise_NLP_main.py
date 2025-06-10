@@ -101,7 +101,7 @@ def main(essay_set_ID):
         y_true = score_prediction["score"]
         y_pred = score_prediction["y_pred"]
 
-        score_prediction["diff"] = y_true - y_pred
+        score_prediction["diff"] = y_pred - y_true
 
         mse = mean_squared_error(y_true, y_pred)
         list_mse.append(mse)

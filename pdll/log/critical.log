@@ -413,3 +413,170 @@
 
 
 
+2025-06-10 02:08:04,323 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 02:08:04,324 - result - CRITICAL - Mode: Pairwise
+2025-06-10 02:08:04,324 - result - CRITICAL - Datapoints: 5; Anchors: 3
+
+2025-06-10 02:08:04,327 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 02:08:04,572 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.750000 -0.083333
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667  0.166667
+796  I believe that computers benefit society. They...  0.666667  0.750000 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.750000 -0.083333
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+
+
+2025-06-10 02:08:04,572 - result - CRITICAL - Evaluation:
+2025-06-10 02:08:04,572 - result - CRITICAL - MSE of Set 1: 0.01528
+2025-06-10 02:08:04,572 - result - CRITICAL - Average MSE: 0.01528
+
+2025-06-10 02:08:04,572 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 02:11:04,826 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 02:11:04,826 - result - CRITICAL - Mode: Pairwise
+2025-06-10 02:11:04,826 - result - CRITICAL - Datapoints: 6; Anchors: 3
+
+2025-06-10 02:11:04,828 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 02:11:07,371 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.750000 -0.083333
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667  0.166667
+796  I believe that computers benefit society. They...  0.666667  0.750000 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.750000 -0.083333
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.583333  0.083333
+
+
+2025-06-10 02:11:07,371 - result - CRITICAL - Evaluation:
+2025-06-10 02:11:07,371 - result - CRITICAL - MSE of Set 1: 0.01389
+2025-06-10 02:11:07,371 - result - CRITICAL - Average MSE: 0.01389
+
+2025-06-10 02:11:07,371 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 02:11:34,209 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-10 02:11:34,209 - result - CRITICAL - Mode: Solo
+2025-06-10 02:11:34,209 - result - CRITICAL - Datapoints: 6
+
+2025-06-10 02:11:34,209 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 02:11:34,505 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  1.333333 -0.666667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000  0.333333
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.666667  0.166667
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000  0.166667
+
+
+2025-06-10 02:11:34,505 - result - CRITICAL - Evaluation:
+2025-06-10 02:11:34,505 - result - CRITICAL - MSE of Set 1: 0.10185
+2025-06-10 02:11:34,505 - result - CRITICAL - Average MSE: 0.10185
+
+2025-06-10 02:11:34,505 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 02:17:38,926 - result - CRITICAL - LLM: gpt-4.1-nano
+2025-06-10 02:17:38,941 - result - CRITICAL - Mode: Solo
+2025-06-10 02:17:38,941 - result - CRITICAL - Datapoints: 6
+
+2025-06-10 02:17:38,941 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 02:17:42,654 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.750000  0.083333
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667 -0.166667
+796  I believe that computers benefit society. They...  0.666667  0.666667  0.000000
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.750000 -0.083333
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.666667  0.000000
+
+
+2025-06-10 02:17:42,655 - result - CRITICAL - Evaluation:
+2025-06-10 02:17:42,655 - result - CRITICAL - MSE of Set 1: 0.00694
+2025-06-10 02:17:42,655 - result - CRITICAL - Average MSE: 0.00694
+
+2025-06-10 02:17:42,655 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 02:18:05,437 - result - CRITICAL - LLM: gpt-4.1-nano
+2025-06-10 02:18:05,437 - result - CRITICAL - Mode: Pairwise
+2025-06-10 02:18:05,437 - result - CRITICAL - Datapoints: 6; Anchors: 3
+
+2025-06-10 02:18:05,441 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 02:18:15,311 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.416667 -0.250000
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.500000 -0.333333
+796  I believe that computers benefit society. They...  0.666667  0.500000 -0.166667
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.500000 -0.166667
+857  "To use computors, or not to. That is the ques...  0.833333  0.500000 -0.333333
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.500000 -0.166667
+
+
+2025-06-10 02:18:15,311 - result - CRITICAL - Evaluation:
+2025-06-10 02:18:15,311 - result - CRITICAL - MSE of Set 1: 0.06134
+2025-06-10 02:18:15,311 - result - CRITICAL - Average MSE: 0.06134
+
+2025-06-10 02:18:15,311 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 02:21:13,193 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-10 02:21:13,193 - result - CRITICAL - Mode: Solo
+2025-06-10 02:21:13,193 - result - CRITICAL - Datapoints: 6
+
+2025-06-10 02:21:13,193 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 02:21:17,593 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.666667  0.000000
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.666667 -0.166667
+796  I believe that computers benefit society. They...  0.666667  0.583333 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.666667  0.000000
+857  "To use computors, or not to. That is the ques...  0.833333  0.750000 -0.083333
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.583333 -0.083333
+
+
+2025-06-10 02:21:17,593 - result - CRITICAL - Evaluation:
+2025-06-10 02:21:17,593 - result - CRITICAL - MSE of Set 1: 0.00810
+2025-06-10 02:21:17,593 - result - CRITICAL - Average MSE: 0.00810
+
+2025-06-10 02:21:17,593 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-10 02:21:31,359 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-10 02:21:31,359 - result - CRITICAL - Mode: Pairwise
+2025-06-10 02:21:31,359 - result - CRITICAL - Datapoints: 6; Anchors: 3
+
+2025-06-10 02:21:31,359 - result - CRITICAL - ESSAY SET 1:
+
+2025-06-10 02:21:44,667 - result - CRITICAL - 
+                                                 essay     score    y_pred      diff
+309  "I personally believe that computersdo benefit...  0.666667  0.833333  0.166667
+104  "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...  0.833333  0.583333 -0.250000
+796  I believe that computers benefit society. They...  0.666667  0.583333 -0.083333
+579  "Dear Newspaper, @CAPS1 you know, the majority...  0.666667  0.750000  0.083333
+857  "To use computors, or not to. That is the ques...  0.833333  0.916667  0.083333
+133  "Dear @CAPS1 @CAPS2, I am writing a letter to ...  0.666667  0.750000  0.083333
+
+
+2025-06-10 02:21:44,667 - result - CRITICAL - Evaluation:
+2025-06-10 02:21:44,667 - result - CRITICAL - MSE of Set 1: 0.01968
+2025-06-10 02:21:44,667 - result - CRITICAL - Average MSE: 0.01968
+
+2025-06-10 02:21:44,667 - result - CRITICAL - -----------------------------------------------------------------
+
+
+

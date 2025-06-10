@@ -20,10 +20,10 @@ fold_ID = 1
 random_seed = 81
 
 if is_pairwise:
-    limit_data = 5
+    limit_data = 6
     limit_anchors = 3
     limit_reasonable = 10
 else:
-    limit_data = 15
+    limit_data = 6
     limit_anchors = 0
     limit_reasonable = 20
