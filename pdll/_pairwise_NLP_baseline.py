@@ -2,16 +2,10 @@ import logging
 import logging.config
 import os
 
-import openai
 import pandas as pd
-from dotenv import load_dotenv
 
 import pdll._pairwise_NLP_caching as caching
 from pdll._pairwise_NLP_dataprocessing import query_the_api
-
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = api_key
 
 # at the end ony one plot, showing the clear difference between baseline and pairwise
 # do anaysis and draw up convincing stats that go with it
