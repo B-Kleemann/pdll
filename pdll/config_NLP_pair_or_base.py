@@ -5,11 +5,15 @@ llms = [
     "gpt-4.1",
     "gpt-4.1-mini",
     "gpt-4.1-nano",
+    "o3",
+    "o3-mini",
+    "o4-mini",
 ]
 
 # Set control variables
 is_test_run = True
-is_pairwise = True
+
+is_pairwise = False
 
 llm = llms[1]
 
