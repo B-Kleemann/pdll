@@ -10,7 +10,7 @@ from pdll._pairwise_NLP_dataprocessing import query_the_api
 # at the end ony one plot, showing the clear difference between baseline and pairwise
 # do anaysis and draw up convincing stats that go with it
 
-logging.config.fileConfig("pdll\\\\log\\_logging.conf")
+logging.config.fileConfig("pdll/log/_logging.conf")
 logger = logging.getLogger("result")
 
 

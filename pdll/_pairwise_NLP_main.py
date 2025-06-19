@@ -10,7 +10,7 @@ import pdll._pairwise_NLP_dataprocessing as data_processing
 import pdll._pairwise_NLP_rubricextraction as rubric_extraction
 import pdll.config_NLP_pair_or_base as _
 
-logging.config.fileConfig("pdll\\\\log\\_logging.conf")
+logging.config.fileConfig("pdll/log/_logging.conf")
 logger = logging.getLogger("result")
 
 # Set control variables

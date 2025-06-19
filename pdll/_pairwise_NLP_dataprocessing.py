@@ -23,7 +23,7 @@ MAX_SCORE_PER_SET = {
     8: 60,
 }
 
-logging.config.fileConfig("pdll\\\\log\\_logging.conf")
+logging.config.fileConfig("pdll/log/_logging.conf")
 logger = logging.getLogger("result")
 
 
@@ -55,8 +55,8 @@ def read_dataset(file_path, prompt_id):
 
 def get_data(fold_id, prompt_id, as_list_of_tuples):
 
-    dir = Path(f"data-set\\asap\\fold_{fold_id}")
-    paths = [f"{dir}\\train.tsv", f"{dir}\\dev.tsv", f"{dir}\\test.tsv"]
+    dir = Path(f"data-set/asap/fold_{fold_id}")
+    paths = [f"{dir}/train.tsv", f"{dir}/dev.tsv", f"{dir}/test.tsv"]
 
     train_path, dev_path, test_path = paths[0], paths[1], paths[2]
 

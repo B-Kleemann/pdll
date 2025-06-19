@@ -2,7 +2,7 @@ import logging
 import logging.config
 from pathlib import Path
 
-logging.config.fileConfig("pdll\\\\log\\_logging.conf")
+logging.config.fileConfig("pdll/log/_logging.conf")
 logger = logging.getLogger("result")
 
 files_need_formatting = False
@@ -26,7 +26,7 @@ formatting_keywords = [
 
 def get_rubric_texts_from_files() -> dict[int, str]:
 
-    target_dir = Path("data-set\\scoring_rubrics")
+    target_dir = Path("data-set/scoring_rubrics")
 
     file_dict = {}
     for file in target_dir.iterdir():

@@ -6,7 +6,7 @@ import pandas as pd
 import pdll._pairwise_NLP_caching as caching
 from pdll._pairwise_NLP_dataprocessing import query_the_api
 
-logging.config.fileConfig("pdll\\\\log\\_logging.conf")
+logging.config.fileConfig("pdll/log/_logging.conf")
 logger = logging.getLogger("result")
 
 

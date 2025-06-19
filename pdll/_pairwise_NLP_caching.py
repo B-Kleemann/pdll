@@ -5,11 +5,11 @@ from datetime import datetime
 
 import pandas as pd
 
-logging.config.fileConfig("pdll\\\\log\\_logging.conf")
+logging.config.fileConfig("pdll/log/_logging.conf")
 logger = logging.getLogger("result")
 
-CACHE_PATH_BL = "pdll\\caching\\baseline_cache.parquet"
-CACHE_PATH_PW = "pdll\\caching\\pairwise_cache.parquet"
+CACHE_PATH_BL = "pdll/caching/baseline_cache.parquet"
+CACHE_PATH_PW = "pdll/caching/pairwise_cache.parquet"
 
 cache_BL = pd.DataFrame()
 cache_PW = pd.DataFrame()
