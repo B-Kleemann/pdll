@@ -1,11 +1,9 @@
 import logging
-import logging.config
 import os
 from datetime import datetime
 
 import pandas as pd
 
-logging.config.fileConfig("pdll/log/_logging.conf")
 logger = logging.getLogger("result")
 
 CACHE_PATH_BL = "pdll/caching/baseline_cache.parquet"
@@ -114,5 +112,5 @@ def print_cache_stats(is_pairwise: bool):
         cache_stats = cache_stats_BL
         logger.info("Baseline Cache-Stats:")
     logger.info(f"Cache hits: {cache_stats['hits']}")
-    logger.info(f"Cache misses: {cache_stats['misses']}")
+    logger.info(f"Cache misses: {cache_stats['misses']}\n")
     logger.debug("printed cache stats\n")

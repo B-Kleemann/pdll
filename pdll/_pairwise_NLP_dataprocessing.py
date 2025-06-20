@@ -1,6 +1,5 @@
 import codecs
 import logging
-import logging.config
 import os
 from pathlib import Path
 
@@ -23,7 +22,6 @@ MAX_SCORE_PER_SET = {
     8: 60,
 }
 
-logging.config.fileConfig("pdll/log/_logging.conf")
 logger = logging.getLogger("result")
 
 

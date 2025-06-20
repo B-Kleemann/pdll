@@ -1,8 +1,6 @@
 import logging
-import logging.config
 from pathlib import Path
 
-logging.config.fileConfig("pdll/log/_logging.conf")
 logger = logging.getLogger("result")
 
 files_need_formatting = False

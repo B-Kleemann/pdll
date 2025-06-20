@@ -1,7 +1,7 @@
 import logging
 import logging.config
 
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import classification_report, mean_squared_error, cohen_kappa_score
 
 import pdll._pairwise_NLP as pairwise
 import pdll._pairwise_NLP_baseline as baseline
@@ -42,7 +42,9 @@ else:
 
 # set up variable for collecting results
 list_mse = []
+list_qwk = []
 gathered_mse = 0
+gathered_qwk = 0
 
 # Load scoring rubrics
 scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
@@ -95,36 +97,60 @@ def main(essay_set_ID):
         )
 
     if score_prediction is not None:
-        # Compute and print error metrics
-        data_processing.normalize_score(score_prediction, essay_set_ID)
+        # extracting values for error metrics computation
+        y_true = score_prediction["score"]
+        y_pred = score_prediction["y_pred"]
+        score_prediction["diff"] = y_pred - y_true
+        # list full dataset
+        logger.critical(f"\n{score_prediction}\n\n")
 
+        # # list classification report
+        # class_report = classification_report(y_true, y_pred, zero_division=0)
+        # logger.critical(f"\n{class_report}\n")
+
+        # compute QWK
+        qwk = cohen_kappa_score(y_true, y_pred, weights="quadratic")
+        list_qwk.append(qwk)
+        logger.info(f"QWK of Set: {qwk:.5f}")
+
+        # normalizing scores with their max value for better comparison
+        data_processing.normalize_score(score_prediction, essay_set_ID)
+        # extracting values for error metrics computation
         y_true = score_prediction["score"]
         y_pred = score_prediction["y_pred"]
 
-        score_prediction["diff"] = y_pred - y_true
-
+        # compute MSE
         mse = mean_squared_error(y_true, y_pred)
         list_mse.append(mse)
-
         logger.info(f"MSE of Set: {mse:.5f}\n")
-        logger.critical(f"\n{score_prediction}\n\n")
+
     else:
         logger.info("No score prediction available.")
 
 
-for i in range(START, STOP + 1):
+for i in range(START, (STOP + 1)):
     main(i)
 
 caching.print_cache_stats(PAIRWISE)
 
 # evaluation
 logger.critical("Evaluation:")
+# all MSE in one place
 for j in range(START, STOP + 1):
     logger.critical(f"MSE of Set {j}: {list_mse[j - 1]:.5f}")
     gathered_mse += list_mse[j - 1]
-
 avg_mse = gathered_mse / len(list_mse)
 logger.critical(f"Average MSE: {avg_mse:.5f}\n")
+
+
+# all QWK in one place
+for j in range(START, STOP + 1):
+    logger.critical(f"QWK of Set {j}: {list_qwk[j - 1]:.5f}")
+    gathered_qwk += list_qwk[j - 1]
+avg_qwk = gathered_qwk / len(list_qwk)
+logger.critical(f"Average QWK: {avg_qwk:.5f}\n")
+
+# marks end of run
 logger.critical(
     "-----------------------------------------------------------------\n\n\n"
 )
