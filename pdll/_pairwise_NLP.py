@@ -39,7 +39,11 @@ def get_pair_diff_as_int(
 
     if from_cache is None:
         try:
-            pred_score = int(query_the_api(model, prompt))
+            answer = query_the_api(model, prompt)
+            try:
+                pred_score = int(answer)
+            except:
+                pred_score = 0
             caching.new_cache_entry(model, prompt, pred_score, True)
             logger.info("got score from new prediction")
             return pred_score

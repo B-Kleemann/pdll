@@ -1,6 +1,7 @@
 import logging
 import logging.config
 
+import pandas as pd
 from sklearn.metrics import classification_report, mean_squared_error, cohen_kappa_score
 
 import pdll._pairwise_NLP as pairwise
@@ -67,16 +68,19 @@ def main(essay_set_ID):
     )
 
     if TESTING:
+        limit_data = min(LIMIT_DATA, len(data_train))
+        limit_reason = LIMIT_REASONABLE
         #! limits data for development and testing
-        assert LIMIT_DATA > 0, logger.warning(
+        assert limit_data > 0, logger.warning(
             "Limit for data reduction must be greater than 0."
         )
-        assert LIMIT_DATA <= LIMIT_REASONABLE, logger.warning(
-            "Limit for data reduction exceeds number of reasonable rows."
-        )
+
+        # assert limit_data >= limit_reason, logger.warning(
+        #     "Limit for data reduction exceeds number of reasonable rows."
+        # )
         # use random sample for testing
         data_train, data_dev = (
-            data_train.sample(LIMIT_DATA, random_state=SEED),
+            data_train.sample(limit_data, random_state=SEED),
             data_dev.sample(LIMIT_ANCHORS, random_state=SEED),
         )
         logger.debug("amount of datapoints was limited due to active testing")
@@ -102,6 +106,7 @@ def main(essay_set_ID):
         y_pred = score_prediction["y_pred"]
         score_prediction["diff"] = y_pred - y_true
         # list full dataset
+        pd.set_option("display.max_rows", len(score_prediction))
         logger.critical(f"\n{score_prediction}\n\n")
 
         # # list classification report
@@ -137,16 +142,16 @@ caching.print_cache_stats(PAIRWISE)
 logger.critical("Evaluation:")
 # all MSE in one place
 for j in range(START, STOP + 1):
-    logger.critical(f"MSE of Set {j}: {list_mse[j - 1]:.5f}")
-    gathered_mse += list_mse[j - 1]
+    logger.critical(f"MSE of Set {j}: {list_mse[j - START]:.5f}")
+    gathered_mse += list_mse[j - START]
 avg_mse = gathered_mse / len(list_mse)
 logger.critical(f"Average MSE: {avg_mse:.5f}\n")
 
 
 # all QWK in one place
 for j in range(START, STOP + 1):
-    logger.critical(f"QWK of Set {j}: {list_qwk[j - 1]:.5f}")
-    gathered_qwk += list_qwk[j - 1]
+    logger.critical(f"QWK of Set {j}: {list_qwk[j - START]:.5f}")
+    gathered_qwk += list_qwk[j - START]
 avg_qwk = gathered_qwk / len(list_qwk)
 logger.critical(f"Average QWK: {avg_qwk:.5f}\n")
 

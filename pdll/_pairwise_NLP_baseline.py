@@ -41,7 +41,11 @@ def get_essay_score_as_float(
 
     if from_cache is None:
         try:
-            pred_score = float(query_the_api(model, prompt))
+            answer = query_the_api(model, prompt)
+            try:
+                pred_score = float(answer)
+            except:
+                pred_score = 0
             caching.new_cache_entry(model, prompt, pred_score, False)
             logger.info("got score from new prediction")
             return pred_score
@@ -78,7 +82,7 @@ def predict_scores_solo(
             score_pred = score_pred_1 * 2
 
             logger.info(f"Score prediction: {score_pred}\n")
-            predictions.append(score_pred)
+            predictions.append(int(score_pred))
 
         except RuntimeError:
             raise RuntimeError(logger.exception(f"prediction failed for: {row_i}"))
