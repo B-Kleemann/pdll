@@ -2,7 +2,6 @@ import codecs
 import logging
 import logging.config
 
-from dotenv import load_dotenv
 import pandas as pd
 from sklearn.metrics import cohen_kappa_score, mean_squared_error
 
@@ -12,8 +11,6 @@ import pdll._pairwise_NLP_caching as caching
 import pdll._pairwise_NLP_dataprocessing as data_processing
 import pdll._pairwise_NLP_rubricextraction as rubric_extraction
 import pdll.config_NLP_pair_or_base as _
-
-load_dotenv()
 
 logging.config.fileConfig("pdll/log/_logging.conf", encoding="utf-8")
 logger = logging.getLogger("result")
@@ -109,29 +106,11 @@ def main(essay_set_ID: int):
         y_true = score_prediction["score"]
         y_pred = score_prediction["y_pred"]
         score_prediction["diff"] = y_pred - y_true
+
         # list full dataset
         pd.options.display.max_rows = None
         pd.options.display.min_rows = 1
-        # pd.set_option(pat="display.max_rows", val=len(score_prediction))
-
-        # file_path = "pdll/log/error_handeling_set7_unicode.txt"
-
-        # with codecs.open(file_path, mode="r+", encoding="UTF8") as alt_log_file:
-        #     alt_log_file.write(score_prediction.to_string())
-
-        # with open(file_path, "r", encoding="utf-8") as f:
-        #     lines = f.readlines()
-        #     for i, l in enumerate(lines):
-        #         try:
-        #             a = l.decode("utf8")
-        #         except:
-        #             print("line", i)
-
         logger.critical(f"\n{score_prediction}\n\n")
-
-        # # list classification report
-        # class_report = classification_report(y_true, y_pred, zero_division=0)
-        # logger.critical(f"\n{class_report}\n")
 
         # compute QWK
         qwk = cohen_kappa_score(y_true, y_pred, weights="quadratic")
