@@ -1,10 +1,10 @@
-2025-06-21 18:45:17,780 - result - CRITICAL - LLM: gpt-4o-mini
-2025-06-21 18:45:17,780 - result - CRITICAL - Mode: Solo
-2025-06-21 18:45:17,780 - result - CRITICAL - Datapoints: 50
+2025-06-21 19:09:01,486 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-21 19:09:01,486 - result - CRITICAL - Mode: Solo
+2025-06-21 19:09:01,486 - result - CRITICAL - Datapoints: 50
 
-2025-06-21 18:45:17,816 - result - CRITICAL - ESSAY SET 1:
+2025-06-21 19:09:01,486 - result - CRITICAL - ESSAY SET 1:
 
-2025-06-21 18:46:03,615 - result - CRITICAL - 
+2025-06-21 19:09:02,016 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 309   "I personally believe that computersdo benefit...      8      12     4
 104   "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...     10       8    -2
@@ -58,9 +58,9 @@
 585   "Dear @CAPS1 @CAPS2, @CAPS3 recently has been ...      8       6    -2
 
 
-2025-06-21 18:46:03,618 - result - CRITICAL - ESSAY SET 2:
+2025-06-21 19:09:02,017 - result - CRITICAL - ESSAY SET 2:
 
-2025-06-21 18:46:49,733 - result - CRITICAL - 
+2025-06-21 19:09:02,521 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 959   I believe books are writen for a reason and th...      6       5    -1
 40    "I am a citizen of the @LOCATION1 and I believ...      8       5    -3
@@ -114,9 +114,9 @@
 89    "I belive that certain materials such as books...      8       7    -1
 
 
-2025-06-21 18:46:49,735 - result - CRITICAL - ESSAY SET 3:
+2025-06-21 19:09:02,522 - result - CRITICAL - ESSAY SET 3:
 
-2025-06-21 18:47:33,885 - result - CRITICAL - 
+2025-06-21 19:09:03,027 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 839   "Each new feature of the setting in the essay ...      3       3     0
 848   "Do not Exceed posted speed limit, never accep...      2       2     0
@@ -170,9 +170,9 @@
 579   The features of the setting affect the cyclist...      1       2     1
 
 
-2025-06-21 18:47:33,886 - result - CRITICAL - ESSAY SET 4:
+2025-06-21 19:09:03,028 - result - CRITICAL - ESSAY SET 4:
 
-2025-06-21 18:48:18,402 - result - CRITICAL - 
+2025-06-21 19:09:03,537 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 289   The author concludes the story with this parag...      1       3     2
 686   "The  author includes that sentence of the end...      1       3     2
@@ -226,9 +226,9 @@
 266   "This paragraph represents an action that Saen...      3       3     0
 
 
-2025-06-21 18:48:18,403 - result - CRITICAL - ESSAY SET 5:
+2025-06-21 19:09:03,538 - result - CRITICAL - ESSAY SET 5:
 
-2025-06-21 18:49:04,810 - result - CRITICAL - 
+2025-06-21 19:09:04,055 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 592   "In the memoir ""Narciso @CAPS1"" by the Bluep...      2       2     0
 336   "In the story ""Narciso Rodriguez"" written by...      2       2     0
@@ -282,9 +282,9 @@
 289   The mood of the memoir is very appreciative. T...      1       3     2
 
 
-2025-06-21 18:49:04,812 - result - CRITICAL - ESSAY SET 6:
+2025-06-21 19:09:04,056 - result - CRITICAL - ESSAY SET 6:
 
-2025-06-21 18:49:49,367 - result - CRITICAL - 
+2025-06-21 19:09:04,574 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 959   "When attempting to allow dirigibles to dock o...      3       6     3
 40    "In attempting to allow dirigibles to dock on ...      3       7     4
@@ -338,9 +338,9 @@
 89    "The plan to allow dirigibles to dock on the E...      4       6     2
 
 
-2025-06-21 18:49:49,368 - result - CRITICAL - ESSAY SET 7:
+2025-06-21 19:09:04,575 - result - CRITICAL - ESSAY SET 7:
 
-2025-06-21 18:50:32,068 - result - CRITICAL - 
+2025-06-21 19:09:05,088 - result - CRITICAL - 
                                                  essay  score  y_pred  diff
 935  "I was patient one time, really patient but ki...     16      28    12
 372  "A time that I was patient is when I had my tw...     13      24    11
@@ -394,9 +394,9 @@
 198  "@CAPS6 was @NUM1 at night, @CAPS1 @CAPS2 and ...     13      14     1
 
 
-2025-06-21 18:50:32,070 - result - CRITICAL - ESSAY SET 8:
+2025-06-21 19:09:05,090 - result - CRITICAL - ESSAY SET 8:
 
-2025-06-21 18:51:17,602 - result - CRITICAL - 
+2025-06-21 19:09:05,595 - result - CRITICAL - 
                                                  essay  score  y_pred  diff
 135  Have u ever been hit by a basketball in the fa...     31      22    -9
 151  "Someone once told me that laughter is the key...     33      52    19
@@ -450,28 +450,28 @@
 37   " Everyone laughs differently , some people la...     40      72    32
 
 
-2025-06-21 18:51:17,604 - result - CRITICAL - Evaluation:
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 1: 0.03903
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 2: 0.03340
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 3: 0.11556
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 4: 0.26444
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 5: 0.18375
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 6: 0.35750
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 7: 0.06933
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 8: 0.15998
-2025-06-21 18:51:17,604 - result - CRITICAL - Average MSE: 0.15287
+2025-06-21 19:09:05,596 - result - CRITICAL - Evaluation:
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 1: 0.03903
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 2: 0.03340
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 3: 0.11556
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 4: 0.26444
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 5: 0.18375
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 6: 0.35750
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 7: 0.06933
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 8: 0.15998
+2025-06-21 19:09:05,597 - result - CRITICAL - Average MSE: 0.15287
 
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 1: 0.28318
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 2: 0.44504
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 3: 0.36678
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 4: 0.27527
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 5: 0.28488
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 6: 0.22903
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 7: 0.20091
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 8: 0.18163
-2025-06-21 18:51:17,604 - result - CRITICAL - Average QWK: 0.28334
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 1: 0.28318
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 2: 0.44504
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 3: 0.36678
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 4: 0.27527
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 5: 0.28488
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 6: 0.22903
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 7: 0.20091
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 8: 0.18163
+2025-06-21 19:09:05,597 - result - CRITICAL - Average QWK: 0.28334
 
-2025-06-21 18:51:17,604 - result - CRITICAL - -----------------------------------------------------------------
+2025-06-21 19:09:05,597 - result - CRITICAL - -----------------------------------------------------------------
 
 
 

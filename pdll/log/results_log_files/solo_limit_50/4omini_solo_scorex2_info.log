@@ -1,215 +1,215 @@
-2025-06-21 18:45:17,780 - result - CRITICAL - LLM: gpt-4o-mini
-2025-06-21 18:45:17,780 - result - CRITICAL - Mode: Solo
-2025-06-21 18:45:17,780 - result - CRITICAL - Datapoints: 50
+2025-06-21 19:09:01,486 - result - CRITICAL - LLM: gpt-4o-mini
+2025-06-21 19:09:01,486 - result - CRITICAL - Mode: Solo
+2025-06-21 19:09:01,486 - result - CRITICAL - Datapoints: 50
 
-2025-06-21 18:45:17,816 - result - INFO - Run through essay sets 1 to 8
+2025-06-21 19:09:01,486 - result - INFO - Run through essay sets 1 to 8
 
-2025-06-21 18:45:17,816 - result - CRITICAL - ESSAY SET 1:
+2025-06-21 19:09:01,486 - result - CRITICAL - ESSAY SET 1:
 
-2025-06-21 18:45:18,271 - result - INFO - score prediction started
+2025-06-21 19:09:01,942 - result - INFO - score prediction started
 
-2025-06-21 18:45:18,271 - result - INFO - Datapoint 309
-2025-06-21 18:45:19,663 - result - INFO - got score from new prediction
-2025-06-21 18:45:19,663 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:01,942 - result - INFO - Datapoint 309
+2025-06-21 19:09:01,944 - result - INFO - got score from cache
+2025-06-21 19:09:01,944 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:45:19,663 - result - INFO - Datapoint 104
-2025-06-21 18:45:20,439 - result - INFO - got score from new prediction
-2025-06-21 18:45:20,439 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,944 - result - INFO - Datapoint 104
+2025-06-21 19:09:01,946 - result - INFO - got score from cache
+2025-06-21 19:09:01,946 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:20,441 - result - INFO - Datapoint 796
-2025-06-21 18:45:21,228 - result - INFO - got score from new prediction
-2025-06-21 18:45:21,229 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,948 - result - INFO - Datapoint 796
+2025-06-21 19:09:01,949 - result - INFO - got score from cache
+2025-06-21 19:09:01,949 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:21,229 - result - INFO - Datapoint 579
-2025-06-21 18:45:22,080 - result - INFO - got score from new prediction
-2025-06-21 18:45:22,080 - result - INFO - Score prediction: 10.0
+2025-06-21 19:09:01,950 - result - INFO - Datapoint 579
+2025-06-21 19:09:01,951 - result - INFO - got score from cache
+2025-06-21 19:09:01,951 - result - INFO - Score prediction: 10.0
 
-2025-06-21 18:45:22,080 - result - INFO - Datapoint 857
-2025-06-21 18:45:22,870 - result - INFO - got score from new prediction
-2025-06-21 18:45:22,870 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,951 - result - INFO - Datapoint 857
+2025-06-21 19:09:01,953 - result - INFO - got score from cache
+2025-06-21 19:09:01,953 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:22,871 - result - INFO - Datapoint 133
-2025-06-21 18:45:23,778 - result - INFO - got score from new prediction
-2025-06-21 18:45:23,778 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,953 - result - INFO - Datapoint 133
+2025-06-21 19:09:01,954 - result - INFO - got score from cache
+2025-06-21 19:09:01,954 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:23,778 - result - INFO - Datapoint 618
-2025-06-21 18:45:24,593 - result - INFO - got score from new prediction
-2025-06-21 18:45:24,593 - result - INFO - Score prediction: 10.0
+2025-06-21 19:09:01,954 - result - INFO - Datapoint 618
+2025-06-21 19:09:01,955 - result - INFO - got score from cache
+2025-06-21 19:09:01,956 - result - INFO - Score prediction: 10.0
 
-2025-06-21 18:45:24,594 - result - INFO - Datapoint 408
-2025-06-21 18:45:25,395 - result - INFO - got score from new prediction
-2025-06-21 18:45:25,395 - result - INFO - Score prediction: 7.0
+2025-06-21 19:09:01,956 - result - INFO - Datapoint 408
+2025-06-21 19:09:01,957 - result - INFO - got score from cache
+2025-06-21 19:09:01,957 - result - INFO - Score prediction: 7.0
 
-2025-06-21 18:45:25,395 - result - INFO - Datapoint 289
-2025-06-21 18:45:26,130 - result - INFO - got score from new prediction
-2025-06-21 18:45:26,130 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,957 - result - INFO - Datapoint 289
+2025-06-21 19:09:01,958 - result - INFO - got score from cache
+2025-06-21 19:09:01,958 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:26,131 - result - INFO - Datapoint 687
-2025-06-21 18:45:26,979 - result - INFO - got score from new prediction
-2025-06-21 18:45:26,979 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,958 - result - INFO - Datapoint 687
+2025-06-21 19:09:01,959 - result - INFO - got score from cache
+2025-06-21 19:09:01,959 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:26,979 - result - INFO - Datapoint 332
-2025-06-21 18:45:27,845 - result - INFO - got score from new prediction
-2025-06-21 18:45:27,846 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,959 - result - INFO - Datapoint 332
+2025-06-21 19:09:01,961 - result - INFO - got score from cache
+2025-06-21 19:09:01,961 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:27,846 - result - INFO - Datapoint 196
-2025-06-21 18:45:28,598 - result - INFO - got score from new prediction
-2025-06-21 18:45:28,598 - result - INFO - Score prediction: 16.0
+2025-06-21 19:09:01,961 - result - INFO - Datapoint 196
+2025-06-21 19:09:01,962 - result - INFO - got score from cache
+2025-06-21 19:09:01,962 - result - INFO - Score prediction: 16.0
 
-2025-06-21 18:45:28,599 - result - INFO - Datapoint 100
-2025-06-21 18:45:31,099 - result - INFO - got score from new prediction
-2025-06-21 18:45:31,099 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,962 - result - INFO - Datapoint 100
+2025-06-21 19:09:01,963 - result - INFO - got score from cache
+2025-06-21 19:09:01,963 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:31,100 - result - INFO - Datapoint 993
-2025-06-21 18:45:31,873 - result - INFO - got score from new prediction
-2025-06-21 18:45:31,873 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:01,963 - result - INFO - Datapoint 993
+2025-06-21 19:09:01,964 - result - INFO - got score from cache
+2025-06-21 19:09:01,964 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:45:31,873 - result - INFO - Datapoint 704
-2025-06-21 18:45:32,759 - result - INFO - got score from new prediction
-2025-06-21 18:45:32,759 - result - INFO - Score prediction: 10.0
+2025-06-21 19:09:01,964 - result - INFO - Datapoint 704
+2025-06-21 19:09:01,966 - result - INFO - got score from cache
+2025-06-21 19:09:01,966 - result - INFO - Score prediction: 10.0
 
-2025-06-21 18:45:32,759 - result - INFO - Datapoint 747
-2025-06-21 18:45:33,543 - result - INFO - got score from new prediction
-2025-06-21 18:45:33,543 - result - INFO - Score prediction: 7.6
+2025-06-21 19:09:01,966 - result - INFO - Datapoint 747
+2025-06-21 19:09:01,967 - result - INFO - got score from cache
+2025-06-21 19:09:01,967 - result - INFO - Score prediction: 7.6
 
-2025-06-21 18:45:33,543 - result - INFO - Datapoint 940
-2025-06-21 18:45:34,401 - result - INFO - got score from new prediction
-2025-06-21 18:45:34,401 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,967 - result - INFO - Datapoint 940
+2025-06-21 19:09:01,968 - result - INFO - got score from cache
+2025-06-21 19:09:01,968 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:34,401 - result - INFO - Datapoint 352
-2025-06-21 18:45:35,190 - result - INFO - got score from new prediction
-2025-06-21 18:45:35,190 - result - INFO - Score prediction: 10.0
+2025-06-21 19:09:01,968 - result - INFO - Datapoint 352
+2025-06-21 19:09:01,969 - result - INFO - got score from cache
+2025-06-21 19:09:01,969 - result - INFO - Score prediction: 10.0
 
-2025-06-21 18:45:35,190 - result - INFO - Datapoint 778
-2025-06-21 18:45:36,020 - result - INFO - got score from new prediction
-2025-06-21 18:45:36,020 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:01,969 - result - INFO - Datapoint 778
+2025-06-21 19:09:01,971 - result - INFO - got score from cache
+2025-06-21 19:09:01,971 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:45:36,020 - result - INFO - Datapoint 304
-2025-06-21 18:45:36,807 - result - INFO - got score from new prediction
-2025-06-21 18:45:36,807 - result - INFO - Score prediction: 7.5
+2025-06-21 19:09:01,971 - result - INFO - Datapoint 304
+2025-06-21 19:09:01,972 - result - INFO - got score from cache
+2025-06-21 19:09:01,972 - result - INFO - Score prediction: 7.5
 
-2025-06-21 18:45:36,807 - result - INFO - Datapoint 474
-2025-06-21 18:45:37,856 - result - INFO - got score from new prediction
-2025-06-21 18:45:37,856 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:01,972 - result - INFO - Datapoint 474
+2025-06-21 19:09:01,973 - result - INFO - got score from cache
+2025-06-21 19:09:01,973 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:45:37,857 - result - INFO - Datapoint 172
-2025-06-21 18:45:38,680 - result - INFO - got score from new prediction
-2025-06-21 18:45:38,680 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:01,973 - result - INFO - Datapoint 172
+2025-06-21 19:09:01,974 - result - INFO - got score from cache
+2025-06-21 19:09:01,974 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:45:38,680 - result - INFO - Datapoint 450
-2025-06-21 18:45:39,434 - result - INFO - got score from new prediction
-2025-06-21 18:45:39,434 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,974 - result - INFO - Datapoint 450
+2025-06-21 19:09:01,976 - result - INFO - got score from cache
+2025-06-21 19:09:01,976 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:39,434 - result - INFO - Datapoint 63
-2025-06-21 18:45:40,193 - result - INFO - got score from new prediction
-2025-06-21 18:45:40,193 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:01,976 - result - INFO - Datapoint 63
+2025-06-21 19:09:01,977 - result - INFO - got score from cache
+2025-06-21 19:09:01,977 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:45:40,193 - result - INFO - Datapoint 37
-2025-06-21 18:45:40,971 - result - INFO - got score from new prediction
-2025-06-21 18:45:40,971 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:01,977 - result - INFO - Datapoint 37
+2025-06-21 19:09:01,978 - result - INFO - got score from cache
+2025-06-21 19:09:01,978 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:45:40,971 - result - INFO - Datapoint 1064
-2025-06-21 18:45:41,773 - result - INFO - got score from new prediction
-2025-06-21 18:45:41,774 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,978 - result - INFO - Datapoint 1064
+2025-06-21 19:09:01,979 - result - INFO - got score from cache
+2025-06-21 19:09:01,979 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:41,774 - result - INFO - Datapoint 347
-2025-06-21 18:45:42,661 - result - INFO - got score from new prediction
-2025-06-21 18:45:42,661 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,979 - result - INFO - Datapoint 347
+2025-06-21 19:09:01,981 - result - INFO - got score from cache
+2025-06-21 19:09:01,981 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:42,661 - result - INFO - Datapoint 482
-2025-06-21 18:45:43,424 - result - INFO - got score from new prediction
-2025-06-21 18:45:43,424 - result - INFO - Score prediction: 6.72
+2025-06-21 19:09:01,981 - result - INFO - Datapoint 482
+2025-06-21 19:09:01,982 - result - INFO - got score from cache
+2025-06-21 19:09:01,982 - result - INFO - Score prediction: 6.72
 
-2025-06-21 18:45:43,424 - result - INFO - Datapoint 167
-2025-06-21 18:45:44,223 - result - INFO - got score from new prediction
-2025-06-21 18:45:44,223 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:01,982 - result - INFO - Datapoint 167
+2025-06-21 19:09:01,983 - result - INFO - got score from cache
+2025-06-21 19:09:01,983 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:45:44,224 - result - INFO - Datapoint 887
-2025-06-21 18:45:45,002 - result - INFO - got score from new prediction
-2025-06-21 18:45:45,002 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,983 - result - INFO - Datapoint 887
+2025-06-21 19:09:01,984 - result - INFO - got score from cache
+2025-06-21 19:09:01,984 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:45,002 - result - INFO - Datapoint 597
-2025-06-21 18:45:45,882 - result - INFO - got score from new prediction
-2025-06-21 18:45:45,882 - result - INFO - Score prediction: 6.8
+2025-06-21 19:09:01,984 - result - INFO - Datapoint 597
+2025-06-21 19:09:01,985 - result - INFO - got score from cache
+2025-06-21 19:09:01,985 - result - INFO - Score prediction: 6.8
 
-2025-06-21 18:45:45,883 - result - INFO - Datapoint 291
-2025-06-21 18:45:48,728 - result - INFO - got score from new prediction
-2025-06-21 18:45:48,728 - result - INFO - Score prediction: 14.8
+2025-06-21 19:09:01,986 - result - INFO - Datapoint 291
+2025-06-21 19:09:01,987 - result - INFO - got score from cache
+2025-06-21 19:09:01,987 - result - INFO - Score prediction: 14.8
 
-2025-06-21 18:45:48,728 - result - INFO - Datapoint 1023
-2025-06-21 18:45:49,560 - result - INFO - got score from new prediction
-2025-06-21 18:45:49,560 - result - INFO - Score prediction: 7.3
+2025-06-21 19:09:01,987 - result - INFO - Datapoint 1023
+2025-06-21 19:09:01,988 - result - INFO - got score from cache
+2025-06-21 19:09:01,988 - result - INFO - Score prediction: 7.3
 
-2025-06-21 18:45:49,560 - result - INFO - Datapoint 452
-2025-06-21 18:45:50,455 - result - INFO - got score from new prediction
-2025-06-21 18:45:50,455 - result - INFO - Score prediction: 9.5
+2025-06-21 19:09:01,988 - result - INFO - Datapoint 452
+2025-06-21 19:09:01,989 - result - INFO - got score from cache
+2025-06-21 19:09:01,989 - result - INFO - Score prediction: 9.5
 
-2025-06-21 18:45:50,455 - result - INFO - Datapoint 677
-2025-06-21 18:45:51,243 - result - INFO - got score from new prediction
-2025-06-21 18:45:51,243 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:01,989 - result - INFO - Datapoint 677
+2025-06-21 19:09:01,990 - result - INFO - got score from cache
+2025-06-21 19:09:01,990 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:45:51,243 - result - INFO - Datapoint 976
-2025-06-21 18:45:52,028 - result - INFO - got score from new prediction
-2025-06-21 18:45:52,028 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,990 - result - INFO - Datapoint 976
+2025-06-21 19:09:01,992 - result - INFO - got score from cache
+2025-06-21 19:09:01,992 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:52,028 - result - INFO - Datapoint 779
-2025-06-21 18:45:52,820 - result - INFO - got score from new prediction
-2025-06-21 18:45:52,820 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,992 - result - INFO - Datapoint 779
+2025-06-21 19:09:01,994 - result - INFO - got score from cache
+2025-06-21 19:09:01,994 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:52,820 - result - INFO - Datapoint 1026
-2025-06-21 18:45:53,599 - result - INFO - got score from new prediction
-2025-06-21 18:45:53,599 - result - INFO - Score prediction: 8.16
+2025-06-21 19:09:01,994 - result - INFO - Datapoint 1026
+2025-06-21 19:09:01,995 - result - INFO - got score from cache
+2025-06-21 19:09:01,995 - result - INFO - Score prediction: 8.16
 
-2025-06-21 18:45:53,599 - result - INFO - Datapoint 932
-2025-06-21 18:45:54,504 - result - INFO - got score from new prediction
-2025-06-21 18:45:54,504 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:01,995 - result - INFO - Datapoint 932
+2025-06-21 19:09:01,996 - result - INFO - got score from cache
+2025-06-21 19:09:01,996 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:45:54,504 - result - INFO - Datapoint 882
-2025-06-21 18:45:55,306 - result - INFO - got score from new prediction
-2025-06-21 18:45:55,306 - result - INFO - Score prediction: 7.0
+2025-06-21 19:09:01,996 - result - INFO - Datapoint 882
+2025-06-21 19:09:01,998 - result - INFO - got score from cache
+2025-06-21 19:09:01,998 - result - INFO - Score prediction: 7.0
 
-2025-06-21 18:45:55,306 - result - INFO - Datapoint 267
-2025-06-21 18:45:56,126 - result - INFO - got score from new prediction
-2025-06-21 18:45:56,126 - result - INFO - Score prediction: 10.0
+2025-06-21 19:09:01,998 - result - INFO - Datapoint 267
+2025-06-21 19:09:01,999 - result - INFO - got score from cache
+2025-06-21 19:09:01,999 - result - INFO - Score prediction: 10.0
 
-2025-06-21 18:45:56,126 - result - INFO - Datapoint 191
-2025-06-21 18:45:56,893 - result - INFO - got score from new prediction
-2025-06-21 18:45:56,893 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:01,999 - result - INFO - Datapoint 191
+2025-06-21 19:09:02,000 - result - INFO - got score from cache
+2025-06-21 19:09:02,000 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:45:56,893 - result - INFO - Datapoint 305
-2025-06-21 18:45:57,736 - result - INFO - got score from new prediction
-2025-06-21 18:45:57,736 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,000 - result - INFO - Datapoint 305
+2025-06-21 19:09:02,002 - result - INFO - got score from cache
+2025-06-21 19:09:02,002 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:45:57,736 - result - INFO - Datapoint 979
-2025-06-21 18:45:58,506 - result - INFO - got score from new prediction
-2025-06-21 18:45:58,506 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:02,002 - result - INFO - Datapoint 979
+2025-06-21 19:09:02,003 - result - INFO - got score from cache
+2025-06-21 19:09:02,003 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:45:58,506 - result - INFO - Datapoint 531
-2025-06-21 18:45:59,301 - result - INFO - got score from new prediction
-2025-06-21 18:45:59,301 - result - INFO - Score prediction: 7.0
+2025-06-21 19:09:02,003 - result - INFO - Datapoint 531
+2025-06-21 19:09:02,005 - result - INFO - got score from cache
+2025-06-21 19:09:02,005 - result - INFO - Score prediction: 7.0
 
-2025-06-21 18:45:59,302 - result - INFO - Datapoint 641
-2025-06-21 18:46:00,192 - result - INFO - got score from new prediction
-2025-06-21 18:46:00,192 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,005 - result - INFO - Datapoint 641
+2025-06-21 19:09:02,006 - result - INFO - got score from cache
+2025-06-21 19:09:02,006 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:00,192 - result - INFO - Datapoint 38
-2025-06-21 18:46:00,957 - result - INFO - got score from new prediction
-2025-06-21 18:46:00,957 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:02,006 - result - INFO - Datapoint 38
+2025-06-21 19:09:02,007 - result - INFO - got score from cache
+2025-06-21 19:09:02,007 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:46:00,957 - result - INFO - Datapoint 990
-2025-06-21 18:46:02,095 - result - INFO - got score from new prediction
-2025-06-21 18:46:02,095 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:02,007 - result - INFO - Datapoint 990
+2025-06-21 19:09:02,008 - result - INFO - got score from cache
+2025-06-21 19:09:02,008 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:46:02,095 - result - INFO - Datapoint 317
-2025-06-21 18:46:02,840 - result - INFO - got score from new prediction
-2025-06-21 18:46:02,840 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:02,008 - result - INFO - Datapoint 317
+2025-06-21 19:09:02,010 - result - INFO - got score from cache
+2025-06-21 19:09:02,011 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:46:02,840 - result - INFO - Datapoint 585
-2025-06-21 18:46:03,611 - result - INFO - got score from new prediction
-2025-06-21 18:46:03,611 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:02,011 - result - INFO - Datapoint 585
+2025-06-21 19:09:02,012 - result - INFO - got score from cache
+2025-06-21 19:09:02,012 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:46:03,611 - result - INFO - predicted scores solo
-2025-06-21 18:46:03,615 - result - CRITICAL - 
+2025-06-21 19:09:02,012 - result - INFO - predicted scores solo
+2025-06-21 19:09:02,016 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 309   "I personally believe that computersdo benefit...      8      12     4
 104   "Dear @CAPS1 @CAPS2 @CAPS3, I believe that com...     10       8    -2
@@ -263,215 +263,215 @@
 585   "Dear @CAPS1 @CAPS2, @CAPS3 recently has been ...      8       6    -2
 
 
-2025-06-21 18:46:03,617 - result - INFO - QWK of Set: 0.28318
-2025-06-21 18:46:03,618 - result - INFO - MSE of Set: 0.03903
+2025-06-21 19:09:02,017 - result - INFO - QWK of Set: 0.28318
+2025-06-21 19:09:02,017 - result - INFO - MSE of Set: 0.03903
 
-2025-06-21 18:46:03,618 - result - CRITICAL - ESSAY SET 2:
+2025-06-21 19:09:02,017 - result - CRITICAL - ESSAY SET 2:
 
-2025-06-21 18:46:04,077 - result - INFO - score prediction started
+2025-06-21 19:09:02,453 - result - INFO - score prediction started
 
-2025-06-21 18:46:04,078 - result - INFO - Datapoint 959
-2025-06-21 18:46:05,059 - result - INFO - got score from new prediction
-2025-06-21 18:46:05,059 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,453 - result - INFO - Datapoint 959
+2025-06-21 19:09:02,455 - result - INFO - got score from cache
+2025-06-21 19:09:02,455 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:05,060 - result - INFO - Datapoint 40
-2025-06-21 18:46:06,419 - result - INFO - got score from new prediction
-2025-06-21 18:46:06,419 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,455 - result - INFO - Datapoint 40
+2025-06-21 19:09:02,457 - result - INFO - got score from cache
+2025-06-21 19:09:02,457 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:06,420 - result - INFO - Datapoint 1055
-2025-06-21 18:46:07,399 - result - INFO - got score from new prediction
-2025-06-21 18:46:07,399 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,457 - result - INFO - Datapoint 1055
+2025-06-21 19:09:02,458 - result - INFO - got score from cache
+2025-06-21 19:09:02,458 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:07,399 - result - INFO - Datapoint 1008
-2025-06-21 18:46:08,246 - result - INFO - got score from new prediction
-2025-06-21 18:46:08,247 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,458 - result - INFO - Datapoint 1008
+2025-06-21 19:09:02,459 - result - INFO - got score from cache
+2025-06-21 19:09:02,460 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:08,247 - result - INFO - Datapoint 383
-2025-06-21 18:46:09,097 - result - INFO - got score from new prediction
-2025-06-21 18:46:09,097 - result - INFO - Score prediction: 6.5
+2025-06-21 19:09:02,460 - result - INFO - Datapoint 383
+2025-06-21 19:09:02,461 - result - INFO - got score from cache
+2025-06-21 19:09:02,461 - result - INFO - Score prediction: 6.5
 
-2025-06-21 18:46:09,097 - result - INFO - Datapoint 248
-2025-06-21 18:46:09,869 - result - INFO - got score from new prediction
-2025-06-21 18:46:09,869 - result - INFO - Score prediction: 6.24
+2025-06-21 19:09:02,461 - result - INFO - Datapoint 248
+2025-06-21 19:09:02,463 - result - INFO - got score from cache
+2025-06-21 19:09:02,463 - result - INFO - Score prediction: 6.24
 
-2025-06-21 18:46:09,869 - result - INFO - Datapoint 234
-2025-06-21 18:46:10,650 - result - INFO - got score from new prediction
-2025-06-21 18:46:10,650 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,463 - result - INFO - Datapoint 234
+2025-06-21 19:09:02,464 - result - INFO - got score from cache
+2025-06-21 19:09:02,465 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:10,650 - result - INFO - Datapoint 572
-2025-06-21 18:46:11,547 - result - INFO - got score from new prediction
-2025-06-21 18:46:11,547 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,465 - result - INFO - Datapoint 572
+2025-06-21 19:09:02,466 - result - INFO - got score from cache
+2025-06-21 19:09:02,466 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:11,548 - result - INFO - Datapoint 585
-2025-06-21 18:46:12,374 - result - INFO - got score from new prediction
-2025-06-21 18:46:12,375 - result - INFO - Score prediction: 6.5
+2025-06-21 19:09:02,466 - result - INFO - Datapoint 585
+2025-06-21 19:09:02,467 - result - INFO - got score from cache
+2025-06-21 19:09:02,467 - result - INFO - Score prediction: 6.5
 
-2025-06-21 18:46:12,375 - result - INFO - Datapoint 972
-2025-06-21 18:46:13,175 - result - INFO - got score from new prediction
-2025-06-21 18:46:13,175 - result - INFO - Score prediction: 5.5
+2025-06-21 19:09:02,467 - result - INFO - Datapoint 972
+2025-06-21 19:09:02,468 - result - INFO - got score from cache
+2025-06-21 19:09:02,468 - result - INFO - Score prediction: 5.5
 
-2025-06-21 18:46:13,175 - result - INFO - Datapoint 796
-2025-06-21 18:46:14,054 - result - INFO - got score from new prediction
-2025-06-21 18:46:14,054 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,468 - result - INFO - Datapoint 796
+2025-06-21 19:09:02,470 - result - INFO - got score from cache
+2025-06-21 19:09:02,470 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:14,054 - result - INFO - Datapoint 1074
-2025-06-21 18:46:14,797 - result - INFO - got score from new prediction
-2025-06-21 18:46:14,797 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,470 - result - INFO - Datapoint 1074
+2025-06-21 19:09:02,471 - result - INFO - got score from cache
+2025-06-21 19:09:02,471 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:14,797 - result - INFO - Datapoint 36
-2025-06-21 18:46:15,708 - result - INFO - got score from new prediction
-2025-06-21 18:46:15,708 - result - INFO - Score prediction: 6.52
+2025-06-21 19:09:02,471 - result - INFO - Datapoint 36
+2025-06-21 19:09:02,472 - result - INFO - got score from cache
+2025-06-21 19:09:02,472 - result - INFO - Score prediction: 6.52
 
-2025-06-21 18:46:15,708 - result - INFO - Datapoint 634
-2025-06-21 18:46:16,461 - result - INFO - got score from new prediction
-2025-06-21 18:46:16,461 - result - INFO - Score prediction: 5.5
+2025-06-21 19:09:02,472 - result - INFO - Datapoint 634
+2025-06-21 19:09:02,473 - result - INFO - got score from cache
+2025-06-21 19:09:02,473 - result - INFO - Score prediction: 5.5
 
-2025-06-21 18:46:16,462 - result - INFO - Datapoint 787
-2025-06-21 18:46:17,356 - result - INFO - got score from new prediction
-2025-06-21 18:46:17,356 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,473 - result - INFO - Datapoint 787
+2025-06-21 19:09:02,475 - result - INFO - got score from cache
+2025-06-21 19:09:02,475 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:17,356 - result - INFO - Datapoint 397
-2025-06-21 18:46:18,243 - result - INFO - got score from new prediction
-2025-06-21 18:46:18,243 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,475 - result - INFO - Datapoint 397
+2025-06-21 19:09:02,476 - result - INFO - got score from cache
+2025-06-21 19:09:02,476 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:18,243 - result - INFO - Datapoint 410
-2025-06-21 18:46:18,991 - result - INFO - got score from new prediction
-2025-06-21 18:46:18,991 - result - INFO - Score prediction: 8.68
+2025-06-21 19:09:02,476 - result - INFO - Datapoint 410
+2025-06-21 19:09:02,477 - result - INFO - got score from cache
+2025-06-21 19:09:02,477 - result - INFO - Score prediction: 8.68
 
-2025-06-21 18:46:18,991 - result - INFO - Datapoint 103
-2025-06-21 18:46:19,795 - result - INFO - got score from new prediction
-2025-06-21 18:46:19,795 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,477 - result - INFO - Datapoint 103
+2025-06-21 19:09:02,478 - result - INFO - got score from cache
+2025-06-21 19:09:02,478 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:19,795 - result - INFO - Datapoint 377
-2025-06-21 18:46:20,651 - result - INFO - got score from new prediction
-2025-06-21 18:46:20,651 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,478 - result - INFO - Datapoint 377
+2025-06-21 19:09:02,479 - result - INFO - got score from cache
+2025-06-21 19:09:02,479 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:20,651 - result - INFO - Datapoint 267
-2025-06-21 18:46:21,485 - result - INFO - got score from new prediction
-2025-06-21 18:46:21,485 - result - INFO - Score prediction: 8.0
+2025-06-21 19:09:02,479 - result - INFO - Datapoint 267
+2025-06-21 19:09:02,481 - result - INFO - got score from cache
+2025-06-21 19:09:02,481 - result - INFO - Score prediction: 8.0
 
-2025-06-21 18:46:21,485 - result - INFO - Datapoint 1007
-2025-06-21 18:46:22,291 - result - INFO - got score from new prediction
-2025-06-21 18:46:22,291 - result - INFO - Score prediction: 8.4
+2025-06-21 19:09:02,481 - result - INFO - Datapoint 1007
+2025-06-21 19:09:02,482 - result - INFO - got score from cache
+2025-06-21 19:09:02,482 - result - INFO - Score prediction: 8.4
 
-2025-06-21 18:46:22,291 - result - INFO - Datapoint 304
-2025-06-21 18:46:23,109 - result - INFO - got score from new prediction
-2025-06-21 18:46:23,109 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,482 - result - INFO - Datapoint 304
+2025-06-21 19:09:02,483 - result - INFO - got score from cache
+2025-06-21 19:09:02,483 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:23,109 - result - INFO - Datapoint 673
-2025-06-21 18:46:26,880 - result - INFO - got score from new prediction
-2025-06-21 18:46:26,880 - result - INFO - Score prediction: 6.96
+2025-06-21 19:09:02,483 - result - INFO - Datapoint 673
+2025-06-21 19:09:02,484 - result - INFO - got score from cache
+2025-06-21 19:09:02,484 - result - INFO - Score prediction: 6.96
 
-2025-06-21 18:46:26,880 - result - INFO - Datapoint 912
-2025-06-21 18:46:27,680 - result - INFO - got score from new prediction
-2025-06-21 18:46:27,680 - result - INFO - Score prediction: 7.0
+2025-06-21 19:09:02,484 - result - INFO - Datapoint 912
+2025-06-21 19:09:02,485 - result - INFO - got score from cache
+2025-06-21 19:09:02,485 - result - INFO - Score prediction: 7.0
 
-2025-06-21 18:46:27,680 - result - INFO - Datapoint 854
-2025-06-21 18:46:28,461 - result - INFO - got score from new prediction
-2025-06-21 18:46:28,461 - result - INFO - Score prediction: 6.4
+2025-06-21 19:09:02,485 - result - INFO - Datapoint 854
+2025-06-21 19:09:02,487 - result - INFO - got score from cache
+2025-06-21 19:09:02,487 - result - INFO - Score prediction: 6.4
 
-2025-06-21 18:46:28,461 - result - INFO - Datapoint 1073
-2025-06-21 18:46:29,237 - result - INFO - got score from new prediction
-2025-06-21 18:46:29,237 - result - INFO - Score prediction: 6.4
+2025-06-21 19:09:02,487 - result - INFO - Datapoint 1073
+2025-06-21 19:09:02,488 - result - INFO - got score from cache
+2025-06-21 19:09:02,488 - result - INFO - Score prediction: 6.4
 
-2025-06-21 18:46:29,237 - result - INFO - Datapoint 424
-2025-06-21 18:46:30,014 - result - INFO - got score from new prediction
-2025-06-21 18:46:30,014 - result - INFO - Score prediction: 2.4
+2025-06-21 19:09:02,488 - result - INFO - Datapoint 424
+2025-06-21 19:09:02,489 - result - INFO - got score from cache
+2025-06-21 19:09:02,489 - result - INFO - Score prediction: 2.4
 
-2025-06-21 18:46:30,014 - result - INFO - Datapoint 681
-2025-06-21 18:46:31,280 - result - INFO - got score from new prediction
-2025-06-21 18:46:31,280 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,489 - result - INFO - Datapoint 681
+2025-06-21 19:09:02,490 - result - INFO - got score from cache
+2025-06-21 19:09:02,490 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:31,280 - result - INFO - Datapoint 632
-2025-06-21 18:46:32,176 - result - INFO - got score from new prediction
-2025-06-21 18:46:32,176 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,490 - result - INFO - Datapoint 632
+2025-06-21 19:09:02,491 - result - INFO - got score from cache
+2025-06-21 19:09:02,491 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:46:32,176 - result - INFO - Datapoint 1071
-2025-06-21 18:46:32,961 - result - INFO - got score from new prediction
-2025-06-21 18:46:32,961 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,491 - result - INFO - Datapoint 1071
+2025-06-21 19:09:02,493 - result - INFO - got score from cache
+2025-06-21 19:09:02,493 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:32,962 - result - INFO - Datapoint 518
-2025-06-21 18:46:33,751 - result - INFO - got score from new prediction
-2025-06-21 18:46:33,751 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,493 - result - INFO - Datapoint 518
+2025-06-21 19:09:02,494 - result - INFO - got score from cache
+2025-06-21 19:09:02,494 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:33,752 - result - INFO - Datapoint 172
-2025-06-21 18:46:34,562 - result - INFO - got score from new prediction
-2025-06-21 18:46:34,563 - result - INFO - Score prediction: 6.4
+2025-06-21 19:09:02,494 - result - INFO - Datapoint 172
+2025-06-21 19:09:02,495 - result - INFO - got score from cache
+2025-06-21 19:09:02,495 - result - INFO - Score prediction: 6.4
 
-2025-06-21 18:46:34,563 - result - INFO - Datapoint 444
-2025-06-21 18:46:35,333 - result - INFO - got score from new prediction
-2025-06-21 18:46:35,333 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,495 - result - INFO - Datapoint 444
+2025-06-21 19:09:02,496 - result - INFO - got score from cache
+2025-06-21 19:09:02,496 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:35,333 - result - INFO - Datapoint 536
-2025-06-21 18:46:36,138 - result - INFO - got score from new prediction
-2025-06-21 18:46:36,138 - result - INFO - Score prediction: 5.5
+2025-06-21 19:09:02,496 - result - INFO - Datapoint 536
+2025-06-21 19:09:02,498 - result - INFO - got score from cache
+2025-06-21 19:09:02,498 - result - INFO - Score prediction: 5.5
 
-2025-06-21 18:46:36,138 - result - INFO - Datapoint 1012
-2025-06-21 18:46:37,133 - result - INFO - got score from new prediction
-2025-06-21 18:46:37,133 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,498 - result - INFO - Datapoint 1012
+2025-06-21 19:09:02,499 - result - INFO - got score from cache
+2025-06-21 19:09:02,499 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:37,133 - result - INFO - Datapoint 731
-2025-06-21 18:46:37,996 - result - INFO - got score from new prediction
-2025-06-21 18:46:37,996 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:02,499 - result - INFO - Datapoint 731
+2025-06-21 19:09:02,500 - result - INFO - got score from cache
+2025-06-21 19:09:02,500 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:46:37,996 - result - INFO - Datapoint 143
-2025-06-21 18:46:38,833 - result - INFO - got score from new prediction
-2025-06-21 18:46:38,833 - result - INFO - Score prediction: 2.4
+2025-06-21 19:09:02,500 - result - INFO - Datapoint 143
+2025-06-21 19:09:02,501 - result - INFO - got score from cache
+2025-06-21 19:09:02,501 - result - INFO - Score prediction: 2.4
 
-2025-06-21 18:46:38,833 - result - INFO - Datapoint 1017
-2025-06-21 18:46:39,735 - result - INFO - got score from new prediction
-2025-06-21 18:46:39,736 - result - INFO - Score prediction: 5.3
+2025-06-21 19:09:02,501 - result - INFO - Datapoint 1017
+2025-06-21 19:09:02,502 - result - INFO - got score from cache
+2025-06-21 19:09:02,502 - result - INFO - Score prediction: 5.3
 
-2025-06-21 18:46:39,736 - result - INFO - Datapoint 37
-2025-06-21 18:46:40,584 - result - INFO - got score from new prediction
-2025-06-21 18:46:40,584 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,502 - result - INFO - Datapoint 37
+2025-06-21 19:09:02,504 - result - INFO - got score from cache
+2025-06-21 19:09:02,504 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:40,584 - result - INFO - Datapoint 387
-2025-06-21 18:46:41,507 - result - INFO - got score from new prediction
-2025-06-21 18:46:41,507 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,504 - result - INFO - Datapoint 387
+2025-06-21 19:09:02,505 - result - INFO - got score from cache
+2025-06-21 19:09:02,505 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:41,507 - result - INFO - Datapoint 336
-2025-06-21 18:46:42,328 - result - INFO - got score from new prediction
-2025-06-21 18:46:42,328 - result - INFO - Score prediction: 6.52
+2025-06-21 19:09:02,505 - result - INFO - Datapoint 336
+2025-06-21 19:09:02,506 - result - INFO - got score from cache
+2025-06-21 19:09:02,506 - result - INFO - Score prediction: 6.52
 
-2025-06-21 18:46:42,329 - result - INFO - Datapoint 935
-2025-06-21 18:46:43,166 - result - INFO - got score from new prediction
-2025-06-21 18:46:43,166 - result - INFO - Score prediction: 3.5
+2025-06-21 19:09:02,506 - result - INFO - Datapoint 935
+2025-06-21 19:09:02,507 - result - INFO - got score from cache
+2025-06-21 19:09:02,507 - result - INFO - Score prediction: 3.5
 
-2025-06-21 18:46:43,166 - result - INFO - Datapoint 77
-2025-06-21 18:46:44,004 - result - INFO - got score from new prediction
-2025-06-21 18:46:44,004 - result - INFO - Score prediction: 6.5
+2025-06-21 19:09:02,507 - result - INFO - Datapoint 77
+2025-06-21 19:09:02,510 - result - INFO - got score from cache
+2025-06-21 19:09:02,510 - result - INFO - Score prediction: 6.5
 
-2025-06-21 18:46:44,004 - result - INFO - Datapoint 834
-2025-06-21 18:46:44,794 - result - INFO - got score from new prediction
-2025-06-21 18:46:44,794 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:02,510 - result - INFO - Datapoint 834
+2025-06-21 19:09:02,511 - result - INFO - got score from cache
+2025-06-21 19:09:02,511 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:46:44,794 - result - INFO - Datapoint 954
-2025-06-21 18:46:45,744 - result - INFO - got score from new prediction
-2025-06-21 18:46:45,744 - result - INFO - Score prediction: 6.16
+2025-06-21 19:09:02,511 - result - INFO - Datapoint 954
+2025-06-21 19:09:02,512 - result - INFO - got score from cache
+2025-06-21 19:09:02,512 - result - INFO - Score prediction: 6.16
 
-2025-06-21 18:46:45,744 - result - INFO - Datapoint 841
-2025-06-21 18:46:46,559 - result - INFO - got score from new prediction
-2025-06-21 18:46:46,559 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:02,512 - result - INFO - Datapoint 841
+2025-06-21 19:09:02,513 - result - INFO - got score from cache
+2025-06-21 19:09:02,513 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:46:46,559 - result - INFO - Datapoint 611
-2025-06-21 18:46:47,342 - result - INFO - got score from new prediction
-2025-06-21 18:46:47,342 - result - INFO - Score prediction: 9.0
+2025-06-21 19:09:02,513 - result - INFO - Datapoint 611
+2025-06-21 19:09:02,515 - result - INFO - got score from cache
+2025-06-21 19:09:02,515 - result - INFO - Score prediction: 9.0
 
-2025-06-21 18:46:47,342 - result - INFO - Datapoint 848
-2025-06-21 18:46:48,146 - result - INFO - got score from new prediction
-2025-06-21 18:46:48,146 - result - INFO - Score prediction: 4.8
+2025-06-21 19:09:02,515 - result - INFO - Datapoint 848
+2025-06-21 19:09:02,516 - result - INFO - got score from cache
+2025-06-21 19:09:02,516 - result - INFO - Score prediction: 4.8
 
-2025-06-21 18:46:48,146 - result - INFO - Datapoint 42
-2025-06-21 18:46:48,937 - result - INFO - got score from new prediction
-2025-06-21 18:46:48,937 - result - INFO - Score prediction: 7.0
+2025-06-21 19:09:02,516 - result - INFO - Datapoint 42
+2025-06-21 19:09:02,517 - result - INFO - got score from cache
+2025-06-21 19:09:02,517 - result - INFO - Score prediction: 7.0
 
-2025-06-21 18:46:48,937 - result - INFO - Datapoint 89
-2025-06-21 18:46:49,729 - result - INFO - got score from new prediction
-2025-06-21 18:46:49,729 - result - INFO - Score prediction: 7.0
+2025-06-21 19:09:02,517 - result - INFO - Datapoint 89
+2025-06-21 19:09:02,518 - result - INFO - got score from cache
+2025-06-21 19:09:02,518 - result - INFO - Score prediction: 7.0
 
-2025-06-21 18:46:49,731 - result - INFO - predicted scores solo
-2025-06-21 18:46:49,733 - result - CRITICAL - 
+2025-06-21 19:09:02,518 - result - INFO - predicted scores solo
+2025-06-21 19:09:02,521 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 959   I believe books are writen for a reason and th...      6       5    -1
 40    "I am a citizen of the @LOCATION1 and I believ...      8       5    -3
@@ -525,215 +525,215 @@
 89    "I belive that certain materials such as books...      8       7    -1
 
 
-2025-06-21 18:46:49,734 - result - INFO - QWK of Set: 0.44504
-2025-06-21 18:46:49,734 - result - INFO - MSE of Set: 0.03340
+2025-06-21 19:09:02,522 - result - INFO - QWK of Set: 0.44504
+2025-06-21 19:09:02,522 - result - INFO - MSE of Set: 0.03340
 
-2025-06-21 18:46:49,735 - result - CRITICAL - ESSAY SET 3:
+2025-06-21 19:09:02,522 - result - CRITICAL - ESSAY SET 3:
 
-2025-06-21 18:46:50,231 - result - INFO - score prediction started
+2025-06-21 19:09:02,958 - result - INFO - score prediction started
 
-2025-06-21 18:46:50,231 - result - INFO - Datapoint 839
-2025-06-21 18:46:51,190 - result - INFO - got score from new prediction
-2025-06-21 18:46:51,190 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,958 - result - INFO - Datapoint 839
+2025-06-21 19:09:02,961 - result - INFO - got score from cache
+2025-06-21 19:09:02,961 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:46:51,190 - result - INFO - Datapoint 848
-2025-06-21 18:46:52,007 - result - INFO - got score from new prediction
-2025-06-21 18:46:52,007 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,961 - result - INFO - Datapoint 848
+2025-06-21 19:09:02,962 - result - INFO - got score from cache
+2025-06-21 19:09:02,962 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:46:52,008 - result - INFO - Datapoint 108
-2025-06-21 18:46:52,780 - result - INFO - got score from new prediction
-2025-06-21 18:46:52,780 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,962 - result - INFO - Datapoint 108
+2025-06-21 19:09:02,964 - result - INFO - got score from cache
+2025-06-21 19:09:02,964 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:46:52,780 - result - INFO - Datapoint 461
-2025-06-21 18:46:53,625 - result - INFO - got score from new prediction
-2025-06-21 18:46:53,625 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,964 - result - INFO - Datapoint 461
+2025-06-21 19:09:02,965 - result - INFO - got score from cache
+2025-06-21 19:09:02,965 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:46:53,626 - result - INFO - Datapoint 255
-2025-06-21 18:46:54,499 - result - INFO - got score from new prediction
-2025-06-21 18:46:54,499 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,965 - result - INFO - Datapoint 255
+2025-06-21 19:09:02,966 - result - INFO - got score from cache
+2025-06-21 19:09:02,966 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:46:54,499 - result - INFO - Datapoint 15
-2025-06-21 18:46:55,635 - result - INFO - got score from new prediction
-2025-06-21 18:46:55,635 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,966 - result - INFO - Datapoint 15
+2025-06-21 19:09:02,968 - result - INFO - got score from cache
+2025-06-21 19:09:02,968 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:46:55,635 - result - INFO - Datapoint 149
-2025-06-21 18:46:56,406 - result - INFO - got score from new prediction
-2025-06-21 18:46:56,406 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,968 - result - INFO - Datapoint 149
+2025-06-21 19:09:02,969 - result - INFO - got score from cache
+2025-06-21 19:09:02,969 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:46:56,406 - result - INFO - Datapoint 778
-2025-06-21 18:46:57,281 - result - INFO - got score from new prediction
-2025-06-21 18:46:57,281 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,969 - result - INFO - Datapoint 778
+2025-06-21 19:09:02,972 - result - INFO - got score from cache
+2025-06-21 19:09:02,972 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:46:57,281 - result - INFO - Datapoint 574
-2025-06-21 18:46:58,043 - result - INFO - got score from new prediction
-2025-06-21 18:46:58,043 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,972 - result - INFO - Datapoint 574
+2025-06-21 19:09:02,973 - result - INFO - got score from cache
+2025-06-21 19:09:02,973 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:46:58,043 - result - INFO - Datapoint 133
-2025-06-21 18:46:58,891 - result - INFO - got score from new prediction
-2025-06-21 18:46:58,891 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,973 - result - INFO - Datapoint 133
+2025-06-21 19:09:02,974 - result - INFO - got score from cache
+2025-06-21 19:09:02,974 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:46:58,891 - result - INFO - Datapoint 38
-2025-06-21 18:46:59,737 - result - INFO - got score from new prediction
-2025-06-21 18:46:59,737 - result - INFO - Score prediction: 2.5
+2025-06-21 19:09:02,974 - result - INFO - Datapoint 38
+2025-06-21 19:09:02,975 - result - INFO - got score from cache
+2025-06-21 19:09:02,975 - result - INFO - Score prediction: 2.5
 
-2025-06-21 18:46:59,737 - result - INFO - Datapoint 1013
-2025-06-21 18:47:00,493 - result - INFO - got score from new prediction
-2025-06-21 18:47:00,493 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,975 - result - INFO - Datapoint 1013
+2025-06-21 19:09:02,977 - result - INFO - got score from cache
+2025-06-21 19:09:02,977 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:00,493 - result - INFO - Datapoint 143
-2025-06-21 18:47:01,268 - result - INFO - got score from new prediction
-2025-06-21 18:47:01,268 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,977 - result - INFO - Datapoint 143
+2025-06-21 19:09:02,978 - result - INFO - got score from cache
+2025-06-21 19:09:02,978 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:01,268 - result - INFO - Datapoint 871
-2025-06-21 18:47:02,080 - result - INFO - got score from new prediction
-2025-06-21 18:47:02,080 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,978 - result - INFO - Datapoint 871
+2025-06-21 19:09:02,979 - result - INFO - got score from cache
+2025-06-21 19:09:02,979 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:02,080 - result - INFO - Datapoint 196
-2025-06-21 18:47:02,847 - result - INFO - got score from new prediction
-2025-06-21 18:47:02,847 - result - INFO - Score prediction: 3.5
+2025-06-21 19:09:02,979 - result - INFO - Datapoint 196
+2025-06-21 19:09:02,980 - result - INFO - got score from cache
+2025-06-21 19:09:02,980 - result - INFO - Score prediction: 3.5
 
-2025-06-21 18:47:02,847 - result - INFO - Datapoint 37
-2025-06-21 18:47:03,645 - result - INFO - got score from new prediction
-2025-06-21 18:47:03,645 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,980 - result - INFO - Datapoint 37
+2025-06-21 19:09:02,981 - result - INFO - got score from cache
+2025-06-21 19:09:02,982 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:03,646 - result - INFO - Datapoint 172
-2025-06-21 18:47:04,560 - result - INFO - got score from new prediction
-2025-06-21 18:47:04,560 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,982 - result - INFO - Datapoint 172
+2025-06-21 19:09:02,983 - result - INFO - got score from cache
+2025-06-21 19:09:02,983 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:04,560 - result - INFO - Datapoint 928
-2025-06-21 18:47:05,507 - result - INFO - got score from new prediction
-2025-06-21 18:47:05,507 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,983 - result - INFO - Datapoint 928
+2025-06-21 19:09:02,984 - result - INFO - got score from cache
+2025-06-21 19:09:02,984 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:05,507 - result - INFO - Datapoint 63
-2025-06-21 18:47:06,288 - result - INFO - got score from new prediction
-2025-06-21 18:47:06,288 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,984 - result - INFO - Datapoint 63
+2025-06-21 19:09:02,985 - result - INFO - got score from cache
+2025-06-21 19:09:02,985 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:06,288 - result - INFO - Datapoint 203
-2025-06-21 18:47:07,110 - result - INFO - got score from new prediction
-2025-06-21 18:47:07,110 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,985 - result - INFO - Datapoint 203
+2025-06-21 19:09:02,986 - result - INFO - got score from cache
+2025-06-21 19:09:02,986 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:07,110 - result - INFO - Datapoint 909
-2025-06-21 18:47:07,878 - result - INFO - got score from new prediction
-2025-06-21 18:47:07,878 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,986 - result - INFO - Datapoint 909
+2025-06-21 19:09:02,988 - result - INFO - got score from cache
+2025-06-21 19:09:02,988 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:07,878 - result - INFO - Datapoint 44
-2025-06-21 18:47:08,652 - result - INFO - got score from new prediction
-2025-06-21 18:47:08,652 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,988 - result - INFO - Datapoint 44
+2025-06-21 19:09:02,989 - result - INFO - got score from cache
+2025-06-21 19:09:02,989 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:08,652 - result - INFO - Datapoint 787
-2025-06-21 18:47:09,483 - result - INFO - got score from new prediction
-2025-06-21 18:47:09,483 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,989 - result - INFO - Datapoint 787
+2025-06-21 19:09:02,990 - result - INFO - got score from cache
+2025-06-21 19:09:02,990 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:09,483 - result - INFO - Datapoint 694
-2025-06-21 18:47:10,269 - result - INFO - got score from new prediction
-2025-06-21 18:47:10,269 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:02,990 - result - INFO - Datapoint 694
+2025-06-21 19:09:02,991 - result - INFO - got score from cache
+2025-06-21 19:09:02,991 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:47:10,269 - result - INFO - Datapoint 695
-2025-06-21 18:47:11,034 - result - INFO - got score from new prediction
-2025-06-21 18:47:11,035 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,991 - result - INFO - Datapoint 695
+2025-06-21 19:09:02,993 - result - INFO - got score from cache
+2025-06-21 19:09:02,993 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:11,035 - result - INFO - Datapoint 511
-2025-06-21 18:47:11,922 - result - INFO - got score from new prediction
-2025-06-21 18:47:11,922 - result - INFO - Score prediction: 3.3
+2025-06-21 19:09:02,993 - result - INFO - Datapoint 511
+2025-06-21 19:09:02,994 - result - INFO - got score from cache
+2025-06-21 19:09:02,994 - result - INFO - Score prediction: 3.3
 
-2025-06-21 18:47:11,922 - result - INFO - Datapoint 267
-2025-06-21 18:47:12,698 - result - INFO - got score from new prediction
-2025-06-21 18:47:12,698 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,994 - result - INFO - Datapoint 267
+2025-06-21 19:09:02,995 - result - INFO - got score from cache
+2025-06-21 19:09:02,995 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:12,699 - result - INFO - Datapoint 727
-2025-06-21 18:47:13,440 - result - INFO - got score from new prediction
-2025-06-21 18:47:13,440 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,995 - result - INFO - Datapoint 727
+2025-06-21 19:09:02,996 - result - INFO - got score from cache
+2025-06-21 19:09:02,996 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:13,440 - result - INFO - Datapoint 671
-2025-06-21 18:47:14,244 - result - INFO - got score from new prediction
-2025-06-21 18:47:14,244 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,996 - result - INFO - Datapoint 671
+2025-06-21 19:09:02,998 - result - INFO - got score from cache
+2025-06-21 19:09:02,998 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:14,244 - result - INFO - Datapoint 42
-2025-06-21 18:47:15,145 - result - INFO - got score from new prediction
-2025-06-21 18:47:15,145 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:02,998 - result - INFO - Datapoint 42
+2025-06-21 19:09:02,999 - result - INFO - got score from cache
+2025-06-21 19:09:02,999 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:15,145 - result - INFO - Datapoint 532
-2025-06-21 18:47:16,025 - result - INFO - got score from new prediction
-2025-06-21 18:47:16,025 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:02,999 - result - INFO - Datapoint 532
+2025-06-21 19:09:03,000 - result - INFO - got score from cache
+2025-06-21 19:09:03,000 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:16,025 - result - INFO - Datapoint 188
-2025-06-21 18:47:16,839 - result - INFO - got score from new prediction
-2025-06-21 18:47:16,839 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,000 - result - INFO - Datapoint 188
+2025-06-21 19:09:03,002 - result - INFO - got score from cache
+2025-06-21 19:09:03,002 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:16,839 - result - INFO - Datapoint 366
-2025-06-21 18:47:17,629 - result - INFO - got score from new prediction
-2025-06-21 18:47:17,629 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,002 - result - INFO - Datapoint 366
+2025-06-21 19:09:03,003 - result - INFO - got score from cache
+2025-06-21 19:09:03,003 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:17,629 - result - INFO - Datapoint 903
-2025-06-21 18:47:18,463 - result - INFO - got score from new prediction
-2025-06-21 18:47:18,463 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,003 - result - INFO - Datapoint 903
+2025-06-21 19:09:03,004 - result - INFO - got score from cache
+2025-06-21 19:09:03,004 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:18,463 - result - INFO - Datapoint 1020
-2025-06-21 18:47:19,308 - result - INFO - got score from new prediction
-2025-06-21 18:47:19,308 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,004 - result - INFO - Datapoint 1020
+2025-06-21 19:09:03,005 - result - INFO - got score from cache
+2025-06-21 19:09:03,005 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:19,308 - result - INFO - Datapoint 187
-2025-06-21 18:47:20,095 - result - INFO - got score from new prediction
-2025-06-21 18:47:20,095 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,005 - result - INFO - Datapoint 187
+2025-06-21 19:09:03,007 - result - INFO - got score from cache
+2025-06-21 19:09:03,007 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:20,095 - result - INFO - Datapoint 207
-2025-06-21 18:47:20,902 - result - INFO - got score from new prediction
-2025-06-21 18:47:20,902 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,007 - result - INFO - Datapoint 207
+2025-06-21 19:09:03,008 - result - INFO - got score from cache
+2025-06-21 19:09:03,008 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:20,902 - result - INFO - Datapoint 1030
-2025-06-21 18:47:21,672 - result - INFO - got score from new prediction
-2025-06-21 18:47:21,672 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,008 - result - INFO - Datapoint 1030
+2025-06-21 19:09:03,009 - result - INFO - got score from cache
+2025-06-21 19:09:03,009 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:21,672 - result - INFO - Datapoint 1027
-2025-06-21 18:47:22,474 - result - INFO - got score from new prediction
-2025-06-21 18:47:22,474 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,009 - result - INFO - Datapoint 1027
+2025-06-21 19:09:03,010 - result - INFO - got score from cache
+2025-06-21 19:09:03,010 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:22,474 - result - INFO - Datapoint 380
-2025-06-21 18:47:23,279 - result - INFO - got score from new prediction
-2025-06-21 18:47:23,279 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,010 - result - INFO - Datapoint 380
+2025-06-21 19:09:03,011 - result - INFO - got score from cache
+2025-06-21 19:09:03,011 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:23,279 - result - INFO - Datapoint 352
-2025-06-21 18:47:24,054 - result - INFO - got score from new prediction
-2025-06-21 18:47:24,054 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,011 - result - INFO - Datapoint 352
+2025-06-21 19:09:03,013 - result - INFO - got score from cache
+2025-06-21 19:09:03,013 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:24,054 - result - INFO - Datapoint 103
-2025-06-21 18:47:24,883 - result - INFO - got score from new prediction
-2025-06-21 18:47:24,883 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,013 - result - INFO - Datapoint 103
+2025-06-21 19:09:03,014 - result - INFO - got score from cache
+2025-06-21 19:09:03,014 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:24,884 - result - INFO - Datapoint 933
-2025-06-21 18:47:28,125 - result - INFO - got score from new prediction
-2025-06-21 18:47:28,125 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,014 - result - INFO - Datapoint 933
+2025-06-21 19:09:03,015 - result - INFO - got score from cache
+2025-06-21 19:09:03,015 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:28,125 - result - INFO - Datapoint 981
-2025-06-21 18:47:28,905 - result - INFO - got score from new prediction
-2025-06-21 18:47:28,906 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,015 - result - INFO - Datapoint 981
+2025-06-21 19:09:03,016 - result - INFO - got score from cache
+2025-06-21 19:09:03,016 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:28,906 - result - INFO - Datapoint 656
-2025-06-21 18:47:29,668 - result - INFO - got score from new prediction
-2025-06-21 18:47:29,668 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,016 - result - INFO - Datapoint 656
+2025-06-21 19:09:03,017 - result - INFO - got score from cache
+2025-06-21 19:09:03,017 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:29,668 - result - INFO - Datapoint 919
-2025-06-21 18:47:30,459 - result - INFO - got score from new prediction
-2025-06-21 18:47:30,459 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,017 - result - INFO - Datapoint 919
+2025-06-21 19:09:03,020 - result - INFO - got score from cache
+2025-06-21 19:09:03,020 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:30,459 - result - INFO - Datapoint 450
-2025-06-21 18:47:31,468 - result - INFO - got score from new prediction
-2025-06-21 18:47:31,468 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,020 - result - INFO - Datapoint 450
+2025-06-21 19:09:03,021 - result - INFO - got score from cache
+2025-06-21 19:09:03,021 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:31,469 - result - INFO - Datapoint 300
-2025-06-21 18:47:32,211 - result - INFO - got score from new prediction
-2025-06-21 18:47:32,211 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,021 - result - INFO - Datapoint 300
+2025-06-21 19:09:03,022 - result - INFO - got score from cache
+2025-06-21 19:09:03,022 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:32,211 - result - INFO - Datapoint 297
-2025-06-21 18:47:33,153 - result - INFO - got score from new prediction
-2025-06-21 18:47:33,153 - result - INFO - Score prediction: 4.4
+2025-06-21 19:09:03,022 - result - INFO - Datapoint 297
+2025-06-21 19:09:03,023 - result - INFO - got score from cache
+2025-06-21 19:09:03,023 - result - INFO - Score prediction: 4.4
 
-2025-06-21 18:47:33,153 - result - INFO - Datapoint 579
-2025-06-21 18:47:33,882 - result - INFO - got score from new prediction
-2025-06-21 18:47:33,882 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,023 - result - INFO - Datapoint 579
+2025-06-21 19:09:03,024 - result - INFO - got score from cache
+2025-06-21 19:09:03,024 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:33,882 - result - INFO - predicted scores solo
-2025-06-21 18:47:33,885 - result - CRITICAL - 
+2025-06-21 19:09:03,024 - result - INFO - predicted scores solo
+2025-06-21 19:09:03,027 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 839   "Each new feature of the setting in the essay ...      3       3     0
 848   "Do not Exceed posted speed limit, never accep...      2       2     0
@@ -787,215 +787,215 @@
 579   The features of the setting affect the cyclist...      1       2     1
 
 
-2025-06-21 18:47:33,885 - result - INFO - QWK of Set: 0.36678
-2025-06-21 18:47:33,886 - result - INFO - MSE of Set: 0.11556
+2025-06-21 19:09:03,028 - result - INFO - QWK of Set: 0.36678
+2025-06-21 19:09:03,028 - result - INFO - MSE of Set: 0.11556
 
-2025-06-21 18:47:33,886 - result - CRITICAL - ESSAY SET 4:
+2025-06-21 19:09:03,028 - result - CRITICAL - ESSAY SET 4:
 
-2025-06-21 18:47:34,361 - result - INFO - score prediction started
+2025-06-21 19:09:03,468 - result - INFO - score prediction started
 
-2025-06-21 18:47:34,361 - result - INFO - Datapoint 289
-2025-06-21 18:47:35,327 - result - INFO - got score from new prediction
-2025-06-21 18:47:35,327 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,468 - result - INFO - Datapoint 289
+2025-06-21 19:09:03,470 - result - INFO - got score from cache
+2025-06-21 19:09:03,470 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:35,327 - result - INFO - Datapoint 686
-2025-06-21 18:47:36,167 - result - INFO - got score from new prediction
-2025-06-21 18:47:36,167 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,471 - result - INFO - Datapoint 686
+2025-06-21 19:09:03,472 - result - INFO - got score from cache
+2025-06-21 19:09:03,472 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:36,167 - result - INFO - Datapoint 162
-2025-06-21 18:47:36,943 - result - INFO - got score from new prediction
-2025-06-21 18:47:36,943 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,472 - result - INFO - Datapoint 162
+2025-06-21 19:09:03,473 - result - INFO - got score from cache
+2025-06-21 19:09:03,473 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:36,943 - result - INFO - Datapoint 659
-2025-06-21 18:47:38,281 - result - INFO - got score from new prediction
-2025-06-21 18:47:38,281 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,473 - result - INFO - Datapoint 659
+2025-06-21 19:09:03,475 - result - INFO - got score from cache
+2025-06-21 19:09:03,475 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:38,281 - result - INFO - Datapoint 736
-2025-06-21 18:47:39,024 - result - INFO - got score from new prediction
-2025-06-21 18:47:39,024 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,475 - result - INFO - Datapoint 736
+2025-06-21 19:09:03,476 - result - INFO - got score from cache
+2025-06-21 19:09:03,476 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:39,025 - result - INFO - Datapoint 483
-2025-06-21 18:47:39,793 - result - INFO - got score from new prediction
-2025-06-21 18:47:39,793 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:03,476 - result - INFO - Datapoint 483
+2025-06-21 19:09:03,477 - result - INFO - got score from cache
+2025-06-21 19:09:03,477 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:47:39,793 - result - INFO - Datapoint 992
-2025-06-21 18:47:40,571 - result - INFO - got score from new prediction
-2025-06-21 18:47:40,571 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,478 - result - INFO - Datapoint 992
+2025-06-21 19:09:03,479 - result - INFO - got score from cache
+2025-06-21 19:09:03,479 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:40,571 - result - INFO - Datapoint 172
-2025-06-21 18:47:41,329 - result - INFO - got score from new prediction
-2025-06-21 18:47:41,329 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,479 - result - INFO - Datapoint 172
+2025-06-21 19:09:03,480 - result - INFO - got score from cache
+2025-06-21 19:09:03,480 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:41,329 - result - INFO - Datapoint 63
-2025-06-21 18:47:42,240 - result - INFO - got score from new prediction
-2025-06-21 18:47:42,240 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,480 - result - INFO - Datapoint 63
+2025-06-21 19:09:03,481 - result - INFO - got score from cache
+2025-06-21 19:09:03,481 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:42,240 - result - INFO - Datapoint 477
-2025-06-21 18:47:43,047 - result - INFO - got score from new prediction
-2025-06-21 18:47:43,047 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,481 - result - INFO - Datapoint 477
+2025-06-21 19:09:03,483 - result - INFO - got score from cache
+2025-06-21 19:09:03,483 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:43,048 - result - INFO - Datapoint 383
-2025-06-21 18:47:43,855 - result - INFO - got score from new prediction
-2025-06-21 18:47:43,855 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:03,483 - result - INFO - Datapoint 383
+2025-06-21 19:09:03,484 - result - INFO - got score from cache
+2025-06-21 19:09:03,484 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:47:43,855 - result - INFO - Datapoint 104
-2025-06-21 18:47:44,625 - result - INFO - got score from new prediction
-2025-06-21 18:47:44,625 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:03,484 - result - INFO - Datapoint 104
+2025-06-21 19:09:03,485 - result - INFO - got score from cache
+2025-06-21 19:09:03,485 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:47:44,625 - result - INFO - Datapoint 103
-2025-06-21 18:47:45,383 - result - INFO - got score from new prediction
-2025-06-21 18:47:45,383 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,485 - result - INFO - Datapoint 103
+2025-06-21 19:09:03,486 - result - INFO - got score from cache
+2025-06-21 19:09:03,486 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:45,383 - result - INFO - Datapoint 143
-2025-06-21 18:47:46,137 - result - INFO - got score from new prediction
-2025-06-21 18:47:46,137 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,486 - result - INFO - Datapoint 143
+2025-06-21 19:09:03,488 - result - INFO - got score from cache
+2025-06-21 19:09:03,488 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:46,138 - result - INFO - Datapoint 38
-2025-06-21 18:47:46,892 - result - INFO - got score from new prediction
-2025-06-21 18:47:46,892 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,488 - result - INFO - Datapoint 38
+2025-06-21 19:09:03,489 - result - INFO - got score from cache
+2025-06-21 19:09:03,489 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:46,892 - result - INFO - Datapoint 796
-2025-06-21 18:47:47,668 - result - INFO - got score from new prediction
-2025-06-21 18:47:47,668 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,489 - result - INFO - Datapoint 796
+2025-06-21 19:09:03,490 - result - INFO - got score from cache
+2025-06-21 19:09:03,490 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:47,668 - result - INFO - Datapoint 918
-2025-06-21 18:47:48,388 - result - INFO - got score from new prediction
-2025-06-21 18:47:48,388 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,490 - result - INFO - Datapoint 918
+2025-06-21 19:09:03,491 - result - INFO - got score from cache
+2025-06-21 19:09:03,491 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:48,388 - result - INFO - Datapoint 133
-2025-06-21 18:47:49,395 - result - INFO - got score from new prediction
-2025-06-21 18:47:49,395 - result - INFO - Score prediction: 2.6
+2025-06-21 19:09:03,491 - result - INFO - Datapoint 133
+2025-06-21 19:09:03,492 - result - INFO - got score from cache
+2025-06-21 19:09:03,493 - result - INFO - Score prediction: 2.6
 
-2025-06-21 18:47:49,395 - result - INFO - Datapoint 481
-2025-06-21 18:47:50,337 - result - INFO - got score from new prediction
-2025-06-21 18:47:50,337 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,493 - result - INFO - Datapoint 481
+2025-06-21 19:09:03,494 - result - INFO - got score from cache
+2025-06-21 19:09:03,494 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:50,338 - result - INFO - Datapoint 42
-2025-06-21 18:47:51,162 - result - INFO - got score from new prediction
-2025-06-21 18:47:51,162 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,494 - result - INFO - Datapoint 42
+2025-06-21 19:09:03,495 - result - INFO - got score from cache
+2025-06-21 19:09:03,495 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:51,162 - result - INFO - Datapoint 203
-2025-06-21 18:47:51,980 - result - INFO - got score from new prediction
-2025-06-21 18:47:51,980 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,495 - result - INFO - Datapoint 203
+2025-06-21 19:09:03,496 - result - INFO - got score from cache
+2025-06-21 19:09:03,496 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:51,981 - result - INFO - Datapoint 466
-2025-06-21 18:47:52,747 - result - INFO - got score from new prediction
-2025-06-21 18:47:52,747 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,496 - result - INFO - Datapoint 466
+2025-06-21 19:09:03,498 - result - INFO - got score from cache
+2025-06-21 19:09:03,498 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:52,747 - result - INFO - Datapoint 313
-2025-06-21 18:47:53,596 - result - INFO - got score from new prediction
-2025-06-21 18:47:53,596 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,498 - result - INFO - Datapoint 313
+2025-06-21 19:09:03,499 - result - INFO - got score from cache
+2025-06-21 19:09:03,499 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:53,596 - result - INFO - Datapoint 147
-2025-06-21 18:47:54,355 - result - INFO - got score from new prediction
-2025-06-21 18:47:54,355 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:03,499 - result - INFO - Datapoint 147
+2025-06-21 19:09:03,501 - result - INFO - got score from cache
+2025-06-21 19:09:03,501 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:47:54,355 - result - INFO - Datapoint 474
-2025-06-21 18:47:55,152 - result - INFO - got score from new prediction
-2025-06-21 18:47:55,152 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,501 - result - INFO - Datapoint 474
+2025-06-21 19:09:03,502 - result - INFO - got score from cache
+2025-06-21 19:09:03,502 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:55,152 - result - INFO - Datapoint 330
-2025-06-21 18:47:56,007 - result - INFO - got score from new prediction
-2025-06-21 18:47:56,007 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,502 - result - INFO - Datapoint 330
+2025-06-21 19:09:03,503 - result - INFO - got score from cache
+2025-06-21 19:09:03,503 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:56,008 - result - INFO - Datapoint 749
-2025-06-21 18:47:56,748 - result - INFO - got score from new prediction
-2025-06-21 18:47:56,748 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,504 - result - INFO - Datapoint 749
+2025-06-21 19:09:03,505 - result - INFO - got score from cache
+2025-06-21 19:09:03,505 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:47:56,748 - result - INFO - Datapoint 1001
-2025-06-21 18:47:57,495 - result - INFO - got score from new prediction
-2025-06-21 18:47:57,495 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:03,505 - result - INFO - Datapoint 1001
+2025-06-21 19:09:03,506 - result - INFO - got score from cache
+2025-06-21 19:09:03,506 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:47:57,495 - result - INFO - Datapoint 929
-2025-06-21 18:47:58,296 - result - INFO - got score from new prediction
-2025-06-21 18:47:58,296 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,506 - result - INFO - Datapoint 929
+2025-06-21 19:09:03,507 - result - INFO - got score from cache
+2025-06-21 19:09:03,507 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:58,296 - result - INFO - Datapoint 960
-2025-06-21 18:47:59,136 - result - INFO - got score from new prediction
-2025-06-21 18:47:59,136 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,507 - result - INFO - Datapoint 960
+2025-06-21 19:09:03,508 - result - INFO - got score from cache
+2025-06-21 19:09:03,508 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:47:59,137 - result - INFO - Datapoint 189
-2025-06-21 18:48:02,701 - result - INFO - got score from new prediction
-2025-06-21 18:48:02,701 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,508 - result - INFO - Datapoint 189
+2025-06-21 19:09:03,510 - result - INFO - got score from cache
+2025-06-21 19:09:03,510 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:02,701 - result - INFO - Datapoint 37
-2025-06-21 18:48:03,534 - result - INFO - got score from new prediction
-2025-06-21 18:48:03,534 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,510 - result - INFO - Datapoint 37
+2025-06-21 19:09:03,511 - result - INFO - got score from cache
+2025-06-21 19:09:03,511 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:03,534 - result - INFO - Datapoint 353
-2025-06-21 18:48:04,289 - result - INFO - got score from new prediction
-2025-06-21 18:48:04,289 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,511 - result - INFO - Datapoint 353
+2025-06-21 19:09:03,512 - result - INFO - got score from cache
+2025-06-21 19:09:03,512 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:04,289 - result - INFO - Datapoint 945
-2025-06-21 18:48:05,045 - result - INFO - got score from new prediction
-2025-06-21 18:48:05,045 - result - INFO - Score prediction: 3.5
+2025-06-21 19:09:03,512 - result - INFO - Datapoint 945
+2025-06-21 19:09:03,514 - result - INFO - got score from cache
+2025-06-21 19:09:03,514 - result - INFO - Score prediction: 3.5
 
-2025-06-21 18:48:05,045 - result - INFO - Datapoint 866
-2025-06-21 18:48:06,001 - result - INFO - got score from new prediction
-2025-06-21 18:48:06,001 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,514 - result - INFO - Datapoint 866
+2025-06-21 19:09:03,515 - result - INFO - got score from cache
+2025-06-21 19:09:03,515 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:06,001 - result - INFO - Datapoint 15
-2025-06-21 18:48:06,929 - result - INFO - got score from new prediction
-2025-06-21 18:48:06,930 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,515 - result - INFO - Datapoint 15
+2025-06-21 19:09:03,516 - result - INFO - got score from cache
+2025-06-21 19:09:03,516 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:06,930 - result - INFO - Datapoint 671
-2025-06-21 18:48:07,877 - result - INFO - got score from new prediction
-2025-06-21 18:48:07,877 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:03,516 - result - INFO - Datapoint 671
+2025-06-21 19:09:03,517 - result - INFO - got score from cache
+2025-06-21 19:09:03,517 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:07,877 - result - INFO - Datapoint 711
-2025-06-21 18:48:08,710 - result - INFO - got score from new prediction
-2025-06-21 18:48:08,710 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,517 - result - INFO - Datapoint 711
+2025-06-21 19:09:03,518 - result - INFO - got score from cache
+2025-06-21 19:09:03,518 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:08,710 - result - INFO - Datapoint 926
-2025-06-21 18:48:09,500 - result - INFO - got score from new prediction
-2025-06-21 18:48:09,500 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,519 - result - INFO - Datapoint 926
+2025-06-21 19:09:03,520 - result - INFO - got score from cache
+2025-06-21 19:09:03,520 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:09,500 - result - INFO - Datapoint 338
-2025-06-21 18:48:10,253 - result - INFO - got score from new prediction
-2025-06-21 18:48:10,254 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,520 - result - INFO - Datapoint 338
+2025-06-21 19:09:03,521 - result - INFO - got score from cache
+2025-06-21 19:09:03,521 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:10,254 - result - INFO - Datapoint 301
-2025-06-21 18:48:11,028 - result - INFO - got score from new prediction
-2025-06-21 18:48:11,028 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,521 - result - INFO - Datapoint 301
+2025-06-21 19:09:03,522 - result - INFO - got score from cache
+2025-06-21 19:09:03,522 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:11,028 - result - INFO - Datapoint 968
-2025-06-21 18:48:11,851 - result - INFO - got score from new prediction
-2025-06-21 18:48:11,851 - result - INFO - Score prediction: 3.5
+2025-06-21 19:09:03,522 - result - INFO - Datapoint 968
+2025-06-21 19:09:03,523 - result - INFO - got score from cache
+2025-06-21 19:09:03,523 - result - INFO - Score prediction: 3.5
 
-2025-06-21 18:48:11,851 - result - INFO - Datapoint 209
-2025-06-21 18:48:12,672 - result - INFO - got score from new prediction
-2025-06-21 18:48:12,672 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,523 - result - INFO - Datapoint 209
+2025-06-21 19:09:03,525 - result - INFO - got score from cache
+2025-06-21 19:09:03,525 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:12,672 - result - INFO - Datapoint 314
-2025-06-21 18:48:13,491 - result - INFO - got score from new prediction
-2025-06-21 18:48:13,491 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,525 - result - INFO - Datapoint 314
+2025-06-21 19:09:03,526 - result - INFO - got score from cache
+2025-06-21 19:09:03,526 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:13,491 - result - INFO - Datapoint 593
-2025-06-21 18:48:14,274 - result - INFO - got score from new prediction
-2025-06-21 18:48:14,274 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:03,526 - result - INFO - Datapoint 593
+2025-06-21 19:09:03,527 - result - INFO - got score from cache
+2025-06-21 19:09:03,527 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:14,274 - result - INFO - Datapoint 861
-2025-06-21 18:48:15,133 - result - INFO - got score from new prediction
-2025-06-21 18:48:15,133 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,527 - result - INFO - Datapoint 861
+2025-06-21 19:09:03,528 - result - INFO - got score from cache
+2025-06-21 19:09:03,528 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:15,133 - result - INFO - Datapoint 901
-2025-06-21 18:48:15,884 - result - INFO - got score from new prediction
-2025-06-21 18:48:15,884 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,529 - result - INFO - Datapoint 901
+2025-06-21 19:09:03,530 - result - INFO - got score from cache
+2025-06-21 19:09:03,530 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:15,884 - result - INFO - Datapoint 810
-2025-06-21 18:48:16,729 - result - INFO - got score from new prediction
-2025-06-21 18:48:16,729 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,530 - result - INFO - Datapoint 810
+2025-06-21 19:09:03,531 - result - INFO - got score from cache
+2025-06-21 19:09:03,531 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:16,729 - result - INFO - Datapoint 302
-2025-06-21 18:48:17,494 - result - INFO - got score from new prediction
-2025-06-21 18:48:17,495 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:03,531 - result - INFO - Datapoint 302
+2025-06-21 19:09:03,532 - result - INFO - got score from cache
+2025-06-21 19:09:03,532 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:17,495 - result - INFO - Datapoint 266
-2025-06-21 18:48:18,400 - result - INFO - got score from new prediction
-2025-06-21 18:48:18,400 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,533 - result - INFO - Datapoint 266
+2025-06-21 19:09:03,534 - result - INFO - got score from cache
+2025-06-21 19:09:03,534 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:18,400 - result - INFO - predicted scores solo
-2025-06-21 18:48:18,402 - result - CRITICAL - 
+2025-06-21 19:09:03,534 - result - INFO - predicted scores solo
+2025-06-21 19:09:03,537 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 289   The author concludes the story with this parag...      1       3     2
 686   "The  author includes that sentence of the end...      1       3     2
@@ -1049,215 +1049,215 @@
 266   "This paragraph represents an action that Saen...      3       3     0
 
 
-2025-06-21 18:48:18,403 - result - INFO - QWK of Set: 0.27527
-2025-06-21 18:48:18,403 - result - INFO - MSE of Set: 0.26444
+2025-06-21 19:09:03,538 - result - INFO - QWK of Set: 0.27527
+2025-06-21 19:09:03,538 - result - INFO - MSE of Set: 0.26444
 
-2025-06-21 18:48:18,403 - result - CRITICAL - ESSAY SET 5:
+2025-06-21 19:09:03,538 - result - CRITICAL - ESSAY SET 5:
 
-2025-06-21 18:48:18,887 - result - INFO - score prediction started
+2025-06-21 19:09:03,984 - result - INFO - score prediction started
 
-2025-06-21 18:48:18,887 - result - INFO - Datapoint 592
-2025-06-21 18:48:19,796 - result - INFO - got score from new prediction
-2025-06-21 18:48:19,796 - result - INFO - Score prediction: 2.5
+2025-06-21 19:09:03,985 - result - INFO - Datapoint 592
+2025-06-21 19:09:03,987 - result - INFO - got score from cache
+2025-06-21 19:09:03,987 - result - INFO - Score prediction: 2.5
 
-2025-06-21 18:48:19,796 - result - INFO - Datapoint 336
-2025-06-21 18:48:20,589 - result - INFO - got score from new prediction
-2025-06-21 18:48:20,589 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,987 - result - INFO - Datapoint 336
+2025-06-21 19:09:03,989 - result - INFO - got score from cache
+2025-06-21 19:09:03,989 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:20,589 - result - INFO - Datapoint 699
-2025-06-21 18:48:21,431 - result - INFO - got score from new prediction
-2025-06-21 18:48:21,431 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:03,989 - result - INFO - Datapoint 699
+2025-06-21 19:09:03,991 - result - INFO - got score from cache
+2025-06-21 19:09:03,991 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:21,431 - result - INFO - Datapoint 108
-2025-06-21 18:48:22,190 - result - INFO - got score from new prediction
-2025-06-21 18:48:22,190 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,991 - result - INFO - Datapoint 108
+2025-06-21 19:09:03,992 - result - INFO - got score from cache
+2025-06-21 19:09:03,992 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:22,190 - result - INFO - Datapoint 430
-2025-06-21 18:48:22,960 - result - INFO - got score from new prediction
-2025-06-21 18:48:22,960 - result - INFO - Score prediction: 4.5
+2025-06-21 19:09:03,992 - result - INFO - Datapoint 430
+2025-06-21 19:09:03,993 - result - INFO - got score from cache
+2025-06-21 19:09:03,993 - result - INFO - Score prediction: 4.5
 
-2025-06-21 18:48:22,960 - result - INFO - Datapoint 508
-2025-06-21 18:48:23,738 - result - INFO - got score from new prediction
-2025-06-21 18:48:23,738 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:03,993 - result - INFO - Datapoint 508
+2025-06-21 19:09:03,995 - result - INFO - got score from cache
+2025-06-21 19:09:03,995 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:23,738 - result - INFO - Datapoint 253
-2025-06-21 18:48:24,556 - result - INFO - got score from new prediction
-2025-06-21 18:48:24,556 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,995 - result - INFO - Datapoint 253
+2025-06-21 19:09:03,997 - result - INFO - got score from cache
+2025-06-21 19:09:03,997 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:24,556 - result - INFO - Datapoint 698
-2025-06-21 18:48:25,758 - result - INFO - got score from new prediction
-2025-06-21 18:48:25,758 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:03,997 - result - INFO - Datapoint 698
+2025-06-21 19:09:03,999 - result - INFO - got score from cache
+2025-06-21 19:09:03,999 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:25,759 - result - INFO - Datapoint 104
-2025-06-21 18:48:26,581 - result - INFO - got score from new prediction
-2025-06-21 18:48:26,581 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:03,999 - result - INFO - Datapoint 104
+2025-06-21 19:09:04,000 - result - INFO - got score from cache
+2025-06-21 19:09:04,000 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:26,581 - result - INFO - Datapoint 114
-2025-06-21 18:48:27,376 - result - INFO - got score from new prediction
-2025-06-21 18:48:27,376 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,000 - result - INFO - Datapoint 114
+2025-06-21 19:09:04,001 - result - INFO - got score from cache
+2025-06-21 19:09:04,001 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:27,376 - result - INFO - Datapoint 733
-2025-06-21 18:48:31,082 - result - INFO - got score from new prediction
-2025-06-21 18:48:31,082 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,001 - result - INFO - Datapoint 733
+2025-06-21 19:09:04,003 - result - INFO - got score from cache
+2025-06-21 19:09:04,003 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:31,082 - result - INFO - Datapoint 851
-2025-06-21 18:48:31,938 - result - INFO - got score from new prediction
-2025-06-21 18:48:31,938 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,003 - result - INFO - Datapoint 851
+2025-06-21 19:09:04,004 - result - INFO - got score from cache
+2025-06-21 19:09:04,004 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:31,938 - result - INFO - Datapoint 909
-2025-06-21 18:48:32,716 - result - INFO - got score from new prediction
-2025-06-21 18:48:32,716 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:04,004 - result - INFO - Datapoint 909
+2025-06-21 19:09:04,005 - result - INFO - got score from cache
+2025-06-21 19:09:04,005 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:48:32,716 - result - INFO - Datapoint 1005
-2025-06-21 18:48:35,082 - result - INFO - got score from new prediction
-2025-06-21 18:48:35,082 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,005 - result - INFO - Datapoint 1005
+2025-06-21 19:09:04,006 - result - INFO - got score from cache
+2025-06-21 19:09:04,006 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:35,082 - result - INFO - Datapoint 201
-2025-06-21 18:48:35,922 - result - INFO - got score from new prediction
-2025-06-21 18:48:35,922 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,006 - result - INFO - Datapoint 201
+2025-06-21 19:09:04,007 - result - INFO - got score from cache
+2025-06-21 19:09:04,008 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:35,922 - result - INFO - Datapoint 40
-2025-06-21 18:48:36,750 - result - INFO - got score from new prediction
-2025-06-21 18:48:36,750 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,008 - result - INFO - Datapoint 40
+2025-06-21 19:09:04,009 - result - INFO - got score from cache
+2025-06-21 19:09:04,009 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:36,750 - result - INFO - Datapoint 665
-2025-06-21 18:48:37,557 - result - INFO - got score from new prediction
-2025-06-21 18:48:37,557 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,009 - result - INFO - Datapoint 665
+2025-06-21 19:09:04,010 - result - INFO - got score from cache
+2025-06-21 19:09:04,010 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:37,557 - result - INFO - Datapoint 196
-2025-06-21 18:48:38,344 - result - INFO - got score from new prediction
-2025-06-21 18:48:38,344 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,010 - result - INFO - Datapoint 196
+2025-06-21 19:09:04,012 - result - INFO - got score from cache
+2025-06-21 19:09:04,012 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:48:38,344 - result - INFO - Datapoint 279
-2025-06-21 18:48:39,088 - result - INFO - got score from new prediction
-2025-06-21 18:48:39,088 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,012 - result - INFO - Datapoint 279
+2025-06-21 19:09:04,013 - result - INFO - got score from cache
+2025-06-21 19:09:04,013 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:39,088 - result - INFO - Datapoint 597
-2025-06-21 18:48:39,966 - result - INFO - got score from new prediction
-2025-06-21 18:48:39,967 - result - INFO - Score prediction: 3.5
+2025-06-21 19:09:04,013 - result - INFO - Datapoint 597
+2025-06-21 19:09:04,014 - result - INFO - got score from cache
+2025-06-21 19:09:04,014 - result - INFO - Score prediction: 3.5
 
-2025-06-21 18:48:39,967 - result - INFO - Datapoint 370
-2025-06-21 18:48:40,836 - result - INFO - got score from new prediction
-2025-06-21 18:48:40,837 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,014 - result - INFO - Datapoint 370
+2025-06-21 19:09:04,016 - result - INFO - got score from cache
+2025-06-21 19:09:04,016 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:40,837 - result - INFO - Datapoint 804
-2025-06-21 18:48:41,664 - result - INFO - got score from new prediction
-2025-06-21 18:48:41,664 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,016 - result - INFO - Datapoint 804
+2025-06-21 19:09:04,017 - result - INFO - got score from cache
+2025-06-21 19:09:04,017 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:41,665 - result - INFO - Datapoint 305
-2025-06-21 18:48:42,451 - result - INFO - got score from new prediction
-2025-06-21 18:48:42,451 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,017 - result - INFO - Datapoint 305
+2025-06-21 19:09:04,018 - result - INFO - got score from cache
+2025-06-21 19:09:04,018 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:42,451 - result - INFO - Datapoint 461
-2025-06-21 18:48:43,320 - result - INFO - got score from new prediction
-2025-06-21 18:48:43,320 - result - INFO - Score prediction: 5.4
+2025-06-21 19:09:04,018 - result - INFO - Datapoint 461
+2025-06-21 19:09:04,020 - result - INFO - got score from cache
+2025-06-21 19:09:04,020 - result - INFO - Score prediction: 5.4
 
-2025-06-21 18:48:43,321 - result - INFO - Datapoint 100
-2025-06-21 18:48:44,059 - result - INFO - got score from new prediction
-2025-06-21 18:48:44,059 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,020 - result - INFO - Datapoint 100
+2025-06-21 19:09:04,021 - result - INFO - got score from cache
+2025-06-21 19:09:04,021 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:44,059 - result - INFO - Datapoint 650
-2025-06-21 18:48:44,873 - result - INFO - got score from new prediction
-2025-06-21 18:48:44,873 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,021 - result - INFO - Datapoint 650
+2025-06-21 19:09:04,023 - result - INFO - got score from cache
+2025-06-21 19:09:04,023 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:44,873 - result - INFO - Datapoint 789
-2025-06-21 18:48:45,820 - result - INFO - got score from new prediction
-2025-06-21 18:48:45,820 - result - INFO - Score prediction: 3.5
+2025-06-21 19:09:04,023 - result - INFO - Datapoint 789
+2025-06-21 19:09:04,024 - result - INFO - got score from cache
+2025-06-21 19:09:04,024 - result - INFO - Score prediction: 3.5
 
-2025-06-21 18:48:45,820 - result - INFO - Datapoint 755
-2025-06-21 18:48:46,577 - result - INFO - got score from new prediction
-2025-06-21 18:48:46,577 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,024 - result - INFO - Datapoint 755
+2025-06-21 19:09:04,025 - result - INFO - got score from cache
+2025-06-21 19:09:04,025 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:46,578 - result - INFO - Datapoint 36
-2025-06-21 18:48:47,477 - result - INFO - got score from new prediction
-2025-06-21 18:48:47,477 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,025 - result - INFO - Datapoint 36
+2025-06-21 19:09:04,026 - result - INFO - got score from cache
+2025-06-21 19:09:04,026 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:47,477 - result - INFO - Datapoint 923
-2025-06-21 18:48:48,220 - result - INFO - got score from new prediction
-2025-06-21 18:48:48,220 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,026 - result - INFO - Datapoint 923
+2025-06-21 19:09:04,028 - result - INFO - got score from cache
+2025-06-21 19:09:04,028 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:48,220 - result - INFO - Datapoint 1011
-2025-06-21 18:48:48,992 - result - INFO - got score from new prediction
-2025-06-21 18:48:48,993 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,028 - result - INFO - Datapoint 1011
+2025-06-21 19:09:04,029 - result - INFO - got score from cache
+2025-06-21 19:09:04,029 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:48,993 - result - INFO - Datapoint 384
-2025-06-21 18:48:49,742 - result - INFO - got score from new prediction
-2025-06-21 18:48:49,742 - result - INFO - Score prediction: 3.5
+2025-06-21 19:09:04,029 - result - INFO - Datapoint 384
+2025-06-21 19:09:04,030 - result - INFO - got score from cache
+2025-06-21 19:09:04,030 - result - INFO - Score prediction: 3.5
 
-2025-06-21 18:48:49,742 - result - INFO - Datapoint 1051
-2025-06-21 18:48:50,474 - result - INFO - got score from new prediction
-2025-06-21 18:48:50,474 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,030 - result - INFO - Datapoint 1051
+2025-06-21 19:09:04,031 - result - INFO - got score from cache
+2025-06-21 19:09:04,031 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:50,474 - result - INFO - Datapoint 940
-2025-06-21 18:48:51,380 - result - INFO - got score from new prediction
-2025-06-21 18:48:51,380 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,031 - result - INFO - Datapoint 940
+2025-06-21 19:09:04,032 - result - INFO - got score from cache
+2025-06-21 19:09:04,033 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:51,380 - result - INFO - Datapoint 398
-2025-06-21 18:48:52,109 - result - INFO - got score from new prediction
-2025-06-21 18:48:52,109 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,033 - result - INFO - Datapoint 398
+2025-06-21 19:09:04,034 - result - INFO - got score from cache
+2025-06-21 19:09:04,034 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:52,109 - result - INFO - Datapoint 826
-2025-06-21 18:48:52,886 - result - INFO - got score from new prediction
-2025-06-21 18:48:52,886 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,034 - result - INFO - Datapoint 826
+2025-06-21 19:09:04,035 - result - INFO - got score from cache
+2025-06-21 19:09:04,035 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:52,886 - result - INFO - Datapoint 991
-2025-06-21 18:48:54,282 - result - INFO - got score from new prediction
-2025-06-21 18:48:54,282 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,035 - result - INFO - Datapoint 991
+2025-06-21 19:09:04,036 - result - INFO - got score from cache
+2025-06-21 19:09:04,036 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:54,283 - result - INFO - Datapoint 77
-2025-06-21 18:48:55,028 - result - INFO - got score from new prediction
-2025-06-21 18:48:55,028 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,036 - result - INFO - Datapoint 77
+2025-06-21 19:09:04,037 - result - INFO - got score from cache
+2025-06-21 19:09:04,037 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:55,028 - result - INFO - Datapoint 133
-2025-06-21 18:48:55,845 - result - INFO - got score from new prediction
-2025-06-21 18:48:55,845 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,037 - result - INFO - Datapoint 133
+2025-06-21 19:09:04,039 - result - INFO - got score from cache
+2025-06-21 19:09:04,039 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:55,845 - result - INFO - Datapoint 37
-2025-06-21 18:48:56,699 - result - INFO - got score from new prediction
-2025-06-21 18:48:56,699 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,039 - result - INFO - Datapoint 37
+2025-06-21 19:09:04,040 - result - INFO - got score from cache
+2025-06-21 19:09:04,040 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:56,699 - result - INFO - Datapoint 397
-2025-06-21 18:48:57,464 - result - INFO - got score from new prediction
-2025-06-21 18:48:57,464 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,040 - result - INFO - Datapoint 397
+2025-06-21 19:09:04,041 - result - INFO - got score from cache
+2025-06-21 19:09:04,041 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:57,465 - result - INFO - Datapoint 974
-2025-06-21 18:48:58,258 - result - INFO - got score from new prediction
-2025-06-21 18:48:58,258 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,041 - result - INFO - Datapoint 974
+2025-06-21 19:09:04,042 - result - INFO - got score from cache
+2025-06-21 19:09:04,042 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:48:58,258 - result - INFO - Datapoint 667
-2025-06-21 18:48:59,089 - result - INFO - got score from new prediction
-2025-06-21 18:48:59,089 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,042 - result - INFO - Datapoint 667
+2025-06-21 19:09:04,043 - result - INFO - got score from cache
+2025-06-21 19:09:04,043 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:48:59,089 - result - INFO - Datapoint 1020
-2025-06-21 18:48:59,869 - result - INFO - got score from new prediction
-2025-06-21 18:48:59,869 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,044 - result - INFO - Datapoint 1020
+2025-06-21 19:09:04,046 - result - INFO - got score from cache
+2025-06-21 19:09:04,046 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:48:59,869 - result - INFO - Datapoint 425
-2025-06-21 18:49:00,617 - result - INFO - got score from new prediction
-2025-06-21 18:49:00,617 - result - INFO - Score prediction: 5.5
+2025-06-21 19:09:04,046 - result - INFO - Datapoint 425
+2025-06-21 19:09:04,047 - result - INFO - got score from cache
+2025-06-21 19:09:04,047 - result - INFO - Score prediction: 5.5
 
-2025-06-21 18:49:00,617 - result - INFO - Datapoint 371
-2025-06-21 18:49:01,397 - result - INFO - got score from new prediction
-2025-06-21 18:49:01,397 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,047 - result - INFO - Datapoint 371
+2025-06-21 19:09:04,048 - result - INFO - got score from cache
+2025-06-21 19:09:04,048 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:49:01,397 - result - INFO - Datapoint 527
-2025-06-21 18:49:02,162 - result - INFO - got score from new prediction
-2025-06-21 18:49:02,162 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,048 - result - INFO - Datapoint 527
+2025-06-21 19:09:04,049 - result - INFO - got score from cache
+2025-06-21 19:09:04,049 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:02,162 - result - INFO - Datapoint 1074
-2025-06-21 18:49:02,900 - result - INFO - got score from new prediction
-2025-06-21 18:49:02,900 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,049 - result - INFO - Datapoint 1074
+2025-06-21 19:09:04,050 - result - INFO - got score from cache
+2025-06-21 19:09:04,050 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:02,900 - result - INFO - Datapoint 872
-2025-06-21 18:49:03,698 - result - INFO - got score from new prediction
-2025-06-21 18:49:03,698 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,050 - result - INFO - Datapoint 872
+2025-06-21 19:09:04,051 - result - INFO - got score from cache
+2025-06-21 19:09:04,051 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:49:03,698 - result - INFO - Datapoint 289
-2025-06-21 18:49:04,807 - result - INFO - got score from new prediction
-2025-06-21 18:49:04,807 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,052 - result - INFO - Datapoint 289
+2025-06-21 19:09:04,053 - result - INFO - got score from cache
+2025-06-21 19:09:04,053 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:49:04,808 - result - INFO - predicted scores solo
-2025-06-21 18:49:04,810 - result - CRITICAL - 
+2025-06-21 19:09:04,053 - result - INFO - predicted scores solo
+2025-06-21 19:09:04,055 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 592   "In the memoir ""Narciso @CAPS1"" by the Bluep...      2       2     0
 336   "In the story ""Narciso Rodriguez"" written by...      2       2     0
@@ -1311,215 +1311,215 @@
 289   The mood of the memoir is very appreciative. T...      1       3     2
 
 
-2025-06-21 18:49:04,811 - result - INFO - QWK of Set: 0.28488
-2025-06-21 18:49:04,812 - result - INFO - MSE of Set: 0.18375
+2025-06-21 19:09:04,056 - result - INFO - QWK of Set: 0.28488
+2025-06-21 19:09:04,056 - result - INFO - MSE of Set: 0.18375
 
-2025-06-21 18:49:04,812 - result - CRITICAL - ESSAY SET 6:
+2025-06-21 19:09:04,056 - result - CRITICAL - ESSAY SET 6:
 
-2025-06-21 18:49:05,293 - result - INFO - score prediction started
+2025-06-21 19:09:04,503 - result - INFO - score prediction started
 
-2025-06-21 18:49:05,293 - result - INFO - Datapoint 959
-2025-06-21 18:49:07,786 - result - INFO - got score from new prediction
-2025-06-21 18:49:07,786 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,503 - result - INFO - Datapoint 959
+2025-06-21 19:09:04,506 - result - INFO - got score from cache
+2025-06-21 19:09:04,506 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:07,786 - result - INFO - Datapoint 40
-2025-06-21 18:49:08,703 - result - INFO - got score from new prediction
-2025-06-21 18:49:08,703 - result - INFO - Score prediction: 7.0
+2025-06-21 19:09:04,506 - result - INFO - Datapoint 40
+2025-06-21 19:09:04,507 - result - INFO - got score from cache
+2025-06-21 19:09:04,507 - result - INFO - Score prediction: 7.0
 
-2025-06-21 18:49:08,703 - result - INFO - Datapoint 1055
-2025-06-21 18:49:09,522 - result - INFO - got score from new prediction
-2025-06-21 18:49:09,522 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,507 - result - INFO - Datapoint 1055
+2025-06-21 19:09:04,508 - result - INFO - got score from cache
+2025-06-21 19:09:04,509 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:09,522 - result - INFO - Datapoint 1008
-2025-06-21 18:49:10,284 - result - INFO - got score from new prediction
-2025-06-21 18:49:10,285 - result - INFO - Score prediction: 0.0
+2025-06-21 19:09:04,509 - result - INFO - Datapoint 1008
+2025-06-21 19:09:04,510 - result - INFO - got score from cache
+2025-06-21 19:09:04,510 - result - INFO - Score prediction: 0.0
 
-2025-06-21 18:49:10,285 - result - INFO - Datapoint 383
-2025-06-21 18:49:11,069 - result - INFO - got score from new prediction
-2025-06-21 18:49:11,069 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,510 - result - INFO - Datapoint 383
+2025-06-21 19:09:04,511 - result - INFO - got score from cache
+2025-06-21 19:09:04,511 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:49:11,069 - result - INFO - Datapoint 248
-2025-06-21 18:49:11,825 - result - INFO - got score from new prediction
-2025-06-21 18:49:11,825 - result - INFO - Score prediction: 5.5
+2025-06-21 19:09:04,511 - result - INFO - Datapoint 248
+2025-06-21 19:09:04,514 - result - INFO - got score from cache
+2025-06-21 19:09:04,514 - result - INFO - Score prediction: 5.5
 
-2025-06-21 18:49:11,825 - result - INFO - Datapoint 234
-2025-06-21 18:49:12,627 - result - INFO - got score from new prediction
-2025-06-21 18:49:12,627 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,514 - result - INFO - Datapoint 234
+2025-06-21 19:09:04,515 - result - INFO - got score from cache
+2025-06-21 19:09:04,515 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:12,627 - result - INFO - Datapoint 572
-2025-06-21 18:49:13,471 - result - INFO - got score from new prediction
-2025-06-21 18:49:13,471 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,515 - result - INFO - Datapoint 572
+2025-06-21 19:09:04,516 - result - INFO - got score from cache
+2025-06-21 19:09:04,516 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:13,471 - result - INFO - Datapoint 585
-2025-06-21 18:49:14,396 - result - INFO - got score from new prediction
-2025-06-21 18:49:14,396 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,516 - result - INFO - Datapoint 585
+2025-06-21 19:09:04,518 - result - INFO - got score from cache
+2025-06-21 19:09:04,518 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:49:14,397 - result - INFO - Datapoint 972
-2025-06-21 18:49:15,215 - result - INFO - got score from new prediction
-2025-06-21 18:49:15,215 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,518 - result - INFO - Datapoint 972
+2025-06-21 19:09:04,519 - result - INFO - got score from cache
+2025-06-21 19:09:04,519 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:49:15,215 - result - INFO - Datapoint 796
-2025-06-21 18:49:15,975 - result - INFO - got score from new prediction
-2025-06-21 18:49:15,975 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,519 - result - INFO - Datapoint 796
+2025-06-21 19:09:04,520 - result - INFO - got score from cache
+2025-06-21 19:09:04,520 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:15,975 - result - INFO - Datapoint 1074
-2025-06-21 18:49:16,850 - result - INFO - got score from new prediction
-2025-06-21 18:49:16,850 - result - INFO - Score prediction: 2.5
+2025-06-21 19:09:04,520 - result - INFO - Datapoint 1074
+2025-06-21 19:09:04,522 - result - INFO - got score from cache
+2025-06-21 19:09:04,522 - result - INFO - Score prediction: 2.5
 
-2025-06-21 18:49:16,851 - result - INFO - Datapoint 36
-2025-06-21 18:49:17,662 - result - INFO - got score from new prediction
-2025-06-21 18:49:17,662 - result - INFO - Score prediction: 7.5
+2025-06-21 19:09:04,522 - result - INFO - Datapoint 36
+2025-06-21 19:09:04,523 - result - INFO - got score from cache
+2025-06-21 19:09:04,523 - result - INFO - Score prediction: 7.5
 
-2025-06-21 18:49:17,662 - result - INFO - Datapoint 634
-2025-06-21 18:49:18,474 - result - INFO - got score from new prediction
-2025-06-21 18:49:18,474 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,523 - result - INFO - Datapoint 634
+2025-06-21 19:09:04,524 - result - INFO - got score from cache
+2025-06-21 19:09:04,524 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:18,475 - result - INFO - Datapoint 787
-2025-06-21 18:49:19,259 - result - INFO - got score from new prediction
-2025-06-21 18:49:19,259 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,524 - result - INFO - Datapoint 787
+2025-06-21 19:09:04,526 - result - INFO - got score from cache
+2025-06-21 19:09:04,526 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:49:19,259 - result - INFO - Datapoint 397
-2025-06-21 18:49:20,227 - result - INFO - got score from new prediction
-2025-06-21 18:49:20,227 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,526 - result - INFO - Datapoint 397
+2025-06-21 19:09:04,527 - result - INFO - got score from cache
+2025-06-21 19:09:04,527 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:20,227 - result - INFO - Datapoint 410
-2025-06-21 18:49:21,167 - result - INFO - got score from new prediction
-2025-06-21 18:49:21,167 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,527 - result - INFO - Datapoint 410
+2025-06-21 19:09:04,528 - result - INFO - got score from cache
+2025-06-21 19:09:04,528 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:49:21,167 - result - INFO - Datapoint 103
-2025-06-21 18:49:22,042 - result - INFO - got score from new prediction
-2025-06-21 18:49:22,042 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,528 - result - INFO - Datapoint 103
+2025-06-21 19:09:04,529 - result - INFO - got score from cache
+2025-06-21 19:09:04,529 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:22,042 - result - INFO - Datapoint 377
-2025-06-21 18:49:22,871 - result - INFO - got score from new prediction
-2025-06-21 18:49:22,871 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,529 - result - INFO - Datapoint 377
+2025-06-21 19:09:04,530 - result - INFO - got score from cache
+2025-06-21 19:09:04,530 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:22,871 - result - INFO - Datapoint 267
-2025-06-21 18:49:23,710 - result - INFO - got score from new prediction
-2025-06-21 18:49:23,710 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,531 - result - INFO - Datapoint 267
+2025-06-21 19:09:04,532 - result - INFO - got score from cache
+2025-06-21 19:09:04,532 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:49:23,710 - result - INFO - Datapoint 1007
-2025-06-21 18:49:24,672 - result - INFO - got score from new prediction
-2025-06-21 18:49:24,672 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,532 - result - INFO - Datapoint 1007
+2025-06-21 19:09:04,533 - result - INFO - got score from cache
+2025-06-21 19:09:04,533 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:24,672 - result - INFO - Datapoint 304
-2025-06-21 18:49:25,468 - result - INFO - got score from new prediction
-2025-06-21 18:49:25,468 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,533 - result - INFO - Datapoint 304
+2025-06-21 19:09:04,534 - result - INFO - got score from cache
+2025-06-21 19:09:04,534 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:25,468 - result - INFO - Datapoint 673
-2025-06-21 18:49:26,246 - result - INFO - got score from new prediction
-2025-06-21 18:49:26,246 - result - INFO - Score prediction: 7.5
+2025-06-21 19:09:04,534 - result - INFO - Datapoint 673
+2025-06-21 19:09:04,536 - result - INFO - got score from cache
+2025-06-21 19:09:04,536 - result - INFO - Score prediction: 7.5
 
-2025-06-21 18:49:26,246 - result - INFO - Datapoint 912
-2025-06-21 18:49:27,171 - result - INFO - got score from new prediction
-2025-06-21 18:49:27,171 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,536 - result - INFO - Datapoint 912
+2025-06-21 19:09:04,537 - result - INFO - got score from cache
+2025-06-21 19:09:04,537 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:27,171 - result - INFO - Datapoint 854
-2025-06-21 18:49:27,980 - result - INFO - got score from new prediction
-2025-06-21 18:49:27,980 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,537 - result - INFO - Datapoint 854
+2025-06-21 19:09:04,538 - result - INFO - got score from cache
+2025-06-21 19:09:04,538 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:49:27,980 - result - INFO - Datapoint 1073
-2025-06-21 18:49:28,761 - result - INFO - got score from new prediction
-2025-06-21 18:49:28,761 - result - INFO - Score prediction: 5.5
+2025-06-21 19:09:04,538 - result - INFO - Datapoint 1073
+2025-06-21 19:09:04,540 - result - INFO - got score from cache
+2025-06-21 19:09:04,540 - result - INFO - Score prediction: 5.5
 
-2025-06-21 18:49:28,761 - result - INFO - Datapoint 424
-2025-06-21 18:49:29,581 - result - INFO - got score from new prediction
-2025-06-21 18:49:29,581 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,540 - result - INFO - Datapoint 424
+2025-06-21 19:09:04,541 - result - INFO - got score from cache
+2025-06-21 19:09:04,541 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:29,581 - result - INFO - Datapoint 681
-2025-06-21 18:49:30,487 - result - INFO - got score from new prediction
-2025-06-21 18:49:30,487 - result - INFO - Score prediction: 5.5
+2025-06-21 19:09:04,541 - result - INFO - Datapoint 681
+2025-06-21 19:09:04,542 - result - INFO - got score from cache
+2025-06-21 19:09:04,542 - result - INFO - Score prediction: 5.5
 
-2025-06-21 18:49:30,487 - result - INFO - Datapoint 632
-2025-06-21 18:49:32,087 - result - INFO - got score from new prediction
-2025-06-21 18:49:32,087 - result - INFO - Score prediction: 3.5
+2025-06-21 19:09:04,542 - result - INFO - Datapoint 632
+2025-06-21 19:09:04,543 - result - INFO - got score from cache
+2025-06-21 19:09:04,543 - result - INFO - Score prediction: 3.5
 
-2025-06-21 18:49:32,088 - result - INFO - Datapoint 1071
-2025-06-21 18:49:32,902 - result - INFO - got score from new prediction
-2025-06-21 18:49:32,902 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,543 - result - INFO - Datapoint 1071
+2025-06-21 19:09:04,545 - result - INFO - got score from cache
+2025-06-21 19:09:04,545 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:32,902 - result - INFO - Datapoint 518
-2025-06-21 18:49:33,780 - result - INFO - got score from new prediction
-2025-06-21 18:49:33,780 - result - INFO - Score prediction: 5.5
+2025-06-21 19:09:04,545 - result - INFO - Datapoint 518
+2025-06-21 19:09:04,546 - result - INFO - got score from cache
+2025-06-21 19:09:04,546 - result - INFO - Score prediction: 5.5
 
-2025-06-21 18:49:33,780 - result - INFO - Datapoint 172
-2025-06-21 18:49:34,521 - result - INFO - got score from new prediction
-2025-06-21 18:49:34,521 - result - INFO - Score prediction: 5.5
+2025-06-21 19:09:04,546 - result - INFO - Datapoint 172
+2025-06-21 19:09:04,547 - result - INFO - got score from cache
+2025-06-21 19:09:04,547 - result - INFO - Score prediction: 5.5
 
-2025-06-21 18:49:34,521 - result - INFO - Datapoint 444
-2025-06-21 18:49:35,311 - result - INFO - got score from new prediction
-2025-06-21 18:49:35,311 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,547 - result - INFO - Datapoint 444
+2025-06-21 19:09:04,549 - result - INFO - got score from cache
+2025-06-21 19:09:04,549 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:35,311 - result - INFO - Datapoint 536
-2025-06-21 18:49:36,487 - result - INFO - got score from new prediction
-2025-06-21 18:49:36,487 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,549 - result - INFO - Datapoint 536
+2025-06-21 19:09:04,550 - result - INFO - got score from cache
+2025-06-21 19:09:04,550 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:36,488 - result - INFO - Datapoint 1012
-2025-06-21 18:49:37,234 - result - INFO - got score from new prediction
-2025-06-21 18:49:37,234 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,550 - result - INFO - Datapoint 1012
+2025-06-21 19:09:04,551 - result - INFO - got score from cache
+2025-06-21 19:09:04,551 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:37,234 - result - INFO - Datapoint 731
-2025-06-21 18:49:38,025 - result - INFO - got score from new prediction
-2025-06-21 18:49:38,025 - result - INFO - Score prediction: 6.6
+2025-06-21 19:09:04,551 - result - INFO - Datapoint 731
+2025-06-21 19:09:04,552 - result - INFO - got score from cache
+2025-06-21 19:09:04,552 - result - INFO - Score prediction: 6.6
 
-2025-06-21 18:49:38,025 - result - INFO - Datapoint 143
-2025-06-21 18:49:38,810 - result - INFO - got score from new prediction
-2025-06-21 18:49:38,810 - result - INFO - Score prediction: 5.34
+2025-06-21 19:09:04,553 - result - INFO - Datapoint 143
+2025-06-21 19:09:04,553 - result - INFO - got score from cache
+2025-06-21 19:09:04,553 - result - INFO - Score prediction: 5.34
 
-2025-06-21 18:49:38,810 - result - INFO - Datapoint 1017
-2025-06-21 18:49:39,741 - result - INFO - got score from new prediction
-2025-06-21 18:49:39,742 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,553 - result - INFO - Datapoint 1017
+2025-06-21 19:09:04,556 - result - INFO - got score from cache
+2025-06-21 19:09:04,556 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:39,742 - result - INFO - Datapoint 37
-2025-06-21 18:49:40,496 - result - INFO - got score from new prediction
-2025-06-21 18:49:40,496 - result - INFO - Score prediction: 7.0
+2025-06-21 19:09:04,556 - result - INFO - Datapoint 37
+2025-06-21 19:09:04,557 - result - INFO - got score from cache
+2025-06-21 19:09:04,557 - result - INFO - Score prediction: 7.0
 
-2025-06-21 18:49:40,496 - result - INFO - Datapoint 387
-2025-06-21 18:49:41,352 - result - INFO - got score from new prediction
-2025-06-21 18:49:41,352 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,557 - result - INFO - Datapoint 387
+2025-06-21 19:09:04,558 - result - INFO - got score from cache
+2025-06-21 19:09:04,558 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:41,353 - result - INFO - Datapoint 336
-2025-06-21 18:49:42,108 - result - INFO - got score from new prediction
-2025-06-21 18:49:42,108 - result - INFO - Score prediction: 5.0
+2025-06-21 19:09:04,558 - result - INFO - Datapoint 336
+2025-06-21 19:09:04,559 - result - INFO - got score from cache
+2025-06-21 19:09:04,559 - result - INFO - Score prediction: 5.0
 
-2025-06-21 18:49:42,108 - result - INFO - Datapoint 935
-2025-06-21 18:49:42,921 - result - INFO - got score from new prediction
-2025-06-21 18:49:42,921 - result - INFO - Score prediction: 3.0
+2025-06-21 19:09:04,559 - result - INFO - Datapoint 935
+2025-06-21 19:09:04,561 - result - INFO - got score from cache
+2025-06-21 19:09:04,561 - result - INFO - Score prediction: 3.0
 
-2025-06-21 18:49:42,921 - result - INFO - Datapoint 77
-2025-06-21 18:49:43,700 - result - INFO - got score from new prediction
-2025-06-21 18:49:43,700 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:04,561 - result - INFO - Datapoint 77
+2025-06-21 19:09:04,562 - result - INFO - got score from cache
+2025-06-21 19:09:04,562 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:49:43,701 - result - INFO - Datapoint 834
-2025-06-21 18:49:44,454 - result - INFO - got score from new prediction
-2025-06-21 18:49:44,454 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,562 - result - INFO - Datapoint 834
+2025-06-21 19:09:04,563 - result - INFO - got score from cache
+2025-06-21 19:09:04,563 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:44,454 - result - INFO - Datapoint 954
-2025-06-21 18:49:45,318 - result - INFO - got score from new prediction
-2025-06-21 18:49:45,318 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,563 - result - INFO - Datapoint 954
+2025-06-21 19:09:04,564 - result - INFO - got score from cache
+2025-06-21 19:09:04,564 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:45,318 - result - INFO - Datapoint 841
-2025-06-21 18:49:46,237 - result - INFO - got score from new prediction
-2025-06-21 18:49:46,237 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,564 - result - INFO - Datapoint 841
+2025-06-21 19:09:04,566 - result - INFO - got score from cache
+2025-06-21 19:09:04,566 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:46,237 - result - INFO - Datapoint 611
-2025-06-21 18:49:47,032 - result - INFO - got score from new prediction
-2025-06-21 18:49:47,032 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,566 - result - INFO - Datapoint 611
+2025-06-21 19:09:04,567 - result - INFO - got score from cache
+2025-06-21 19:09:04,567 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:47,033 - result - INFO - Datapoint 848
-2025-06-21 18:49:47,838 - result - INFO - got score from new prediction
-2025-06-21 18:49:47,838 - result - INFO - Score prediction: 7.0
+2025-06-21 19:09:04,567 - result - INFO - Datapoint 848
+2025-06-21 19:09:04,568 - result - INFO - got score from cache
+2025-06-21 19:09:04,568 - result - INFO - Score prediction: 7.0
 
-2025-06-21 18:49:47,838 - result - INFO - Datapoint 42
-2025-06-21 18:49:48,615 - result - INFO - got score from new prediction
-2025-06-21 18:49:48,615 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,568 - result - INFO - Datapoint 42
+2025-06-21 19:09:04,569 - result - INFO - got score from cache
+2025-06-21 19:09:04,570 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:48,615 - result - INFO - Datapoint 89
-2025-06-21 18:49:49,364 - result - INFO - got score from new prediction
-2025-06-21 18:49:49,364 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:04,570 - result - INFO - Datapoint 89
+2025-06-21 19:09:04,571 - result - INFO - got score from cache
+2025-06-21 19:09:04,571 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:49:49,364 - result - INFO - predicted scores solo
-2025-06-21 18:49:49,367 - result - CRITICAL - 
+2025-06-21 19:09:04,571 - result - INFO - predicted scores solo
+2025-06-21 19:09:04,574 - result - CRITICAL - 
                                                   essay  score  y_pred  diff
 959   "When attempting to allow dirigibles to dock o...      3       6     3
 40    "In attempting to allow dirigibles to dock on ...      3       7     4
@@ -1573,215 +1573,215 @@
 89    "The plan to allow dirigibles to dock on the E...      4       6     2
 
 
-2025-06-21 18:49:49,367 - result - INFO - QWK of Set: 0.22903
-2025-06-21 18:49:49,368 - result - INFO - MSE of Set: 0.35750
+2025-06-21 19:09:04,574 - result - INFO - QWK of Set: 0.22903
+2025-06-21 19:09:04,575 - result - INFO - MSE of Set: 0.35750
 
-2025-06-21 18:49:49,368 - result - CRITICAL - ESSAY SET 7:
+2025-06-21 19:09:04,575 - result - CRITICAL - ESSAY SET 7:
 
-2025-06-21 18:49:49,850 - result - INFO - score prediction started
+2025-06-21 19:09:05,019 - result - INFO - score prediction started
 
-2025-06-21 18:49:49,850 - result - INFO - Datapoint 935
-2025-06-21 18:49:50,734 - result - INFO - got score from new prediction
-2025-06-21 18:49:50,734 - result - INFO - Score prediction: 28.0
+2025-06-21 19:09:05,019 - result - INFO - Datapoint 935
+2025-06-21 19:09:05,022 - result - INFO - got score from cache
+2025-06-21 19:09:05,022 - result - INFO - Score prediction: 28.0
 
-2025-06-21 18:49:50,734 - result - INFO - Datapoint 372
-2025-06-21 18:49:51,636 - result - INFO - got score from new prediction
-2025-06-21 18:49:51,636 - result - INFO - Score prediction: 24.0
+2025-06-21 19:09:05,022 - result - INFO - Datapoint 372
+2025-06-21 19:09:05,023 - result - INFO - got score from cache
+2025-06-21 19:09:05,023 - result - INFO - Score prediction: 24.0
 
-2025-06-21 18:49:51,636 - result - INFO - Datapoint 142
-2025-06-21 18:49:52,496 - result - INFO - got score from new prediction
-2025-06-21 18:49:52,496 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:05,023 - result - INFO - Datapoint 142
+2025-06-21 19:09:05,025 - result - INFO - got score from cache
+2025-06-21 19:09:05,025 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:49:52,496 - result - INFO - Datapoint 273
-2025-06-21 18:49:53,319 - result - INFO - got score from new prediction
-2025-06-21 18:49:53,319 - result - INFO - Score prediction: 16.0
+2025-06-21 19:09:05,025 - result - INFO - Datapoint 273
+2025-06-21 19:09:05,026 - result - INFO - got score from cache
+2025-06-21 19:09:05,026 - result - INFO - Score prediction: 16.0
 
-2025-06-21 18:49:53,319 - result - INFO - Datapoint 44
-2025-06-21 18:49:54,079 - result - INFO - got score from new prediction
-2025-06-21 18:49:54,079 - result - INFO - Score prediction: 18.0
+2025-06-21 19:09:05,027 - result - INFO - Datapoint 44
+2025-06-21 19:09:05,028 - result - INFO - got score from cache
+2025-06-21 19:09:05,028 - result - INFO - Score prediction: 18.0
 
-2025-06-21 18:49:54,079 - result - INFO - Datapoint 201
-2025-06-21 18:49:54,824 - result - INFO - got score from new prediction
-2025-06-21 18:49:54,824 - result - INFO - Score prediction: 10.0
+2025-06-21 19:09:05,028 - result - INFO - Datapoint 201
+2025-06-21 19:09:05,029 - result - INFO - got score from cache
+2025-06-21 19:09:05,029 - result - INFO - Score prediction: 10.0
 
-2025-06-21 18:49:54,824 - result - INFO - Datapoint 352
-2025-06-21 18:49:55,585 - result - INFO - got score from new prediction
-2025-06-21 18:49:55,585 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:05,029 - result - INFO - Datapoint 352
+2025-06-21 19:09:05,030 - result - INFO - got score from cache
+2025-06-21 19:09:05,030 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:49:55,585 - result - INFO - Datapoint 340
-2025-06-21 18:49:56,409 - result - INFO - got score from new prediction
-2025-06-21 18:49:56,410 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:05,030 - result - INFO - Datapoint 340
+2025-06-21 19:09:05,032 - result - INFO - got score from cache
+2025-06-21 19:09:05,032 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:49:56,410 - result - INFO - Datapoint 808
-2025-06-21 18:49:57,206 - result - INFO - got score from new prediction
-2025-06-21 18:49:57,206 - result - INFO - Score prediction: 16.0
+2025-06-21 19:09:05,032 - result - INFO - Datapoint 808
+2025-06-21 19:09:05,033 - result - INFO - got score from cache
+2025-06-21 19:09:05,033 - result - INFO - Score prediction: 16.0
 
-2025-06-21 18:49:57,206 - result - INFO - Datapoint 15
-2025-06-21 18:49:58,087 - result - INFO - got score from new prediction
-2025-06-21 18:49:58,087 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:05,033 - result - INFO - Datapoint 15
+2025-06-21 19:09:05,034 - result - INFO - got score from cache
+2025-06-21 19:09:05,034 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:49:58,087 - result - INFO - Datapoint 167
-2025-06-21 18:49:58,899 - result - INFO - got score from new prediction
-2025-06-21 18:49:58,900 - result - INFO - Score prediction: 18.0
+2025-06-21 19:09:05,034 - result - INFO - Datapoint 167
+2025-06-21 19:09:05,035 - result - INFO - got score from cache
+2025-06-21 19:09:05,035 - result - INFO - Score prediction: 18.0
 
-2025-06-21 18:49:58,900 - result - INFO - Datapoint 297
-2025-06-21 18:49:59,661 - result - INFO - got score from new prediction
-2025-06-21 18:49:59,661 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:05,035 - result - INFO - Datapoint 297
+2025-06-21 19:09:05,036 - result - INFO - got score from cache
+2025-06-21 19:09:05,036 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:49:59,661 - result - INFO - Datapoint 93
-2025-06-21 18:50:00,439 - result - INFO - got score from new prediction
-2025-06-21 18:50:00,439 - result - INFO - Score prediction: 28.0
+2025-06-21 19:09:05,036 - result - INFO - Datapoint 93
+2025-06-21 19:09:05,038 - result - INFO - got score from cache
+2025-06-21 19:09:05,038 - result - INFO - Score prediction: 28.0
 
-2025-06-21 18:50:00,439 - result - INFO - Datapoint 821
-2025-06-21 18:50:01,181 - result - INFO - got score from new prediction
-2025-06-21 18:50:01,181 - result - INFO - Score prediction: 20.0
+2025-06-21 19:09:05,038 - result - INFO - Datapoint 821
+2025-06-21 19:09:05,039 - result - INFO - got score from cache
+2025-06-21 19:09:05,039 - result - INFO - Score prediction: 20.0
 
-2025-06-21 18:50:01,181 - result - INFO - Datapoint 183
-2025-06-21 18:50:01,972 - result - INFO - got score from new prediction
-2025-06-21 18:50:01,972 - result - INFO - Score prediction: 28.0
+2025-06-21 19:09:05,039 - result - INFO - Datapoint 183
+2025-06-21 19:09:05,040 - result - INFO - got score from cache
+2025-06-21 19:09:05,040 - result - INFO - Score prediction: 28.0
 
-2025-06-21 18:50:01,972 - result - INFO - Datapoint 37
-2025-06-21 18:50:02,775 - result - INFO - got score from new prediction
-2025-06-21 18:50:02,775 - result - INFO - Score prediction: 14.0
+2025-06-21 19:09:05,040 - result - INFO - Datapoint 37
+2025-06-21 19:09:05,041 - result - INFO - got score from cache
+2025-06-21 19:09:05,041 - result - INFO - Score prediction: 14.0
 
-2025-06-21 18:50:02,776 - result - INFO - Datapoint 38
-2025-06-21 18:50:03,592 - result - INFO - got score from new prediction
-2025-06-21 18:50:03,592 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:05,041 - result - INFO - Datapoint 38
+2025-06-21 19:09:05,042 - result - INFO - got score from cache
+2025-06-21 19:09:05,042 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:50:03,592 - result - INFO - Datapoint 875
-2025-06-21 18:50:04,385 - result - INFO - got score from new prediction
-2025-06-21 18:50:04,385 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:05,042 - result - INFO - Datapoint 875
+2025-06-21 19:09:05,044 - result - INFO - got score from cache
+2025-06-21 19:09:05,044 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:50:04,385 - result - INFO - Datapoint 518
-2025-06-21 18:50:05,113 - result - INFO - got score from new prediction
-2025-06-21 18:50:05,113 - result - INFO - Score prediction: 24.0
+2025-06-21 19:09:05,044 - result - INFO - Datapoint 518
+2025-06-21 19:09:05,045 - result - INFO - got score from cache
+2025-06-21 19:09:05,045 - result - INFO - Score prediction: 24.0
 
-2025-06-21 18:50:05,113 - result - INFO - Datapoint 414
-2025-06-21 18:50:05,883 - result - INFO - got score from new prediction
-2025-06-21 18:50:05,883 - result - INFO - Score prediction: 22.0
+2025-06-21 19:09:05,045 - result - INFO - Datapoint 414
+2025-06-21 19:09:05,046 - result - INFO - got score from cache
+2025-06-21 19:09:05,046 - result - INFO - Score prediction: 22.0
 
-2025-06-21 18:50:05,883 - result - INFO - Datapoint 179
-2025-06-21 18:50:06,698 - result - INFO - got score from new prediction
-2025-06-21 18:50:06,698 - result - INFO - Score prediction: 16.0
+2025-06-21 19:09:05,046 - result - INFO - Datapoint 179
+2025-06-21 19:09:05,047 - result - INFO - got score from cache
+2025-06-21 19:09:05,047 - result - INFO - Score prediction: 16.0
 
-2025-06-21 18:50:06,698 - result - INFO - Datapoint 774
-2025-06-21 18:50:07,546 - result - INFO - got score from new prediction
-2025-06-21 18:50:07,546 - result - INFO - Score prediction: 24.0
+2025-06-21 19:09:05,047 - result - INFO - Datapoint 774
+2025-06-21 19:09:05,049 - result - INFO - got score from cache
+2025-06-21 19:09:05,049 - result - INFO - Score prediction: 24.0
 
-2025-06-21 18:50:07,546 - result - INFO - Datapoint 421
-2025-06-21 18:50:08,325 - result - INFO - got score from new prediction
-2025-06-21 18:50:08,325 - result - INFO - Score prediction: 4.0
+2025-06-21 19:09:05,049 - result - INFO - Datapoint 421
+2025-06-21 19:09:05,050 - result - INFO - got score from cache
+2025-06-21 19:09:05,050 - result - INFO - Score prediction: 4.0
 
-2025-06-21 18:50:08,325 - result - INFO - Datapoint 862
-2025-06-21 18:50:09,300 - result - INFO - got score from new prediction
-2025-06-21 18:50:09,300 - result - INFO - Score prediction: 24.0
+2025-06-21 19:09:05,050 - result - INFO - Datapoint 862
+2025-06-21 19:09:05,051 - result - INFO - got score from cache
+2025-06-21 19:09:05,051 - result - INFO - Score prediction: 24.0
 
-2025-06-21 18:50:09,300 - result - INFO - Datapoint 579
-2025-06-21 18:50:10,984 - result - INFO - got score from new prediction
-2025-06-21 18:50:10,984 - result - INFO - Score prediction: 10.0
+2025-06-21 19:09:05,051 - result - INFO - Datapoint 579
+2025-06-21 19:09:05,052 - result - INFO - got score from cache
+2025-06-21 19:09:05,052 - result - INFO - Score prediction: 10.0
 
-2025-06-21 18:50:10,984 - result - INFO - Datapoint 512
-2025-06-21 18:50:11,798 - result - INFO - got score from new prediction
-2025-06-21 18:50:11,798 - result - INFO - Score prediction: 24.0
+2025-06-21 19:09:05,052 - result - INFO - Datapoint 512
+2025-06-21 19:09:05,053 - result - INFO - got score from cache
+2025-06-21 19:09:05,053 - result - INFO - Score prediction: 24.0
 
-2025-06-21 18:50:11,798 - result - INFO - Datapoint 647
-2025-06-21 18:50:12,686 - result - INFO - got score from new prediction
-2025-06-21 18:50:12,686 - result - INFO - Score prediction: 18.0
+2025-06-21 19:09:05,053 - result - INFO - Datapoint 647
+2025-06-21 19:09:05,055 - result - INFO - got score from cache
+2025-06-21 19:09:05,055 - result - INFO - Score prediction: 18.0
 
-2025-06-21 18:50:12,686 - result - INFO - Datapoint 652
-2025-06-21 18:50:13,500 - result - INFO - got score from new prediction
-2025-06-21 18:50:13,501 - result - INFO - Score prediction: 22.0
+2025-06-21 19:09:05,055 - result - INFO - Datapoint 652
+2025-06-21 19:09:05,057 - result - INFO - got score from cache
+2025-06-21 19:09:05,057 - result - INFO - Score prediction: 22.0
 
-2025-06-21 18:50:13,501 - result - INFO - Datapoint 780
-2025-06-21 18:50:14,266 - result - INFO - got score from new prediction
-2025-06-21 18:50:14,266 - result - INFO - Score prediction: 26.0
+2025-06-21 19:09:05,057 - result - INFO - Datapoint 780
+2025-06-21 19:09:05,058 - result - INFO - got score from cache
+2025-06-21 19:09:05,058 - result - INFO - Score prediction: 26.0
 
-2025-06-21 18:50:14,267 - result - INFO - Datapoint 873
-2025-06-21 18:50:15,890 - result - INFO - got score from new prediction
-2025-06-21 18:50:15,890 - result - INFO - Score prediction: 40.0
+2025-06-21 19:09:05,058 - result - INFO - Datapoint 873
+2025-06-21 19:09:05,059 - result - INFO - got score from cache
+2025-06-21 19:09:05,059 - result - INFO - Score prediction: 40.0
 
-2025-06-21 18:50:15,890 - result - INFO - Datapoint 826
-2025-06-21 18:50:16,702 - result - INFO - got score from new prediction
-2025-06-21 18:50:16,702 - result - INFO - Score prediction: 24.0
+2025-06-21 19:09:05,059 - result - INFO - Datapoint 826
+2025-06-21 19:09:05,061 - result - INFO - got score from cache
+2025-06-21 19:09:05,061 - result - INFO - Score prediction: 24.0
 
-2025-06-21 18:50:16,702 - result - INFO - Datapoint 503
-2025-06-21 18:50:17,624 - result - INFO - got score from new prediction
-2025-06-21 18:50:17,624 - result - INFO - Score prediction: 30.0
+2025-06-21 19:09:05,061 - result - INFO - Datapoint 503
+2025-06-21 19:09:05,062 - result - INFO - got score from cache
+2025-06-21 19:09:05,062 - result - INFO - Score prediction: 30.0
 
-2025-06-21 18:50:17,624 - result - INFO - Datapoint 234
-2025-06-21 18:50:18,429 - result - INFO - got score from new prediction
-2025-06-21 18:50:18,429 - result - INFO - Score prediction: 28.0
+2025-06-21 19:09:05,062 - result - INFO - Datapoint 234
+2025-06-21 19:09:05,063 - result - INFO - got score from cache
+2025-06-21 19:09:05,063 - result - INFO - Score prediction: 28.0
 
-2025-06-21 18:50:18,429 - result - INFO - Datapoint 670
-2025-06-21 18:50:19,254 - result - INFO - got score from new prediction
-2025-06-21 18:50:19,254 - result - INFO - Score prediction: 16.0
+2025-06-21 19:09:05,063 - result - INFO - Datapoint 670
+2025-06-21 19:09:05,064 - result - INFO - got score from cache
+2025-06-21 19:09:05,064 - result - INFO - Score prediction: 16.0
 
-2025-06-21 18:50:19,254 - result - INFO - Datapoint 782
-2025-06-21 18:50:20,094 - result - INFO - got score from new prediction
-2025-06-21 18:50:20,094 - result - INFO - Score prediction: 10.0
+2025-06-21 19:09:05,064 - result - INFO - Datapoint 782
+2025-06-21 19:09:05,066 - result - INFO - got score from cache
+2025-06-21 19:09:05,066 - result - INFO - Score prediction: 10.0
 
-2025-06-21 18:50:20,094 - result - INFO - Datapoint 838
-2025-06-21 18:50:21,044 - result - INFO - got score from new prediction
-2025-06-21 18:50:21,045 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:05,066 - result - INFO - Datapoint 838
+2025-06-21 19:09:05,067 - result - INFO - got score from cache
+2025-06-21 19:09:05,067 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:50:21,045 - result - INFO - Datapoint 330
-2025-06-21 18:50:21,840 - result - INFO - got score from new prediction
-2025-06-21 18:50:21,840 - result - INFO - Score prediction: 20.0
+2025-06-21 19:09:05,067 - result - INFO - Datapoint 330
+2025-06-21 19:09:05,068 - result - INFO - got score from cache
+2025-06-21 19:09:05,068 - result - INFO - Score prediction: 20.0
 
-2025-06-21 18:50:21,840 - result - INFO - Datapoint 703
-2025-06-21 18:50:22,623 - result - INFO - got score from new prediction
-2025-06-21 18:50:22,623 - result - INFO - Score prediction: 20.0
+2025-06-21 19:09:05,068 - result - INFO - Datapoint 703
+2025-06-21 19:09:05,069 - result - INFO - got score from cache
+2025-06-21 19:09:05,069 - result - INFO - Score prediction: 20.0
 
-2025-06-21 18:50:22,623 - result - INFO - Datapoint 483
-2025-06-21 18:50:23,388 - result - INFO - got score from new prediction
-2025-06-21 18:50:23,388 - result - INFO - Score prediction: 16.0
+2025-06-21 19:09:05,069 - result - INFO - Datapoint 483
+2025-06-21 19:09:05,071 - result - INFO - got score from cache
+2025-06-21 19:09:05,071 - result - INFO - Score prediction: 16.0
 
-2025-06-21 18:50:23,388 - result - INFO - Datapoint 374
-2025-06-21 18:50:24,178 - result - INFO - got score from new prediction
-2025-06-21 18:50:24,178 - result - INFO - Score prediction: 12.0
+2025-06-21 19:09:05,071 - result - INFO - Datapoint 374
+2025-06-21 19:09:05,072 - result - INFO - got score from cache
+2025-06-21 19:09:05,072 - result - INFO - Score prediction: 12.0
 
-2025-06-21 18:50:24,179 - result - INFO - Datapoint 604
-2025-06-21 18:50:24,971 - result - INFO - got score from new prediction
-2025-06-21 18:50:24,971 - result - INFO - Score prediction: 18.0
+2025-06-21 19:09:05,072 - result - INFO - Datapoint 604
+2025-06-21 19:09:05,073 - result - INFO - got score from cache
+2025-06-21 19:09:05,073 - result - INFO - Score prediction: 18.0
 
-2025-06-21 18:50:24,971 - result - INFO - Datapoint 293
-2025-06-21 18:50:25,801 - result - INFO - got score from new prediction
-2025-06-21 18:50:25,801 - result - INFO - Score prediction: 6.0
+2025-06-21 19:09:05,073 - result - INFO - Datapoint 293
+2025-06-21 19:09:05,074 - result - INFO - got score from cache
+2025-06-21 19:09:05,074 - result - INFO - Score prediction: 6.0
 
-2025-06-21 18:50:25,801 - result - INFO - Datapoint 14
-2025-06-21 18:50:26,590 - result - INFO - got score from new prediction
-2025-06-21 18:50:26,590 - result - INFO - Score prediction: 14.0
+2025-06-21 19:09:05,074 - result - INFO - Datapoint 14
+2025-06-21 19:09:05,076 - result - INFO - got score from cache
+2025-06-21 19:09:05,076 - result - INFO - Score prediction: 14.0
 
-2025-06-21 18:50:26,590 - result - INFO - Datapoint 316
-2025-06-21 18:50:27,368 - result - INFO - got score from new prediction
-2025-06-21 18:50:27,368 - result - INFO - Score prediction: 24.0
+2025-06-21 19:09:05,076 - result - INFO - Datapoint 316
+2025-06-21 19:09:05,076 - result - INFO - got score from cache
+2025-06-21 19:09:05,076 - result - INFO - Score prediction: 24.0
 
-2025-06-21 18:50:27,368 - result - INFO - Datapoint 752
-2025-06-21 18:50:28,100 - result - INFO - got score from new prediction
-2025-06-21 18:50:28,101 - result - INFO - Score prediction: 18.0
+2025-06-21 19:09:05,078 - result - INFO - Datapoint 752
+2025-06-21 19:09:05,079 - result - INFO - got score from cache
+2025-06-21 19:09:05,079 - result - INFO - Score prediction: 18.0
 
-2025-06-21 18:50:28,101 - result - INFO - Datapoint 108
-2025-06-21 18:50:28,890 - result - INFO - got score from new prediction
-2025-06-21 18:50:28,890 - result - INFO - Score prediction: 14.0
+2025-06-21 19:09:05,079 - result - INFO - Datapoint 108
+2025-06-21 19:09:05,080 - result - INFO - got score from cache
+2025-06-21 19:09:05,080 - result - INFO - Score prediction: 14.0
 
-2025-06-21 18:50:28,890 - result - INFO - Datapoint 656
-2025-06-21 18:50:29,692 - result - INFO - got score from new prediction
-2025-06-21 18:50:29,692 - result - INFO - Score prediction: 18.0
+2025-06-21 19:09:05,080 - result - INFO - Datapoint 656
+2025-06-21 19:09:05,081 - result - INFO - got score from cache
+2025-06-21 19:09:05,081 - result - INFO - Score prediction: 18.0
 
-2025-06-21 18:50:29,692 - result - INFO - Datapoint 517
-2025-06-21 18:50:30,471 - result - INFO - got score from new prediction
-2025-06-21 18:50:30,471 - result - INFO - Score prediction: 14.0
+2025-06-21 19:09:05,081 - result - INFO - Datapoint 517
+2025-06-21 19:09:05,083 - result - INFO - got score from cache
+2025-06-21 19:09:05,083 - result - INFO - Score prediction: 14.0
 
-2025-06-21 18:50:30,472 - result - INFO - Datapoint 404
-2025-06-21 18:50:31,309 - result - INFO - got score from new prediction
-2025-06-21 18:50:31,309 - result - INFO - Score prediction: 0.0
+2025-06-21 19:09:05,083 - result - INFO - Datapoint 404
+2025-06-21 19:09:05,084 - result - INFO - got score from cache
+2025-06-21 19:09:05,084 - result - INFO - Score prediction: 0.0
 
-2025-06-21 18:50:31,309 - result - INFO - Datapoint 198
-2025-06-21 18:50:32,065 - result - INFO - got score from new prediction
-2025-06-21 18:50:32,066 - result - INFO - Score prediction: 14.0
+2025-06-21 19:09:05,084 - result - INFO - Datapoint 198
+2025-06-21 19:09:05,085 - result - INFO - got score from cache
+2025-06-21 19:09:05,085 - result - INFO - Score prediction: 14.0
 
-2025-06-21 18:50:32,066 - result - INFO - predicted scores solo
-2025-06-21 18:50:32,068 - result - CRITICAL - 
+2025-06-21 19:09:05,085 - result - INFO - predicted scores solo
+2025-06-21 19:09:05,088 - result - CRITICAL - 
                                                  essay  score  y_pred  diff
 935  "I was patient one time, really patient but ki...     16      28    12
 372  "A time that I was patient is when I had my tw...     13      24    11
@@ -1835,215 +1835,215 @@
 198  "@CAPS6 was @NUM1 at night, @CAPS1 @CAPS2 and ...     13      14     1
 
 
-2025-06-21 18:50:32,069 - result - INFO - QWK of Set: 0.20091
-2025-06-21 18:50:32,070 - result - INFO - MSE of Set: 0.06933
+2025-06-21 19:09:05,089 - result - INFO - QWK of Set: 0.20091
+2025-06-21 19:09:05,089 - result - INFO - MSE of Set: 0.06933
 
-2025-06-21 18:50:32,070 - result - CRITICAL - ESSAY SET 8:
+2025-06-21 19:09:05,090 - result - CRITICAL - ESSAY SET 8:
 
-2025-06-21 18:50:32,556 - result - INFO - score prediction started
+2025-06-21 19:09:05,524 - result - INFO - score prediction started
 
-2025-06-21 18:50:32,556 - result - INFO - Datapoint 135
-2025-06-21 18:50:33,547 - result - INFO - got score from new prediction
-2025-06-21 18:50:33,547 - result - INFO - Score prediction: 22.0
+2025-06-21 19:09:05,524 - result - INFO - Datapoint 135
+2025-06-21 19:09:05,527 - result - INFO - got score from cache
+2025-06-21 19:09:05,527 - result - INFO - Score prediction: 22.0
 
-2025-06-21 18:50:33,547 - result - INFO - Datapoint 151
-2025-06-21 18:50:34,688 - result - INFO - got score from new prediction
-2025-06-21 18:50:34,688 - result - INFO - Score prediction: 52.0
+2025-06-21 19:09:05,527 - result - INFO - Datapoint 151
+2025-06-21 19:09:05,528 - result - INFO - got score from cache
+2025-06-21 19:09:05,528 - result - INFO - Score prediction: 52.0
 
-2025-06-21 18:50:34,688 - result - INFO - Datapoint 330
-2025-06-21 18:50:35,745 - result - INFO - got score from new prediction
-2025-06-21 18:50:35,745 - result - INFO - Score prediction: 74.0
+2025-06-21 19:09:05,529 - result - INFO - Datapoint 330
+2025-06-21 19:09:05,530 - result - INFO - got score from cache
+2025-06-21 19:09:05,530 - result - INFO - Score prediction: 74.0
 
-2025-06-21 18:50:35,745 - result - INFO - Datapoint 19
-2025-06-21 18:50:36,860 - result - INFO - got score from new prediction
-2025-06-21 18:50:36,860 - result - INFO - Score prediction: 45.32
+2025-06-21 19:09:05,530 - result - INFO - Datapoint 19
+2025-06-21 19:09:05,531 - result - INFO - got score from cache
+2025-06-21 19:09:05,531 - result - INFO - Score prediction: 45.32
 
-2025-06-21 18:50:36,860 - result - INFO - Datapoint 405
-2025-06-21 18:50:37,707 - result - INFO - got score from new prediction
-2025-06-21 18:50:37,707 - result - INFO - Score prediction: 64.0
+2025-06-21 19:09:05,531 - result - INFO - Datapoint 405
+2025-06-21 19:09:05,533 - result - INFO - got score from cache
+2025-06-21 19:09:05,533 - result - INFO - Score prediction: 64.0
 
-2025-06-21 18:50:37,708 - result - INFO - Datapoint 15
-2025-06-21 18:50:38,671 - result - INFO - got score from new prediction
-2025-06-21 18:50:38,671 - result - INFO - Score prediction: 24.0
+2025-06-21 19:09:05,533 - result - INFO - Datapoint 15
+2025-06-21 19:09:05,534 - result - INFO - got score from cache
+2025-06-21 19:09:05,534 - result - INFO - Score prediction: 24.0
 
-2025-06-21 18:50:38,671 - result - INFO - Datapoint 110
-2025-06-21 18:50:39,463 - result - INFO - got score from new prediction
-2025-06-21 18:50:39,465 - result - INFO - Score prediction: 49.0
+2025-06-21 19:09:05,534 - result - INFO - Datapoint 110
+2025-06-21 19:09:05,535 - result - INFO - got score from cache
+2025-06-21 19:09:05,535 - result - INFO - Score prediction: 49.0
 
-2025-06-21 18:50:39,465 - result - INFO - Datapoint 329
-2025-06-21 18:50:40,254 - result - INFO - got score from new prediction
-2025-06-21 18:50:40,254 - result - INFO - Score prediction: 75.0
+2025-06-21 19:09:05,535 - result - INFO - Datapoint 329
+2025-06-21 19:09:05,536 - result - INFO - got score from cache
+2025-06-21 19:09:05,536 - result - INFO - Score prediction: 75.0
 
-2025-06-21 18:50:40,254 - result - INFO - Datapoint 68
-2025-06-21 18:50:41,073 - result - INFO - got score from new prediction
-2025-06-21 18:50:41,073 - result - INFO - Score prediction: 69.6
+2025-06-21 19:09:05,537 - result - INFO - Datapoint 68
+2025-06-21 19:09:05,538 - result - INFO - got score from cache
+2025-06-21 19:09:05,538 - result - INFO - Score prediction: 69.6
 
-2025-06-21 18:50:41,073 - result - INFO - Datapoint 222
-2025-06-21 18:50:41,885 - result - INFO - got score from new prediction
-2025-06-21 18:50:41,885 - result - INFO - Score prediction: 48.0
+2025-06-21 19:09:05,538 - result - INFO - Datapoint 222
+2025-06-21 19:09:05,539 - result - INFO - got score from cache
+2025-06-21 19:09:05,539 - result - INFO - Score prediction: 48.0
 
-2025-06-21 18:50:41,885 - result - INFO - Datapoint 187
-2025-06-21 18:50:42,674 - result - INFO - got score from new prediction
-2025-06-21 18:50:42,674 - result - INFO - Score prediction: 81.0
+2025-06-21 19:09:05,539 - result - INFO - Datapoint 187
+2025-06-21 19:09:05,540 - result - INFO - got score from cache
+2025-06-21 19:09:05,540 - result - INFO - Score prediction: 81.0
 
-2025-06-21 18:50:42,674 - result - INFO - Datapoint 95
-2025-06-21 18:50:43,664 - result - INFO - got score from new prediction
-2025-06-21 18:50:43,664 - result - INFO - Score prediction: 60.0
+2025-06-21 19:09:05,540 - result - INFO - Datapoint 95
+2025-06-21 19:09:05,542 - result - INFO - got score from cache
+2025-06-21 19:09:05,542 - result - INFO - Score prediction: 60.0
 
-2025-06-21 18:50:43,665 - result - INFO - Datapoint 207
-2025-06-21 18:50:44,709 - result - INFO - got score from new prediction
-2025-06-21 18:50:44,709 - result - INFO - Score prediction: 48.6
+2025-06-21 19:09:05,542 - result - INFO - Datapoint 207
+2025-06-21 19:09:05,543 - result - INFO - got score from cache
+2025-06-21 19:09:05,543 - result - INFO - Score prediction: 48.6
 
-2025-06-21 18:50:44,709 - result - INFO - Datapoint 266
-2025-06-21 18:50:45,564 - result - INFO - got score from new prediction
-2025-06-21 18:50:45,564 - result - INFO - Score prediction: 56.0
+2025-06-21 19:09:05,543 - result - INFO - Datapoint 266
+2025-06-21 19:09:05,544 - result - INFO - got score from cache
+2025-06-21 19:09:05,544 - result - INFO - Score prediction: 56.0
 
-2025-06-21 18:50:45,564 - result - INFO - Datapoint 365
-2025-06-21 18:50:46,581 - result - INFO - got score from new prediction
-2025-06-21 18:50:46,581 - result - INFO - Score prediction: 50.0
+2025-06-21 19:09:05,544 - result - INFO - Datapoint 365
+2025-06-21 19:09:05,546 - result - INFO - got score from cache
+2025-06-21 19:09:05,546 - result - INFO - Score prediction: 50.0
 
-2025-06-21 18:50:46,581 - result - INFO - Datapoint 336
-2025-06-21 18:50:47,436 - result - INFO - got score from new prediction
-2025-06-21 18:50:47,436 - result - INFO - Score prediction: 58.0
+2025-06-21 19:09:05,546 - result - INFO - Datapoint 336
+2025-06-21 19:09:05,547 - result - INFO - got score from cache
+2025-06-21 19:09:05,547 - result - INFO - Score prediction: 58.0
 
-2025-06-21 18:50:47,436 - result - INFO - Datapoint 126
-2025-06-21 18:50:49,720 - result - INFO - got score from new prediction
-2025-06-21 18:50:49,720 - result - INFO - Score prediction: 36.0
+2025-06-21 19:09:05,547 - result - INFO - Datapoint 126
+2025-06-21 19:09:05,548 - result - INFO - got score from cache
+2025-06-21 19:09:05,549 - result - INFO - Score prediction: 36.0
 
-2025-06-21 18:50:49,720 - result - INFO - Datapoint 103
-2025-06-21 18:50:50,532 - result - INFO - got score from new prediction
-2025-06-21 18:50:50,532 - result - INFO - Score prediction: 44.0
+2025-06-21 19:09:05,549 - result - INFO - Datapoint 103
+2025-06-21 19:09:05,550 - result - INFO - got score from cache
+2025-06-21 19:09:05,550 - result - INFO - Score prediction: 44.0
 
-2025-06-21 18:50:50,533 - result - INFO - Datapoint 44
-2025-06-21 18:50:51,314 - result - INFO - got score from new prediction
-2025-06-21 18:50:51,314 - result - INFO - Score prediction: 32.0
+2025-06-21 19:09:05,550 - result - INFO - Datapoint 44
+2025-06-21 19:09:05,553 - result - INFO - got score from cache
+2025-06-21 19:09:05,553 - result - INFO - Score prediction: 32.0
 
-2025-06-21 18:50:51,314 - result - INFO - Datapoint 274
-2025-06-21 18:50:52,199 - result - INFO - got score from new prediction
-2025-06-21 18:50:52,199 - result - INFO - Score prediction: 76.0
+2025-06-21 19:09:05,553 - result - INFO - Datapoint 274
+2025-06-21 19:09:05,554 - result - INFO - got score from cache
+2025-06-21 19:09:05,554 - result - INFO - Score prediction: 76.0
 
-2025-06-21 18:50:52,199 - result - INFO - Datapoint 85
-2025-06-21 18:50:53,065 - result - INFO - got score from new prediction
-2025-06-21 18:50:53,065 - result - INFO - Score prediction: 60.0
+2025-06-21 19:09:05,554 - result - INFO - Datapoint 85
+2025-06-21 19:09:05,555 - result - INFO - got score from cache
+2025-06-21 19:09:05,555 - result - INFO - Score prediction: 60.0
 
-2025-06-21 18:50:53,065 - result - INFO - Datapoint 428
-2025-06-21 18:50:53,841 - result - INFO - got score from new prediction
-2025-06-21 18:50:53,841 - result - INFO - Score prediction: 30.0
+2025-06-21 19:09:05,555 - result - INFO - Datapoint 428
+2025-06-21 19:09:05,556 - result - INFO - got score from cache
+2025-06-21 19:09:05,556 - result - INFO - Score prediction: 30.0
 
-2025-06-21 18:50:53,841 - result - INFO - Datapoint 13
-2025-06-21 18:50:54,645 - result - INFO - got score from new prediction
-2025-06-21 18:50:54,645 - result - INFO - Score prediction: 51.0
+2025-06-21 19:09:05,556 - result - INFO - Datapoint 13
+2025-06-21 19:09:05,558 - result - INFO - got score from cache
+2025-06-21 19:09:05,558 - result - INFO - Score prediction: 51.0
 
-2025-06-21 18:50:54,645 - result - INFO - Datapoint 239
-2025-06-21 18:50:55,440 - result - INFO - got score from new prediction
-2025-06-21 18:50:55,440 - result - INFO - Score prediction: 84.0
+2025-06-21 19:09:05,558 - result - INFO - Datapoint 239
+2025-06-21 19:09:05,559 - result - INFO - got score from cache
+2025-06-21 19:09:05,559 - result - INFO - Score prediction: 84.0
 
-2025-06-21 18:50:55,440 - result - INFO - Datapoint 334
-2025-06-21 18:50:56,275 - result - INFO - got score from new prediction
-2025-06-21 18:50:56,275 - result - INFO - Score prediction: 70.0
+2025-06-21 19:09:05,559 - result - INFO - Datapoint 334
+2025-06-21 19:09:05,560 - result - INFO - got score from cache
+2025-06-21 19:09:05,560 - result - INFO - Score prediction: 70.0
 
-2025-06-21 18:50:56,275 - result - INFO - Datapoint 182
-2025-06-21 18:50:57,079 - result - INFO - got score from new prediction
-2025-06-21 18:50:57,079 - result - INFO - Score prediction: 2.0
+2025-06-21 19:09:05,560 - result - INFO - Datapoint 182
+2025-06-21 19:09:05,561 - result - INFO - got score from cache
+2025-06-21 19:09:05,561 - result - INFO - Score prediction: 2.0
 
-2025-06-21 18:50:57,080 - result - INFO - Datapoint 100
-2025-06-21 18:50:58,032 - result - INFO - got score from new prediction
-2025-06-21 18:50:58,032 - result - INFO - Score prediction: 53.0
+2025-06-21 19:09:05,561 - result - INFO - Datapoint 100
+2025-06-21 19:09:05,562 - result - INFO - got score from cache
+2025-06-21 19:09:05,562 - result - INFO - Score prediction: 53.0
 
-2025-06-21 18:50:58,032 - result - INFO - Datapoint 156
-2025-06-21 18:50:58,873 - result - INFO - got score from new prediction
-2025-06-21 18:50:58,873 - result - INFO - Score prediction: 45.0
+2025-06-21 19:09:05,562 - result - INFO - Datapoint 156
+2025-06-21 19:09:05,564 - result - INFO - got score from cache
+2025-06-21 19:09:05,564 - result - INFO - Score prediction: 45.0
 
-2025-06-21 18:50:58,873 - result - INFO - Datapoint 20
-2025-06-21 18:50:59,771 - result - INFO - got score from new prediction
-2025-06-21 18:50:59,771 - result - INFO - Score prediction: 24.0
+2025-06-21 19:09:05,564 - result - INFO - Datapoint 20
+2025-06-21 19:09:05,565 - result - INFO - got score from cache
+2025-06-21 19:09:05,565 - result - INFO - Score prediction: 24.0
 
-2025-06-21 18:50:59,772 - result - INFO - Datapoint 77
-2025-06-21 18:51:00,724 - result - INFO - got score from new prediction
-2025-06-21 18:51:00,724 - result - INFO - Score prediction: 84.88
+2025-06-21 19:09:05,565 - result - INFO - Datapoint 77
+2025-06-21 19:09:05,567 - result - INFO - got score from cache
+2025-06-21 19:09:05,567 - result - INFO - Score prediction: 84.88
 
-2025-06-21 18:51:00,724 - result - INFO - Datapoint 270
-2025-06-21 18:51:01,683 - result - INFO - got score from new prediction
-2025-06-21 18:51:01,683 - result - INFO - Score prediction: 68.0
+2025-06-21 19:09:05,567 - result - INFO - Datapoint 270
+2025-06-21 19:09:05,568 - result - INFO - got score from cache
+2025-06-21 19:09:05,568 - result - INFO - Score prediction: 68.0
 
-2025-06-21 18:51:01,683 - result - INFO - Datapoint 221
-2025-06-21 18:51:02,595 - result - INFO - got score from new prediction
-2025-06-21 18:51:02,595 - result - INFO - Score prediction: 50.4
+2025-06-21 19:09:05,568 - result - INFO - Datapoint 221
+2025-06-21 19:09:05,569 - result - INFO - got score from cache
+2025-06-21 19:09:05,569 - result - INFO - Score prediction: 50.4
 
-2025-06-21 18:51:02,596 - result - INFO - Datapoint 321
-2025-06-21 18:51:03,397 - result - INFO - got score from new prediction
-2025-06-21 18:51:03,397 - result - INFO - Score prediction: 64.0
+2025-06-21 19:09:05,569 - result - INFO - Datapoint 321
+2025-06-21 19:09:05,571 - result - INFO - got score from cache
+2025-06-21 19:09:05,571 - result - INFO - Score prediction: 64.0
 
-2025-06-21 18:51:03,397 - result - INFO - Datapoint 303
-2025-06-21 18:51:04,201 - result - INFO - got score from new prediction
-2025-06-21 18:51:04,201 - result - INFO - Score prediction: 44.0
+2025-06-21 19:09:05,571 - result - INFO - Datapoint 303
+2025-06-21 19:09:05,572 - result - INFO - got score from cache
+2025-06-21 19:09:05,572 - result - INFO - Score prediction: 44.0
 
-2025-06-21 18:51:04,201 - result - INFO - Datapoint 196
-2025-06-21 18:51:05,024 - result - INFO - got score from new prediction
-2025-06-21 18:51:05,024 - result - INFO - Score prediction: 44.0
+2025-06-21 19:09:05,572 - result - INFO - Datapoint 196
+2025-06-21 19:09:05,573 - result - INFO - got score from cache
+2025-06-21 19:09:05,573 - result - INFO - Score prediction: 44.0
 
-2025-06-21 18:51:05,025 - result - INFO - Datapoint 134
-2025-06-21 18:51:05,913 - result - INFO - got score from new prediction
-2025-06-21 18:51:05,913 - result - INFO - Score prediction: 55.04
+2025-06-21 19:09:05,573 - result - INFO - Datapoint 134
+2025-06-21 19:09:05,574 - result - INFO - got score from cache
+2025-06-21 19:09:05,574 - result - INFO - Score prediction: 55.04
 
-2025-06-21 18:51:05,913 - result - INFO - Datapoint 309
-2025-06-21 18:51:06,702 - result - INFO - got score from new prediction
-2025-06-21 18:51:06,702 - result - INFO - Score prediction: 52.0
+2025-06-21 19:09:05,574 - result - INFO - Datapoint 309
+2025-06-21 19:09:05,576 - result - INFO - got score from cache
+2025-06-21 19:09:05,576 - result - INFO - Score prediction: 52.0
 
-2025-06-21 18:51:06,703 - result - INFO - Datapoint 210
-2025-06-21 18:51:07,513 - result - INFO - got score from new prediction
-2025-06-21 18:51:07,514 - result - INFO - Score prediction: 47.16
+2025-06-21 19:09:05,576 - result - INFO - Datapoint 210
+2025-06-21 19:09:05,577 - result - INFO - got score from cache
+2025-06-21 19:09:05,577 - result - INFO - Score prediction: 47.16
 
-2025-06-21 18:51:07,514 - result - INFO - Datapoint 320
-2025-06-21 18:51:08,383 - result - INFO - got score from new prediction
-2025-06-21 18:51:08,383 - result - INFO - Score prediction: 20.0
+2025-06-21 19:09:05,577 - result - INFO - Datapoint 320
+2025-06-21 19:09:05,578 - result - INFO - got score from cache
+2025-06-21 19:09:05,578 - result - INFO - Score prediction: 20.0
 
-2025-06-21 18:51:08,383 - result - INFO - Datapoint 224
-2025-06-21 18:51:09,192 - result - INFO - got score from new prediction
-2025-06-21 18:51:09,192 - result - INFO - Score prediction: 76.0
+2025-06-21 19:09:05,578 - result - INFO - Datapoint 224
+2025-06-21 19:09:05,579 - result - INFO - got score from cache
+2025-06-21 19:09:05,579 - result - INFO - Score prediction: 76.0
 
-2025-06-21 18:51:09,193 - result - INFO - Datapoint 397
-2025-06-21 18:51:10,023 - result - INFO - got score from new prediction
-2025-06-21 18:51:10,023 - result - INFO - Score prediction: 79.0
+2025-06-21 19:09:05,579 - result - INFO - Datapoint 397
+2025-06-21 19:09:05,581 - result - INFO - got score from cache
+2025-06-21 19:09:05,581 - result - INFO - Score prediction: 79.0
 
-2025-06-21 18:51:10,023 - result - INFO - Datapoint 337
-2025-06-21 18:51:10,857 - result - INFO - got score from new prediction
-2025-06-21 18:51:10,857 - result - INFO - Score prediction: 50.0
+2025-06-21 19:09:05,581 - result - INFO - Datapoint 337
+2025-06-21 19:09:05,582 - result - INFO - got score from cache
+2025-06-21 19:09:05,582 - result - INFO - Score prediction: 50.0
 
-2025-06-21 18:51:10,857 - result - INFO - Datapoint 155
-2025-06-21 18:51:11,732 - result - INFO - got score from new prediction
-2025-06-21 18:51:11,732 - result - INFO - Score prediction: 50.6
+2025-06-21 19:09:05,582 - result - INFO - Datapoint 155
+2025-06-21 19:09:05,583 - result - INFO - got score from cache
+2025-06-21 19:09:05,583 - result - INFO - Score prediction: 50.6
 
-2025-06-21 18:51:11,732 - result - INFO - Datapoint 35
-2025-06-21 18:51:12,542 - result - INFO - got score from new prediction
-2025-06-21 18:51:12,542 - result - INFO - Score prediction: 82.0
+2025-06-21 19:09:05,583 - result - INFO - Datapoint 35
+2025-06-21 19:09:05,584 - result - INFO - got score from cache
+2025-06-21 19:09:05,584 - result - INFO - Score prediction: 82.0
 
-2025-06-21 18:51:12,542 - result - INFO - Datapoint 328
-2025-06-21 18:51:13,354 - result - INFO - got score from new prediction
-2025-06-21 18:51:13,354 - result - INFO - Score prediction: 76.0
+2025-06-21 19:09:05,584 - result - INFO - Datapoint 328
+2025-06-21 19:09:05,586 - result - INFO - got score from cache
+2025-06-21 19:09:05,586 - result - INFO - Score prediction: 76.0
 
-2025-06-21 18:51:13,354 - result - INFO - Datapoint 378
-2025-06-21 18:51:14,144 - result - INFO - got score from new prediction
-2025-06-21 18:51:14,144 - result - INFO - Score prediction: 20.0
+2025-06-21 19:09:05,586 - result - INFO - Datapoint 378
+2025-06-21 19:09:05,587 - result - INFO - got score from cache
+2025-06-21 19:09:05,587 - result - INFO - Score prediction: 20.0
 
-2025-06-21 18:51:14,144 - result - INFO - Datapoint 426
-2025-06-21 18:51:14,980 - result - INFO - got score from new prediction
-2025-06-21 18:51:14,980 - result - INFO - Score prediction: 75.0
+2025-06-21 19:09:05,587 - result - INFO - Datapoint 426
+2025-06-21 19:09:05,588 - result - INFO - got score from cache
+2025-06-21 19:09:05,588 - result - INFO - Score prediction: 75.0
 
-2025-06-21 18:51:14,980 - result - INFO - Datapoint 169
-2025-06-21 18:51:15,837 - result - INFO - got score from new prediction
-2025-06-21 18:51:15,837 - result - INFO - Score prediction: 48.0
+2025-06-21 19:09:05,588 - result - INFO - Datapoint 169
+2025-06-21 19:09:05,589 - result - INFO - got score from cache
+2025-06-21 19:09:05,589 - result - INFO - Score prediction: 48.0
 
-2025-06-21 18:51:15,837 - result - INFO - Datapoint 306
-2025-06-21 18:51:16,732 - result - INFO - got score from new prediction
-2025-06-21 18:51:16,732 - result - INFO - Score prediction: 59.9
+2025-06-21 19:09:05,590 - result - INFO - Datapoint 306
+2025-06-21 19:09:05,591 - result - INFO - got score from cache
+2025-06-21 19:09:05,591 - result - INFO - Score prediction: 59.9
 
-2025-06-21 18:51:16,733 - result - INFO - Datapoint 37
-2025-06-21 18:51:17,599 - result - INFO - got score from new prediction
-2025-06-21 18:51:17,599 - result - INFO - Score prediction: 72.0
+2025-06-21 19:09:05,591 - result - INFO - Datapoint 37
+2025-06-21 19:09:05,592 - result - INFO - got score from cache
+2025-06-21 19:09:05,592 - result - INFO - Score prediction: 72.0
 
-2025-06-21 18:51:17,600 - result - INFO - predicted scores solo
-2025-06-21 18:51:17,602 - result - CRITICAL - 
+2025-06-21 19:09:05,592 - result - INFO - predicted scores solo
+2025-06-21 19:09:05,595 - result - CRITICAL - 
                                                  essay  score  y_pred  diff
 135  Have u ever been hit by a basketball in the fa...     31      22    -9
 151  "Someone once told me that laughter is the key...     33      52    19
@@ -2097,35 +2097,35 @@
 37   " Everyone laughs differently , some people la...     40      72    32
 
 
-2025-06-21 18:51:17,603 - result - INFO - QWK of Set: 0.18163
-2025-06-21 18:51:17,604 - result - INFO - MSE of Set: 0.15998
+2025-06-21 19:09:05,595 - result - INFO - QWK of Set: 0.18163
+2025-06-21 19:09:05,596 - result - INFO - MSE of Set: 0.15998
 
-2025-06-21 18:51:17,604 - result - INFO - Baseline Cache-Stats:
-2025-06-21 18:51:17,604 - result - INFO - Cache hits: 0
-2025-06-21 18:51:17,604 - result - INFO - Cache misses: 400
+2025-06-21 19:09:05,596 - result - INFO - Baseline Cache-Stats:
+2025-06-21 19:09:05,596 - result - INFO - Cache hits: 400
+2025-06-21 19:09:05,596 - result - INFO - Cache misses: 0
 
-2025-06-21 18:51:17,604 - result - CRITICAL - Evaluation:
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 1: 0.03903
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 2: 0.03340
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 3: 0.11556
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 4: 0.26444
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 5: 0.18375
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 6: 0.35750
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 7: 0.06933
-2025-06-21 18:51:17,604 - result - CRITICAL - MSE of Set 8: 0.15998
-2025-06-21 18:51:17,604 - result - CRITICAL - Average MSE: 0.15287
+2025-06-21 19:09:05,596 - result - CRITICAL - Evaluation:
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 1: 0.03903
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 2: 0.03340
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 3: 0.11556
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 4: 0.26444
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 5: 0.18375
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 6: 0.35750
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 7: 0.06933
+2025-06-21 19:09:05,596 - result - CRITICAL - MSE of Set 8: 0.15998
+2025-06-21 19:09:05,597 - result - CRITICAL - Average MSE: 0.15287
 
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 1: 0.28318
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 2: 0.44504
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 3: 0.36678
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 4: 0.27527
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 5: 0.28488
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 6: 0.22903
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 7: 0.20091
-2025-06-21 18:51:17,604 - result - CRITICAL - QWK of Set 8: 0.18163
-2025-06-21 18:51:17,604 - result - CRITICAL - Average QWK: 0.28334
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 1: 0.28318
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 2: 0.44504
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 3: 0.36678
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 4: 0.27527
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 5: 0.28488
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 6: 0.22903
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 7: 0.20091
+2025-06-21 19:09:05,597 - result - CRITICAL - QWK of Set 8: 0.18163
+2025-06-21 19:09:05,597 - result - CRITICAL - Average QWK: 0.28334
 
-2025-06-21 18:51:17,604 - result - CRITICAL - -----------------------------------------------------------------
+2025-06-21 19:09:05,597 - result - CRITICAL - -----------------------------------------------------------------
 
 
 
