@@ -1,5 +1,6 @@
 import codecs
 import logging
+from operator import contains
 import os
 from pathlib import Path
 
@@ -108,17 +109,29 @@ def convert_to_dataframe(list_data) -> list[pd.DataFrame]:
 
 
 def query_the_api(model: str, prompt: str):
-    response = openai.chat.completions.create(
-        model=model,
-        temperature=0,
-        # try put sentence actually in the prompt, not system, no separation
-        messages=[
-            {
-                "role": "user",
-                "content": prompt,
-            },
-        ],
-    )
+    # parameter temperature is only supported by gpt models!
+    if "gpt" in model:
+        response = openai.chat.completions.create(
+            model=model,
+            temperature=0,
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt,
+                },
+            ],
+        )
+    else:
+        response = openai.chat.completions.create(
+            model=model,
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt,
+                },
+            ],
+        )
+
     answer = response.choices[0].message.content.strip()  # type: ignore
     logger.debug("queried the API")
     return answer
