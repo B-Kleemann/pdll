@@ -53,6 +53,5 @@ def format_rubric_text_file(file: Path, keyword_list: list[str], filter: str):
                 for keyword in keyword_list:
                     if line.startswith(keyword):
                         writer.write("\n")
-                writer.write(line)
-        writer.truncate()
+                writer.write(line.strip())
     logger.debug("formatted rubric text file")

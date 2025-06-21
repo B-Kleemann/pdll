@@ -49,3 +49,180 @@
 
 
 
+2025-06-21 03:13:33,396 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:13:33,397 - result - CRITICAL - Mode: Solo
+2025-06-21 03:13:33,397 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:13:33,397 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:14:11,195 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:14:11,195 - result - CRITICAL - Mode: Solo
+2025-06-21 03:14:11,195 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:14:11,196 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:16:27,156 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:16:27,156 - result - CRITICAL - Mode: Solo
+2025-06-21 03:16:27,156 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:16:27,157 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:16:28,337 - result - CRITICAL - Evaluation:
+2025-06-21 03:16:28,337 - result - CRITICAL - MSE of Set 7: 0.11903
+2025-06-21 03:16:28,337 - result - CRITICAL - Average MSE: 0.11903
+
+2025-06-21 03:16:28,337 - result - CRITICAL - QWK of Set 7: 0.47708
+2025-06-21 03:16:28,337 - result - CRITICAL - Average QWK: 0.47708
+
+2025-06-21 03:16:28,337 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-21 03:20:39,362 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:20:39,362 - result - CRITICAL - Mode: Solo
+2025-06-21 03:20:39,362 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:20:39,364 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:20:40,503 - result - CRITICAL - Evaluation:
+2025-06-21 03:20:40,503 - result - CRITICAL - MSE of Set 7: 0.11903
+2025-06-21 03:20:40,503 - result - CRITICAL - Average MSE: 0.11903
+
+2025-06-21 03:20:40,503 - result - CRITICAL - QWK of Set 7: 0.47708
+2025-06-21 03:20:40,503 - result - CRITICAL - Average QWK: 0.47708
+
+2025-06-21 03:20:40,503 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-21 03:29:03,143 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:29:03,143 - result - CRITICAL - Mode: Solo
+2025-06-21 03:29:03,143 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:29:03,144 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:30:34,010 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:30:34,011 - result - CRITICAL - Mode: Solo
+2025-06-21 03:30:34,011 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:30:34,012 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:30:35,171 - result - CRITICAL - Evaluation:
+2025-06-21 03:30:35,171 - result - CRITICAL - MSE of Set 7: 0.11903
+2025-06-21 03:30:35,171 - result - CRITICAL - Average MSE: 0.11903
+
+2025-06-21 03:30:35,171 - result - CRITICAL - QWK of Set 7: 0.47708
+2025-06-21 03:30:35,171 - result - CRITICAL - Average QWK: 0.47708
+
+2025-06-21 03:30:35,171 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-21 03:40:16,408 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:40:16,408 - result - CRITICAL - Mode: Solo
+2025-06-21 03:40:16,408 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:40:16,409 - result - CRITICAL - Evaluation:
+2025-06-21 03:41:03,363 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:41:03,364 - result - CRITICAL - Mode: Solo
+2025-06-21 03:41:03,364 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:41:03,365 - result - CRITICAL - Evaluation:
+2025-06-21 03:41:40,710 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:41:40,710 - result - CRITICAL - Mode: Solo
+2025-06-21 03:41:40,710 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:41:40,711 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:43:57,341 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:43:57,341 - result - CRITICAL - Mode: Solo
+2025-06-21 03:43:57,341 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:43:57,341 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:43:58,435 - result - CRITICAL - Evaluation:
+2025-06-21 03:43:58,435 - result - CRITICAL - MSE of Set 7: 0.11903
+2025-06-21 03:43:58,435 - result - CRITICAL - Average MSE: 0.11903
+
+2025-06-21 03:43:58,435 - result - CRITICAL - QWK of Set 7: 0.47708
+2025-06-21 03:43:58,435 - result - CRITICAL - Average QWK: 0.47708
+
+2025-06-21 03:43:58,435 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-21 03:51:13,885 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:51:13,885 - result - CRITICAL - Mode: Solo
+2025-06-21 03:51:13,885 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:51:13,886 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:52:04,769 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:52:04,769 - result - CRITICAL - Mode: Solo
+2025-06-21 03:52:04,769 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:52:04,770 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:52:05,525 - result - CRITICAL - Evaluation:
+2025-06-21 03:52:05,525 - result - CRITICAL - MSE of Set 7: 0.11903
+2025-06-21 03:52:05,525 - result - CRITICAL - Average MSE: 0.11903
+
+2025-06-21 03:52:05,526 - result - CRITICAL - QWK of Set 7: 0.47708
+2025-06-21 03:52:05,526 - result - CRITICAL - Average QWK: 0.47708
+
+2025-06-21 03:52:05,526 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-21 03:53:23,285 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:53:23,285 - result - CRITICAL - Mode: Solo
+2025-06-21 03:53:23,285 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:53:23,286 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:53:24,050 - result - CRITICAL - Evaluation:
+2025-06-21 03:53:24,050 - result - CRITICAL - MSE of Set 7: 0.11903
+2025-06-21 03:53:24,050 - result - CRITICAL - Average MSE: 0.11903
+
+2025-06-21 03:53:24,050 - result - CRITICAL - QWK of Set 7: 0.47708
+2025-06-21 03:53:24,050 - result - CRITICAL - Average QWK: 0.47708
+
+2025-06-21 03:53:24,050 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-21 03:54:01,177 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:54:01,177 - result - CRITICAL - Mode: Solo
+2025-06-21 03:54:01,177 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:54:01,178 - result - CRITICAL - ESSAY SET 7:
+
+2025-06-21 03:54:01,967 - result - CRITICAL - Evaluation:
+2025-06-21 03:54:01,967 - result - CRITICAL - MSE of Set 7: 0.11903
+2025-06-21 03:54:01,967 - result - CRITICAL - Average MSE: 0.11903
+
+2025-06-21 03:54:01,967 - result - CRITICAL - QWK of Set 7: 0.47708
+2025-06-21 03:54:01,967 - result - CRITICAL - Average QWK: 0.47708
+
+2025-06-21 03:54:01,967 - result - CRITICAL - -----------------------------------------------------------------
+
+
+
+2025-06-21 03:54:28,651 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:54:28,651 - result - CRITICAL - Mode: Solo
+2025-06-21 03:54:28,651 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:54:28,652 - result - CRITICAL - ESSAY SET 3:
+
+2025-06-21 03:55:23,220 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:55:23,220 - result - CRITICAL - Mode: Solo
+2025-06-21 03:55:23,220 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:55:23,221 - result - CRITICAL - ESSAY SET 3:
+
+2025-06-21 03:57:13,870 - result - CRITICAL - LLM: gpt-4.1-mini
+2025-06-21 03:57:13,870 - result - CRITICAL - Mode: Solo
+2025-06-21 03:57:13,870 - result - CRITICAL - Datapoints: 500
+
+2025-06-21 03:57:13,871 - result - CRITICAL - ESSAY SET 3:
+

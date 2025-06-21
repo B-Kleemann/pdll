@@ -1,3 +1,4 @@
+import codecs
 import logging
 import logging.config
 
@@ -107,7 +108,21 @@ def main(essay_set_ID: int):
         score_prediction["diff"] = y_pred - y_true
         # list full dataset
         pd.set_option("display.max_rows", len(score_prediction))
-        logger.critical(f"\n{score_prediction}\n\n")
+
+        # file_path = "pdll/log/error_handeling_set7_unicode.txt"
+
+        # with codecs.open(file_path, mode="r+", encoding="UTF8") as alt_log_file:
+        #     alt_log_file.write(score_prediction.to_string())
+
+        # with open(file_path, "r", encoding="utf-8") as f:
+        #     lines = f.readlines()
+        #     for i, l in enumerate(lines):
+        #         try:
+        #             a = l.decode("utf8")
+        #         except:
+        #             print("line", i)
+
+        logger.critical(f"\n{score_prediction.to_string()}\n\n")
 
         # # list classification report
         # class_report = classification_report(y_true, y_pred, zero_division=0)
