@@ -1,4 +1,4 @@
-﻿Essay Set #1 
+Essay Set #1 
 Type of essay: Persuasive/ Narrative/Expository 
 Grade level: 8 
 Training set size: 1,785 essays 

@@ -1,4 +1,4 @@
-﻿Essay Set #5 
+Essay Set #5 
 Type of essay: Source Dependent Responses 
 Grade level: 8 
 Training set size: 1,805 essays 

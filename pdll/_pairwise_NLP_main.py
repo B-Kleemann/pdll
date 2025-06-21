@@ -2,7 +2,7 @@ import logging
 import logging.config
 
 import pandas as pd
-from sklearn.metrics import classification_report, mean_squared_error, cohen_kappa_score
+from sklearn.metrics import cohen_kappa_score, mean_squared_error
 
 import pdll._pairwise_NLP as pairwise
 import pdll._pairwise_NLP_baseline as baseline
@@ -50,10 +50,10 @@ gathered_qwk = 0
 # Load scoring rubrics
 scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
-logger.info(f"Run through essay sets {START} to {STOP}\n")
+logger.info(f"Run through essay sets {START} to {STOP - 1}\n")
 
 
-def main(essay_set_ID):
+def main(essay_set_ID: int):
     logger.critical(f"ESSAY SET {essay_set_ID}:\n")
 
     data_train, data_dev, data_test = data_processing.get_data(
@@ -133,7 +133,7 @@ def main(essay_set_ID):
         logger.info("No score prediction available.")
 
 
-for i in range(START, (STOP + 1)):
+for i in range(START, STOP):
     main(i)
 
 caching.print_cache_stats(PAIRWISE)
@@ -141,7 +141,7 @@ caching.print_cache_stats(PAIRWISE)
 # evaluation
 logger.critical("Evaluation:")
 # all MSE in one place
-for j in range(START, STOP + 1):
+for j in range(START, STOP):
     logger.critical(f"MSE of Set {j}: {list_mse[j - START]:.5f}")
     gathered_mse += list_mse[j - START]
 avg_mse = gathered_mse / len(list_mse)
@@ -149,7 +149,7 @@ logger.critical(f"Average MSE: {avg_mse:.5f}\n")
 
 
 # all QWK in one place
-for j in range(START, STOP + 1):
+for j in range(START, STOP):
     logger.critical(f"QWK of Set {j}: {list_qwk[j - START]:.5f}")
     gathered_qwk += list_qwk[j - START]
 avg_qwk = gathered_qwk / len(list_qwk)

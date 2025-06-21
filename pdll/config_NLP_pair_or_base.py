@@ -13,21 +13,21 @@ llms = [
 # Set control variables
 is_test_run = True
 
-is_pairwise = True
+is_pairwise = False
 
-llm = llms[0]
+llm = llms[1]
 
-start_at_essay_set = 1
-stop_at_essay_set = 2
+start_at_essay_set = 7
+stop_at_essay_set = 1 + 7
 
 fold_ID = 1
 random_seed = 81
 
 if is_pairwise:
-    limit_data = 10
-    limit_anchors = 5
-    limit_reasonable = 15
-else:
     limit_data = 50
+    limit_anchors = 10
+    limit_reasonable = 60
+else:
+    limit_data = 500
     limit_anchors = 0
-    limit_reasonable = 80
+    limit_reasonable = 600
