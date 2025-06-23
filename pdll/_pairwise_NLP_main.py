@@ -18,7 +18,7 @@ logger = logging.getLogger("result")
 # Set control variables
 TESTING = _.is_test_run
 PAIRWISE = _.is_pairwise
-MODEL = _.llm
+LLMS = _.llms
 
 START = _.start_at_essay_set
 STOP = _.stop_at_essay_set
@@ -32,15 +32,6 @@ LIMIT_REASONABLE = _.limit_reasonable
 
 
 logger.debug(f"random seed: {SEED}; fold ID: {FOLD_ID}")
-logger.critical(f"LLM: {MODEL}")
-
-# Set limit of rows for testing
-if PAIRWISE:
-    logger.critical("Mode: Pairwise")
-    logger.critical(f"Datapoints: {LIMIT_DATA}; Anchors: {LIMIT_ANCHORS}\n")
-else:
-    logger.critical("Mode: Solo")
-    logger.critical(f"Datapoints: {LIMIT_DATA}\n")
 
 # set up variable for collecting results
 list_mse = []
@@ -51,10 +42,8 @@ gathered_qwk = 0
 # Load scoring rubrics
 scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
-logger.info(f"Run through essay sets {START} to {STOP - 1}\n")
 
-
-def main(essay_set_ID: int):
+def run_prediction_for_essay_set(essay_set_ID: int, model: str):
     logger.critical(f"ESSAY SET {essay_set_ID}:\n")
 
     data_train, data_dev, data_test = data_processing.get_data(
@@ -92,13 +81,13 @@ def main(essay_set_ID: int):
             data_train,
             data_dev,
             scoring_rubrics[essay_set_ID],
-            MODEL,
+            model,
         )
     else:
         score_prediction = baseline.predict_scores_solo(
             data_train,
             scoring_rubrics[essay_set_ID],
-            MODEL,
+            model,
         )
 
     if score_prediction is not None:
@@ -132,32 +121,49 @@ def main(essay_set_ID: int):
         logger.info("No score prediction available.")
 
 
-for i in range(START, STOP):
-    main(i)
+def run_through_all_essay_sets(model: str):
+    # set up header with info
+    logger.critical(f"LLM: {model}")
+    # Set limit of rows for testing
+    if PAIRWISE:
+        logger.critical("Mode: Pairwise")
+        logger.critical(f"Datapoints: {LIMIT_DATA}; Anchors: {LIMIT_ANCHORS}\n")
+    else:
+        logger.critical("Mode: Solo")
+        logger.critical(f"Datapoints: {LIMIT_DATA}\n")
+    logger.info(f"Run through essay sets {START} to {STOP - 1}\n")
 
-caching.print_cache_stats(PAIRWISE)
+    # run through all essay sets
+    for essay_set in range(START, STOP):
+        run_prediction_for_essay_set(essay_set, model)
 
-# evaluation
-logger.critical("Evaluation:")
-# all MSE in one place
-for j in range(START, STOP):
-    logger.critical(f"MSE of Set {j}: {list_mse[j - START]:.5f}")
-    gathered_mse += list_mse[j - START]
-avg_mse = gathered_mse / len(list_mse)
-logger.critical(f"Average MSE: {avg_mse:.5f}\n")
+    # print caching information
+    caching.print_cache_stats(PAIRWISE)
+
+    # evaluation of run
+    logger.critical("Evaluation:")
+    # all MSE in one place
+    for j in range(START, STOP):
+        logger.critical(f"MSE of Set {j}: {list_mse[j - START]:.5f}")
+        gathered_mse += list_mse[j - START]
+    avg_mse = gathered_mse / len(list_mse)
+    logger.critical(f"Average MSE: {avg_mse:.5f}\n")
+
+    # all QWK in one place
+    for j in range(START, STOP):
+        logger.critical(f"QWK of Set {j}: {list_qwk[j - START]:.5f}")
+        gathered_qwk += list_qwk[j - START]
+    avg_qwk = gathered_qwk / len(list_qwk)
+    logger.critical(f"Average QWK: {avg_qwk:.5f}\n")
+
+    # marks end of run
+    logger.critical(
+        "-----------------------------------------------------------------\n\n\n"
+    )
 
 
-# all QWK in one place
-for j in range(START, STOP):
-    logger.critical(f"QWK of Set {j}: {list_qwk[j - START]:.5f}")
-    gathered_qwk += list_qwk[j - START]
-avg_qwk = gathered_qwk / len(list_qwk)
-logger.critical(f"Average QWK: {avg_qwk:.5f}\n")
-
-# marks end of run
-logger.critical(
-    "-----------------------------------------------------------------\n\n\n"
-)
+for llm in LLMS:
+    run_through_all_essay_sets(llm)
 
 
 # * DONE
