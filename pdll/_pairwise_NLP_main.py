@@ -33,17 +33,11 @@ LIMIT_REASONABLE = _.limit_reasonable
 
 logger.debug(f"random seed: {SEED}; fold ID: {FOLD_ID}")
 
-# set up variable for collecting results
-list_mse = []
-list_qwk = []
-gathered_mse = 0
-gathered_qwk = 0
-
 # Load scoring rubrics
 scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
 
-def run_prediction_for_essay_set(essay_set_ID: int, model: str):
+def run_prediction_for(essay_set_ID: int, model: str):
     logger.critical(f"ESSAY SET {essay_set_ID}:\n")
 
     data_train, data_dev, data_test = data_processing.get_data(
@@ -103,7 +97,6 @@ def run_prediction_for_essay_set(essay_set_ID: int, model: str):
 
         # compute QWK
         qwk = cohen_kappa_score(y_true, y_pred, weights="quadratic")
-        list_qwk.append(qwk)
         logger.info(f"QWK of Set: {qwk:.5f}")
 
         # normalizing scores with their max value for better comparison
@@ -114,14 +107,23 @@ def run_prediction_for_essay_set(essay_set_ID: int, model: str):
 
         # compute MSE
         mse = mean_squared_error(y_true, y_pred)
-        list_mse.append(mse)
         logger.info(f"MSE of Set: {mse:.5f}\n")
 
     else:
+        qwk = None
+        mse = None
         logger.info("No score prediction available.")
 
+    return mse, qwk
 
-def run_through_all_essay_sets(model: str):
+
+def run_through_all_essay_sets_with(model: str):
+    # set up variable for collecting results
+    list_mse = []
+    list_qwk = []
+    gathered_mse = 0
+    gathered_qwk = 0
+
     # set up header with info
     logger.critical(f"LLM: {model}")
     # Set limit of rows for testing
@@ -135,10 +137,22 @@ def run_through_all_essay_sets(model: str):
 
     # run through all essay sets
     for essay_set in range(START, STOP):
-        run_prediction_for_essay_set(essay_set, model)
+        mse, qwk = run_prediction_for(essay_set, model)
+        list_mse.append(mse)
+        list_qwk.append(qwk)
 
     # print caching information
     caching.print_cache_stats(PAIRWISE)
+
+    # repetition of header for info
+    logger.critical(f"LLM: {model}")
+    # Set limit of rows for testing
+    if PAIRWISE:
+        logger.critical("Mode: Pairwise")
+        logger.critical(f"Datapoints: {LIMIT_DATA}; Anchors: {LIMIT_ANCHORS}\n")
+    else:
+        logger.critical("Mode: Solo")
+        logger.critical(f"Datapoints: {LIMIT_DATA}\n")
 
     # evaluation of run
     logger.critical("Evaluation:")
@@ -163,7 +177,7 @@ def run_through_all_essay_sets(model: str):
 
 
 for llm in LLMS:
-    run_through_all_essay_sets(llm)
+    run_through_all_essay_sets_with(llm)
 
 
 # * DONE

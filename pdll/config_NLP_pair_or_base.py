@@ -12,9 +12,9 @@ llms = [
 # Set control variables
 is_test_run = True
 
-is_pairwise = False
+is_pairwise = True
 
-llm = llms[5]
+llm = llms[0]
 
 start_at_essay_set = 1
 stop_at_essay_set = 1 + 8
