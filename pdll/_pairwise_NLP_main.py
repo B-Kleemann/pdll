@@ -1,7 +1,9 @@
-import codecs
+import itertools
 import logging
 import logging.config
+import math
 
+import numpy as np
 import pandas as pd
 from sklearn.metrics import cohen_kappa_score, mean_squared_error
 
@@ -16,7 +18,6 @@ logging.config.fileConfig("pdll/log/_logging.conf", encoding="utf-8")
 logger = logging.getLogger("result")
 
 # Set control variables
-TESTING = _.is_test_run
 PAIRWISE = _.is_pairwise
 LLMS = _.llms
 
@@ -28,6 +29,7 @@ FOLD_ID = _.fold_ID
 
 LIMIT_DATA = _.limit_data
 LIMIT_ANCHORS = _.limit_anchors
+FIXED_ANCHORS = _.fixed_anchors
 LIMIT_REASONABLE = _.limit_reasonable
 
 
@@ -37,49 +39,37 @@ logger.debug(f"random seed: {SEED}; fold ID: {FOLD_ID}")
 scoring_rubrics = rubric_extraction.get_rubric_texts_from_files()
 
 
-def run_prediction_for(essay_set_ID: int, model: str):
-    logger.critical(f"ESSAY SET {essay_set_ID}:\n")
+def get_anchor_combos(data, number_of_anchors):
+    combos = itertools.combinations(data, number_of_anchors)
+    return combos
 
-    data_train, data_dev, data_test = data_processing.get_data(
-        FOLD_ID,
-        essay_set_ID,
-        True,
+
+def reduce_the_data(data, limit: int):
+    data = pd.DataFrame(data)
+    limit_data = min(LIMIT_DATA, len(data))
+
+    assert limit_data > 0, logger.warning(
+        "Limit for data reduction must be greater than 0."
     )
 
-    # conversion to DataFrame
-    data_train, data_dev, data_test = data_processing.convert_to_dataframe(
-        [data_train, data_dev, data_test]
-    )
+    data = data.sample(limit, random_state=SEED)
+    logger.debug("amount of datapoints was limited")
 
-    if TESTING:
-        limit_data = min(LIMIT_DATA, len(data_train))
-        limit_reason = LIMIT_REASONABLE
-        #! limits data for development and testing
-        assert limit_data > 0, logger.warning(
-            "Limit for data reduction must be greater than 0."
-        )
+    return data
 
-        # assert limit_data >= limit_reason, logger.warning(
-        #     "Limit for data reduction exceeds number of reasonable rows."
-        # )
-        # use random sample for testing
-        data_train, data_dev = (
-            data_train.sample(limit_data, random_state=SEED),
-            data_dev.sample(LIMIT_ANCHORS, random_state=SEED),
-        )
-        logger.debug("amount of datapoints was limited due to active testing")
 
+def run_per_anchor_combo(anchors, data, essay_set_ID: int, model: str):
     score_prediction = None
     if PAIRWISE:
         score_prediction = pairwise.predict_scores_pairwise(
-            data_train,
-            data_dev,
+            data,
+            anchors,
             scoring_rubrics[essay_set_ID],
             model,
         )
     else:
         score_prediction = baseline.predict_scores_solo(
-            data_train,
+            data,
             scoring_rubrics[essay_set_ID],
             model,
         )
@@ -110,11 +100,44 @@ def run_prediction_for(essay_set_ID: int, model: str):
         logger.info(f"MSE of Set: {mse:.5f}\n")
 
     else:
-        qwk = None
-        mse = None
+        mse, qwk = None, None
         logger.info("No score prediction available.")
 
     return mse, qwk
+
+
+def run_prediction_for(essay_set_ID: int, model: str):
+    logger.critical(f"ESSAY SET {essay_set_ID}:\n")
+
+    data_train, data_dev, data_test = data_processing.get_data(
+        FOLD_ID, essay_set_ID, True, True
+    )
+
+    data_train = reduce_the_data(data_train, LIMIT_DATA)
+    data_dev = reduce_the_data(data_dev, FIXED_ANCHORS)
+
+    anchor_combos = get_anchor_combos(data_dev, LIMIT_ANCHORS)
+    logger.critical(
+        f"Anchor Combinations for {LIMIT_ANCHORS} anchors: {math.comb(FIXED_ANCHORS, LIMIT_ANCHORS)}"
+    )
+
+    collect_mse, collect_qwk = [], []
+
+    for combo in anchor_combos:
+        logger.critical(f"Anchors: {combo}")
+        mse, qwk = run_per_anchor_combo(
+            combo,
+            data_train,
+            essay_set_ID,
+            model,
+        )
+        collect_mse.append(mse)
+        collect_qwk.append(qwk)
+
+    avg_mse = np.mean(collect_mse)
+    avg_qwk = np.mean(collect_qwk)
+
+    return avg_mse, avg_qwk
 
 
 def run_through_all_essay_sets_with(model: str):

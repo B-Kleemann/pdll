@@ -52,7 +52,7 @@ def read_dataset(file_path, prompt_id):
     return data_x, data_y, prompt_ids
 
 
-def get_data(fold_id, prompt_id, as_list_of_tuples):
+def get_data(fold_id, prompt_id, as_list_of_tuples, to_dataframe):
 
     dir = Path(f"data-set/asap/fold_{fold_id}")
     paths = [f"{dir}/train.tsv", f"{dir}/dev.tsv", f"{dir}/test.tsv"]
@@ -85,6 +85,10 @@ def get_data(fold_id, prompt_id, as_list_of_tuples):
         test = (test_x, test_y)
 
     logger.debug("split data in train, dev, test set")
+
+    if to_dataframe:
+        train, dev, test = convert_to_dataframe([train, test, dev])
+
     return train, dev, test
 
 
