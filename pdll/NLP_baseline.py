@@ -3,8 +3,8 @@ import os
 
 import pandas as pd
 
-import pdll._pairwise_NLP_caching as caching
-from pdll._pairwise_NLP_dataprocessing import query_the_api
+import pdll.NLP_caching as caching
+from pdll.NLP_data_processing import query_the_api
 
 # at the end ony one plot, showing the clear difference between baseline and pairwise
 # do anaysis and draw up convincing stats that go with it
