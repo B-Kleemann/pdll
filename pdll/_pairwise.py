@@ -10,7 +10,6 @@ from typing import Iterable
 import numpy as np
 import pandas as pd
 import sklearn.base
-import _pairwise_NLP as pNLP
 from scipy.optimize import LinearConstraint, minimize
 from scipy.spatial.distance import cdist
 from scipy.stats import entropy

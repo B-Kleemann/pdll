@@ -2,8 +2,8 @@ import logging
 
 import pandas as pd
 
-import pdll.NLP_caching as caching
-from pdll.NLP_data_processing import query_the_api
+import pdll.pairwise_NLP_LLM.NLP_caching as caching
+from pdll.pairwise_NLP_LLM.NLP_data_processing import query_the_api
 
 logger = logging.getLogger("result")
 

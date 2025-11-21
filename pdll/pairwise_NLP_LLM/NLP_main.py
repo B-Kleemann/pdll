@@ -7,12 +7,12 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import cohen_kappa_score, mean_squared_error
 
-import pdll.NLP_pairwise as pairwise
-import pdll.NLP_baseline as baseline
-import pdll.NLP_caching as caching
-import pdll.NLP_data_processing as data_processing
-import pdll.NLP_rubric_extraction as rubric_extraction
-import pdll.NLP_config as _
+import pdll.pairwise_NLP_LLM.NLP_pairwise as pairwise
+import pdll.pairwise_NLP_LLM.NLP_baseline as baseline
+import pdll.pairwise_NLP_LLM.NLP_caching as caching
+import pdll.pairwise_NLP_LLM.NLP_data_processing as data_processing
+import pdll.pairwise_NLP_LLM.NLP_rubric_extraction as rubric_extraction
+import pdll.pairwise_NLP_LLM.NLP_config as _
 
 logging.config.fileConfig("pdll/log/_logging.conf", encoding="utf-8")
 logger = logging.getLogger("result")
