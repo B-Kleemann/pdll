@@ -37,7 +37,7 @@ rubric = scoring_rubrics[essay_set]
 
 is_pairwise = True
 if is_pairwise:
-    limit_data = 15
+    limit_data = 10
     limit_anchors = 7
     limit_reasonable = 40
 else:

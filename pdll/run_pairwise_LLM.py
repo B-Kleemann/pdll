@@ -1,3 +1,4 @@
+from operator import index
 import _pairwise_LLM as pw_LLM
 import pairwise_NLP_LLM.NLP_config as _
 import pairwise_NLP_LLM.NLP_data_processing as dp
@@ -21,19 +22,24 @@ def retrieve_data():
     return data, anchors
 
 
-def __main__():
-    data, anchors = retrieve_data()
-    
+def run_prediction(data, anchors):
     PDC_llm = pw_LLM.PairwiseDifferenceClassifierLLM(_.llm, _.rubric, _.max_score)
     
     data_pred = PDC_llm.predict(data, anchors, _.rubric)
     
     print(data_pred)
     print("\n")
-        
+
     mse, qwk = PDC_llm.metrics(data_pred)
     
     print(f"MSE: {mse}")
     print(f"QWK: {qwk}")
     
-__main__()
+    # data_pred.to_csv("result_for_test_LLM_DataFrame.cvs")
+    # with open("result_for_test_LLM_Metrics.txt", "w") as f:
+    #     f.write(f"{mse}\n{qwk}")
+
+   
+if __name__ == "__main__":
+    data, anchors = retrieve_data()
+    run_prediction(data, anchors)

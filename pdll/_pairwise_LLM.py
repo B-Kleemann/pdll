@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from pairwise_NLP_LLM.NLP_data_processing import query_the_api
 from sklearn.metrics import cohen_kappa_score, mean_squared_error
 
@@ -37,7 +38,7 @@ class PairwiseDifferenceClassifierLLM():
    
     
     
-    def predict(self, data, anchors, rubric):
+    def predict(self, data, anchors, rubric) -> pd.DataFrame:
         predictions = []
 
         for i, unknown_datapoint in data.iterrows():
@@ -88,10 +89,11 @@ class PairwiseDifferenceClassifierLLM():
         return data
 
     def normalize_scores(self, data_pred):
-        # normalizing scores with their max value for better comparison        
-        data_pred["score"] = (data_pred["score"] / self.max_score)
-        data_pred["y_pred"] = (data_pred["y_pred"] / self.max_score)
-        return data_pred
+        # normalizing scores with their max value for better comparison
+        df = pd.DataFrame(data_pred)
+        df["score"] = (data_pred["score"] / self.max_score)
+        df["y_pred"] = (data_pred["y_pred"] / self.max_score)
+        return df
 
     def metrics(self, data_pred):
         if 'y_pred' in data_pred:
@@ -99,9 +101,9 @@ class PairwiseDifferenceClassifierLLM():
             qwk = round(cohen_kappa_score(data_pred["score"], data_pred["y_pred"], weights="quadratic"), self.digits)
             
             
-            data_pred = self.normalize_scores(data_pred)        
+            data_metrics = self.normalize_scores(data_pred)
             # compute MSE
-            mse = round(mean_squared_error(data_pred["score"], data_pred["y_pred"]), self.digits)
+            mse = round(mean_squared_error(data_metrics["score"], data_metrics["y_pred"]), self.digits)
             
         else:
             qwk, mse = 0, 0
